@@ -1,0 +1,6085 @@
+{
+ "total": 31630,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 258,
+   "y": 65,
+   "w": 1167,
+   "h": 31211,
+   "txt": "Легендарки Наборы карт для выбора первой легендарки на Арене Главная › Легендарк"
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "arena-legendaries-page",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 31131,
+   "txt": "Легендарки Наборы карт для выбора первой легендарки на Арене Главная › Легендарк"
+  },
+  {
+   "d": 2,
+   "tag": "HEADER",
+   "cls": "section-banner-modern",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 320,
+   "txt": "Легендарки Наборы карт для выбора первой легендарки на Арене"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "traditional-mode-banner__copy",
+   "x": 326,
+   "y": 195,
+   "w": 720,
+   "h": 107,
+   "txt": "Легендарки Наборы карт для выбора первой легендарки на Арене"
+  },
+  {
+   "d": 4,
+   "tag": "H1",
+   "cls": "",
+   "x": 326,
+   "y": 195,
+   "w": 720,
+   "h": 60,
+   "txt": "Легендарки"
+  },
+  {
+   "d": 2,
+   "tag": "NAV",
+   "cls": "mb-3",
+   "x": 282,
+   "y": 425,
+   "w": 1119,
+   "h": 58,
+   "txt": "Главная › Легендарки"
+  },
+  {
+   "d": 3,
+   "tag": "OL",
+   "cls": "flex items-center gap-1 flex-wrap text-xs text-[#8b6c42]",
+   "x": 284,
+   "y": 425,
+   "w": 1114,
+   "h": 44,
+   "txt": "Главная › Легендарки"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "",
+   "x": 282,
+   "y": 501,
+   "w": 1119,
+   "h": 67,
+   "txt": "На Арене Hearthstone легендарная карта предлагается в качестве первого выбора. Н"
+  },
+  {
+   "d": 3,
+   "tag": "P",
+   "cls": "text-[#6b4c2a] text-sm leading-relaxed mb-5 px-1",
+   "x": 282,
+   "y": 501,
+   "w": 1119,
+   "h": 67,
+   "txt": "На Арене Hearthstone легендарная карта предлагается в качестве первого выбора. Н"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "legendary-access-shell",
+   "x": 282,
+   "y": 588,
+   "w": 1119,
+   "h": 30631,
+   "txt": "HSReplay Firestone 147 групп Сортировка: Винрейт Поиск легендарок 1 Лекарь крови"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "legendary-access-content",
+   "x": 282,
+   "y": 588,
+   "w": 1119,
+   "h": 30631,
+   "txt": "HSReplay Firestone 147 групп Сортировка: Винрейт Поиск легендарок 1 Лекарь крови"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "legendary-toolbar flex items-center justify-between mb-4 -mt-2 flex-wrap gap-2",
+   "x": 282,
+   "y": 588,
+   "w": 1119,
+   "h": 71,
+   "txt": "HSReplay Firestone 147 групп"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-source-toggle flex items-center gap-1 p-1 rounded-xl",
+   "x": 282,
+   "y": 588,
+   "w": 224,
+   "h": 54,
+   "txt": "HSReplay Firestone"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "legendary-class-nav mb-5",
+   "x": 282,
+   "y": 729,
+   "w": 1119,
+   "h": 78,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-class-tabs flex items-center gap-1.5 sm:gap-2 px-3 py-2.5 rounded-2xl ",
+   "x": 282,
+   "y": 729,
+   "w": 1119,
+   "h": 78,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "legendary-groups-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4",
+   "x": 282,
+   "y": 828,
+   "w": 1119,
+   "h": 30274,
+   "txt": "1 Лекарь крови Тал'ена 61.1% винрейт Питье крови Башня из вурдалаков Происшестви"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 837,
+   "w": 359,
+   "h": 543,
+   "txt": "1 Лекарь крови Тал'ена 61.1% винрейт Питье крови Башня из вурдалаков Происшестви"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 1078,
+   "w": 309,
+   "h": 50,
+   "txt": "Лекарь крови Тал'ена 61.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 1157,
+   "w": 256,
+   "h": 135,
+   "txt": "Питье крови Башня из вурдалаков Происшествие в шахте"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 1306,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 61.1% Частота выбора 80.1% Частота предложения 3.6% Очки ArenaSmith 51"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 837,
+   "w": 359,
+   "h": 543,
+   "txt": "2 Вулкаросс 60.7% винрейт Фалрик Происшествие в шахте Севооборот Винрейт 60.7% Ч"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 1078,
+   "w": 309,
+   "h": 50,
+   "txt": "Вулкаросс 60.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 1157,
+   "w": 256,
+   "h": 135,
+   "txt": "Фалрик Происшествие в шахте Севооборот"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 1306,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 60.7% Частота выбора 61.0% Частота предложения 3.5% Очки ArenaSmith 48"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 837,
+   "w": 359,
+   "h": 543,
+   "txt": "3 Оживленная Ониксия 60.4% винрейт Экспериментальное оживление Одержимый техник "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 1078,
+   "w": 309,
+   "h": 50,
+   "txt": "Оживленная Ониксия 60.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 1157,
+   "w": 256,
+   "h": 135,
+   "txt": "Экспериментальное оживление Одержимый техник Воплощенное воспоминание"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 1306,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 60.4% Частота выбора 93.0% Частота предложения 2.1% Очки ArenaSmith 54"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 1401,
+   "w": 359,
+   "h": 573,
+   "txt": "4 Капитан Краули 59.2% винрейт Ручница Притягивающий крюк Главный канонир Винрей"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 1662,
+   "w": 309,
+   "h": 50,
+   "txt": "Капитан Краули 59.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 1741,
+   "w": 256,
+   "h": 146,
+   "txt": "Ручница Притягивающий крюк Главный канонир"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 1901,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 59.2% Частота выбора 89.5% Частота предложения 1.5% Очки ArenaSmith 54"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 1401,
+   "w": 359,
+   "h": 573,
+   "txt": "5 Синестра 57.9% винрейт Сумеречный обряд Безумный приспешник Вендетта Винрейт 5"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 1642,
+   "w": 309,
+   "h": 50,
+   "txt": "Синестра 57.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 1721,
+   "w": 256,
+   "h": 135,
+   "txt": "Сумеречный обряд Безумный приспешник Вендетта"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 1871,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 57.9% Частота выбора 94.5% Частота предложения 1.6% Очки ArenaSmith 54"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 1401,
+   "w": 359,
+   "h": 573,
+   "txt": "6 Низендра 57.9% винрейт Зловещая клетка душ Пробудитель душ Жестокий обряд Винр"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 1642,
+   "w": 309,
+   "h": 50,
+   "txt": "Низендра 57.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 1721,
+   "w": 256,
+   "h": 135,
+   "txt": "Зловещая клетка душ Пробудитель душ Жестокий обряд"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 1871,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 57.9% Частота выбора 39.5% Частота предложения 3.3% Очки ArenaSmith 42"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 1996,
+   "w": 359,
+   "h": 565,
+   "txt": "7 Могильная Таланджи 57.9% винрейт Могильная Таланджи (1 - Бвонсамди) Могильная "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 2237,
+   "w": 309,
+   "h": 50,
+   "txt": "Могильная Таланджи 57.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 377,
+   "y": 2316,
+   "w": 168,
+   "h": 157,
+   "txt": "Могильная Таланджи (1 - Бвонсамди) Могильная Таланджи (2 - Что стало с Зандаларо"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 2488,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 57.9% Частота выбора 66.1% Частота предложения 3.5% Очки ArenaSmith 47"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 1996,
+   "w": 359,
+   "h": 565,
+   "txt": "8 Трас'тат, паразит душ 57.7% винрейт Коса Звездной Пыли Злобный пусточешуйник В"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 2237,
+   "w": 309,
+   "h": 50,
+   "txt": "Трас'тат, паразит душ 57.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 2316,
+   "w": 256,
+   "h": 135,
+   "txt": "Коса Звездной Пыли Злобный пусточешуйник Взрыв Бездны"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 2465,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 57.7% Частота выбора 92.9% Частота предложения 2.1% Очки ArenaSmith 54"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 1996,
+   "w": 359,
+   "h": 565,
+   "txt": "9 Меритра из Сна 57.2% винрейт Страж кладки Пустынная матрона Древень Оскверненн"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 2237,
+   "w": 309,
+   "h": 50,
+   "txt": "Меритра из Сна 57.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 2316,
+   "w": 256,
+   "h": 146,
+   "txt": "Страж кладки Пустынная матрона Древень Оскверненного леса"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 2477,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 57.2% Частота выбора 91.8% Частота предложения 1.3% Очки ArenaSmith 54"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 2583,
+   "w": 359,
+   "h": 565,
+   "txt": "10 Медив Освященный 57.0% винрейт Медив Освященный (2 - Великий посох Атиеш) Мед"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 2824,
+   "w": 309,
+   "h": 50,
+   "txt": "Медив Освященный 57.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 377,
+   "y": 2903,
+   "w": 168,
+   "h": 157,
+   "txt": "Медив Освященный (2 - Великий посох Атиеш) Медив Освященный (1 - Святыня Каражан"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 3075,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 57.0% Частота выбора 83.5% Частота предложения 3.1% Очки ArenaSmith 52"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 2583,
+   "w": 359,
+   "h": 565,
+   "txt": "11 Урсок 56.7% винрейт Тощая Гончая Угонщица скота Вопли йодля Винрейт 56.7% Час"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 2824,
+   "w": 309,
+   "h": 50,
+   "txt": "Урсок 56.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 2903,
+   "w": 256,
+   "h": 124,
+   "txt": "Тощая Гончая Угонщица скота Вопли йодля"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 3041,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 56.7% Частота выбора 38.1% Частота предложения 3.4% Очки ArenaSmith 41"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 2583,
+   "w": 359,
+   "h": 565,
+   "txt": "12 Вечный жнец Пустотел 56.5% винрейт Обсидиановый загробник Нерубский страж роя"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 2824,
+   "w": 309,
+   "h": 50,
+   "txt": "Вечный жнец Пустотел 56.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 2903,
+   "w": 256,
+   "h": 135,
+   "txt": "Обсидиановый загробник Нерубский страж роя Происшествие в шахте"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 3052,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 56.5% Частота выбора 29.7% Частота предложения 3.3% Очки ArenaSmith 31"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 3169,
+   "w": 359,
+   "h": 543,
+   "txt": "13 Каров Сломленный 56.4% винрейт Посмертный приговор Зов сумерек Гадалка Винрей"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 3411,
+   "w": 309,
+   "h": 50,
+   "txt": "Каров Сломленный 56.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 3490,
+   "w": 256,
+   "h": 135,
+   "txt": "Посмертный приговор Зов сумерек Гадалка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 3639,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 56.4% Частота выбора 88.5% Частота предложения 3.3% Очки ArenaSmith 53"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 3169,
+   "w": 359,
+   "h": 543,
+   "txt": "14 Посох Вестницы гибели 56.3% винрейт Коррак Кровопуск Игрушечный потрошитель П"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 3411,
+   "w": 309,
+   "h": 50,
+   "txt": "Посох Вестницы гибели 56.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 3490,
+   "w": 256,
+   "h": 135,
+   "txt": "Коррак Кровопуск Игрушечный потрошитель Плотоядный куб"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 3639,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 56.3% Частота выбора 18.7% Частота предложения 3.3% Очки ArenaSmith 23"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 3169,
+   "w": 359,
+   "h": 543,
+   "txt": "15 Достичь равновесия 55.7% винрейт Обновление Сумеречный целитель Темные видени"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 3411,
+   "w": 309,
+   "h": 50,
+   "txt": "Достичь равновесия 55.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 3490,
+   "w": 256,
+   "h": 135,
+   "txt": "Обновление Сумеречный целитель Темные видения"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 3639,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 55.7% Частота выбора 74.4% Частота предложения 3.3% Очки ArenaSmith 50"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 3734,
+   "w": 359,
+   "h": 543,
+   "txt": "16 Виктор Нефарий 55.6% винрейт Хроматическая праматерь Эксперимент Крыла Тьмы У"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 3975,
+   "w": 309,
+   "h": 50,
+   "txt": "Виктор Нефарий 55.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 4054,
+   "w": 256,
+   "h": 135,
+   "txt": "Хроматическая праматерь Эксперимент Крыла Тьмы Управление клешней"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 4203,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 55.6% Частота выбора 22.9% Частота предложения 3.3% Очки ArenaSmith 24"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 3734,
+   "w": 359,
+   "h": 543,
+   "txt": "17 Ирида Искатель Греха 55.2% винрейт Призыватель ада Космические воплощения Пуг"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 3975,
+   "w": 309,
+   "h": 50,
+   "txt": "Ирида Искатель Греха 55.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 4054,
+   "w": 256,
+   "h": 135,
+   "txt": "Призыватель ада Космические воплощения Пугалка!"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 4203,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 55.2% Частота выбора 51.0% Частота предложения 2.0% Очки ArenaSmith 46"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 3734,
+   "w": 359,
+   "h": 543,
+   "txt": "18 Матиас Шоу 54.5% винрейт Истребитель из ШРУ Поставщик ШРУ Беззвучный удар Вин"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 3975,
+   "w": 309,
+   "h": 50,
+   "txt": "Матиас Шоу 54.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 4054,
+   "w": 256,
+   "h": 135,
+   "txt": "Истребитель из ШРУ Поставщик ШРУ Беззвучный удар"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 4203,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 54.5% Частота выбора 67.6% Частота предложения 3.1% Очки ArenaSmith 47"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 4298,
+   "w": 359,
+   "h": 543,
+   "txt": "19 Хроникар 54.4% винрейт Танец клинков Оскверненное копье Дама с клинками Винре"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 4539,
+   "w": 309,
+   "h": 50,
+   "txt": "Хроникар 54.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 4618,
+   "w": 256,
+   "h": 135,
+   "txt": "Танец клинков Оскверненное копье Дама с клинками"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 4768,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 54.4% Частота выбора 25.2% Частота предложения 2.0% Очки ArenaSmith 30"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 4298,
+   "w": 359,
+   "h": 543,
+   "txt": "20 Чаромикон 54.3% винрейт Силовая странница Волнолов Узел силовых линий Винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 4539,
+   "w": 309,
+   "h": 50,
+   "txt": "Чаромикон 54.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 4618,
+   "w": 256,
+   "h": 135,
+   "txt": "Силовая странница Волнолов Узел силовых линий"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 4768,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 54.3% Частота выбора 94.1% Частота предложения 1.5% Очки ArenaSmith 54"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 4298,
+   "w": 359,
+   "h": 543,
+   "txt": "21 Верховный сектант Геренн 54.2% винрейт Пробудитель душ Охранник Разделяющийся"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 4539,
+   "w": 309,
+   "h": 50,
+   "txt": "Верховный сектант Геренн 54.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 4618,
+   "w": 256,
+   "h": 135,
+   "txt": "Пробудитель душ Охранник Разделяющийся метеор"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 4768,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 54.2% Частота выбора 39.4% Частота предложения 3.2% Очки ArenaSmith 40"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 4862,
+   "w": 359,
+   "h": 554,
+   "txt": "22 Смертокрыл Разрушитель миров 54.2% винрейт Ультраксион Глашатай конца времен "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 5104,
+   "w": 309,
+   "h": 50,
+   "txt": "Смертокрыл Разрушитель миров 54.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 5183,
+   "w": 256,
+   "h": 135,
+   "txt": "Ультраксион Глашатай конца времен Темный осведомитель"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 5332,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 54.2% Частота выбора 87.7% Частота предложения 6.5% Очки ArenaSmith 51"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 4862,
+   "w": 359,
+   "h": 554,
+   "txt": "23 Незримый Опу 53.8% винрейт Веер клинков Разлив дегтя Карта сектантов Винрейт "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 5104,
+   "w": 309,
+   "h": 50,
+   "txt": "Незримый Опу 53.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 5183,
+   "w": 256,
+   "h": 124,
+   "txt": "Веер клинков Разлив дегтя Карта сектантов"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 5321,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.8% Частота выбора 51.4% Частота предложения 2.5% Очки ArenaSmith 46"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 4862,
+   "w": 359,
+   "h": 554,
+   "txt": "24 Азшара, владычица океана 53.6% винрейт Бронированный кровопускатель Насыщение"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 5104,
+   "w": 309,
+   "h": 50,
+   "txt": "Азшара, владычица океана 53.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 5183,
+   "w": 256,
+   "h": 146,
+   "txt": "Бронированный кровопускатель Насыщение Скверной Зловредный мутант"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 5343,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.6% Частота выбора 69.5% Частота предложения 1.3% Очки ArenaSmith 48"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 5438,
+   "w": 359,
+   "h": 554,
+   "txt": "25 Авиана, избранница Элуны 53.6% винрейт Лунокрыл-посланник Желание новолуния Л"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 5679,
+   "w": 309,
+   "h": 50,
+   "txt": "Авиана, избранница Элуны 53.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 5758,
+   "w": 256,
+   "h": 135,
+   "txt": "Лунокрыл-посланник Желание новолуния Лунный колодец"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 5907,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.6% Частота выбора 60.1% Частота предложения 3.2% Очки ArenaSmith 45"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 5438,
+   "w": 359,
+   "h": 554,
+   "txt": "26 Гарона Полуорчиха 53.4% винрейт Гарона Полуорчиха (1 - Король Ллейн) Гарона П"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 5679,
+   "w": 309,
+   "h": 50,
+   "txt": "Гарона Полуорчиха 53.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 757,
+   "y": 5758,
+   "w": 168,
+   "h": 146,
+   "txt": "Гарона Полуорчиха (1 - Король Ллейн) Гарона Полуорчиха (2 - Убийцы Королей)"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 5919,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.4% Частота выбора 46.8% Частота предложения 2.5% Очки ArenaSmith 44"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 5438,
+   "w": 359,
+   "h": 554,
+   "txt": "27 Тиранда 53.4% винрейт Лунный колодец Ритуал новолуния Нечто из янтаря Винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 5679,
+   "w": 309,
+   "h": 50,
+   "txt": "Тиранда 53.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 5758,
+   "w": 256,
+   "h": 135,
+   "txt": "Лунный колодец Ритуал новолуния Нечто из янтаря"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 5907,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.4% Частота выбора 50.5% Частота предложения 3.0% Очки ArenaSmith 43"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 6013,
+   "w": 359,
+   "h": 543,
+   "txt": "28 Хронолорд Эпох 53.4% винрейт Упреждающий удар Комментатор на стадионе За слав"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 6254,
+   "w": 309,
+   "h": 50,
+   "txt": "Хронолорд Эпох 53.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 6333,
+   "w": 256,
+   "h": 135,
+   "txt": "Упреждающий удар Комментатор на стадионе За славу!"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 6483,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.4% Частота выбора 37.5% Частота предложения 1.3% Очки ArenaSmith 41"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 6013,
+   "w": 359,
+   "h": 543,
+   "txt": "29 Омен 53.1% винрейт Свирепый сквернотопырь Прожорливый охотник Скверны Кабан с"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 6254,
+   "w": 309,
+   "h": 50,
+   "txt": "Омен 53.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 6333,
+   "w": 256,
+   "h": 135,
+   "txt": "Свирепый сквернотопырь Прожорливый охотник Скверны Кабан с мячом"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 6483,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.1% Частота выбора 67.3% Частота предложения 2.1% Очки ArenaSmith 48"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 6013,
+   "w": 359,
+   "h": 543,
+   "txt": "30 Неспира Порабощенная 53.0% винрейт Зловредный мутант Карта улья Вкус хаоса Ви"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 6254,
+   "w": 309,
+   "h": 50,
+   "txt": "Неспира Порабощенная 53.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 6333,
+   "w": 256,
+   "h": 135,
+   "txt": "Зловредный мутант Карта улья Вкус хаоса"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 6483,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.0% Частота выбора 48.5% Частота предложения 2.1% Очки ArenaSmith 44"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 6577,
+   "w": 359,
+   "h": 543,
+   "txt": "31 Инспектор Мурлок Холмс 53.0% винрейт Мурлок Холмс Кватсон Слияние из глубин В"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 6819,
+   "w": 309,
+   "h": 50,
+   "txt": "Инспектор Мурлок Холмс 53.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 6898,
+   "w": 256,
+   "h": 135,
+   "txt": "Мурлок Холмс Кватсон Слияние из глубин"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 7047,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.0% Частота выбора 12.4% Частота предложения 4.5% Очки ArenaSmith 21"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 6577,
+   "w": 359,
+   "h": 543,
+   "txt": "32 Командир Геддон 53.0% винрейт Планета-карлик Испытание огнем Шведский стол Ви"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 6819,
+   "w": 309,
+   "h": 50,
+   "txt": "Командир Геддон 53.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 6898,
+   "w": 256,
+   "h": 124,
+   "txt": "Планета-карлик Испытание огнем Шведский стол"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 7036,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 53.0% Частота выбора 12.8% Частота предложения 1.4% Очки ArenaSmith 19"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 6577,
+   "w": 359,
+   "h": 543,
+   "txt": "33 Хлад ван Пир 52.9% винрейт Активированный голем Грешный скакун Эксперт по дух"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 6819,
+   "w": 309,
+   "h": 50,
+   "txt": "Хлад ван Пир 52.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 6898,
+   "w": 256,
+   "h": 135,
+   "txt": "Активированный голем Грешный скакун Эксперт по духам"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 7047,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 52.9% Частота выбора 59.9% Частота предложения 4.1% Очки ArenaSmith 46"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 7142,
+   "w": 359,
+   "h": 718,
+   "txt": "34 Башана Рунический Тотем 52.7% винрейт Восстанавливающий друид Жизнецвет Камни"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 7404,
+   "w": 309,
+   "h": 50,
+   "txt": "Башана Рунический Тотем 52.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 7483,
+   "w": 256,
+   "h": 147,
+   "txt": "Восстанавливающий друид Жизнецвет Камни главного корня"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 7643,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 52.7% Частота выбора 68.6% Частота предложения 1.3% Очки ArenaSmith 47"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 7142,
+   "w": 359,
+   "h": 718,
+   "txt": "35 Возрождение кошмара 52.7% винрейт Грызя и Глот Ферма трупов Пробитый шлюз Вос"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 7404,
+   "w": 309,
+   "h": 50,
+   "txt": "Возрождение кошмара 52.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 687,
+   "y": 7483,
+   "w": 309,
+   "h": 290,
+   "txt": "Грызя и Глот Ферма трупов Пробитый шлюз Воскрешенный терродактиль Севооборот"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 7787,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 52.7% Частота выбора 54.3% Частота предложения 3.3% Очки ArenaSmith 40"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 7142,
+   "w": 359,
+   "h": 718,
+   "txt": "36 Вечнос 52.6% винрейт Послушница-голубка Слово силы: Барьер Божественный авгур"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 7404,
+   "w": 309,
+   "h": 50,
+   "txt": "Вечнос 52.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 7483,
+   "w": 256,
+   "h": 147,
+   "txt": "Послушница-голубка Слово силы: Барьер Божественный авгур"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 7643,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 52.6% Частота выбора 30.1% Частота предложения 3.2% Очки ArenaSmith 33"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 7881,
+   "w": 359,
+   "h": 575,
+   "txt": "37 Нири из кратера 52.5% винрейт Пробуждающие толчки Знатный улов Связка бананов"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 8143,
+   "w": 309,
+   "h": 50,
+   "txt": "Нири из кратера 52.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 8222,
+   "w": 256,
+   "h": 147,
+   "txt": "Пробуждающие толчки Знатный улов Связка бананов"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 8383,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 52.5% Частота выбора 28.0% Частота предложения 34.0% Очки ArenaSmith 49"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 7881,
+   "w": 359,
+   "h": 575,
+   "txt": "38 Кровавый боец Ло'гош 52.3% винрейт Кровавый боец Бролл Кровавый боец Валира В"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 8143,
+   "w": 309,
+   "h": 50,
+   "txt": "Кровавый боец Ло'гош 52.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 757,
+   "y": 8222,
+   "w": 168,
+   "h": 147,
+   "txt": "Кровавый боец Бролл Кровавый боец Валира"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 8383,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 52.3% Частота выбора 42.6% Частота предложения 1.4% Очки ArenaSmith 42"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 7881,
+   "w": 359,
+   "h": 575,
+   "txt": "39 Пеплошкурая 52.1% винрейт Угонщица скота Хитрый мошенник Воришка Винрейт 52.1"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 8143,
+   "w": 309,
+   "h": 50,
+   "txt": "Пеплошкурая 52.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 8222,
+   "w": 256,
+   "h": 147,
+   "txt": "Угонщица скота Хитрый мошенник Воришка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 8383,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 52.1% Частота выбора 53.5% Частота предложения 2.5% Очки ArenaSmith 42"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 8478,
+   "w": 359,
+   "h": 575,
+   "txt": "40 Рагнарос Великий огонь 52.1% винрейт Обжигающий разоритель Катастрофический б"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 8739,
+   "w": 309,
+   "h": 50,
+   "txt": "Рагнарос Великий огонь 52.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 8818,
+   "w": 256,
+   "h": 147,
+   "txt": "Обжигающий разоритель Катастрофический боевой топор Опаляющая расщелина"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 8979,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 52.1% Частота выбора 76.5% Частота предложения 91.0% Очки ArenaSmith 50"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 8478,
+   "w": 359,
+   "h": 575,
+   "txt": "41 Посох коварства 52.1% винрейт Секретный ингредиент Паучок Укус вдовы Винрейт "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 8739,
+   "w": 309,
+   "h": 50,
+   "txt": "Посох коварства 52.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 8818,
+   "w": 256,
+   "h": 147,
+   "txt": "Секретный ингредиент Паучок Укус вдовы"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 8979,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 52.1% Частота выбора 83.3% Частота предложения 1.2% Очки ArenaSmith 51"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 8478,
+   "w": 359,
+   "h": 575,
+   "txt": "42 Айя, главарь «Лотоса» 51.9% винрейт Смертельная взятка Акула-ростовщик Позват"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 8739,
+   "w": 309,
+   "h": 50,
+   "txt": "Айя, главарь «Лотоса» 51.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 8818,
+   "w": 256,
+   "h": 147,
+   "txt": "Смертельная взятка Акула-ростовщик Позвать управляющего!"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 8979,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 51.9% Частота выбора 61.3% Частота предложения 2.6% Очки ArenaSmith 46"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 9074,
+   "w": 359,
+   "h": 575,
+   "txt": "43 Великий дракорекс 51.5% винрейт Дракон-гурман Поддаться безумию Кладка порчи "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 9336,
+   "w": 309,
+   "h": 50,
+   "txt": "Великий дракорекс 51.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 9415,
+   "w": 256,
+   "h": 147,
+   "txt": "Дракон-гурман Поддаться безумию Кладка порчи"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 9575,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 51.5% Частота выбора 66.7% Частота предложения 40.0% Очки ArenaSmith 46"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 9074,
+   "w": 359,
+   "h": 575,
+   "txt": "44 Страж Майев 51.5% винрейт Демонтаж-бот Брелок-скарабей Клювозавр Винрейт 51.5"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 9336,
+   "w": 309,
+   "h": 50,
+   "txt": "Страж Майев 51.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 9415,
+   "w": 256,
+   "h": 135,
+   "txt": "Демонтаж-бот Брелок-скарабей Клювозавр"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 9564,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 51.5% Частота выбора 17.1% Частота предложения 4.5% Очки ArenaSmith 20"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 9074,
+   "w": 359,
+   "h": 575,
+   "txt": "45 Глашатай драконов Наралекс 51.1% винрейт Шипорожденный дракон Истерзанный гро"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 9336,
+   "w": 309,
+   "h": 50,
+   "txt": "Глашатай драконов Наралекс 51.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 9415,
+   "w": 256,
+   "h": 147,
+   "txt": "Шипорожденный дракон Истерзанный грознокрыл Дракон-оригами"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 9575,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 51.1% Частота выбора 12.8% Частота предложения 4.4% Очки ArenaSmith 16"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 9670,
+   "w": 359,
+   "h": 586,
+   "txt": "46 Плетеный Клык 51.0% винрейт Одеревенение Ярость прайда Дар леса Винрейт 51.0%"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 9932,
+   "w": 309,
+   "h": 50,
+   "txt": "Плетеный Клык 51.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 10011,
+   "w": 256,
+   "h": 135,
+   "txt": "Одеревенение Ярость прайда Дар леса"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 10160,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 51.0% Частота выбора 69.0% Частота предложения 1.1% Очки ArenaSmith 49"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 9670,
+   "w": 359,
+   "h": 586,
+   "txt": "47 Шаладрассил 50.9% винрейт Арденвельдский трюкач Чародейка-варвар Кошмар Винре"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 9932,
+   "w": 309,
+   "h": 50,
+   "txt": "Шаладрассил 50.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 10011,
+   "w": 256,
+   "h": 147,
+   "txt": "Арденвельдский трюкач Чародейка-варвар Кошмар"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 10172,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.9% Частота выбора 12.6% Частота предложения 4.2% Очки ArenaSmith 13"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 9670,
+   "w": 359,
+   "h": 586,
+   "txt": "48 Броксигар 50.9% винрейт Броксигар (2 - Топор Кенария) Броксигар (1 - Первый п"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 9932,
+   "w": 309,
+   "h": 50,
+   "txt": "Броксигар 50.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1138,
+   "y": 10011,
+   "w": 168,
+   "h": 158,
+   "txt": "Броксигар (2 - Топор Кенария) Броксигар (1 - Первый портал на Аргус)"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 10183,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.9% Частота выбора 38.6% Частота предложения 2.0% Очки ArenaSmith 39"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 10278,
+   "w": 359,
+   "h": 575,
+   "txt": "49 Архей 50.6% винрейт Новая жизнь Прислужница Тени Кристаллический оракул Винре"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 10539,
+   "w": 309,
+   "h": 50,
+   "txt": "Архей 50.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 10618,
+   "w": 256,
+   "h": 147,
+   "txt": "Новая жизнь Прислужница Тени Кристаллический оракул"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 10779,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.6% Частота выбора 14.8% Частота предложения 3.0% Очки ArenaSmith 14"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 10278,
+   "w": 359,
+   "h": 575,
+   "txt": "50 Повелитель кошмаров Ксавий 50.5% винрейт Порождение безумия Ящер-вестник Сати"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 10539,
+   "w": 309,
+   "h": 50,
+   "txt": "Повелитель кошмаров Ксавий 50.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 10618,
+   "w": 256,
+   "h": 147,
+   "txt": "Порождение безумия Ящер-вестник Сатир-иллюзионист"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 10779,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.5% Частота выбора 32.6% Частота предложения 4.6% Очки ArenaSmith 37"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 10278,
+   "w": 359,
+   "h": 575,
+   "txt": "51 Мясорубка 50.4% винрейт Подготовка Ускоренный просмотр Злобный удар (1-й ранг"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 10539,
+   "w": 309,
+   "h": 50,
+   "txt": "Мясорубка 50.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 10618,
+   "w": 256,
+   "h": 147,
+   "txt": "Подготовка Ускоренный просмотр Злобный удар (1-й ранг)"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 10779,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.4% Частота выбора 14.9% Частота предложения 2.4% Очки ArenaSmith 19"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 10874,
+   "w": 359,
+   "h": 575,
+   "txt": "52 Вулканос 50.3% винрейт Инфернальный вестник Аква-архивариус Призыв стихий Вин"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 11136,
+   "w": 309,
+   "h": 50,
+   "txt": "Вулканос 50.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 11215,
+   "w": 256,
+   "h": 147,
+   "txt": "Инфернальный вестник Аква-архивариус Призыв стихий"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 11375,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.3% Частота выбора 64.9% Частота предложения 88.0% Очки ArenaSmith 50"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 10874,
+   "w": 359,
+   "h": 575,
+   "txt": "53 Энтомолог Тору 50.3% винрейт Воевода Кривого Клыка Иллидари-инквизитор Обжига"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 11136,
+   "w": 309,
+   "h": 50,
+   "txt": "Энтомолог Тору 50.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 11215,
+   "w": 256,
+   "h": 147,
+   "txt": "Воевода Кривого Клыка Иллидари-инквизитор Обжигающий жар"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 11375,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.3% Частота выбора 10.4% Частота предложения 2.0% Очки ArenaSmith 11"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 10874,
+   "w": 359,
+   "h": 575,
+   "txt": "54 Исондра 50.3% винрейт Кладка порчи Поддаться безумию Искаженный опустошитель "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 11136,
+   "w": 309,
+   "h": 50,
+   "txt": "Исондра 50.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 11215,
+   "w": 256,
+   "h": 147,
+   "txt": "Кладка порчи Поддаться безумию Искаженный опустошитель"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 11375,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.3% Частота выбора 61.1% Частота предложения 1.4% Очки ArenaSmith 46"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 11470,
+   "w": 359,
+   "h": 575,
+   "txt": "55 Морхи 50.2% винрейт Страж портала Маг вечности Разрушитель Перекрестка Винрей"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 11732,
+   "w": 309,
+   "h": 50,
+   "txt": "Морхи 50.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 11811,
+   "w": 256,
+   "h": 147,
+   "txt": "Страж портала Маг вечности Разрушитель Перекрестка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 11972,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.2% Частота выбора 10.9% Частота предложения 4.3% Очки ArenaSmith 21"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 11470,
+   "w": 359,
+   "h": 575,
+   "txt": "56 Зеркалекс Кристальная 50.2% винрейт Ванесса ван Клиф Мимикрия Кошмарное топли"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 11732,
+   "w": 309,
+   "h": 50,
+   "txt": "Зеркалекс Кристальная 50.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 11811,
+   "w": 256,
+   "h": 147,
+   "txt": "Ванесса ван Клиф Мимикрия Кошмарное топливо"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 11972,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.2% Частота выбора 45.3% Частота предложения 67.0% Очки ArenaSmith 43"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 11470,
+   "w": 359,
+   "h": 575,
+   "txt": "57 Страж Дорог Малорн 50.1% винрейт Блистающий ткач Снов Рыцарь Горького Цветка "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 11732,
+   "w": 309,
+   "h": 50,
+   "txt": "Страж Дорог Малорн 50.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 11811,
+   "w": 256,
+   "h": 147,
+   "txt": "Блистающий ткач Снов Рыцарь Горького Цветка Пухокрылка-страж"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 11972,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.1% Частота выбора 45.5% Частота предложения 2.6% Очки ArenaSmith 43"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 12066,
+   "w": 359,
+   "h": 586,
+   "txt": "58 Гелбин из будущего 50.0% винрейт Гелбин из будущего (1 - Гномья аура) Гелбин "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 12328,
+   "w": 309,
+   "h": 50,
+   "txt": "Гелбин из будущего 50.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 377,
+   "y": 12407,
+   "w": 168,
+   "h": 158,
+   "txt": "Гелбин из будущего (1 - Гномья аура) Гелбин из будущего (2 - Аура Меггакрута)"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 12579,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 50.0% Частота выбора 58.8% Частота предложения 35.0% Очки ArenaSmith 50"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 12066,
+   "w": 359,
+   "h": 586,
+   "txt": "59 Дорнозму из Конца Времен 49.8% винрейт Дорнозму Дракончик Бесконечности Солда"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 12328,
+   "w": 309,
+   "h": 50,
+   "txt": "Дорнозму из Конца Времен 49.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 12407,
+   "w": 256,
+   "h": 147,
+   "txt": "Дорнозму Дракончик Бесконечности Солдат Бесконечности"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 12568,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 49.8% Частота выбора 13.5% Частота предложения 4.5% Очки ArenaSmith 13"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 12066,
+   "w": 359,
+   "h": 586,
+   "txt": "60 Хронолорд Дейос 49.5% винрейт Школьный учитель Смотритель песочных часов Сгус"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 12328,
+   "w": 309,
+   "h": 50,
+   "txt": "Хронолорд Дейос 49.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 12407,
+   "w": 256,
+   "h": 147,
+   "txt": "Школьный учитель Смотритель песочных часов Сгусток смолы"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 12568,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 49.5% Частота выбора 12.2% Частота предложения 4.4% Очки ArenaSmith 14"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 12674,
+   "w": 359,
+   "h": 575,
+   "txt": "61 Навигатор Элиза 48.9% винрейт Солнечный Колодец Гнолл из Златоземья Горный ве"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 12936,
+   "w": 309,
+   "h": 50,
+   "txt": "Навигатор Элиза 48.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 13015,
+   "w": 256,
+   "h": 147,
+   "txt": "Солнечный Колодец Гнолл из Златоземья Горный великан"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 13176,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 48.9% Частота выбора 14.6% Частота предложения 4.4% Очки ArenaSmith 13"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 12674,
+   "w": 359,
+   "h": 575,
+   "txt": "62 Дорнозму Освобожденный 48.8% винрейт Губитель Крыла Тьмы Янтарный дракончик И"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 12936,
+   "w": 309,
+   "h": 50,
+   "txt": "Дорнозму Освобожденный 48.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 13015,
+   "w": 256,
+   "h": 147,
+   "txt": "Губитель Крыла Тьмы Янтарный дракончик Историк Гнева Пустоты"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 13176,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 48.8% Частота выбора 4.2% Частота предложения 4.4% Очки ArenaSmith 3.9"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 12674,
+   "w": 359,
+   "h": 575,
+   "txt": "63 Алара'ши 48.8% винрейт Выброшенный кит Пугалка! Срочное собрание Винрейт 48.8"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 12936,
+   "w": 309,
+   "h": 50,
+   "txt": "Алара'ши 48.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 13015,
+   "w": 256,
+   "h": 147,
+   "txt": "Выброшенный кит Пугалка! Срочное собрание"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 13176,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 48.8% Частота выбора 16.6% Частота предложения 2.2% Очки ArenaSmith 15"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 13270,
+   "w": 359,
+   "h": 575,
+   "txt": "64 Фиракк Пылающий 48.8% винрейт Историк Гнева Пустоты Посланник будущего Заводч"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 13532,
+   "w": 309,
+   "h": 50,
+   "txt": "Фиракк Пылающий 48.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 13611,
+   "w": 256,
+   "h": 147,
+   "txt": "Историк Гнева Пустоты Посланник будущего Заводчик драконов"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 13772,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 48.8% Частота выбора 22.7% Частота предложения 4.5% Очки ArenaSmith 22"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 13270,
+   "w": 359,
+   "h": 575,
+   "txt": "65 Хроноадмирал Крюкохвост 48.5% винрейт Колодец желаний Вооруженный посыльный С"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 13532,
+   "w": 309,
+   "h": 50,
+   "txt": "Хроноадмирал Крюкохвост 48.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 13611,
+   "w": 256,
+   "h": 147,
+   "txt": "Колодец желаний Вооруженный посыльный Священный яйценос"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 13772,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 48.5% Частота выбора 29.9% Частота предложения 2.5% Очки ArenaSmith 31"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 13270,
+   "w": 359,
+   "h": 575,
+   "txt": "66 Черная кровь 48.4% винрейт Очищающая священница Раненый смотритель Клирик Сев"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 13532,
+   "w": 309,
+   "h": 50,
+   "txt": "Черная кровь 48.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 13611,
+   "w": 256,
+   "h": 147,
+   "txt": "Очищающая священница Раненый смотритель Клирик Североземья"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 13772,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 48.4% Частота выбора 26.2% Частота предложения 3.2% Очки ArenaSmith 20"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 13866,
+   "w": 359,
+   "h": 575,
+   "txt": "67 Изера, изумрудный Аспект 48.4% винрейт Изера Дремлющая Изера Истерзанный гроз"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 14128,
+   "w": 309,
+   "h": 50,
+   "txt": "Изера, изумрудный Аспект 48.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 14207,
+   "w": 256,
+   "h": 147,
+   "txt": "Изера Дремлющая Изера Истерзанный грознокрыл"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 14368,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 48.4% Частота выбора 19.3% Частота предложения 4.5% Очки ArenaSmith 19"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 13866,
+   "w": 359,
+   "h": 575,
+   "txt": "68 Главарь Ванесса 48.1% винрейт Тюремная птичка Контрабандист Братства Винрейт "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 14128,
+   "w": 309,
+   "h": 50,
+   "txt": "Главарь Ванесса 48.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 757,
+   "y": 14207,
+   "w": 168,
+   "h": 147,
+   "txt": "Тюремная птичка Контрабандист Братства"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 14368,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 48.1% Частота выбора 14.2% Частота предложения 4.5% Очки ArenaSmith 10"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 13866,
+   "w": 359,
+   "h": 575,
+   "txt": "69 Лесной властелин Кенарий 48.0% винрейт Оберег земли Походный перекус Новые вы"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 14128,
+   "w": 309,
+   "h": 50,
+   "txt": "Лесной властелин Кенарий 48.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 14207,
+   "w": 256,
+   "h": 147,
+   "txt": "Оберег земли Походный перекус Новые высоты"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 14368,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 48.0% Частота выбора 45.3% Частота предложения 1.2% Очки ArenaSmith 42"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 14463,
+   "w": 359,
+   "h": 586,
+   "txt": "70 Темница Зурамата 47.9% винрейт Любитель фотографий Добро пожаловать домой! За"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 14724,
+   "w": 309,
+   "h": 50,
+   "txt": "Темница Зурамата 47.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 14803,
+   "w": 256,
+   "h": 158,
+   "txt": "Любитель фотографий Добро пожаловать домой! Занятой батрак"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 14976,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 47.9% Частота выбора 8.4% Частота предложения 4.3% Очки ArenaSmith 7.8"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 14463,
+   "w": 359,
+   "h": 586,
+   "txt": "71 Изо'рат 47.8% винрейт Тэнь-у Красный Дым Брейкданс Шаг сквозь тень Винрейт 47"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 14724,
+   "w": 309,
+   "h": 50,
+   "txt": "Изо'рат 47.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 14803,
+   "w": 256,
+   "h": 147,
+   "txt": "Тэнь-у Красный Дым Брейкданс Шаг сквозь тень"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 14964,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 47.8% Частота выбора 41.5% Частота предложения 2.5% Очки ArenaSmith 33"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 14463,
+   "w": 359,
+   "h": 586,
+   "txt": "72 Хроматий 47.8% винрейт Медвежья кувалда Укротитель драконов Танцпол Винрейт 4"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 14724,
+   "w": 309,
+   "h": 50,
+   "txt": "Хроматий 47.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 14803,
+   "w": 256,
+   "h": 147,
+   "txt": "Медвежья кувалда Укротитель драконов Танцпол"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 14964,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 47.8% Частота выбора 48.9% Частота предложения 34.0% Очки ArenaSmith 46"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 15070,
+   "w": 359,
+   "h": 575,
+   "txt": "73 Господин Часовщик 47.6% винрейт Разрушитель Перекрестка Маг вечности Страж по"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 15332,
+   "w": 309,
+   "h": 50,
+   "txt": "Господин Часовщик 47.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 15411,
+   "w": 256,
+   "h": 147,
+   "txt": "Разрушитель Перекрестка Маг вечности Страж портала"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 15572,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 47.6% Частота выбора 8.8% Частота предложения 4.3% Очки ArenaSmith 12"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 15070,
+   "w": 359,
+   "h": 575,
+   "txt": "74 Тиндрал Полет Мысли 47.3% винрейт Плотоядный куб Плотоядная кабина Заступница"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 15332,
+   "w": 309,
+   "h": 50,
+   "txt": "Тиндрал Полет Мысли 47.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 15411,
+   "w": 256,
+   "h": 147,
+   "txt": "Плотоядный куб Плотоядная кабина Заступница син'дорай"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 15572,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 47.3% Частота выбора 6.0% Частота предложения 4.6% Очки ArenaSmith 4.5"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 15070,
+   "w": 359,
+   "h": 575,
+   "txt": "75 Повелитель времени Ноздорму 47.3% винрейт Маг вечности Корабельный парковщик "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 15332,
+   "w": 309,
+   "h": 50,
+   "txt": "Повелитель времени Ноздорму 47.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 15411,
+   "w": 256,
+   "h": 147,
+   "txt": "Маг вечности Корабельный парковщик Смотритель песочных часов"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 15572,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 47.3% Частота выбора 2.3% Частота предложения 4.4% Очки ArenaSmith 4.7"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 15666,
+   "w": 359,
+   "h": 586,
+   "txt": "76 Крона, хранитель эпох 47.1% винрейт Лоцман сэр Финли Калдорай-культиватор Зап"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 15928,
+   "w": 309,
+   "h": 50,
+   "txt": "Крона, хранитель эпох 47.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 16007,
+   "w": 256,
+   "h": 147,
+   "txt": "Лоцман сэр Финли Калдорай-культиватор Запасной план"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 16168,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 47.1% Частота выбора 40.8% Частота предложения 1.2% Очки ArenaSmith 31"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 15666,
+   "w": 359,
+   "h": 586,
+   "txt": "77 Амирдрассил 47.0% винрейт Любитель фотографий Занятой батрак Добро пожаловать"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 15928,
+   "w": 309,
+   "h": 50,
+   "txt": "Амирдрассил 47.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 16007,
+   "w": 256,
+   "h": 158,
+   "txt": "Любитель фотографий Занятой батрак Добро пожаловать домой!"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 16179,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 47.0% Частота выбора 28.2% Частота предложения 1.1% Очки ArenaSmith 31"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 15666,
+   "w": 359,
+   "h": 586,
+   "txt": "78 Вестница гибели Умбра 47.0% винрейт Устройство сдерживания Кошмарный конь Пос"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 15928,
+   "w": 309,
+   "h": 50,
+   "txt": "Вестница гибели Умбра 47.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 16007,
+   "w": 256,
+   "h": 158,
+   "txt": "Устройство сдерживания Кошмарный конь Послушник Пылающего Клинка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 16179,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 47.0% Частота выбора 16.1% Частота предложения 4.5% Очки ArenaSmith 12"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 16274,
+   "w": 359,
+   "h": 575,
+   "txt": "79 Астралозуб 46.8% винрейт Бунтовщик Замаскированный дозорный Аттракционная маш"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 16536,
+   "w": 309,
+   "h": 50,
+   "txt": "Астралозуб 46.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 16615,
+   "w": 256,
+   "h": 147,
+   "txt": "Бунтовщик Замаскированный дозорный Аттракционная машинка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 16776,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 46.8% Частота выбора 8.7% Частота предложения 1.3% Очки ArenaSmith 16"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 16274,
+   "w": 359,
+   "h": 575,
+   "txt": "80 Воевода Черный Рог 46.8% винрейт Солнечный дракон Браконьер Драконьей Пасти С"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 16536,
+   "w": 309,
+   "h": 50,
+   "txt": "Воевода Черный Рог 46.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 16615,
+   "w": 256,
+   "h": 147,
+   "txt": "Солнечный дракон Браконьер Драконьей Пасти Страж портала"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 16776,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 46.8% Частота выбора 2.4% Частота предложения 4.4% Очки ArenaSmith 3.6"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 16274,
+   "w": 359,
+   "h": 575,
+   "txt": "81 Ал'акир, повелитель бурь 46.6% винрейт Страж Небесной выси Ритуал силы Сказоч"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 16536,
+   "w": 309,
+   "h": 50,
+   "txt": "Ал'акир, повелитель бурь 46.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 16615,
+   "w": 256,
+   "h": 147,
+   "txt": "Страж Небесной выси Ритуал силы Сказочный лес"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 16776,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 46.6% Частота выбора 86.3% Частота предложения 13.0% Очки ArenaSmith 26"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 16870,
+   "w": 359,
+   "h": 729,
+   "txt": "82 Освободить колосса 46.6% винрейт Они повсюду Коготь насекомого Оса Гориши Про"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 17132,
+   "w": 309,
+   "h": 50,
+   "txt": "Освободить колосса 46.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 307,
+   "y": 17211,
+   "w": 309,
+   "h": 301,
+   "txt": "Они повсюду Коготь насекомого Оса Гориши Проходчик Гориши Расщелина Скверны"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 17526,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 46.6% Частота выбора 59.6% Частота предложения 2.2% Очки ArenaSmith 43"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 16870,
+   "w": 359,
+   "h": 729,
+   "txt": "83 К'онзу 46.6% винрейт Звездный баланс Космические клавишные Манускрипт Бездны "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 17132,
+   "w": 309,
+   "h": 50,
+   "txt": "К'онзу 46.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 17211,
+   "w": 256,
+   "h": 147,
+   "txt": "Звездный баланс Космические клавишные Манускрипт Бездны"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 17372,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 46.6% Частота выбора 30.6% Частота предложения 1.5% Очки ArenaSmith 29"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 16870,
+   "w": 359,
+   "h": 729,
+   "txt": "84 Магмарь 46.6% винрейт По седлам! Гарпунная пушка Охотничья уловка Винрейт 46."
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 17132,
+   "w": 309,
+   "h": 50,
+   "txt": "Магмарь 46.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 17211,
+   "w": 256,
+   "h": 135,
+   "txt": "По седлам! Гарпунная пушка Охотничья уловка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 17361,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 46.6% Частота выбора 34.9% Частота предложения 32.0% Очки ArenaSmith 44"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 17621,
+   "w": 359,
+   "h": 575,
+   "txt": "85 Дозорная Набия 46.4% винрейт Топор праотцов Защита города Резчик по камню Вин"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 17883,
+   "w": 309,
+   "h": 50,
+   "txt": "Дозорная Набия 46.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 17962,
+   "w": 256,
+   "h": 135,
+   "txt": "Топор праотцов Защита города Резчик по камню"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 18111,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 46.4% Частота выбора 9.9% Частота предложения 1.3% Очки ArenaSmith 6.3"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 17621,
+   "w": 359,
+   "h": 575,
+   "txt": "86 Талия Землеход 46.3% винрейт Вольные скитания Говорящий с духами Прирученный "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 17883,
+   "w": 309,
+   "h": 50,
+   "txt": "Талия Землеход 46.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 17962,
+   "w": 256,
+   "h": 147,
+   "txt": "Вольные скитания Говорящий с духами Прирученный питомец"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 18123,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 46.3% Частота выбора 77.6% Частота предложения 32.0% Очки ArenaSmith 25"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 17621,
+   "w": 359,
+   "h": 575,
+   "txt": "87 Алекстраза, Хранительница жизни 45.9% винрейт История об Амаре Очищающее дыха"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 17883,
+   "w": 309,
+   "h": 50,
+   "txt": "Алекстраза, Хранительница жизни 45.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 17962,
+   "w": 256,
+   "h": 147,
+   "txt": "История об Амаре Очищающее дыхание Рубиновое святилище"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 18123,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.9% Частота выбора 7.4% Частота предложения 3.0% Очки ArenaSmith 6"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 18217,
+   "w": 359,
+   "h": 575,
+   "txt": "88 Морагг 45.8% винрейт Подпевала из банды бесов Проклятая королева Унылая балла"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 18479,
+   "w": 309,
+   "h": 50,
+   "txt": "Морагг 45.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 18558,
+   "w": 256,
+   "h": 147,
+   "txt": "Подпевала из банды бесов Проклятая королева Унылая баллада"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 18719,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.8% Частота выбора 68.3% Частота предложения 26.0% Очки ArenaSmith 24"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 18217,
+   "w": 359,
+   "h": 575,
+   "txt": "89 Заклинатель зверей Така 45.7% винрейт Лунная волчица Псартас КЛNК-КЛ4К Винрей"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 18479,
+   "w": 309,
+   "h": 50,
+   "txt": "Заклинатель зверей Така 45.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 18558,
+   "w": 256,
+   "h": 135,
+   "txt": "Лунная волчица Псартас КЛNК-КЛ4К"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 18708,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.7% Частота выбора 9.1% Частота предложения 4.6% Очки ArenaSmith 7"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 18217,
+   "w": 359,
+   "h": 575,
+   "txt": "90 Абиссиан 45.4% винрейт Черночешуйный разведчик Камнерукий боец Дракончик-носи"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 18479,
+   "w": 309,
+   "h": 50,
+   "txt": "Абиссиан 45.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 18558,
+   "w": 256,
+   "h": 147,
+   "txt": "Черночешуйный разведчик Камнерукий боец Дракончик-носильщик"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 18719,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.4% Частота выбора 61.2% Частота предложения 33.0% Очки ArenaSmith 48"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 18814,
+   "w": 359,
+   "h": 729,
+   "txt": "91 Пищевая цепочка 45.4% винрейт Террокрыл-разоритель Равазавр-матриарх Вьючный "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 19075,
+   "w": 309,
+   "h": 50,
+   "txt": "Пищевая цепочка 45.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 307,
+   "y": 19154,
+   "w": 309,
+   "h": 301,
+   "txt": "Террокрыл-разоритель Равазавр-матриарх Вьючный кодо Самоцветный ара Диковинная к"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 19470,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.4% Частота выбора 59.8% Частота предложения 32.0% Очки ArenaSmith 44"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 18814,
+   "w": 359,
+   "h": 729,
+   "txt": "92 Леди Азшара 45.3% винрейт Леди Азшара (1 - Источник Вечности) Леди Азшара (2 "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 19075,
+   "w": 309,
+   "h": 50,
+   "txt": "Леди Азшара 45.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 757,
+   "y": 19154,
+   "w": 168,
+   "h": 158,
+   "txt": "Леди Азшара (1 - Источник Вечности) Леди Азшара (2 - Зин-Азшари)"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 19326,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.3% Частота выбора 23.3% Частота предложения 1.1% Очки ArenaSmith 19"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 18814,
+   "w": 359,
+   "h": 729,
+   "txt": "93 Эссина 45.1% винрейт Наездница на огоньках Сборщик духов Предсказание Винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 19075,
+   "w": 309,
+   "h": 50,
+   "txt": "Эссина 45.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 19154,
+   "w": 256,
+   "h": 147,
+   "txt": "Наездница на огоньках Сборщик духов Предсказание"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 19315,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.1% Частота выбора 72.4% Частота предложения 1.5% Очки ArenaSmith 48"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 19564,
+   "w": 359,
+   "h": 575,
+   "txt": "94 Живая чума 45.1% винрейт Начинающий кукловод Воплощенное воспоминание Мертвый"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 19826,
+   "w": 309,
+   "h": 50,
+   "txt": "Живая чума 45.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 19905,
+   "w": 256,
+   "h": 147,
+   "txt": "Начинающий кукловод Воплощенное воспоминание Мертвый эфир"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 20066,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.1% Частота выбора 18.3% Частота предложения 3.3% Очки ArenaSmith 6.9"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 19564,
+   "w": 359,
+   "h": 575,
+   "txt": "95 Проклятый король Генн 45.0% винрейт Подпевала Пантара-маноед Командир гарнизо"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 19826,
+   "w": 309,
+   "h": 50,
+   "txt": "Проклятый король Генн 45.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 19905,
+   "w": 256,
+   "h": 147,
+   "txt": "Подпевала Пантара-маноед Командир гарнизона"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 20066,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.0% Частота выбора 3.5% Частота предложения 4.2% Очки ArenaSmith 4.5"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 19564,
+   "w": 359,
+   "h": 575,
+   "txt": "96 Предсказательница Во 45.0% винрейт Буреклюв Громовой раскат Статический разря"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 19826,
+   "w": 309,
+   "h": 50,
+   "txt": "Предсказательница Во 45.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 19905,
+   "w": 256,
+   "h": 147,
+   "txt": "Буреклюв Громовой раскат Статический разряд"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 20066,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 45.0% Частота выбора 34.3% Частота предложения 25.0% Очки ArenaSmith 20"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 20161,
+   "w": 359,
+   "h": 718,
+   "txt": "97 Командир следопытов Сильвана 44.8% винрейт Командир следопытов Сильвана (2 - "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 20422,
+   "w": 309,
+   "h": 50,
+   "txt": "Командир следопытов Сильвана 44.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 377,
+   "y": 20501,
+   "w": 168,
+   "h": 192,
+   "txt": "Командир следопытов Сильвана (2 - Капитан следопытов Аллерия) Командир следопыто"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 20707,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 44.8% Частота выбора 73.3% Частота предложения 34.0% Очки ArenaSmith 24"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 20161,
+   "w": 359,
+   "h": 718,
+   "txt": "98 Вход в Затерянный город 44.4% винрейт Латорвийский бронник Укрепление Обеззар"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 20422,
+   "w": 309,
+   "h": 50,
+   "txt": "Вход в Затерянный город 44.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 687,
+   "y": 20501,
+   "w": 309,
+   "h": 290,
+   "txt": "Латорвийский бронник Укрепление Обеззараживание Защита города Панцирный вихрь"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 20805,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 44.4% Частота выбора 59.8% Частота предложения 1.5% Очки ArenaSmith 41"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 20161,
+   "w": 359,
+   "h": 718,
+   "txt": "99 Бролл Медвежья Шкура 44.3% винрейт Связка бананов Всепожирающий рой Узы духа "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 20422,
+   "w": 309,
+   "h": 50,
+   "txt": "Бролл Медвежья Шкура 44.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 20501,
+   "w": 256,
+   "h": 147,
+   "txt": "Связка бананов Всепожирающий рой Узы духа"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 20662,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 44.3% Частота выбора 34.3% Частота предложения 27.0% Очки ArenaSmith 20"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 20900,
+   "w": 359,
+   "h": 718,
+   "txt": "100 Маленький дружок 44.2% винрейт Смотритель арены Узорный песчаноменталь Кобол"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 21162,
+   "w": 309,
+   "h": 50,
+   "txt": "Маленький дружок 44.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 21241,
+   "w": 256,
+   "h": 147,
+   "txt": "Смотритель арены Узорный песчаноменталь Кобольд-барахольщик"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 21402,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 44.2% Частота выбора 38.9% Частота предложения 27.0% Очки ArenaSmith 42"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 20900,
+   "w": 359,
+   "h": 718,
+   "txt": "101 Дух горы 44.1% винрейт Кок Пирожок Полет огненного ястреба Карта горы Слияни"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 21162,
+   "w": 309,
+   "h": 50,
+   "txt": "Дух горы 44.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 687,
+   "y": 21241,
+   "w": 309,
+   "h": 290,
+   "txt": "Кок Пирожок Полет огненного ястреба Карта горы Слияние из глубин Тортотем"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 21545,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 44.1% Частота выбора 76.1% Частота предложения 29.0% Очки ArenaSmith 50"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 20900,
+   "w": 359,
+   "h": 718,
+   "txt": "102 Король Клоаки 43.8% винрейт Сеть Клоаки Сопутствующий ущерб Рамкахен-звероло"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 21162,
+   "w": 309,
+   "h": 50,
+   "txt": "Король Клоаки 43.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 21241,
+   "w": 256,
+   "h": 147,
+   "txt": "Сеть Клоаки Сопутствующий ущерб Рамкахен-зверолов"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 21402,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 43.8% Частота выбора 69.6% Частота предложения 29.0% Очки ArenaSmith 24"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 21640,
+   "w": 359,
+   "h": 597,
+   "txt": "103 Верховный маг Кейлек 43.7% винрейт Сила звезд Чародейский обстрел Морозное к"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 21901,
+   "w": 309,
+   "h": 50,
+   "txt": "Верховный маг Кейлек 43.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 21980,
+   "w": 256,
+   "h": 147,
+   "txt": "Сила звезд Чародейский обстрел Морозное касание"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 22141,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 43.7% Частота выбора 40.5% Частота предложения 1.4% Очки ArenaSmith 39"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 21640,
+   "w": 359,
+   "h": 597,
+   "txt": "104 Верховный король Мурадин 43.7% винрейт Верховный король Мурадин (1 - Королев"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 21901,
+   "w": 309,
+   "h": 50,
+   "txt": "Верховный король Мурадин 43.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 757,
+   "y": 21980,
+   "w": 168,
+   "h": 169,
+   "txt": "Верховный король Мурадин (1 - Королевский молот) Верховный король Мурадин (2 - О"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 22164,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 43.7% Частота выбора 52.1% Частота предложения 30.0% Очки ArenaSmith 22"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 21640,
+   "w": 359,
+   "h": 597,
+   "txt": "105 Титанограф Оск 43.6% винрейт Раскаленная руна Манускрипт Бездны Карикатурист"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 21901,
+   "w": 309,
+   "h": 50,
+   "txt": "Титанограф Оск 43.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 21980,
+   "w": 256,
+   "h": 147,
+   "txt": "Раскаленная руна Манускрипт Бездны Карикатуристка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 22141,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 43.6% Частота выбора 30.7% Частота предложения 1.4% Очки ArenaSmith 19"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 22258,
+   "w": 359,
+   "h": 575,
+   "txt": "106 Расколотая Душа Дракона 43.6% винрейт Эфириал-оракул Зоркий искатель Помощни"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 22520,
+   "w": 309,
+   "h": 50,
+   "txt": "Расколотая Душа Дракона 43.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 22599,
+   "w": 256,
+   "h": 147,
+   "txt": "Эфириал-оракул Зоркий искатель Помощник Сухая Чешуя"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 22760,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 43.6% Частота выбора 10.5% Частота предложения 4.2% Очки ArenaSmith 5.4"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 22258,
+   "w": 359,
+   "h": 575,
+   "txt": "107 Вневременный Плавник 43.5% винрейт Инженер танка Починка временной линии Гно"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 22520,
+   "w": 309,
+   "h": 50,
+   "txt": "Вневременный Плавник 43.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 22599,
+   "w": 256,
+   "h": 147,
+   "txt": "Инженер танка Починка временной линии Гномреган: прошлое"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 22760,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 43.5% Частота выбора 20.9% Частота предложения 38.0% Очки ArenaSmith 29"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 22258,
+   "w": 359,
+   "h": 575,
+   "txt": "108 Ноздорму, бронзовый Аспект 43.5% винрейт Копьеносный часовой Аура песчаной б"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 22520,
+   "w": 309,
+   "h": 50,
+   "txt": "Ноздорму, бронзовый Аспект 43.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 22599,
+   "w": 256,
+   "h": 147,
+   "txt": "Копьеносный часовой Аура песчаной бури Воодушевляющий молот"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 22760,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 43.5% Частота выбора 74.0% Частота предложения 31.0% Очки ArenaSmith 45"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 22855,
+   "w": 359,
+   "h": 575,
+   "txt": "109 Годфри Предатель 43.4% винрейт Незримый атлас Шпиль Уединения Винрейт 43.4% "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 23116,
+   "w": 309,
+   "h": 50,
+   "txt": "Годфри Предатель 43.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 377,
+   "y": 23195,
+   "w": 168,
+   "h": 135,
+   "txt": "Незримый атлас Шпиль Уединения"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 23345,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 43.4% Частота выбора 65.1% Частота предложения 21.0% Очки ArenaSmith 23"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 22855,
+   "w": 359,
+   "h": 575,
+   "txt": "110 Ключ-отмычка 43.1% винрейт Беспорядок в хранилище Манускрипт Бездны Приливны"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 23116,
+   "w": 309,
+   "h": 50,
+   "txt": "Ключ-отмычка 43.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 23195,
+   "w": 256,
+   "h": 147,
+   "txt": "Беспорядок в хранилище Манускрипт Бездны Приливные лужи"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 23356,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 43.1% Частота выбора 38.0% Частота предложения 1.4% Очки ArenaSmith 24"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 22855,
+   "w": 359,
+   "h": 575,
+   "txt": "111 Цикличная Токи 42.6% винрейт Элементаль-манипулятор Похищение маны Полустаби"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 23116,
+   "w": 309,
+   "h": 50,
+   "txt": "Цикличная Токи 42.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 23195,
+   "w": 256,
+   "h": 147,
+   "txt": "Элементаль-манипулятор Похищение маны Полустабильный портал"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 23356,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 42.6% Частота выбора 55.6% Частота предложения 1.5% Очки ArenaSmith 31"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 23451,
+   "w": 359,
+   "h": 575,
+   "txt": "112 Король кратера Крог 42.3% винрейт Ундаста Озумат Угонщица скота Винрейт 42.3"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 23713,
+   "w": 309,
+   "h": 50,
+   "txt": "Король кратера Крог 42.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 23792,
+   "w": 256,
+   "h": 135,
+   "txt": "Ундаста Озумат Угонщица скота"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 23941,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 42.3% Частота выбора 5.3% Частота предложения 4.4% Очки ArenaSmith 4.5"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 23451,
+   "w": 359,
+   "h": 575,
+   "txt": "113 Меритра 42.3% винрейт Объятия Аспекта Оживший сад Рыцарь Горького Цветка Вин"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 23713,
+   "w": 309,
+   "h": 50,
+   "txt": "Меритра 42.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 23792,
+   "w": 256,
+   "h": 147,
+   "txt": "Объятия Аспекта Оживший сад Рыцарь Горького Цветка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 23953,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 42.3% Частота выбора 67.0% Частота предложения 27.0% Очки ArenaSmith 25"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 23451,
+   "w": 359,
+   "h": 575,
+   "txt": "114 Торет Несокрушимый 42.3% винрейт Пухокрылка-страж Золотистый дракон Винрейт "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 23713,
+   "w": 309,
+   "h": 50,
+   "txt": "Торет Несокрушимый 42.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1138,
+   "y": 23792,
+   "w": 168,
+   "h": 147,
+   "txt": "Пухокрылка-страж Золотистый дракон"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 23953,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 42.3% Частота выбора 80.3% Частота предложения 41.0% Очки ArenaSmith 53"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 24047,
+   "w": 359,
+   "h": 575,
+   "txt": "115 Иводрев Презренный 42.1% винрейт Порождение безумия Передовое садоводство Ло"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 24309,
+   "w": 309,
+   "h": 50,
+   "txt": "Иводрев Презренный 42.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 24388,
+   "w": 256,
+   "h": 147,
+   "txt": "Порождение безумия Передовое садоводство Ловчий пламени Тьмы"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 24549,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 42.1% Частота выбора 69.2% Частота предложения 20.0% Очки ArenaSmith 24"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 24047,
+   "w": 359,
+   "h": 575,
+   "txt": "116 Урсол 41.8% винрейт Огни обновления Вечная жизнь в камне Медвежья кувалда Ви"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 24309,
+   "w": 309,
+   "h": 50,
+   "txt": "Урсол 41.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 24388,
+   "w": 256,
+   "h": 147,
+   "txt": "Огни обновления Вечная жизнь в камне Медвежья кувалда"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 24549,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 41.8% Частота выбора 44.1% Частота предложения 36.0% Очки ArenaSmith 21"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 24047,
+   "w": 359,
+   "h": 575,
+   "txt": "117 Тортолла 41.7% винрейт Багровая твердь Утечка химикатов Вихрь клинков Винрей"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 24309,
+   "w": 309,
+   "h": 50,
+   "txt": "Тортолла 41.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 24388,
+   "w": 256,
+   "h": 135,
+   "txt": "Багровая твердь Утечка химикатов Вихрь клинков"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 24538,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 41.7% Частота выбора 16.8% Частота предложения 1.5% Очки ArenaSmith 7.3"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 24643,
+   "w": 359,
+   "h": 729,
+   "txt": "118 Забота о природе 41.5% винрейт Вечный кровоцвет Друзья-плавунцы Чешуя Оникси"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 24905,
+   "w": 309,
+   "h": 50,
+   "txt": "Забота о природе 41.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 307,
+   "y": 24984,
+   "w": 309,
+   "h": 301,
+   "txt": "Вечный кровоцвет Друзья-плавунцы Чешуя Ониксии ПЧЕЛЫ!!! Псарня Северных Волков"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 25300,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 41.5% Частота выбора 21.6% Частота предложения 1.2% Очки ArenaSmith 13"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 24643,
+   "w": 359,
+   "h": 729,
+   "txt": "119 Засада 40.1% винрейт Допрос Переключение передач Главный по безопасности Бил"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 24905,
+   "w": 309,
+   "h": 50,
+   "txt": "Засада 40.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 687,
+   "y": 24984,
+   "w": 309,
+   "h": 301,
+   "txt": "Допрос Переключение передач Главный по безопасности Билетер Иллюзорный зеленокры"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 25300,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 40.1% Частота выбора 26.3% Частота предложения 2.3% Очки ArenaSmith 8.4"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 24643,
+   "w": 359,
+   "h": 729,
+   "txt": "120 Лидер Чо'Галл 39.7% винрейт Сумеречное святилище Ученик Приверженцев Тени Ко"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 24905,
+   "w": 309,
+   "h": 50,
+   "txt": "Лидер Чо'Галл 39.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 24984,
+   "w": 256,
+   "h": 158,
+   "txt": "Сумеречное святилище Ученик Приверженцев Тени Кошмарный скакун"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 25156,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.7% Частота выбора 63.8% Частота предложения 15.0% Очки ArenaSmith 23"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 25394,
+   "w": 359,
+   "h": 586,
+   "txt": "121 Айдо из флота жесткозубов 39.7% винрейт Благословенный ковбой Существо из св"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 25656,
+   "w": 309,
+   "h": 50,
+   "txt": "Айдо из флота жесткозубов 39.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 25735,
+   "w": 256,
+   "h": 158,
+   "txt": "Благословенный ковбой Существо из священной пещеры Благословение всадника"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 25907,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.7% Частота выбора 31.9% Частота предложения 35.0% Очки ArenaSmith 20"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 25394,
+   "w": 359,
+   "h": 586,
+   "txt": "122 Аратор Искупитель 39.7% винрейт Ободряющий клинок Командная работа Стойкая с"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 25656,
+   "w": 309,
+   "h": 50,
+   "txt": "Аратор Искупитель 39.7% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 25735,
+   "w": 256,
+   "h": 147,
+   "txt": "Ободряющий клинок Командная работа Стойкая спасительница"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 25896,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.7% Частота выбора 41.0% Частота предложения 35.0% Очки ArenaSmith 32"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 25394,
+   "w": 359,
+   "h": 586,
+   "txt": "123 Вихлепых, король контрабандистов 39.5% винрейт Крыс-домушник Вайш'ирский ора"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 25656,
+   "w": 309,
+   "h": 50,
+   "txt": "Вихлепых, король контрабандистов 39.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 25735,
+   "w": 256,
+   "h": 147,
+   "txt": "Крыс-домушник Вайш'ирский оракул Продавец сувениров"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 25896,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.5% Частота выбора 1.4% Частота предложения 4.2% Очки ArenaSmith 2.6"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 26002,
+   "w": 359,
+   "h": 575,
+   "txt": "124 Яйцо кхелоса 39.4% винрейт Священный яйценос Прожорливый кракен Плотоядный к"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 26263,
+   "w": 309,
+   "h": 50,
+   "txt": "Яйцо кхелоса 39.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 26342,
+   "w": 256,
+   "h": 147,
+   "txt": "Священный яйценос Прожорливый кракен Плотоядный куб"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 26503,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.4% Частота выбора 8.9% Частота предложения 4.3% Очки ArenaSmith 3.1"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 26002,
+   "w": 359,
+   "h": 575,
+   "txt": "125 Сорвавшийся с цепи Дробитель 39.4% винрейт Каргат Острорук Лор'темар Терон М"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 26263,
+   "w": 309,
+   "h": 50,
+   "txt": "Сорвавшийся с цепи Дробитель 39.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 26342,
+   "w": 256,
+   "h": 135,
+   "txt": "Каргат Острорук Лор'темар Терон Манкрик"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 26492,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.4% Частота выбора 34.9% Частота предложения 1.4% Очки ArenaSmith 20"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 26002,
+   "w": 359,
+   "h": 575,
+   "txt": "126 Бралма Тлеющий Камень 39.2% винрейт Углежабр Обжигающий рой Шлаковый коготь "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 26263,
+   "w": 309,
+   "h": 50,
+   "txt": "Бралма Тлеющий Камень 39.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 26342,
+   "w": 256,
+   "h": 135,
+   "txt": "Углежабр Обжигающий рой Шлаковый коготь"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 26492,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.2% Частота выбора 23.1% Частота предложения 27.0% Очки ArenaSmith 23"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 26598,
+   "w": 359,
+   "h": 575,
+   "txt": "127 Разидир 39.0% винрейт Ловчий пламени Тьмы Стрекочущий землерой Ненасытный те"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 26860,
+   "w": 309,
+   "h": 50,
+   "txt": "Разидир 39.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 26939,
+   "w": 256,
+   "h": 147,
+   "txt": "Ловчий пламени Тьмы Стрекочущий землерой Ненасытный терродактиль"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 27100,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.0% Частота выбора 44.8% Частота предложения 22.0% Очки ArenaSmith 22"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 26598,
+   "w": 359,
+   "h": 575,
+   "txt": "128 Голдринн 39.0% винрейт Экзотический псарь Ночекоготь Винрейт 39.0% Частота в"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 26860,
+   "w": 309,
+   "h": 50,
+   "txt": "Голдринн 39.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 757,
+   "y": 26939,
+   "w": 168,
+   "h": 147,
+   "txt": "Экзотический псарь Ночекоготь"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 27100,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.0% Частота выбора 30.5% Частота предложения 27.0% Очки ArenaSmith 15"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 26598,
+   "w": 359,
+   "h": 575,
+   "txt": "129 Он'ара 39.0% винрейт Ходячая гора Гнилокровный берсерк Перестраховщик Винрей"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 26860,
+   "w": 309,
+   "h": 50,
+   "txt": "Он'ара 39.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 26939,
+   "w": 256,
+   "h": 147,
+   "txt": "Ходячая гора Гнилокровный берсерк Перестраховщик"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 27100,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 39.0% Частота выбора 11.6% Частота предложения 29.0% Очки ArenaSmith 8.6"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 27194,
+   "w": 359,
+   "h": 729,
+   "txt": "130 Хроми 38.9% винрейт Мягкая гидра Страж портала Винрейт 38.9% Частота выбора "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 27456,
+   "w": 309,
+   "h": 50,
+   "txt": "Хроми 38.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 377,
+   "y": 27535,
+   "w": 168,
+   "h": 135,
+   "txt": "Мягкая гидра Страж портала"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 27685,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 38.9% Частота выбора 3.4% Частота предложения 4.4% Очки ArenaSmith 1.9"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 27194,
+   "w": 359,
+   "h": 729,
+   "txt": "131 Запретный протокол 38.8% винрейт Великая мудрость Приливные лужи Петроглиф С"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 27456,
+   "w": 309,
+   "h": 50,
+   "txt": "Запретный протокол 38.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 687,
+   "y": 27535,
+   "w": 309,
+   "h": 301,
+   "txt": "Великая мудрость Приливные лужи Петроглиф Сила созидания Амулет пламени дракона"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 27850,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 38.8% Частота выбора 73.1% Частота предложения 1.4% Очки ArenaSmith 43"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 27194,
+   "w": 359,
+   "h": 729,
+   "txt": "132 Король Малук 38.6% винрейт Ковбойская шляпа Легенда о Карнассе Носильщик стр"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 27456,
+   "w": 309,
+   "h": 50,
+   "txt": "Король Малук 38.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 27535,
+   "w": 256,
+   "h": 147,
+   "txt": "Ковбойская шляпа Легенда о Карнассе Носильщик стрел"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 27696,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 38.6% Частота выбора 10.4% Частота предложения 27.0% Очки ArenaSmith 5.5"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 27945,
+   "w": 359,
+   "h": 575,
+   "txt": "133 В'ама, Маячащая погибель 38.3% винрейт Кровавый крестоносец Световой скат Гр"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 28207,
+   "w": 309,
+   "h": 50,
+   "txt": "В'ама, Маячащая погибель 38.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 28286,
+   "w": 256,
+   "h": 147,
+   "txt": "Кровавый крестоносец Световой скат Грязерожденный слуга"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 28447,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 38.3% Частота выбора 31.1% Частота предложения 38.0% Очки ArenaSmith 19"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 27945,
+   "w": 359,
+   "h": 575,
+   "txt": "134 Торга 38.0% винрейт Прожорливый дьявозавр Чешуешкурый кодо Дерзкий палеомурл"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 28207,
+   "w": 309,
+   "h": 50,
+   "txt": "Торга 38.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 28286,
+   "w": 256,
+   "h": 147,
+   "txt": "Прожорливый дьявозавр Чешуешкурый кодо Дерзкий палеомурлок"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 28447,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 38.0% Частота выбора 1.4% Частота предложения 4.3% Очки ArenaSmith 1.2"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 27945,
+   "w": 359,
+   "h": 575,
+   "txt": "135 Агамагган 37.5% винрейт Угонщица скота Фабричный бот-сборщик Ход доской Винр"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 28207,
+   "w": 309,
+   "h": 50,
+   "txt": "Агамагган 37.5% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 28286,
+   "w": 256,
+   "h": 147,
+   "txt": "Угонщица скота Фабричный бот-сборщик Ход доской"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 28447,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 37.5% Частота выбора 12.5% Частота предложения 20.0% Очки ArenaSmith 8.3"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 28541,
+   "w": 359,
+   "h": 608,
+   "txt": "136 КР1С-0-Л0В 37.2% винрейт Чародейская растяжка Зверская растяжка Винрейт 37.2"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 28803,
+   "w": 309,
+   "h": 50,
+   "txt": "КР1С-0-Л0В 37.2% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 377,
+   "y": 28882,
+   "w": 168,
+   "h": 147,
+   "txt": "Чародейская растяжка Зверская растяжка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 29043,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 37.2% Частота выбора 45.5% Частота предложения 34.0% Очки ArenaSmith 35"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 28541,
+   "w": 359,
+   "h": 608,
+   "txt": "137 Временная стражница Руни 37.1% винрейт Бронзовый дракорыцарь Страж катакомб "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 28803,
+   "w": 309,
+   "h": 50,
+   "txt": "Временная стражница Руни 37.1% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 28882,
+   "w": 256,
+   "h": 147,
+   "txt": "Бронзовый дракорыцарь Страж катакомб Мышцебот"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 29043,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 37.1% Частота выбора 12.5% Частота предложения 29.0% Очки ArenaSmith 10"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 28541,
+   "w": 359,
+   "h": 608,
+   "txt": "138 Лазурная королева Синдрагоса 36.8% винрейт Лазурная королева Синдрагоса (1 -"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 28803,
+   "w": 309,
+   "h": 50,
+   "txt": "Лазурная королева Синдрагоса 36.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1138,
+   "y": 28882,
+   "w": 168,
+   "h": 180,
+   "txt": "Лазурная королева Синдрагоса (1 - Лазурный король Малигос) Лазурная королева Син"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 29077,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 36.8% Частота выбора 10.6% Частота предложения 1.5% Очки ArenaSmith 13"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 29171,
+   "w": 359,
+   "h": 729,
+   "txt": "139 Малориак 36.0% винрейт Рука Гул'дана Окулярный оккультист Торговка гнильем В"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 29433,
+   "w": 309,
+   "h": 50,
+   "txt": "Малориак 36.0% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 29512,
+   "w": 256,
+   "h": 147,
+   "txt": "Рука Гул'дана Окулярный оккультист Торговка гнильем"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 29673,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 36.0% Частота выбора 16.7% Частота предложения 23.0% Очки ArenaSmith 11"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 29171,
+   "w": 359,
+   "h": 729,
+   "txt": "140 Крестный отец Казакус 35.6% винрейт Заговорщик «Кабала» Суровый приговор Про"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 29433,
+   "w": 309,
+   "h": 50,
+   "txt": "Крестный отец Казакус 35.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 29512,
+   "w": 256,
+   "h": 147,
+   "txt": "Заговорщик «Кабала» Суровый приговор Продажный констебль"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 29673,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 35.6% Частота выбора 68.4% Частота предложения 24.0% Очки ArenaSmith 25"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 29171,
+   "w": 359,
+   "h": 729,
+   "txt": "141 Погружение в Голакка 34.8% винрейт Тиранножабр Гейзерный прыгун Утонувшая ка"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 29433,
+   "w": 309,
+   "h": 50,
+   "txt": "Погружение в Голакка 34.8% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1067,
+   "y": 29512,
+   "w": 309,
+   "h": 301,
+   "txt": "Тиранножабр Гейзерный прыгун Утонувшая карта Мурквизитор Удочка Темносвета"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 29827,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 34.8% Частота выбора 43.0% Частота предложения 36.0% Очки ArenaSmith 21"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 29922,
+   "w": 359,
+   "h": 575,
+   "txt": "142 Командир Беатриса 34.4% винрейт Алая вербовщица Аура подкрепления К оружию! "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 30184,
+   "w": 309,
+   "h": 50,
+   "txt": "Командир Беатриса 34.4% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 30263,
+   "w": 256,
+   "h": 147,
+   "txt": "Алая вербовщица Аура подкрепления К оружию!"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 30424,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 34.4% Частота выбора 46.1% Частота предложения 36.0% Очки ArenaSmith 21"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 29922,
+   "w": 359,
+   "h": 575,
+   "txt": "143 Морхок 34.3% винрейт Сверкающий ара Сказочный лес Облачный змей Винрейт 34.3"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 30184,
+   "w": 309,
+   "h": 50,
+   "txt": "Морхок 34.3% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 30263,
+   "w": 256,
+   "h": 135,
+   "txt": "Сверкающий ара Сказочный лес Облачный змей"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 30412,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 34.3% Частота выбора 25.5% Частота предложения 26.0% Очки ArenaSmith 13"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 29922,
+   "w": 359,
+   "h": 575,
+   "txt": "144 Хроногор 29.6% винрейт Губительный велоцидракон Тахионный залп Сумеречный хр"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 30184,
+   "w": 309,
+   "h": 50,
+   "txt": "Хроногор 29.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 1094,
+   "y": 30263,
+   "w": 256,
+   "h": 147,
+   "txt": "Губительный велоцидракон Тахионный залп Сумеречный хрономот"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 30424,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 29.6% Частота выбора 25.0% Частота предложения 21.0% Очки ArenaSmith 15"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 282,
+   "y": 30518,
+   "w": 359,
+   "h": 575,
+   "txt": "145 Ло, живая легенда 28.6% винрейт Тирантий Разделяющийся метеор Сочный псирбуз"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 307,
+   "y": 30780,
+   "w": 309,
+   "h": 50,
+   "txt": "Ло, живая легенда 28.6% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 333,
+   "y": 30859,
+   "w": 256,
+   "h": 135,
+   "txt": "Тирантий Разделяющийся метеор Сочный псирбуз"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 307,
+   "y": 31009,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 28.6% Частота выбора 5.4% Частота предложения 1.1% Очки ArenaSmith 3.2"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 662,
+   "y": 30518,
+   "w": 359,
+   "h": 575,
+   "txt": "146 Битва в Конце Времен 26.9% винрейт Смертокрыл Книжный переполох ЛЕСТНИЦА ИЗ "
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 687,
+   "y": 30780,
+   "w": 309,
+   "h": 50,
+   "txt": "Битва в Конце Времен 26.9% винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex gap-2 justify-center flex-wrap",
+   "x": 713,
+   "y": 30859,
+   "w": 256,
+   "h": 147,
+   "txt": "Смертокрыл Книжный переполох ЛЕСТНИЦА ИЗ РАФААМОВ!"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 687,
+   "y": 31020,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт 26.9% Частота выбора 17.9% Частота предложения 20.0% Очки ArenaSmith 11"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-group-card card-hover rounded-2xl flex flex-col items-center p-4 gap-3",
+   "x": 1042,
+   "y": 30518,
+   "w": 359,
+   "h": 575,
+   "txt": "147 Тлетворная Дикая Лань — винрейт Тлетворная Дикая Лань Винрейт — Частота выбо"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "flex flex-col items-center gap-1 w-full",
+   "x": 1067,
+   "y": 30780,
+   "w": 309,
+   "h": 50,
+   "txt": "Тлетворная Дикая Лань — винрейт"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "legendary-stats-footer w-full grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-1",
+   "x": 1067,
+   "y": 31020,
+   "w": 309,
+   "h": 48,
+   "txt": "Винрейт — Частота выбора 0.0% Частота предложения 2.3% Очки ArenaSmith 1.2"
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "mt-8 pt-4",
+   "x": 282,
+   "y": 31131,
+   "w": 1119,
+   "h": 89,
+   "txt": "СМОТРИ ТАКЖЕ Тир-лист карт → Винрейт классов → Статьи о Арене →"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "flex flex-wrap gap-2",
+   "x": 282,
+   "y": 31176,
+   "w": 1119,
+   "h": 44,
+   "txt": "Тир-лист карт → Винрейт классов → Статьи о Арене →"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "inline-flex min-h-11 items-center px-4 py-2 rounded-lg text-sm font-hs transitio",
+   "x": 282,
+   "y": 31176,
+   "w": 152,
+   "h": 44,
+   "txt": "Тир-лист карт →"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "inline-flex min-h-11 items-center px-4 py-2 rounded-lg text-sm font-hs transitio",
+   "x": 442,
+   "y": 31176,
+   "w": 174,
+   "h": 44,
+   "txt": "Винрейт классов →"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "inline-flex min-h-11 items-center px-4 py-2 rounded-lg text-sm font-hs transitio",
+   "x": 624,
+   "y": 31176,
+   "w": 161,
+   "h": 44,
+   "txt": "Статьи о Арене →"
+  }
+ ]
+}

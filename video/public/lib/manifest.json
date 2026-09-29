@@ -1,0 +1,672 @@
+{
+ "bg/tavern-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "04454858-f9b7-499b-b801-d2be4c12c74a",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Cozy fantasy tavern interior, roaring stone fireplace, heavy wooden beams, a round card-game table with glowing magical cards and gold coins in the foreground, warm candlelight, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/arena-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "5a419f70-7b9f-42e0-a86b-2858b1566f73",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Grand fantasy coliseum arena at golden dusk, empty sand floor, towering stone stands, colorful banners and burning braziers, epic scale, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/library-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "f4986605-aa60-4307-9d22-6d657d46ccdc",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Vast arcane library with towering bookshelves, floating glowing books and tomes, drifting magical runes, purple and golden light, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/arena-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "ad071aec-af1b-48b7-9adf-ac69471f420d",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Grand fantasy coliseum arena at golden dusk, empty sand floor, towering stone stands, colorful banners and burning braziers, epic scale, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/library-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "af6fc2fc-97d1-486f-9d1f-3af7cd425493",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Vast arcane library with towering bookshelves, floating glowing books and tomes, drifting magical runes, purple and golden light, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/crystal-cave-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "d5a30409-d924-485c-ae54-f594a4b9969e",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Mystical underground cave full of huge glowing blue and violet crystals, soft fog, shimmering reflections in a still pool, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/crystal-cave-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "b0e79ca2-5998-447e-bbac-e77c2e992329",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Mystical underground cave full of huge glowing blue and violet crystals, soft fog, shimmering reflections in a still pool, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/forge-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "8f18aca1-e5f4-41bd-bd39-0e4c8553d295",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Dwarven forge hall inside a mountain, rivers of molten metal, glowing anvils, flying sparks, warm orange light, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/forge-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "25c9d05e-e8ea-4247-a311-c536dbc23c85",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Dwarven forge hall inside a mountain, rivers of molten metal, glowing anvils, flying sparks, warm orange light, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/frozen-citadel-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "d9a5a76a-8c48-4f33-bbbf-a8c84be170c1",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Frozen citadel throne hall made of ice and dark stone, cold blue glow, falling snow, ominous but beautiful, empty throne, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/frozen-citadel-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "ec7bc752-2318-46d0-a67c-741624bfd852",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Frozen citadel throne hall made of ice and dark stone, cold blue glow, falling snow, ominous but beautiful, empty throne, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/jungle-temple-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "6fe2ee0f-71e9-40e9-a5a9-19f74381333c",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Ancient jungle temple ruins overgrown with vines and flowers, golden sunset rays, stone idols, lush and colorful, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/jungle-temple-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "8844b789-c892-4a3f-b0a0-58d29e4cd1ed",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Ancient jungle temple ruins overgrown with vines and flowers, golden sunset rays, stone idols, lush and colorful, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/night-sky-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "2fa27eb3-eff6-49ae-9d41-55737e01ad18",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Magical night sky over misty mountains, swirling golden stars and aurora ribbons, glowing constellations, deep purple and gold, empty landscape. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/night-sky-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "a68843b2-89b0-49c3-8fae-08cabf7a186f",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Magical night sky over misty mountains, swirling golden stars and aurora ribbons, glowing constellations, deep purple and gold, empty landscape. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/game-board-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "a7b313ee-49f9-4f67-934f-1190d96a1963",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Top-down view of an ornate wooden fantasy game board on a tavern table, scattered glowing cards, gold coins, gems and candles around the edges, empty center. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/game-board-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "03a129fc-5c49-41b8-8b6f-f32029ac331c",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Top-down view of an ornate wooden fantasy game board on a tavern table, scattered glowing cards, gold coins, gems and candles around the edges, empty center. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/inn-exterior-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "6fa726fa-59ed-4812-bffa-9b074dc4cbd2",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Cozy fantasy inn exterior at snowy night, warm glowing windows, lanterns, wooden sign without text, soft snowfall, empty street. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/treasure-vault-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "90e0f932-4624-4634-9461-44e57f55215f",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Treasure vault full of gold coins, open chests, jewels and golden trophies, warm glittering light, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/treasure-vault-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "4595fa19-cfde-40a4-8a1a-190b806fb997",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Treasure vault full of gold coins, open chests, jewels and golden trophies, warm glittering light, empty of people. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/battlefield-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "1ea6e0a4-6a30-4685-b915-1d46b5b42259",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Epic magical battlefield at dusk seen from afar, silhouettes of two distant armies, swirling spells and light beams in the sky, dramatic clouds. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/battlefield-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "4a62a998-e9de-4d92-9761-009c36cb9229",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Epic magical battlefield at dusk seen from afar, silhouettes of two distant armies, swirling spells and light beams in the sky, dramatic clouds. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/dwarf-innkeeper.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "a16e80c0-382e-4e21-95d3-98038a018bf7",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A jolly dwarf innkeeper with a braided red beard and leather apron raising a foaming tankard, friendly welcoming pose. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/elf-ranger.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "3a0c44cc-8874-4c41-993a-4db385bb2713",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "An elven ranger in a green hooded cloak drawing a glowing magical bow, determined look. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/orc-berserker.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "3aa55fc7-b081-42a9-b8d6-2401f0e84ba9",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A muscular orc berserker with two battle axes, fur and leather armor, mid battle roar. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/gnome-tinker.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "a65825ed-32c4-41ed-8f08-a04e2dec87e6",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A cheerful gnome inventor with brass goggles and a clockwork backpack holding a sparking gadget. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/necromancer.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "86a27974-4c44-46b6-a732-f3905345e5e1",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "An undead necromancer in tattered violet robes casting swirling green soul magic, skull staff. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/paladin.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "2e9a3e9c-bd58-435a-967d-3a82a611bf02",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A human paladin woman in shining gold-and-white plate armor raising a glowing warhammer, heroic pose. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/inn-exterior-h.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "7bcacdc6-910a-40bf-91e2-98e74a860526",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Cozy fantasy inn exterior at snowy night, warm glowing windows, lanterns, wooden sign without text, soft snowfall, empty street. Cinematic composition. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/pirate-rogue.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "7c5af333-cb2a-47da-b28e-5a8a3665ccd0",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A swashbuckling pirate rogue in a tricorn hat with a cutlass and a confident smirk. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/troll-shaman.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "6d6572d8-56bf-4774-bc15-634be3a39207",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A lanky troll shaman with tusks and tribal paint holding a totem staff crackling with lightning. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/druid.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "303d6298-9e3b-485b-ba3e-b584904cedfa",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A druid with antlers and leafy robes summoning swirling green nature magic, calm powerful pose. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/goblin-merchant.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "8a86d613-cbee-42b6-ad04-a83a88ea11f7",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A grinning goblin merchant holding a heavy sack of gold coins, shrewd and funny. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/frost-mage.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "e11ecd47-d7d4-4974-89aa-af510173a039",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A frost mage sorceress in blue robes with an icy staff, swirling snowflakes and frost magic. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/priestess.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "8fe0996f-31af-4410-a26c-aa0507d36c7d",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A celestial priestess in white and gold robes with a glowing halo holding radiant holy light. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/card-frame.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "0c5bb09b-5f42-46be-9a38-735ef5348d55",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A blank collectible card frame: ornate gold and stone border, empty oval art window at the top, empty parchment text box at the bottom, no text. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/dragon-whelp.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "219ed093-028b-4177-84ae-e8916c64973f",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A small cute red dragon whelp with golden horns flapping its wings playfully. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "chars/mech-bot.png": {
+  "category": "chars",
+  "model": "gpt_image_2_5",
+  "jobId": "5af14064-40fc-49d3-99e2-29598220d86d",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "A cute small mechanical robot companion made of brass and copper with a glowing blue core, waving. Full body, isolated on a fully transparent background, clean silhouette, no ground, no shadow. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/card-back.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "3a834a48-5a63-426b-91fc-766e881efab0",
+  "width": 1360,
+  "height": 2048,
+  "prompt": "An ornate collectible card back, portrait card shape with rounded corners, burgundy leather with intricate gold filigree border, a central golden emblem of a flame with a heartbeat line like the reference image. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/ribbon-banner.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "2ab36570-5e05-4e6d-a684-042f1ad931df",
+  "width": 2688,
+  "height": 1152,
+  "prompt": "An empty horizontal ribbon banner of burgundy cloth with gold edges and folded ends, no text. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/gold-frame.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "d450eec2-216c-443b-ba75-970d9f6a71f0",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "An ornate empty rectangular gold picture frame with gems in the corners, empty transparent center. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/chest-open.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "6bdf75b4-79b6-4462-9deb-b54c6636ca6b",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "An open wooden treasure chest bound in gold, overflowing with coins and gems, glowing golden light pouring out. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/coins-pile.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "64bb01e9-bf18-4118-8e2a-06087f8c040b",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A pile of shiny gold coins with a few gems. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/mana-gem.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "e4efba99-949a-433c-b542-8f12d06e68ba",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A glowing blue hexagonal mana crystal in a gold setting, magical sparkles. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/scroll.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "5d21b73d-78bb-46a3-8abc-7c9ad81aca95",
+  "width": 2048,
+  "height": 1360,
+  "prompt": "An unrolled blank parchment scroll with wooden handles, no writing. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/spellbook.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "be73ef18-24dc-4ba8-b00d-c5035d25b656",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "An open ancient spellbook with glowing violet pages and floating runes. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/potion.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "0f0fe30b-63b5-4b71-b779-5024c9ccb970",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A bubbling round potion bottle with glowing pink liquid and a cork. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/trophy.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "ecdddeb6-2f61-4c77-86bf-f525e27a4b1b",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A golden trophy cup decorated with rubies and laurel, gleaming. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/icon-arena.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "9cc1e6d2-070b-47cd-801e-4597beea3d91",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A game emblem icon: two crossed swords over a round wooden shield with gold trim. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/icon-tavern.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "a8be20b9-604d-4398-88b7-a49c94641c78",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A game emblem icon: a hanging wooden tavern sign with a carved foaming mug, no text. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "fx/sparkle-burst.png": {
+  "category": "fx",
+  "model": "gpt_image_2_5",
+  "jobId": "bac3dd5c-72d8-4f42-af71-b69478503a27",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "A burst of golden magical sparkles and glowing particles on a pure black background. Only light and particles, nothing else."
+ },
+ "props/icon-standard.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "8d441eb8-a048-497c-b565-f587545836f4",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A game emblem icon: a heraldic gold and burgundy shield with a star. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/icon-legend.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "d8efbe77-f43e-4a88-bf6c-1205e5cc05cc",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A game emblem icon: a jeweled golden crown with a glowing orange gem. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/icon-wild.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "c4c6c49d-9471-438d-b65f-ab1ca97a26ef",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A game emblem icon: a golden hourglass wrapped in swirling purple magic. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "props/icon-stats.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "151c1ebd-b574-4e34-8431-e8fc1df25542",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A game emblem icon: a rising bar chart made of glowing golden crystals on a stone plinth. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "fx/magic-smoke.png": {
+  "category": "fx",
+  "model": "gpt_image_2_5",
+  "jobId": "380c07ea-9ebf-40f5-9533-e0b3565a79a7",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Wisps of soft violet and gold magical smoke on a pure black background. Only light and particles, nothing else."
+ },
+ "fx/gold-dust.png": {
+  "category": "fx",
+  "model": "gpt_image_2_5",
+  "jobId": "366d625c-670d-4b19-88eb-95014882158a",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "A curved trail of glittering gold dust on a pure black background. Only light and particles, nothing else."
+ },
+ "fx/god-rays.png": {
+  "category": "fx",
+  "model": "gpt_image_2_5",
+  "jobId": "3ebba04a-1ee3-4442-bb7f-9c6d4503eb0c",
+  "width": 2688,
+  "height": 1520,
+  "prompt": "Warm golden god rays of light streaming diagonally on a pure black background. Only light and particles, nothing else."
+ },
+ "music/tavern-30.m4a": {
+  "category": "music",
+  "model": "sonilo_music",
+  "jobId": "c9cfffd4-7bc5-472e-8e04-3686e385f7c4",
+  "prompt": "Cozy fantasy tavern music, instrumental, warm lute, fiddle, hand drums and soft flute, relaxed cheerful groove around 100 BPM, loopable, no vocals."
+ },
+ "music/epic-45.m4a": {
+  "category": "music",
+  "model": "sonilo_music",
+  "jobId": "13c89f03-c242-4377-a737-550fd9736cf3",
+  "prompt": "Epic fantasy tavern trailer music, instrumental, steady strong beat around 120 BPM. Big brass and choir hit at 3 seconds, driving celtic groove with fiddle, lute, frame drums and staccato strings, rising energy, huge final orchestral hit at 42 seconds ringing out. No vocals."
+ },
+ "music/hype-15.m4a": {
+  "category": "music",
+  "model": "sonilo_music",
+  "jobId": "b155f5a5-76fe-4060-a79e-735437ff2b1c",
+  "prompt": "Short energetic fantasy promo sting, instrumental: fast taiko and brass build for 3 seconds, heroic orchestral burst, ends with a big hit at 13 seconds. No vocals."
+ },
+ "music/announce-20.m4a": {
+  "category": "music",
+  "model": "sonilo_music",
+  "jobId": "32e5f868-b2ae-465b-8094-6a3182e3560c",
+  "prompt": "Upbeat fantasy announcement music, instrumental, bright strings, glockenspiel and hand drums, playful and exciting, clear beat, final hit at 18 seconds. No vocals."
+ },
+ "sfx/card-shuffle.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "060b7b4e-a80e-412c-91f4-116938d6d4c2",
+  "prompt": "Sound effect only: a deck of thick playing cards being shuffled. No music, no voice."
+ },
+ "sfx/coin-single.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "7bd6837f-9395-46b0-aac4-42ae9fdbe48c",
+  "prompt": "Sound effect only: a single gold coin dropping and ringing on a wooden table. No music, no voice."
+ },
+ "music/mystic-30.m4a": {
+  "category": "music",
+  "model": "sonilo_music",
+  "jobId": "dae01d4f-1555-4f19-87ff-92133e6b278c",
+  "prompt": "Mysterious arcane fantasy ambient music, instrumental, shimmering harp, soft choir pads, low drones and gentle chimes, slow and magical, no drums, no vocals."
+ },
+ "sfx/card-draw.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "4863465d-79a6-46fa-8426-69c7a36d03c4",
+  "prompt": "Sound effect only: a single playing card being drawn and slid quickly across a wooden table. No music, no voice."
+ },
+ "sfx/coin-pile.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "d81c182f-8543-4c4c-bc5c-e4e2cde79049",
+  "prompt": "Sound effect only: a handful of gold coins pouring into a pile. No music, no voice."
+ },
+ "sfx/gem-sparkle.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "d1541348-7776-49c0-8bb2-ab415dee78ee",
+  "prompt": "Sound effect only: a magical gem sparkle chime, bright and short. No music, no voice."
+ },
+ "sfx/level-up.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "4d62819f-f965-4c6a-b2ab-ec8a028fc2e8",
+  "prompt": "Sound effect only: a short triumphant fantasy level up chime with a magical shimmer. No music, no voice."
+ },
+ "sfx/magic-whoosh.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "06fe2dcc-7a8a-4098-8e51-452c99d0fa72",
+  "prompt": "Sound effect only: a fast magical whoosh with sparkles. No music, no voice."
+ },
+ "sfx/riser.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "2c41f5d7-b35b-4f45-998b-1ddceb819610",
+  "prompt": "Sound effect only: a cinematic rising swell building tension for two seconds, ending abruptly. No music, no voice."
+ },
+ "sfx/drum-hit.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "7f59f7d4-d714-4dae-b92a-579cef1e4bc4",
+  "prompt": "Sound effect only: one huge cinematic taiko drum hit with a short tail. No music, no voice."
+ },
+ "sfx/notification.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "93595bd4-7b9d-4ab2-a2d3-481aee5e8aa6",
+  "prompt": "Sound effect only: a soft pleasant magical notification ding. No music, no voice."
+ },
+ "sfx/fanfare.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "19a751ee-7d11-4b84-a418-5067550f47b9",
+  "prompt": "Sound effect only: a short heroic brass fanfare of three notes. No music, no voice."
+ },
+ "sfx/scroll-unroll.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "d3e97d2b-e702-4d03-9e7d-4e84c9ccdbed",
+  "prompt": "Sound effect only: a parchment scroll being unrolled. No music, no voice."
+ },
+ "sfx/page-turn.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "ede00be0-ff25-42f7-aafd-03ecc6e80bbe",
+  "prompt": "Sound effect only: a single old book page turning. No music, no voice."
+ },
+ "sfx/ui-click.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "80b5f89b-20fc-4494-8f4e-128f90f6697b",
+  "prompt": "Sound effect only: a soft wooden interface click, very short. No music, no voice."
+ },
+ "sfx/sword-clash.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "9bb6551a-f99a-424a-a685-8f629e576449",
+  "prompt": "Sound effect only: two swords clashing once with a metallic ring. No music, no voice."
+ },
+ "sfx/fire-crackle.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "5173b539-96bf-426e-ade5-18bd80c5dba5",
+  "prompt": "Sound effect only: a cozy fireplace crackling, ambient, steady. No music, no voice."
+ },
+ "sfx/tavern-crowd.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "785730f4-f30d-4e7a-bd68-7ff95dd9db2a",
+  "prompt": "Sound effect only: a fantasy tavern crowd murmuring and laughing softly with mugs clinking, ambient. No music, no voice."
+ },
+ "sfx/ui-hover.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "c0cf10b6-2bf0-4d57-ba0a-1b83cfa1e390",
+  "prompt": "Sound effect only: a very soft subtle magical interface hover tick. No music, no voice."
+ },
+ "sfx/bell.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "de6a86b4-aba1-411b-a37f-9cdc87c0b493",
+  "prompt": "Sound effect only: a single bright bell ring with a long shimmering tail. No music, no voice."
+ },
+ "sfx/stone-slide.wav": {
+  "category": "sfx",
+  "model": "seed_audio",
+  "jobId": "1fe5840e-8f72-4f1d-84c0-956ac01c96d2",
+  "prompt": "Sound effect only: a heavy stone slab sliding open. No music, no voice."
+ },
+ "loops/library-v.mp4": {
+  "category": "loops",
+  "model": "seedance_2_5",
+  "jobId": "0274ccce-83dc-4cd9-8d22-a224c32eb153",
+  "width": 1080,
+  "height": 1920,
+  "prompt": "Seamless ambient loop, static camera, the scene ends exactly as it starts. Books and tomes float and drift gently, glowing runes swirl slowly, candle light flickers, magical particles rise. Keep the painterly illustration style, subtle smooth motion."
+ },
+ "loops/tavern-v.mp4": {
+  "category": "loops",
+  "model": "seedance_2_5",
+  "jobId": "97d4e740-9a7c-4244-a3ac-9becf81c15f2",
+  "width": 1080,
+  "height": 1920,
+  "prompt": "Seamless ambient loop, static camera, the scene ends exactly as it starts. The fire in the fireplace flickers, candle flames dance, the magical cards on the table softly glow and pulse, dust motes drift in the warm light. Keep the painterly illustration style, subtle smooth motion."
+ },
+ "loops/night-sky-v.mp4": {
+  "category": "loops",
+  "model": "seedance_2_5",
+  "jobId": "521a7960-043f-4232-b317-8ad47fa3759c",
+  "width": 1080,
+  "height": 1920,
+  "prompt": "Seamless ambient loop, static camera, the scene ends exactly as it starts. Golden stars swirl slowly, aurora ribbons wave gently, constellations twinkle, mist drifts over the mountains. Keep the painterly illustration style, subtle smooth motion."
+ },
+ "loops/crystal-cave-v.mp4": {
+  "category": "loops",
+  "model": "seedance_2_5",
+  "jobId": "8708bb98-cc57-444c-9f82-bc7a99cca935",
+  "width": 1080,
+  "height": 1920,
+  "prompt": "Seamless ambient loop, static camera, the scene ends exactly as it starts. Crystals pulse with soft glowing light, fog drifts slowly, gentle ripples spread across the still pool, sparkles twinkle. Keep the painterly illustration style, subtle smooth motion."
+ },
+ "props/icon-matchups.png": {
+  "category": "props",
+  "model": "gpt_image_2_5",
+  "jobId": "56045e65-849f-4f47-956d-0293a1389a5e",
+  "width": 2048,
+  "height": 2048,
+  "prompt": "A game emblem icon: two playing cards crossed against each other with a glowing versus spark between them, no text. Isolated object on a fully transparent background. Hand-painted digital fantasy illustration in the style of a cozy collectible card game: warm dramatic lighting, rich saturated colors with burgundy, gold and deep purple accents, painterly brush strokes, stylized chunky shapes, high detail. No text, no letters, no logos, no watermark."
+ },
+ "bg/tavern-v.png": {
+  "category": "bg",
+  "model": "gpt_image_2_5",
+  "jobId": "ddce6b16-8222-47ae-a41f-d5bbf5b3b3b3",
+  "width": 1520,
+  "height": 2688,
+  "prompt": "Cozy fantasy tavern interior, roaring stone fireplace, heavy wooden beams, a round card-game table with glowing magical cards and gold coins in the foreground, warm candlelight, empty of people. (стиль — STYLE из scripts/gen-library.mjs)"
+ },
+ "loops/arena-v.mp4": {
+  "category": "loops",
+  "model": "seedance_2_5",
+  "jobId": "b2fb9bb9-abb1-48b7-a2f3-a7a954d9add2",
+  "width": 1080,
+  "height": 1920,
+  "prompt": "Seamless ambient loop from bg/arena-v.png (см. LOOPS в scripts/gen-library.mjs)"
+ }
+}

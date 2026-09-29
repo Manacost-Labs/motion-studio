@@ -1,0 +1,405 @@
+{
+ "total": 3956,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 272,
+   "y": 65,
+   "w": 1138,
+   "h": 3537,
+   "txt": "ПОЛЯ СРАЖЕНИЙ Тир-лист БГ Hearthstone Сравнивайте существ, стратегии, заклинания"
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "bg-tier-list-page space-y-5",
+   "x": 306,
+   "y": 99,
+   "w": 1071,
+   "h": 3470,
+   "txt": "ПОЛЯ СРАЖЕНИЙ Тир-лист БГ Hearthstone Сравнивайте существ, стратегии, заклинания"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "text-center",
+   "x": 306,
+   "y": 99,
+   "w": 1071,
+   "h": 209,
+   "txt": "ПОЛЯ СРАЖЕНИЙ Тир-лист БГ Hearthstone Сравнивайте существ, стратегии, заклинания"
+  },
+  {
+   "d": 3,
+   "tag": "P",
+   "cls": "mx-auto mt-2 max-w-2xl text-sm text-[#6b4c2a]",
+   "x": 506,
+   "y": 179,
+   "w": 672,
+   "h": 60,
+   "txt": "Сравнивайте существ, стратегии, заклинания и аксессуары Полей сражений. Для тир-"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "bg-tier-nav-grid grid grid-cols-2 gap-2 lg:grid-cols-4",
+   "x": 306,
+   "y": 328,
+   "w": 1071,
+   "h": 104,
+   "txt": "Существа Рейтинг существ по влиянию на бой и статистике HSReplay. Стратегии Гото"
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "bg-tier-nav-card rounded-lg border px-3 py-3 text-left transition-all",
+   "x": 306,
+   "y": 328,
+   "w": 262,
+   "h": 104,
+   "txt": "Существа Рейтинг существ по влиянию на бой и статистике HSReplay."
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "bg-tier-nav-card rounded-lg border px-3 py-3 text-left transition-all",
+   "x": 576,
+   "y": 328,
+   "w": 262,
+   "h": 104,
+   "txt": "Стратегии Готовые архетипы и ключевые карты композиций из Firestone."
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "bg-tier-nav-card rounded-lg border px-3 py-3 text-left transition-all",
+   "x": 846,
+   "y": 328,
+   "w": 262,
+   "h": 104,
+   "txt": "Заклинания Заклинания таверны по среднему месту и силе в партиях."
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "bg-tier-nav-card rounded-lg border px-3 py-3 text-left transition-all",
+   "x": 1115,
+   "y": 328,
+   "w": 262,
+   "h": 104,
+   "txt": "Аксессуары Большие и малые аксессуары, разложенные по актуальным тирам."
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "bg-tier-index-panel rounded-lg border p-3 sm:p-4",
+   "x": 306,
+   "y": 452,
+   "w": 1071,
+   "h": 3117,
+   "txt": "Тир-лист стратегий Источник: firestone · обновлено 28.09.2026, 18:00 FIRESTONE H"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "flex flex-col gap-3 border-b border-[#bfdbfe]/70 pb-3 lg:flex-row lg:items-end l",
+   "x": 333,
+   "y": 479,
+   "w": 1017,
+   "h": 80,
+   "txt": "Тир-лист стратегий Источник: firestone · обновлено 28.09.2026, 18:00 FIRESTONE H"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "bg-tier-panel-heading",
+   "x": 333,
+   "y": 479,
+   "w": 520,
+   "h": 67,
+   "txt": "Тир-лист стратегий Источник: firestone · обновлено 28.09.2026, 18:00"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "mt-4 space-y-5",
+   "x": 333,
+   "y": 575,
+   "w": 1017,
+   "h": 2966,
+   "txt": "S Тир S 3 позиций Abberation Deathrattle ОБЩИЕ · СР. МЕСТО 3.11 · 67 461 ИГР Сре"
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "bg-tier-rank-panel rounded-lg border p-3",
+   "x": 333,
+   "y": 575,
+   "w": 1017,
+   "h": 643,
+   "txt": "S Тир S 3 позиций Abberation Deathrattle ОБЩИЕ · СР. МЕСТО 3.11 · 67 461 ИГР Сре"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mb-3 flex items-center gap-3",
+   "x": 346,
+   "y": 588,
+   "w": 991,
+   "h": 44,
+   "txt": "S Тир S 3 позиций"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid gap-3 lg:grid-cols-2",
+   "x": 346,
+   "y": 644,
+   "w": 991,
+   "h": 561,
+   "txt": "Abberation Deathrattle ОБЩИЕ · СР. МЕСТО 3.11 · 67 461 ИГР Средняя КЛЮЧЕВЫЕ ДОПО"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 346,
+   "y": 644,
+   "w": 490,
+   "h": 274,
+   "txt": "Abberation Deathrattle ОБЩИЕ · СР. МЕСТО 3.11 · 67 461 ИГР Средняя КЛЮЧЕВЫЕ ДОПО"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 848,
+   "y": 644,
+   "w": 490,
+   "h": 274,
+   "txt": "Undead Butcher НЕЖИТЬ · СР. МЕСТО 4 · 6 789 ИГР Сложная КЛЮЧЕВЫЕ ДОПОЛНИТЕЛЬНЫЕ"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 346,
+   "y": 930,
+   "w": 490,
+   "h": 274,
+   "txt": "Murloc Scam МУРЛОКИ · СР. МЕСТО 4.33 · 4 088 ИГР Сложная КЛЮЧЕВЫЕ ДОПОЛНИТЕЛЬНЫЕ"
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "bg-tier-rank-panel rounded-lg border p-3",
+   "x": 333,
+   "y": 1237,
+   "w": 1017,
+   "h": 979,
+   "txt": "A Тир A 9 позиций Abberation Discard ОБЩИЕ · СР. МЕСТО 3.18 · 23 293 ИГР Средняя"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mb-3 flex items-center gap-3",
+   "x": 346,
+   "y": 1250,
+   "w": 991,
+   "h": 44,
+   "txt": "A Тир A 9 позиций"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid gap-3 lg:grid-cols-2",
+   "x": 346,
+   "y": 1306,
+   "w": 991,
+   "h": 847,
+   "txt": "Abberation Discard ОБЩИЕ · СР. МЕСТО 3.18 · 23 293 ИГР Средняя КЛЮЧЕВЫЕ ДОПОЛНИТ"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 346,
+   "y": 1306,
+   "w": 490,
+   "h": 274,
+   "txt": "Abberation Discard ОБЩИЕ · СР. МЕСТО 3.18 · 23 293 ИГР Средняя КЛЮЧЕВЫЕ ДОПОЛНИТ"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 848,
+   "y": 1306,
+   "w": 490,
+   "h": 274,
+   "txt": "Neutral Tea Set ОБЩИЕ · СР. МЕСТО 3.23 · 5 016 ИГР Сложная КЛЮЧЕВЫЕ ДОПОЛНИТЕЛЬН"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 346,
+   "y": 1593,
+   "w": 490,
+   "h": 274,
+   "txt": "Demon Boost Shop ДЕМОНЫ · СР. МЕСТО 3.68 · 5 154 ИГР Средняя КЛЮЧЕВЫЕ ДОПОЛНИТЕЛ"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 848,
+   "y": 1593,
+   "w": 490,
+   "h": 274,
+   "txt": "Elemental Boost ЭЛЕМЕНТАЛИ · СР. МЕСТО 3.68 · 4 200 ИГР Средняя КЛЮЧЕВЫЕ ДОПОЛНИ"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 346,
+   "y": 1879,
+   "w": 490,
+   "h": 274,
+   "txt": "Mech Volumizer МЕХАНИЗМЫ · СР. МЕСТО 3.81 · 7 155 ИГР Средняя КЛЮЧЕВЫЕ ДОПОЛНИТЕ"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 848,
+   "y": 1879,
+   "w": 490,
+   "h": 274,
+   "txt": "Beast Beetle ЗВЕРИ · СР. МЕСТО 3.89 · 4 108 ИГР Легкая КЛЮЧЕВЫЕ ДОПОЛНИТЕЛЬНЫЕ"
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "bg-tier-rank-panel rounded-lg border p-3",
+   "x": 333,
+   "y": 2236,
+   "w": 1017,
+   "h": 643,
+   "txt": "B Тир B 3 позиций Dragon Shield ДРАКОНЫ · СР. МЕСТО 3.8 · 2 594 ИГР Легкая КЛЮЧЕ"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mb-3 flex items-center gap-3",
+   "x": 346,
+   "y": 2249,
+   "w": 991,
+   "h": 44,
+   "txt": "B Тир B 3 позиций"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid gap-3 lg:grid-cols-2",
+   "x": 346,
+   "y": 2305,
+   "w": 991,
+   "h": 561,
+   "txt": "Dragon Shield ДРАКОНЫ · СР. МЕСТО 3.8 · 2 594 ИГР Легкая КЛЮЧЕВЫЕ ДОПОЛНИТЕЛЬНЫЕ"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 346,
+   "y": 2305,
+   "w": 490,
+   "h": 274,
+   "txt": "Dragon Shield ДРАКОНЫ · СР. МЕСТО 3.8 · 2 594 ИГР Легкая КЛЮЧЕВЫЕ ДОПОЛНИТЕЛЬНЫЕ"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 848,
+   "y": 2305,
+   "w": 490,
+   "h": 274,
+   "txt": "Pirate Discover ПИРАТЫ · СР. МЕСТО 4.06 · 7 161 ИГР Сложная КЛЮЧЕВЫЕ ДОПОЛНИТЕЛЬ"
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 346,
+   "y": 2591,
+   "w": 490,
+   "h": 274,
+   "txt": "Beast Leviathan ЗВЕРИ · СР. МЕСТО 4.18 · 1 436 ИГР Легкая КЛЮЧЕВЫЕ ДОПОЛНИТЕЛЬНЫ"
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "bg-tier-rank-panel rounded-lg border p-3",
+   "x": 333,
+   "y": 2899,
+   "w": 1017,
+   "h": 643,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mb-3 flex items-center gap-3",
+   "x": 346,
+   "y": 2912,
+   "w": 991,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid gap-3 lg:grid-cols-2",
+   "x": 346,
+   "y": 2968,
+   "w": 991,
+   "h": 561,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 346,
+   "y": 2968,
+   "w": 490,
+   "h": 274,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 848,
+   "y": 2968,
+   "w": 490,
+   "h": 274,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "ARTICLE",
+   "cls": "bg-tier-strategy-card rounded-lg border p-3 shadow-sm transition-all duration-30",
+   "x": 346,
+   "y": 3254,
+   "w": 490,
+   "h": 274,
+   "txt": ""
+  }
+ ]
+}

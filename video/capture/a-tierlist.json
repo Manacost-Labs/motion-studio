@@ -1,0 +1,4115 @@
+{
+ "total": 10893,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 258,
+   "y": 65,
+   "w": 1167,
+   "h": 10473,
+   "txt": "Тир-лист карт Арены Hearthstone Оценки карт для каждого класса — текущий патч Гл"
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "arena-tierlist-page",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 10385,
+   "txt": "Тир-лист карт Арены Hearthstone Оценки карт для каждого класса — текущий патч Гл"
+  },
+  {
+   "d": 2,
+   "tag": "HEADER",
+   "cls": "section-banner-modern",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 320,
+   "txt": "Тир-лист карт Арены Hearthstone Оценки карт для каждого класса — текущий патч"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "traditional-mode-banner__copy",
+   "x": 326,
+   "y": 165,
+   "w": 720,
+   "h": 168,
+   "txt": "Тир-лист карт Арены Hearthstone Оценки карт для каждого класса — текущий патч"
+  },
+  {
+   "d": 4,
+   "tag": "H1",
+   "cls": "",
+   "x": 326,
+   "y": 165,
+   "w": 720,
+   "h": 121,
+   "txt": "Тир-лист карт Арены Hearthstone"
+  },
+  {
+   "d": 2,
+   "tag": "NAV",
+   "cls": "mb-3",
+   "x": 282,
+   "y": 425,
+   "w": 1119,
+   "h": 58,
+   "txt": "Главная › Тир-лист"
+  },
+  {
+   "d": 3,
+   "tag": "OL",
+   "cls": "flex items-center gap-1 flex-wrap text-xs text-[#8b6c42]",
+   "x": 284,
+   "y": 425,
+   "w": 1114,
+   "h": 44,
+   "txt": "Главная › Тир-лист"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "",
+   "x": 282,
+   "y": 501,
+   "w": 1119,
+   "h": 107,
+   "txt": "Тир-лист карт Арены Hearthstone — рейтинг всех карт по классам с оценками от S ("
+  },
+  {
+   "d": 3,
+   "tag": "P",
+   "cls": "mb-5 px-1 text-sm leading-relaxed text-[#6b4c2a]",
+   "x": 282,
+   "y": 501,
+   "w": 1119,
+   "h": 67,
+   "txt": "Тир-лист карт Арены Hearthstone — рейтинг всех карт по классам с оценками от S ("
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "tierlist-source-row flex items-center justify-between mb-4 -mt-2 flex-wrap gap-2",
+   "x": 282,
+   "y": 628,
+   "w": 1119,
+   "h": 71,
+   "txt": "HSReplay HearthArena Firestone 28.09.2026, 20:20"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "tierlist-source-toggle flex items-center gap-1 p-1 rounded-xl",
+   "x": 282,
+   "y": 628,
+   "w": 354,
+   "h": 54,
+   "txt": "HSReplay HearthArena Firestone"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "tierlist-class-nav mb-5",
+   "x": 282,
+   "y": 715,
+   "w": 1119,
+   "h": 78,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "tierlist-class-tabs flex items-center gap-2 sm:gap-3 px-3 py-2.5 rounded-2xl ove",
+   "x": 282,
+   "y": 715,
+   "w": 1119,
+   "h": 78,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "tierlist-class-scroll flex items-center gap-1.5 sm:gap-2 flex-shrink-0",
+   "x": 295,
+   "y": 733,
+   "w": 668,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "tierlist-class-search relative flex-grow min-w-[140px]",
+   "x": 996,
+   "y": 733,
+   "w": 392,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "INPUT",
+   "cls": "w-full bg-transparent pl-8 pr-11 py-1.5 text-sm text-[#3d2a1e] placeholder-[#8b6",
+   "x": 1003,
+   "y": 733,
+   "w": 385,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "tierlist-active-header flex items-center justify-between gap-3 mb-5 flex-wrap",
+   "x": 282,
+   "y": 814,
+   "w": 1119,
+   "h": 143,
+   "txt": "Все карты 1080 уникальных карт Галерея Таблица Все Все 0 1 2 3 4 5 6 7 8 9 10+"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "flex items-center gap-3",
+   "x": 303,
+   "y": 827,
+   "w": 179,
+   "h": 49,
+   "txt": "Все карты 1080 уникальных карт"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "tierlist-control-panel flex items-center gap-2 flex-wrap justify-end",
+   "x": 303,
+   "y": 888,
+   "w": 1040,
+   "h": 54,
+   "txt": "Галерея Таблица Все Все 0 1 2 3 4 5 6 7 8 9 10+"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "tierlist-view-toggle flex items-center gap-1 p-1 rounded-xl flex-shrink-0",
+   "x": 303,
+   "y": 888,
+   "w": 196,
+   "h": 54,
+   "txt": "Галерея Таблица"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "tierlist-rarity-filter flex items-center gap-1 p-1 rounded-xl flex-shrink-0",
+   "x": 507,
+   "y": 888,
+   "w": 246,
+   "h": 54,
+   "txt": "Все"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "tierlist-mana-filter flex max-w-full items-center gap-1 overflow-x-auto p-1 roun",
+   "x": 761,
+   "y": 888,
+   "w": 582,
+   "h": 54,
+   "txt": "Все 0 1 2 3 4 5 6 7 8 9 10+"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "tierlist-groups space-y-10",
+   "x": 282,
+   "y": 977,
+   "w": 1119,
+   "h": 8870,
+   "txt": "S Отлично 25 карт Авто-пик — доминирующие карты текущего метагейма. A Хорошо 155"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "tierlist-group anim-fade-up",
+   "x": 282,
+   "y": 977,
+   "w": 1119,
+   "h": 1503,
+   "txt": "S Отлично 25 карт Авто-пик — доминирующие карты текущего метагейма."
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "tierlist-group-heading flex items-center gap-4 mb-5",
+   "x": 282,
+   "y": 999,
+   "w": 1119,
+   "h": 70,
+   "txt": "S Отлично 25 карт Авто-пик — доминирующие карты текущего метагейма."
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "flex-grow",
+   "x": 360,
+   "y": 1000,
+   "w": 1036,
+   "h": 54,
+   "txt": "Отлично 25 карт Авто-пик — доминирующие карты текущего метагейма."
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "tierlist-card-grid",
+   "x": 282,
+   "y": 1085,
+   "w": 1119,
+   "h": 1396,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 1103,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 1379,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 1655,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 1930,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 2206,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 2206,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "tierlist-group anim-fade-up",
+   "x": 282,
+   "y": 2554,
+   "w": 1119,
+   "h": 7293,
+   "txt": "A Хорошо 155 из 222 карт Отличные карты, очень сильны в большинстве ситуаций."
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "tierlist-group-heading flex items-center gap-4 mb-5",
+   "x": 282,
+   "y": 2576,
+   "w": 1119,
+   "h": 70,
+   "txt": "A Хорошо 155 из 222 карт Отличные карты, очень сильны в большинстве ситуаций."
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "flex-grow",
+   "x": 360,
+   "y": 2577,
+   "w": 1036,
+   "h": 54,
+   "txt": "Хорошо 155 из 222 карт Отличные карты, очень сильны в большинстве ситуаций."
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "tierlist-card-grid",
+   "x": 282,
+   "y": 2662,
+   "w": 1119,
+   "h": 7185,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 2680,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 2956,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 3232,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 3507,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 3783,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 4059,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 4334,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 4610,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 4886,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 5162,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 5437,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 5713,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 5989,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 6264,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 6540,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 6816,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 7091,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 7367,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 7643,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 7919,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 8194,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 8470,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 8746,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 9021,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1226,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1226,
+   "y": 9297,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 287,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 287,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 475,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 475,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 662,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 662,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 850,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 850,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "anim-scale-in",
+   "x": 1038,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "hs-tier-card relative z-0 flex-shrink-0 group cursor-pointer hover:z-[9999] focu",
+   "x": 1038,
+   "y": 9573,
+   "w": 171,
+   "h": 258,
+   "txt": ""
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "tierlist-load-more mt-6 flex flex-col items-center gap-2",
+   "x": 282,
+   "y": 9871,
+   "w": 1119,
+   "h": 68,
+   "txt": "Показать ещё 180 Показано 180 из 1080"
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "rounded-xl px-5 py-2.5 font-hs text-sm transition-all",
+   "x": 757,
+   "y": 9871,
+   "w": 168,
+   "h": 44,
+   "txt": "Показать ещё 180"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "mt-8 pt-4",
+   "x": 282,
+   "y": 9971,
+   "w": 1119,
+   "h": 85,
+   "txt": "СМОТРИ ТАКЖЕ Винрейт классов → Легендарки → Статьи о Арене →"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "flex flex-wrap gap-2",
+   "x": 282,
+   "y": 10012,
+   "w": 1119,
+   "h": 44,
+   "txt": "Винрейт классов → Легендарки → Статьи о Арене →"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "inline-flex min-h-11 items-center px-4 py-2 rounded-lg text-sm font-hs transitio",
+   "x": 282,
+   "y": 10012,
+   "w": 174,
+   "h": 44,
+   "txt": "Винрейт классов →"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "inline-flex min-h-11 items-center px-4 py-2 rounded-lg text-sm font-hs transitio",
+   "x": 609,
+   "y": 10012,
+   "w": 161,
+   "h": 44,
+   "txt": "Статьи о Арене →"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "faq-section",
+   "x": 282,
+   "y": 10088,
+   "w": 1119,
+   "h": 386,
+   "txt": "Частые вопросы Какой класс лучший на Арене Hearthstone? + Как пользоваться тир-л"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "faq-section__list",
+   "x": 282,
+   "y": 10134,
+   "w": 1119,
+   "h": 340,
+   "txt": "Какой класс лучший на Арене Hearthstone? + Как пользоваться тир-листом карт? + К"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 10134,
+   "w": 1119,
+   "h": 50,
+   "txt": "Какой класс лучший на Арене Hearthstone? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 283,
+   "y": 10135,
+   "w": 1117,
+   "h": 48,
+   "txt": "Какой класс лучший на Арене Hearthstone? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 10192,
+   "w": 1119,
+   "h": 50,
+   "txt": "Как пользоваться тир-листом карт? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 283,
+   "y": 10193,
+   "w": 1117,
+   "h": 48,
+   "txt": "Как пользоваться тир-листом карт? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 10250,
+   "w": 1119,
+   "h": 50,
+   "txt": "Как выбрать легендарку на Арене? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 283,
+   "y": 10251,
+   "w": 1117,
+   "h": 48,
+   "txt": "Как выбрать легендарку на Арене? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 10308,
+   "w": 1119,
+   "h": 50,
+   "txt": "Как часто обновляются данные? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 283,
+   "y": 10309,
+   "w": 1117,
+   "h": 48,
+   "txt": "Как часто обновляются данные? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 10366,
+   "w": 1119,
+   "h": 50,
+   "txt": "Что такое винрейт класса на Арене? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 283,
+   "y": 10367,
+   "w": 1117,
+   "h": 48,
+   "txt": "Что такое винрейт класса на Арене? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 10424,
+   "w": 1119,
+   "h": 50,
+   "txt": "Сколько побед нужно для окупаемости Арены? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 283,
+   "y": 10425,
+   "w": 1117,
+   "h": 48,
+   "txt": "Сколько побед нужно для окупаемости Арены? +"
+  }
+ ]
+}

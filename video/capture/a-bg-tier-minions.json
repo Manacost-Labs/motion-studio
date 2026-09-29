@@ -1,0 +1,135 @@
+{
+ "total": 1539,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 272,
+   "y": 65,
+   "w": 1138,
+   "h": 1122,
+   "txt": "ПОЛЯ СРАЖЕНИЙ Тир-лист БГ Hearthstone Сравнивайте существ, стратегии, заклинания"
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "bg-tier-list-page space-y-5",
+   "x": 306,
+   "y": 98,
+   "w": 1071,
+   "h": 1055,
+   "txt": "ПОЛЯ СРАЖЕНИЙ Тир-лист БГ Hearthstone Сравнивайте существ, стратегии, заклинания"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "text-center",
+   "x": 306,
+   "y": 98,
+   "w": 1071,
+   "h": 209,
+   "txt": "ПОЛЯ СРАЖЕНИЙ Тир-лист БГ Hearthstone Сравнивайте существ, стратегии, заклинания"
+  },
+  {
+   "d": 3,
+   "tag": "P",
+   "cls": "mx-auto mt-2 max-w-2xl text-sm text-[#6b4c2a]",
+   "x": 506,
+   "y": 178,
+   "w": 672,
+   "h": 60,
+   "txt": "Сравнивайте существ, стратегии, заклинания и аксессуары Полей сражений. Для тир-"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "bg-tier-nav-grid grid grid-cols-2 gap-2 lg:grid-cols-4",
+   "x": 306,
+   "y": 327,
+   "w": 1071,
+   "h": 104,
+   "txt": "Существа Рейтинг существ по влиянию на бой и статистике HSReplay. Стратегии Гото"
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "bg-tier-nav-card rounded-lg border px-3 py-3 text-left transition-all",
+   "x": 306,
+   "y": 327,
+   "w": 262,
+   "h": 104,
+   "txt": "Существа Рейтинг существ по влиянию на бой и статистике HSReplay."
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "bg-tier-nav-card rounded-lg border px-3 py-3 text-left transition-all",
+   "x": 576,
+   "y": 327,
+   "w": 262,
+   "h": 104,
+   "txt": "Стратегии Готовые архетипы и ключевые карты композиций из Firestone."
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "bg-tier-nav-card rounded-lg border px-3 py-3 text-left transition-all",
+   "x": 846,
+   "y": 327,
+   "w": 262,
+   "h": 104,
+   "txt": "Заклинания Заклинания таверны по среднему месту и силе в партиях."
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "bg-tier-nav-card rounded-lg border px-3 py-3 text-left transition-all",
+   "x": 1115,
+   "y": 327,
+   "w": 262,
+   "h": 104,
+   "txt": "Аксессуары Большие и малые аксессуары, разложенные по актуальным тирам."
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "bg-tier-index-panel rounded-lg border p-3 sm:p-4",
+   "x": 306,
+   "y": 451,
+   "w": 1071,
+   "h": 702,
+   "txt": "Тир-лист существ Источник: BG Manacost Загружаем BG данные..."
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "flex flex-col gap-3 border-b border-[#bfdbfe]/70 pb-3 lg:flex-row lg:items-end l",
+   "x": 333,
+   "y": 478,
+   "w": 1017,
+   "h": 80,
+   "txt": "Тир-лист существ Источник: BG Manacost"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "bg-tier-panel-heading",
+   "x": 333,
+   "y": 478,
+   "w": 520,
+   "h": 67,
+   "txt": "Тир-лист существ Источник: BG Manacost"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "py-12 text-center font-hs text-[#6b4c2a]",
+   "x": 333,
+   "y": 558,
+   "w": 1017,
+   "h": 120,
+   "txt": "Загружаем BG данные..."
+  }
+ ]
+}

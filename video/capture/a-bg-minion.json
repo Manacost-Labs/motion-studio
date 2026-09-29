@@ -1,0 +1,445 @@
+{
+ "total": 2712,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 272,
+   "y": 65,
+   "w": 1138,
+   "h": 2295,
+   "txt": "Назад в библиотеку СУЩЕСТВА · АКТИВНЫЙ ПУЛ Баюбот Lullabot Таверна 1 Механизм В "
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "bg-library-detail-page space-y-6 text-[#26374f]",
+   "x": 306,
+   "y": 98,
+   "w": 1071,
+   "h": 2228,
+   "txt": "Назад в библиотеку СУЩЕСТВА · АКТИВНЫЙ ПУЛ Баюбот Lullabot Таверна 1 Механизм В "
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "bg-library-card-dossier overflow-hidden rounded-lg border border-[#cbd9ed] bg-[#",
+   "x": 306,
+   "y": 159,
+   "w": 1071,
+   "h": 657,
+   "txt": "СУЩЕСТВА · АКТИВНЫЙ ПУЛ Баюбот Lullabot Таверна 1 Механизм В конце хода Магнетиз"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "bg-library-card-dossier__layout grid gap-6 p-4 sm:p-6 lg:grid-cols-[320px_1fr]",
+   "x": 320,
+   "y": 173,
+   "w": 1044,
+   "h": 629,
+   "txt": "СУЩЕСТВА · АКТИВНЫЙ ПУЛ Баюбот Lullabot Таверна 1 Механизм В конце хода Магнетиз"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "bg-library-card-dossier__art relative mx-auto w-full max-w-xs flex-col",
+   "x": 344,
+   "y": 197,
+   "w": 320,
+   "h": 581,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "IMG",
+   "cls": "w-full drop-shadow-[0_22px_30px_rgba(21,31,47,0.22)]",
+   "x": 357,
+   "y": 266,
+   "w": 293,
+   "h": 444,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "bg-library-card-dossier__copy min-w-0 space-y-5",
+   "x": 688,
+   "y": 197,
+   "w": 652,
+   "h": 581,
+   "txt": "СУЩЕСТВА · АКТИВНЫЙ ПУЛ Баюбот Lullabot Таверна 1 Механизм В конце хода Магнетиз"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 688,
+   "y": 197,
+   "w": 652,
+   "h": 111,
+   "txt": "СУЩЕСТВА · АКТИВНЫЙ ПУЛ Баюбот Lullabot"
+  },
+  {
+   "d": 6,
+   "tag": "H1",
+   "cls": "bg-library-card-dossier__title mt-2 font-hs text-4xl text-[#23314a] sm:text-5xl",
+   "x": 688,
+   "y": 221,
+   "w": 652,
+   "h": 55,
+   "txt": "Баюбот"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "flex flex-wrap gap-2",
+   "x": 688,
+   "y": 328,
+   "w": 652,
+   "h": 49,
+   "txt": "Таверна 1 Механизм В конце хода Магнетизм"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "bg-library-card-description rounded-md border border-[#d6e1f1] bg-[#ffffff] p-4 ",
+   "x": 688,
+   "y": 397,
+   "w": 652,
+   "h": 199,
+   "txt": "Описание карты Магнетизм. В конце вашего хода получает +1 к здоровью. Механики: "
+  },
+  {
+   "d": 6,
+   "tag": "P",
+   "cls": "whitespace-pre-line",
+   "x": 704,
+   "y": 450,
+   "w": 619,
+   "h": 130,
+   "txt": "Магнетизм. В конце вашего хода получает +1 к здоровью. Механики: END_OF_TURN_TRI"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid gap-3 sm:grid-cols-2 xl:grid-cols-4",
+   "x": 688,
+   "y": 617,
+   "w": 652,
+   "h": 105,
+   "txt": "IMPACT -0,38 СРЕДНЕЕ МЕСТО 4,39 ПОПУЛЯРНОСТЬ 1,5% СТРАТЕГИИ 0 где карта встречае"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "bg-library-metric-card min-w-0 rounded-md border border-[#cbd9ed] bg-[#f8fbff] p",
+   "x": 688,
+   "y": 617,
+   "w": 154,
+   "h": 105,
+   "txt": "IMPACT -0,38"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "bg-library-metric-card min-w-0 rounded-md border border-[#cbd9ed] bg-[#f8fbff] p",
+   "x": 854,
+   "y": 617,
+   "w": 154,
+   "h": 105,
+   "txt": "СРЕДНЕЕ МЕСТО 4,39"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "bg-library-metric-card min-w-0 rounded-md border border-[#cbd9ed] bg-[#f8fbff] p",
+   "x": 1020,
+   "y": 617,
+   "w": 154,
+   "h": 105,
+   "txt": "ПОПУЛЯРНОСТЬ 1,5%"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "bg-library-metric-card min-w-0 rounded-md border border-[#cbd9ed] bg-[#f8fbff] p",
+   "x": 1186,
+   "y": 617,
+   "w": 154,
+   "h": 105,
+   "txt": "СТРАТЕГИИ 0 где карта встречается"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "rounded-lg border border-[#cbd9ed] bg-[#f8fbff] p-4 shadow-sm sm:p-5",
+   "x": 306,
+   "y": 840,
+   "w": 1071,
+   "h": 938,
+   "txt": "Раунды и динамика Влияние по раундам Насколько наличие существа меняет среднее м"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "grid gap-4 lg:grid-cols-2",
+   "x": 333,
+   "y": 915,
+   "w": 1017,
+   "h": 597,
+   "txt": "Влияние по раундам Насколько наличие существа меняет среднее место Ход: 16 0,29 "
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "rounded-md border border-[#cbd9ed] bg-[#f8fbff] p-4",
+   "x": 333,
+   "y": 915,
+   "w": 501,
+   "h": 290,
+   "txt": "Влияние по раундам Насколько наличие существа меняет среднее место Ход: 16 0,29 "
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "relative overflow-hidden rounded-md border border-[#d3deef] bg-[#fbfdff]",
+   "x": 349,
+   "y": 995,
+   "w": 468,
+   "h": 193,
+   "txt": "Ход: 16 0,29 1 16 0,29"
+  },
+  {
+   "d": 6,
+   "tag": "svg",
+   "cls": "[object SVGAnimatedString]",
+   "x": 350,
+   "y": 996,
+   "w": 466,
+   "h": 192,
+   "txt": "1160,29"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "rounded-md border border-[#cbd9ed] bg-[#f8fbff] p-4",
+   "x": 850,
+   "y": 915,
+   "w": 501,
+   "h": 290,
+   "txt": "Доля побед в боях Combat winrate по раундам Ход: 16 50,0% 1 16 50,0%"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "relative overflow-hidden rounded-md border border-[#d3deef] bg-[#fbfdff]",
+   "x": 866,
+   "y": 995,
+   "w": 468,
+   "h": 193,
+   "txt": "Ход: 16 50,0% 1 16 50,0%"
+  },
+  {
+   "d": 6,
+   "tag": "svg",
+   "cls": "[object SVGAnimatedString]",
+   "x": 867,
+   "y": 996,
+   "w": 466,
+   "h": 192,
+   "txt": "11650,0%"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "rounded-md border border-[#cbd9ed] bg-[#f8fbff] p-4",
+   "x": 333,
+   "y": 1221,
+   "w": 501,
+   "h": 290,
+   "txt": "Среднее место Меньше значение лучше Ход: 16 1,30 1 16 1,30"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "relative overflow-hidden rounded-md border border-[#d3deef] bg-[#fbfdff]",
+   "x": 349,
+   "y": 1302,
+   "w": 468,
+   "h": 193,
+   "txt": "Ход: 16 1,30 1 16 1,30"
+  },
+  {
+   "d": 6,
+   "tag": "svg",
+   "cls": "[object SVGAnimatedString]",
+   "x": 350,
+   "y": 1302,
+   "w": 466,
+   "h": 192,
+   "txt": "1161,30"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "rounded-md border border-[#cbd9ed] bg-[#f8fbff] p-4",
+   "x": 850,
+   "y": 1221,
+   "w": 501,
+   "h": 290,
+   "txt": "Размер выборки Сколько игр включено в раундовую точку Ход: 16 126,00 1 16 126,00"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "relative overflow-hidden rounded-md border border-[#d3deef] bg-[#fbfdff]",
+   "x": 866,
+   "y": 1302,
+   "w": 468,
+   "h": 193,
+   "txt": "Ход: 16 126,00 1 16 126,00"
+  },
+  {
+   "d": 6,
+   "tag": "svg",
+   "cls": "[object SVGAnimatedString]",
+   "x": 867,
+   "y": 1302,
+   "w": 466,
+   "h": 192,
+   "txt": "116126,00"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "mt-5 overflow-hidden rounded-md border border-[#cbd9ed]",
+   "x": 333,
+   "y": 1531,
+   "w": 1017,
+   "h": 219,
+   "txt": "Раунд Impact Combat WR Среднее место Игры с картой W/L 1 -0,36 38,9% 4,65 2 549 "
+  },
+  {
+   "d": 4,
+   "tag": "TABLE",
+   "cls": "w-full min-w-[760px] text-sm",
+   "x": 333,
+   "y": 1532,
+   "w": 1016,
+   "h": 218,
+   "txt": "Раунд Impact Combat WR Среднее место Игры с картой W/L 1 -0,36 38,9% 4,65 2 549 "
+  },
+  {
+   "d": 5,
+   "tag": "TBODY",
+   "cls": "divide-y divide-[#d6e1f1] bg-[#ffffff]",
+   "x": 333,
+   "y": 1568,
+   "w": 1016,
+   "h": 182,
+   "txt": "1 -0,36 38,9% 4,65 2 549 424 / 666 2 -0,24 70,4% 4,54 587 1 446 / 608 3 -0,35 54"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "rounded-lg border border-[#cbd9ed] bg-[#f8fbff] p-4 shadow-sm sm:p-5",
+   "x": 306,
+   "y": 1802,
+   "w": 1071,
+   "h": 175,
+   "txt": "Используется в стратегиях В текущих мета-сборках эта карта не найдена."
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "rounded-md border border-[#cbd9ed] bg-[#ffffff] p-6 text-center text-[#657893]",
+   "x": 333,
+   "y": 1877,
+   "w": 1017,
+   "h": 73,
+   "txt": "В текущих мета-сборках эта карта не найдена."
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "rounded-lg border border-[#cbd9ed] bg-[#f8fbff] p-4 shadow-sm sm:p-5",
+   "x": 306,
+   "y": 2001,
+   "w": 1071,
+   "h": 326,
+   "txt": "Похожие карты Вспомогательный дрон Автосборщик Гламбот Дрон-дубликатор Зачарован"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6",
+   "x": 333,
+   "y": 2075,
+   "w": 1017,
+   "h": 224,
+   "txt": "Вспомогательный дрон Автосборщик Гламбот Дрон-дубликатор Зачарованный часовой Ис"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "rounded-md p-2 text-center transition-transform hover:-translate-y-1",
+   "x": 333,
+   "y": 2075,
+   "w": 160,
+   "h": 224,
+   "txt": "Вспомогательный дрон"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "rounded-md p-2 text-center transition-transform hover:-translate-y-1",
+   "x": 504,
+   "y": 2075,
+   "w": 160,
+   "h": 224,
+   "txt": "Автосборщик"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "rounded-md p-2 text-center transition-transform hover:-translate-y-1",
+   "x": 676,
+   "y": 2075,
+   "w": 160,
+   "h": 224,
+   "txt": "Гламбот"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "rounded-md p-2 text-center transition-transform hover:-translate-y-1",
+   "x": 848,
+   "y": 2075,
+   "w": 160,
+   "h": 224,
+   "txt": "Дрон-дубликатор"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "rounded-md p-2 text-center transition-transform hover:-translate-y-1",
+   "x": 1019,
+   "y": 2075,
+   "w": 160,
+   "h": 224,
+   "txt": "Зачарованный часовой"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "rounded-md p-2 text-center transition-transform hover:-translate-y-1",
+   "x": 1191,
+   "y": 2075,
+   "w": 160,
+   "h": 224,
+   "txt": "Искрохват"
+  }
+ ]
+}

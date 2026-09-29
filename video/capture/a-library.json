@@ -1,0 +1,1465 @@
+{
+ "total": 9672,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 272,
+   "y": 65,
+   "w": 1138,
+   "h": 9252,
+   "txt": "BATTLEGROUNDS Библиотека Полей Сражений Все доступные сейчас существа с фильтрам"
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "bg-library-page space-y-6 text-[#26374f]",
+   "x": 306,
+   "y": 99,
+   "w": 1071,
+   "h": 9185,
+   "txt": "BATTLEGROUNDS Библиотека Полей Сражений Все доступные сейчас существа с фильтрам"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "rounded-lg border border-[#cbd9ed] bg-[#f8fbff] p-4 shadow-[0_16px_38px_rgba(68,",
+   "x": 306,
+   "y": 99,
+   "w": 1071,
+   "h": 159,
+   "txt": "BATTLEGROUNDS Библиотека Полей Сражений Все доступные сейчас существа с фильтрам"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between",
+   "x": 331,
+   "y": 124,
+   "w": 1021,
+   "h": 92,
+   "txt": "BATTLEGROUNDS Библиотека Полей Сражений Все доступные сейчас существа с фильтрам"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 331,
+   "y": 124,
+   "w": 618,
+   "h": 92,
+   "txt": "BATTLEGROUNDS Библиотека Полей Сражений Все доступные сейчас существа с фильтрам"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "rounded-md border border-[#d6e1f1] bg-white px-4 py-3 text-sm text-[#5e708a]",
+   "x": 1111,
+   "y": 170,
+   "w": 241,
+   "h": 46,
+   "txt": "Актуальный пул·Существа"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "bg-library-directory rounded-lg border border-[#cbd9ed] bg-[#f3f7fe] p-4 shadow-",
+   "x": 306,
+   "y": 282,
+   "w": 1071,
+   "h": 319,
+   "txt": "РАЗДЕЛЫ БИБЛИОТЕКИ Существа · Актуальный пул 274 найдено · 302 загружено СОСТОЯН"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "bg-library-directory-head mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:j",
+   "x": 318,
+   "y": 294,
+   "w": 1047,
+   "h": 96,
+   "txt": "РАЗДЕЛЫ БИБЛИОТЕКИ Существа · Актуальный пул 274 найдено · 302 загружено"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 344,
+   "y": 315,
+   "w": 341,
+   "h": 52,
+   "txt": "РАЗДЕЛЫ БИБЛИОТЕКИ Существа · Актуальный пул"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "bg-library-directory-grid grid gap-3 lg:grid-cols-[minmax(260px,0.75fr)_1fr]",
+   "x": 318,
+   "y": 390,
+   "w": 1047,
+   "h": 198,
+   "txt": "СОСТОЯНИЕ ПУЛА Актуальный пул Архив ТИП ДАННЫХ Существа Заклинания Аномалии Темн"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "bg-library-nav-group rounded-md border border-[#d6e1f1] bg-white p-3",
+   "x": 337,
+   "y": 409,
+   "w": 432,
+   "h": 160,
+   "txt": "СОСТОЯНИЕ ПУЛА Актуальный пул Архив"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "flex flex-wrap gap-2",
+   "x": 349,
+   "y": 445,
+   "w": 408,
+   "h": 44,
+   "txt": "Актуальный пул Архив"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "inline-flex min-h-[44px] items-center rounded-md border px-4 py-2 font-hs text-s",
+   "x": 349,
+   "y": 445,
+   "w": 153,
+   "h": 44,
+   "txt": "Актуальный пул"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "bg-library-nav-group rounded-md border border-[#d6e1f1] bg-white p-3",
+   "x": 769,
+   "y": 409,
+   "w": 576,
+   "h": 160,
+   "txt": "ТИП ДАННЫХ Существа Заклинания Аномалии Темные дары Квесты Награды Призы Аксессу"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "flex max-h-none flex-wrap gap-2 overflow-auto pr-1 sm:max-h-28",
+   "x": 789,
+   "y": 445,
+   "w": 545,
+   "h": 112,
+   "txt": "Существа Заклинания Аномалии Темные дары Квесты Награды Призы Аксессуары Хронома"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "bg-library-filter-board rounded-lg border border-[#cbd9ed] bg-[#f3f7fe] p-4 shad",
+   "x": 306,
+   "y": 624,
+   "w": 1071,
+   "h": 744,
+   "txt": "Фильтры библиотеки Формат Показывать карты Duo Добавляет карты Duo к списку. Уро"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "grid gap-3",
+   "x": 336,
+   "y": 655,
+   "w": 1010,
+   "h": 62,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "LABEL",
+   "cls": "bg-library-search relative block",
+   "x": 336,
+   "y": 655,
+   "w": 1010,
+   "h": 62,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "INPUT",
+   "cls": "h-12 w-full rounded-md border border-[#c5d4e9] bg-[#ffffff] pl-12 pr-4 text-base",
+   "x": 343,
+   "y": 662,
+   "w": 996,
+   "h": 48,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "mt-4 space-y-4",
+   "x": 336,
+   "y": 729,
+   "w": 1010,
+   "h": 609,
+   "txt": "Фильтры библиотеки Формат Показывать карты Duo Добавляет карты Duo к списку. Уро"
+  },
+  {
+   "d": 4,
+   "tag": "DETAILS",
+   "cls": "bg-library-filter-group rounded-md border border-[#cbd9ed] bg-[#ffffff] p-3",
+   "x": 336,
+   "y": 785,
+   "w": 1010,
+   "h": 113,
+   "txt": "Формат Показывать карты Duo Добавляет карты Duo к списку."
+  },
+  {
+   "d": 5,
+   "tag": "SUMMARY",
+   "cls": "flex cursor-pointer list-none items-center justify-between font-hs text-sm text-",
+   "x": 337,
+   "y": 786,
+   "w": 1008,
+   "h": 44,
+   "txt": "Формат"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mt-3 flex flex-wrap items-center gap-3",
+   "x": 337,
+   "y": 830,
+   "w": 1008,
+   "h": 67,
+   "txt": "Показывать карты Duo Добавляет карты Duo к списку."
+  },
+  {
+   "d": 4,
+   "tag": "DETAILS",
+   "cls": "bg-library-filter-group rounded-md border border-[#cbd9ed] bg-[#ffffff] p-3",
+   "x": 336,
+   "y": 914,
+   "w": 1010,
+   "h": 173,
+   "txt": "Уровень таверны Все уровни Таверна 1 Таверна 2 Таверна 3 Таверна 4 Таверна 5 Тав"
+  },
+  {
+   "d": 5,
+   "tag": "SUMMARY",
+   "cls": "flex cursor-pointer list-none items-center justify-between font-hs text-sm text-",
+   "x": 337,
+   "y": 915,
+   "w": 1008,
+   "h": 44,
+   "txt": "Уровень таверны"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mt-3 flex flex-wrap gap-2",
+   "x": 337,
+   "y": 959,
+   "w": 1008,
+   "h": 127,
+   "txt": "Все уровни Таверна 1 Таверна 2 Таверна 3 Таверна 4 Таверна 5 Таверна 6 Таверна 7"
+  },
+  {
+   "d": 4,
+   "tag": "DETAILS",
+   "cls": "bg-library-filter-group rounded-md border border-[#cbd9ed] bg-[#ffffff] p-3",
+   "x": 336,
+   "y": 1103,
+   "w": 1010,
+   "h": 173,
+   "txt": "Тип существа Все типы Аберрация Нежить Дракон Механизм Мурлок Демон Свинобраз На"
+  },
+  {
+   "d": 5,
+   "tag": "SUMMARY",
+   "cls": "flex cursor-pointer list-none items-center justify-between font-hs text-sm text-",
+   "x": 337,
+   "y": 1104,
+   "w": 1008,
+   "h": 44,
+   "txt": "Тип существа"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mt-3 flex flex-wrap gap-2",
+   "x": 337,
+   "y": 1148,
+   "w": 1008,
+   "h": 127,
+   "txt": "Все типы Аберрация Нежить Дракон Механизм Мурлок Демон Свинобраз Нага Пират Звер"
+  },
+  {
+   "d": 4,
+   "tag": "DETAILS",
+   "cls": "bg-library-filter-group rounded-md border border-[#cbd9ed] bg-[#ffffff] p-3",
+   "x": 336,
+   "y": 1292,
+   "w": 1010,
+   "h": 46,
+   "txt": "Механики"
+  },
+  {
+   "d": 5,
+   "tag": "SUMMARY",
+   "cls": "flex cursor-pointer list-none items-center justify-between font-hs text-sm text-",
+   "x": 337,
+   "y": 1293,
+   "w": 1008,
+   "h": 44,
+   "txt": "Механики"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mt-3 flex max-h-56 flex-wrap gap-2 overflow-auto pr-1",
+   "x": 337,
+   "y": 1337,
+   "w": 1008,
+   "h": 224,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "bg-library-filter-chip flex min-h-[44px] items-center gap-2 rounded-md border px",
+   "x": 790,
+   "y": 1350,
+   "w": 163,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "bg-library-filter-chip flex min-h-[44px] items-center gap-2 rounded-md border px",
+   "x": 1086,
+   "y": 1350,
+   "w": 216,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "bg-library-filter-chip flex min-h-[44px] items-center gap-2 rounded-md border px",
+   "x": 351,
+   "y": 1402,
+   "w": 151,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "bg-library-filter-chip flex min-h-[44px] items-center gap-2 rounded-md border px",
+   "x": 510,
+   "y": 1402,
+   "w": 179,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "bg-library-filter-chip flex min-h-[44px] items-center gap-2 rounded-md border px",
+   "x": 1123,
+   "y": 1402,
+   "w": 160,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "bg-library-filter-chip flex min-h-[44px] items-center gap-2 rounded-md border px",
+   "x": 627,
+   "y": 1454,
+   "w": 171,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "bg-library-filter-chip flex min-h-[44px] items-center gap-2 rounded-md border px",
+   "x": 1026,
+   "y": 1454,
+   "w": 237,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 6,
+   "tag": "BUTTON",
+   "cls": "bg-library-filter-chip flex min-h-[44px] items-center gap-2 rounded-md border px",
+   "x": 351,
+   "y": 1506,
+   "w": 201,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "overflow-visible rounded-lg border border-[#cbd9ed] bg-[#f8fbff] p-4 shadow-sm s",
+   "x": 306,
+   "y": 1392,
+   "w": 1071,
+   "h": 7891,
+   "txt": "Существа · Актуальный пул Таверна 1 24 Баюбот Lullabot Открыть страницу карты Ба"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "space-y-8",
+   "x": 327,
+   "y": 1461,
+   "w": 1029,
+   "h": 7702,
+   "txt": "Таверна 1 24 Баюбот Lullabot Открыть страницу карты Баюбот Безобидная черепушка "
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 327,
+   "y": 1461,
+   "w": 1029,
+   "h": 1911,
+   "txt": "Таверна 1 24 Баюбот Lullabot Открыть страницу карты Баюбот Безобидная черепушка "
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid overflow-visible grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 ",
+   "x": 327,
+   "y": 1517,
+   "w": 1029,
+   "h": 1855,
+   "txt": "Баюбот Lullabot Открыть страницу карты Баюбот Безобидная черепушка Harmless Bone"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 1517,
+   "w": 193,
+   "h": 349,
+   "txt": "Баюбот Lullabot Открыть страницу карты Баюбот"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 1517,
+   "w": 193,
+   "h": 349,
+   "txt": "Безобидная черепушка Harmless Bonehead Открыть страницу карты Безобидная черепуш"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 1517,
+   "w": 193,
+   "h": 349,
+   "txt": "Бликостраж Glim Guardian Открыть страницу карты Бликостраж"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 1517,
+   "w": 193,
+   "h": 349,
+   "txt": "Вертлявый разведчик Flighty Scout Открыть страницу карты Вертлявый разведчик"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 1517,
+   "w": 193,
+   "h": 349,
+   "txt": "Восставший всадник Risen Rider Открыть страницу карты Восставший всадник"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 1898,
+   "w": 193,
+   "h": 349,
+   "txt": "Выживший красный дракон Scarlet Survivor Открыть страницу карты Выживший красный"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 1898,
+   "w": 193,
+   "h": 349,
+   "txt": "Гнолл из стаи Гнилошкуров Rot Hide Gnoll Открыть страницу карты Гнолл из стаи Гн"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 1898,
+   "w": 193,
+   "h": 349,
+   "txt": "Жужжащий вредитель Buzzing Vermin Открыть страницу карты Жужжащий вредитель"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 1898,
+   "w": 193,
+   "h": 349,
+   "txt": "Заклинатель гнева Wrath Weaver Открыть страницу карты Заклинатель гнева"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 1898,
+   "w": 193,
+   "h": 349,
+   "txt": "Зловещая пророчица Ominous Seer Открыть страницу карты Зловещая пророчица"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 2279,
+   "w": 193,
+   "h": 331,
+   "txt": "Зоатроид Zoatroid Открыть страницу карты Зоатроид"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 2279,
+   "w": 193,
+   "h": 331,
+   "txt": "Золотой призер Aureate Laureate Открыть страницу карты Золотой призер"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 2279,
+   "w": 193,
+   "h": 331,
+   "txt": "Иглошкур-геомант Razorfen Geomancer Открыть страницу карты Иглошкур-геомант"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 2279,
+   "w": 193,
+   "h": 331,
+   "txt": "Клыкастый походник Tusked Camper Открыть страницу карты Клыкастый походник"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 2279,
+   "w": 193,
+   "h": 331,
+   "txt": "Мини-мирмидон Mini-Myrmidon Открыть страницу карты Мини-мирмидон"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 2643,
+   "w": 193,
+   "h": 349,
+   "txt": "Музыкант Южных Морей Southsea Busker Открыть страницу карты Музыкант Южных Морей"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 2643,
+   "w": 193,
+   "h": 349,
+   "txt": "Подозрительный надзиратель Suspicious Prisonguard Открыть страницу карты Подозри"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 2643,
+   "w": 193,
+   "h": 349,
+   "txt": "Порхающий нетопырь Flittering Bat Открыть страницу карты Порхающий нетопырь"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 2643,
+   "w": 193,
+   "h": 349,
+   "txt": "Протягиватель кабелей Cord Puller Открыть страницу карты Протягиватель кабелей"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 2643,
+   "w": 193,
+   "h": 349,
+   "txt": "Раскаленный валун Molten Rock Открыть страницу карты Раскаленный валун"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 3024,
+   "w": 193,
+   "h": 349,
+   "txt": "Речной скакун River Skipper Открыть страницу карты Речной скакун"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 3024,
+   "w": 193,
+   "h": 349,
+   "txt": "Счастье Joyous Открыть страницу карты Счастье"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 3024,
+   "w": 193,
+   "h": 349,
+   "txt": "Трескучий циклон Crackling Cyclone Открыть страницу карты Трескучий циклон"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 3024,
+   "w": 193,
+   "h": 349,
+   "txt": "Убегающий преступник Fleeing Fugitive Открыть страницу карты Убегающий преступни"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 327,
+   "y": 3405,
+   "w": 1029,
+   "h": 3054,
+   "txt": "Таверна 2 37 Алый Череп Scarlet Skull Открыть страницу карты Алый Череп Беглянка"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid overflow-visible grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 ",
+   "x": 327,
+   "y": 3461,
+   "w": 1029,
+   "h": 2998,
+   "txt": "Алый Череп Scarlet Skull Открыть страницу карты Алый Череп Беглянка из Трюмных В"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 3461,
+   "w": 193,
+   "h": 349,
+   "txt": "Алый Череп Scarlet Skull Открыть страницу карты Алый Череп"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 3461,
+   "w": 193,
+   "h": 349,
+   "txt": "Беглянка из Трюмных Вод Bilgewater Breakout Открыть страницу карты Беглянка из Т"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 3461,
+   "w": 193,
+   "h": 349,
+   "txt": "Бесстрашный ботаник Intrepid Botanist Открыть страницу карты Бесстрашный ботаник"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 3461,
+   "w": 193,
+   "h": 349,
+   "txt": "Вечный рыцарь Eternal Knight Открыть страницу карты Вечный рыцарь"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 3461,
+   "w": 193,
+   "h": 349,
+   "txt": "Вокалибри Humming Bird Открыть страницу карты Вокалибри"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 3842,
+   "w": 193,
+   "h": 331,
+   "txt": "Голован Tad Открыть страницу карты Голован"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 3842,
+   "w": 193,
+   "h": 331,
+   "txt": "Голодный зимнеплав Very Hungry Winterfinner Открыть страницу карты Голодный зимн"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 3842,
+   "w": 193,
+   "h": 331,
+   "txt": "Громадный клыкач Prodigious Tusker Открыть страницу карты Громадный клыкач"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 3842,
+   "w": 193,
+   "h": 331,
+   "txt": "Дирижер душ Soul Rewinder Открыть страницу карты Дирижер душ"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 3842,
+   "w": 193,
+   "h": 331,
+   "txt": "Затаившаяся лев-рыба Lurking Lionfish Открыть страницу карты Затаившаяся лев-рыб"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 4205,
+   "w": 193,
+   "h": 349,
+   "txt": "Коллекционер раковин Shell Collector Открыть страницу карты Коллекционер раковин"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 4205,
+   "w": 193,
+   "h": 349,
+   "txt": "Кратерный старатель Crater Miner Открыть страницу карты Кратерный старатель"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 4205,
+   "w": 193,
+   "h": 349,
+   "txt": "Лавовый скрытень Lava Lurker Открыть страницу карты Лавовый скрытень"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 4205,
+   "w": 193,
+   "h": 349,
+   "txt": "Лентяй поневоле Unwilling Slacker Открыть страницу карты Лентяй поневоле"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 4205,
+   "w": 193,
+   "h": 349,
+   "txt": "Лесной бродяга Forest Rover Открыть страницу карты Лесной бродяга"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 4586,
+   "w": 193,
+   "h": 349,
+   "txt": "Летчик-эксперт Expert Aviator Открыть страницу карты Летчик-эксперт"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 4586,
+   "w": 193,
+   "h": 349,
+   "txt": "Металлический охотник Metallic Hunter Открыть страницу карты Металлический охотн"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 4586,
+   "w": 193,
+   "h": 349,
+   "txt": "Механизм предков Ancestral Automaton Открыть страницу карты Механизм предков"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 4586,
+   "w": 193,
+   "h": 349,
+   "txt": "Механогном-переводчик Mechagnome Interpreter Открыть страницу карты Механогном-п"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 4586,
+   "w": 193,
+   "h": 349,
+   "txt": "Мозговая жижа Mind Muck Открыть страницу карты Мозговая жижа"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 4967,
+   "w": 193,
+   "h": 349,
+   "txt": "Мозгодав Brain Rotter Открыть страницу карты Мозгодав"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 4967,
+   "w": 193,
+   "h": 349,
+   "txt": "Неруб-смертороевик Nerubian Deathswarmer Открыть страницу карты Неруб-смертороев"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 4967,
+   "w": 193,
+   "h": 349,
+   "txt": "Огнеметатель Fire Baller Открыть страницу карты Огнеметатель"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 4967,
+   "w": 193,
+   "h": 349,
+   "txt": "Порождение Подгнилья Underrot Spawn Открыть страницу карты Порождение Подгнилья"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 4967,
+   "w": 193,
+   "h": 349,
+   "txt": "Продажементаль Sellemental Открыть страницу карты Продажементаль"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 5348,
+   "w": 193,
+   "h": 349,
+   "txt": "Сильвар-серфер Surfing Sylvar Открыть страницу карты Сильвар-серфер"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 5348,
+   "w": 193,
+   "h": 349,
+   "txt": "Слизнюченыш-гладиатор Oozeling Gladiator Открыть страницу карты Слизнюченыш-глад"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 5348,
+   "w": 193,
+   "h": 349,
+   "txt": "Смышленый изгой Clever Castaway Открыть страницу карты Смышленый изгой"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 5348,
+   "w": 193,
+   "h": 349,
+   "txt": "Тавматург Thaumaturgist Открыть страницу карты Тавматург"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 5348,
+   "w": 193,
+   "h": 349,
+   "txt": "Таресгоса Tarecgosa Открыть страницу карты Таресгоса"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 5729,
+   "w": 193,
+   "h": 349,
+   "txt": "Творец обманок Decoy Conjurer Открыть страницу карты Творец обманок"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 5729,
+   "w": 193,
+   "h": 349,
+   "txt": "Терпеливый разведчик Patient Scout Открыть страницу карты Терпеливый разведчик"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 5729,
+   "w": 193,
+   "h": 349,
+   "txt": "Турбохряк Roadboar Открыть страницу карты Турбохряк"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 5729,
+   "w": 193,
+   "h": 349,
+   "txt": "Тысячный дракончик Thousandth Paper Drake Открыть страницу карты Тысячный дракон"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 5729,
+   "w": 193,
+   "h": 349,
+   "txt": "Услужливый лаборант Laboratory Assistant Открыть страницу карты Услужливый лабор"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 6110,
+   "w": 193,
+   "h": 349,
+   "txt": "Хладометатель Snow Baller Открыть страницу карты Хладометатель"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 6110,
+   "w": 193,
+   "h": 349,
+   "txt": "Электрический синтезатор Electric Synthesizer Открыть страницу карты Электрическ"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 327,
+   "y": 6491,
+   "w": 1029,
+   "h": 2673,
+   "txt": "Таверна 3 35 Азшарский саблист Azsharan Cutlassier Открыть страницу карты Азшарс"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid overflow-visible grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4 ",
+   "x": 327,
+   "y": 6547,
+   "w": 1029,
+   "h": 2617,
+   "txt": "Азшарский саблист Azsharan Cutlassier Открыть страницу карты Азшарский саблист Б"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 6547,
+   "w": 193,
+   "h": 331,
+   "txt": "Азшарский саблист Azsharan Cutlassier Открыть страницу карты Азшарский саблист"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 6547,
+   "w": 193,
+   "h": 331,
+   "txt": "Безрукая Отрекшаяся Handless Forsaken Открыть страницу карты Безрукая Отрекшаяся"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 6547,
+   "w": 193,
+   "h": 331,
+   "txt": "Бесстрашный гурман Fearless Foodie Открыть страницу карты Бесстрашный гурман"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 6547,
+   "w": 193,
+   "h": 331,
+   "txt": "Блокобот Deflect-o-Bot Открыть страницу карты Блокобот"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 6547,
+   "w": 193,
+   "h": 331,
+   "txt": "Боец в окопе Trench Fighter Открыть страницу карты Боец в окопе"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 6910,
+   "w": 193,
+   "h": 349,
+   "txt": "Бот-спасатель Rescue Bot Открыть страницу карты Бот-спасатель"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 6910,
+   "w": 193,
+   "h": 349,
+   "txt": "Бродячая жертва Drifting Sacrifice Открыть страницу карты Бродячая жертва"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 6910,
+   "w": 193,
+   "h": 349,
+   "txt": "Бродячий сокрушитель воли Wandering Willbreaker Открыть страницу карты Бродячий "
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 6910,
+   "w": 193,
+   "h": 349,
+   "txt": "Буйный элементаль огня Wildfire Elemental Открыть страницу карты Буйный элемента"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 6910,
+   "w": 193,
+   "h": 349,
+   "txt": "Вкусный омар Tasty Lobster Открыть страницу карты Вкусный омар"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 7291,
+   "w": 193,
+   "h": 349,
+   "txt": "Волчонок Wolf Pup Открыть страницу карты Волчонок"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 7291,
+   "w": 193,
+   "h": 349,
+   "txt": "Глубоководный удильщик Deep-Sea Angler Открыть страницу карты Глубоководный удил"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 7291,
+   "w": 193,
+   "h": 349,
+   "txt": "Дух волн Waveling Открыть страницу карты Дух волн"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 7291,
+   "w": 193,
+   "h": 349,
+   "txt": "Жестокий рассекатель разума Vicious Mindslasher Открыть страницу карты Жестокий "
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 7291,
+   "w": 193,
+   "h": 349,
+   "txt": "Заключенная мятежница Locked-up Mutineer Открыть страницу карты Заключенная мяте"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 7672,
+   "w": 193,
+   "h": 349,
+   "txt": "Зловонный разъедатель Fetid Corroder Открыть страницу карты Зловонный разъедател"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 7672,
+   "w": 193,
+   "h": 349,
+   "txt": "Коварная шпионка Sly Infiltrator Открыть страницу карты Коварная шпионка"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 7672,
+   "w": 193,
+   "h": 349,
+   "txt": "Малчезар, принц танца Malchezaar, Prince of Dance Открыть страницу карты Малчеза"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 7672,
+   "w": 193,
+   "h": 349,
+   "txt": "Мама Мрргглтон Mama Mrrglton Открыть страницу карты Мама Мрргглтон"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 7672,
+   "w": 193,
+   "h": 349,
+   "txt": "Метеоритный крушитель Meteorite Crasher Открыть страницу карты Метеоритный круши"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 8053,
+   "w": 193,
+   "h": 349,
+   "txt": "Мумификатор Mummifier Открыть страницу карты Мумификатор"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 8053,
+   "w": 193,
+   "h": 349,
+   "txt": "Наемный транспорт Hired Mount Открыть страницу карты Наемный транспорт"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 8053,
+   "w": 193,
+   "h": 349,
+   "txt": "Папа Мрргглтон Papa Mrrglton Открыть страницу карты Папа Мрргглтон"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 8053,
+   "w": 193,
+   "h": 349,
+   "txt": "Переодетый грабитель могил Disguised Graverobber Открыть страницу карты Переодет"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 8053,
+   "w": 193,
+   "h": 349,
+   "txt": "Песчаный вихрень Sand Swirler Открыть страницу карты Песчаный вихрень"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 8434,
+   "w": 193,
+   "h": 349,
+   "txt": "Планировщик побега Breakout Mastermind Открыть страницу карты Планировщик побега"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 8434,
+   "w": 193,
+   "h": 349,
+   "txt": "Пойманный колотун Trapped Clapper Открыть страницу карты Пойманный колотун"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 8434,
+   "w": 193,
+   "h": 349,
+   "txt": "Попечительница трупов Cadaver Caretaker Открыть страницу карты Попечительница тр"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 8434,
+   "w": 193,
+   "h": 349,
+   "txt": "Посланник глубин Abyssal Envoy Открыть страницу карты Посланник глубин"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 8434,
+   "w": 193,
+   "h": 349,
+   "txt": "Пылекостная опустошительница Dustbone Devastator Открыть страницу карты Пылекост"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 327,
+   "y": 8815,
+   "w": 193,
+   "h": 349,
+   "txt": "Раздражодуль Annoy-o-Module Открыть страницу карты Раздражодуль"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 536,
+   "y": 8815,
+   "w": 193,
+   "h": 349,
+   "txt": "Ревностный призыватель огня Devout Hellcaller Открыть страницу карты Ревностный "
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 745,
+   "y": 8815,
+   "w": 193,
+   "h": 349,
+   "txt": "Рука-протез Prosthetic Hand Открыть страницу карты Рука-протез"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 954,
+   "y": 8815,
+   "w": 193,
+   "h": 349,
+   "txt": "Рычащий вербовщик Roaring Recruiter Открыть страницу карты Рычащий вербовщик"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "group relative block overflow-visible rounded-md p-1 text-center transition-tran",
+   "x": 1163,
+   "y": 8815,
+   "w": 193,
+   "h": 349,
+   "txt": "Синий дракончик Blue Whelp Открыть страницу карты Синий дракончик"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "mt-8 text-center",
+   "x": 327,
+   "y": 9196,
+   "w": 1029,
+   "h": 50,
+   "txt": "Показать ещё"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "rounded-md border border-[#e4c675] bg-[#e4c675] px-6 py-3 font-hs text-[#101827]",
+   "x": 759,
+   "y": 9196,
+   "w": 164,
+   "h": 50,
+   "txt": "Показать ещё"
+  }
+ ]
+}

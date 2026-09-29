@@ -1,0 +1,3895 @@
+{
+ "total": 19466,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 258,
+   "y": 65,
+   "w": 1167,
+   "h": 19048,
+   "txt": "HSGuru: мета Hearthstone HSGuru — источник статистики: сравнивайте тир-лист коло"
+  },
+  {
+   "d": 1,
+   "tag": "SECTION",
+   "cls": "standard-meta",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 18960,
+   "txt": "HSGuru: мета Hearthstone HSGuru — источник статистики: сравнивайте тир-лист коло"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "traditional-mode-banner",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 320,
+   "txt": "HSGuru: мета Hearthstone HSGuru — источник статистики: сравнивайте тир-лист коло"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "traditional-mode-banner__copy",
+   "x": 326,
+   "y": 153,
+   "w": 650,
+   "h": 192,
+   "txt": "HSGuru: мета Hearthstone HSGuru — источник статистики: сравнивайте тир-лист коло"
+  },
+  {
+   "d": 4,
+   "tag": "H1",
+   "cls": "",
+   "x": 326,
+   "y": 153,
+   "w": 650,
+   "h": 121,
+   "txt": "HSGuru: мета Hearthstone"
+  },
+  {
+   "d": 4,
+   "tag": "P",
+   "cls": "",
+   "x": 326,
+   "y": 297,
+   "w": 590,
+   "h": 47,
+   "txt": "HSGuru — источник статистики: сравнивайте тир-лист колод, винрейты и популярност"
+  },
+  {
+   "d": 3,
+   "tag": "DL",
+   "cls": "traditional-mode-banner__summary",
+   "x": 1000,
+   "y": 289,
+   "w": 357,
+   "h": 75,
+   "txt": "АРХЕТИПОВ 111 ИГР В ВЫБОРКЕ 2 231 111"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 1000,
+   "y": 290,
+   "w": 178,
+   "h": 74,
+   "txt": "АРХЕТИПОВ 111"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 1178,
+   "y": 290,
+   "w": 178,
+   "h": 74,
+   "txt": "ИГР В ВЫБОРКЕ 2 231 111"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "standard-meta__controls",
+   "x": 282,
+   "y": 425,
+   "w": 1119,
+   "h": 311,
+   "txt": "Управление срезом Выберите формат, рейтинг и временной диапазон ФОРМАТ Стандарт "
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "standard-meta__panel-heading",
+   "x": 306,
+   "y": 447,
+   "w": 1070,
+   "h": 55,
+   "txt": "Управление срезом Выберите формат, рейтинг и временной диапазон"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 358,
+   "y": 447,
+   "w": 257,
+   "h": 42,
+   "txt": "Управление срезом Выберите формат, рейтинг и временной диапазон"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "standard-meta__format-control",
+   "x": 306,
+   "y": 519,
+   "w": 380,
+   "h": 105,
+   "txt": "ФОРМАТ Стандарт Текущая ротация Вольный Все дополнения"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta__segmented",
+   "x": 306,
+   "y": 560,
+   "w": 380,
+   "h": 64,
+   "txt": "Стандарт Текущая ротация Вольный Все дополнения"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 311,
+   "y": 564,
+   "w": 185,
+   "h": 55,
+   "txt": "Стандарт Текущая ротация"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 496,
+   "y": 564,
+   "w": 185,
+   "h": 55,
+   "txt": "Вольный Все дополнения"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "",
+   "x": 702,
+   "y": 519,
+   "w": 675,
+   "h": 105,
+   "txt": "РЕЙТИНГ АЛМАЗ Ранги: Алмаз Алмаз 1–4 Алмаз — Легенда ЛЕГЕНДА Ранги: Легенда Леге"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta__rank-groups",
+   "x": 702,
+   "y": 542,
+   "w": 675,
+   "h": 82,
+   "txt": "АЛМАЗ Ранги: Алмаз Алмаз 1–4 Алмаз — Легенда ЛЕГЕНДА Ранги: Легенда Легенда Топ-"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "standard-meta__rank-group",
+   "x": 702,
+   "y": 542,
+   "w": 300,
+   "h": 82,
+   "txt": "АЛМАЗ Ранги: Алмаз Алмаз 1–4 Алмаз — Легенда"
+  },
+  {
+   "d": 6,
+   "tag": "FIELDSET",
+   "cls": "standard-meta__rank-tabs",
+   "x": 702,
+   "y": 560,
+   "w": 300,
+   "h": 64,
+   "txt": "Ранги: Алмаз Алмаз 1–4 Алмаз — Легенда"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "standard-meta__rank-group",
+   "x": 1010,
+   "y": 542,
+   "w": 367,
+   "h": 82,
+   "txt": "ЛЕГЕНДА Ранги: Легенда Легенда Топ-5000 Топ-1000"
+  },
+  {
+   "d": 6,
+   "tag": "FIELDSET",
+   "cls": "standard-meta__rank-tabs",
+   "x": 1010,
+   "y": 560,
+   "w": 367,
+   "h": 64,
+   "txt": "Ранги: Легенда Легенда Топ-5000 Топ-1000"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "standard-meta__secondary-filters",
+   "x": 306,
+   "y": 640,
+   "w": 1070,
+   "h": 72,
+   "txt": "ПЕРИОД За весь патч 36.6.0 За всё дополнение — Побег из Аметистовой крепости За "
+  },
+  {
+   "d": 4,
+   "tag": "LABEL",
+   "cls": "standard-meta__select",
+   "x": 306,
+   "y": 640,
+   "w": 322,
+   "h": 72,
+   "txt": "ПЕРИОД За весь патч 36.6.0 За всё дополнение — Побег из Аметистовой крепости За "
+  },
+  {
+   "d": 5,
+   "tag": "SELECT",
+   "cls": "",
+   "x": 306,
+   "y": 663,
+   "w": 322,
+   "h": 48,
+   "txt": "За весь патч 36.6.0 За всё дополнение — Побег из Аметистовой крепости За прошедш"
+  },
+  {
+   "d": 4,
+   "tag": "LABEL",
+   "cls": "standard-meta__select",
+   "x": 640,
+   "y": 640,
+   "w": 322,
+   "h": 72,
+   "txt": "МИНИМУМ ИГР 100 250 500 1 000 2 500 5 000"
+  },
+  {
+   "d": 5,
+   "tag": "SELECT",
+   "cls": "",
+   "x": 640,
+   "y": 663,
+   "w": 322,
+   "h": 48,
+   "txt": "100 250 500 1 000 2 500 5 000"
+  },
+  {
+   "d": 4,
+   "tag": "LABEL",
+   "cls": "standard-meta__search",
+   "x": 974,
+   "y": 663,
+   "w": 402,
+   "h": 48,
+   "txt": "Поиск архетипа"
+  },
+  {
+   "d": 5,
+   "tag": "INPUT",
+   "cls": "",
+   "x": 1013,
+   "y": 665,
+   "w": 350,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "standard-meta-chart",
+   "x": 282,
+   "y": 749,
+   "w": 1119,
+   "h": 93,
+   "txt": "Карта меты Винрейт и популярность архетипов · Стандарт · Алмаз — Легенда 111 точ"
+  },
+  {
+   "d": 3,
+   "tag": "HEADER",
+   "cls": "standard-meta-chart__header",
+   "x": 289,
+   "y": 756,
+   "w": 1105,
+   "h": 79,
+   "txt": "Карта меты Винрейт и популярность архетипов · Стандарт · Алмаз — Легенда 111 точ"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-chart__heading",
+   "x": 303,
+   "y": 772,
+   "w": 417,
+   "h": 47,
+   "txt": "Карта меты Винрейт и популярность архетипов · Стандарт · Алмаз — Легенда"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 356,
+   "y": 772,
+   "w": 364,
+   "h": 47,
+   "txt": "Карта меты Винрейт и популярность архетипов · Стандарт · Алмаз — Легенда"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "standard-meta__results-toolbar",
+   "x": 282,
+   "y": 858,
+   "w": 1119,
+   "h": 75,
+   "txt": "111 архетипов в текущем срезе Карточки Таблица"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "standard-meta__view-switch",
+   "x": 1175,
+   "y": 873,
+   "w": 209,
+   "h": 46,
+   "txt": "Карточки Таблица"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "standard-meta__grid",
+   "x": 282,
+   "y": 950,
+   "w": 1119,
+   "h": 18099,
+   "txt": "1 DRAGON PIRATE WARRIOR Пират Воин 59,4% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 3,1% ИГРЫ 69 174 Х"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 950,
+   "w": 553,
+   "h": 227,
+   "txt": "1 DRAGON PIRATE WARRIOR Пират Воин 59,4% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 3,1% ИГРЫ 69 174 Х"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 978,
+   "w": 277,
+   "h": 41,
+   "txt": "DRAGON PIRATE WARRIOR Пират Воин"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 1041,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 3,1% ИГРЫ 69 174 ХОДЫ 7,5 ДЛИТЕЛЬНОСТЬ 6,4 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 950,
+   "w": 553,
+   "h": 227,
+   "txt": "2 DRAGON WARRIOR Дракон Воин 59,3% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 11% ИГРЫ 245 899 ХОДЫ 7,"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 978,
+   "w": 277,
+   "h": 41,
+   "txt": "DRAGON WARRIOR Дракон Воин"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 1041,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 11% ИГРЫ 245 899 ХОДЫ 7,4 ДЛИТЕЛЬНОСТЬ 6,6 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 1190,
+   "w": 553,
+   "h": 227,
+   "txt": "3 PIRATE WARRIOR Пират Воин 58,8% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 2% ИГРЫ 45 436 ХОДЫ 7,4 Д"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 1219,
+   "w": 277,
+   "h": 41,
+   "txt": "PIRATE WARRIOR Пират Воин"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 1282,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 2% ИГРЫ 45 436 ХОДЫ 7,4 ДЛИТЕЛЬНОСТЬ 6,1 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 1190,
+   "w": 553,
+   "h": 227,
+   "txt": "4 UNHOLY DK Анхоли Рыцарь Смерти 58,3% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 1,4% ИГРЫ 31 175 ХОД"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 1219,
+   "w": 277,
+   "h": 41,
+   "txt": "UNHOLY DK Анхоли Рыцарь Смерти"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 1282,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 1,4% ИГРЫ 31 175 ХОДЫ 7,7 ДЛИТЕЛЬНОСТЬ 7 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 1431,
+   "w": 553,
+   "h": 227,
+   "txt": "5 ATTACK DRUID Друид на атаке 57,4% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 14,4% ИГРЫ 322 482 ХОДЫ"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 1459,
+   "w": 277,
+   "h": 41,
+   "txt": "ATTACK DRUID Друид на атаке"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 1522,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 14,4% ИГРЫ 322 482 ХОДЫ 8,5 ДЛИТЕЛЬНОСТЬ 8,7 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 1431,
+   "w": 553,
+   "h": 227,
+   "txt": "6 ZEE SHAMAN Зи Шаман 56,9% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 1,7% ИГРЫ 37 463 ХОДЫ 8 ДЛИТЕЛЬ"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 1459,
+   "w": 277,
+   "h": 41,
+   "txt": "ZEE SHAMAN Зи Шаман"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 1522,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 1,7% ИГРЫ 37 463 ХОДЫ 8 ДЛИТЕЛЬНОСТЬ 7,6 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 1672,
+   "w": 553,
+   "h": 233,
+   "txt": "7 PURE PALADIN Чистый Паладин 56% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 1,2% ИГРЫ 26 108 ХОДЫ 8,4"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 1701,
+   "w": 277,
+   "h": 41,
+   "txt": "PURE PALADIN Чистый Паладин"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 1766,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 1,2% ИГРЫ 26 108 ХОДЫ 8,4 ДЛИТЕЛЬНОСТЬ 7,3 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 1672,
+   "w": 553,
+   "h": 233,
+   "txt": "8 DINO EGGLOCK Дино Кхелос Чернокнижник 55,9% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 0% ИГРЫ 331 Х"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 1692,
+   "w": 277,
+   "h": 65,
+   "txt": "DINO EGGLOCK Дино Кхелос Чернокнижник"
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 980,
+   "y": 1710,
+   "w": 277,
+   "h": 46,
+   "txt": "Дино Кхелос Чернокнижник"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 1769,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 0% ИГРЫ 331 ХОДЫ 8,2 ДЛИТЕЛЬНОСТЬ 7,2 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 1919,
+   "w": 553,
+   "h": 233,
+   "txt": "9 VOID SOUL DH Охотник на демонов Бездны 55,2% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 1,7% ИГРЫ 38"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 1938,
+   "w": 277,
+   "h": 65,
+   "txt": "VOID SOUL DH Охотник на демонов Бездны"
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 1957,
+   "w": 277,
+   "h": 46,
+   "txt": "Охотник на демонов Бездны"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 2016,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 1,7% ИГРЫ 38 407 ХОДЫ 8,3 ДЛИТЕЛЬНОСТЬ 7,6 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 1919,
+   "w": 553,
+   "h": 233,
+   "txt": "10 MUG SHAMAN Граб Шаман 55,1% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 2,1% ИГРЫ 46 024 ХОДЫ 8,6 ДЛ"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 1948,
+   "w": 277,
+   "h": 41,
+   "txt": "MUG SHAMAN Граб Шаман"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 2013,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 2,1% ИГРЫ 46 024 ХОДЫ 8,6 ДЛИТЕЛЬНОСТЬ 8,9 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 2165,
+   "w": 553,
+   "h": 227,
+   "txt": "11 HANDBUFF WARRIOR Хэндбафф Воин 54,4% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 0% ИГРЫ 125 ХОДЫ 7,"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 2194,
+   "w": 277,
+   "h": 41,
+   "txt": "HANDBUFF WARRIOR Хэндбафф Воин"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 2256,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 0% ИГРЫ 125 ХОДЫ 7,8 ДЛИТЕЛЬНОСТЬ 7,3 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 2165,
+   "w": 553,
+   "h": 227,
+   "txt": "12 EGG WARRIOR Кхелос Воин 54,1% ВИНРЕЙТ ПОПУЛЯРНОСТЬ 0,1% ИГРЫ 3 014 ХОДЫ 9,3 Д"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 2194,
+   "w": 277,
+   "h": 41,
+   "txt": "EGG WARRIOR Кхелос Воин"
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 2256,
+   "w": 513,
+   "h": 59,
+   "txt": "ПОПУЛЯРНОСТЬ 0,1% ИГРЫ 3 014 ХОДЫ 9,3 ДЛИТЕЛЬНОСТЬ 8,7 мин"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 2406,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 2450,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 2543,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 2406,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 2450,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 2543,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 2739,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 2773,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 2792,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 2879,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 2739,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 2783,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 2876,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 3072,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 3116,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 3210,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 3072,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 3116,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 3210,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 3405,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 3449,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 3543,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 3405,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 3440,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 980,
+   "y": 3458,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 3546,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 3738,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 3782,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 3876,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 3738,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 3773,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 980,
+   "y": 3791,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 3879,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 4072,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 4115,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 4209,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 4072,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 4115,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 4209,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 4405,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 4448,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 4542,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 4405,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 4448,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 4542,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 4738,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 4782,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 4875,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 4738,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 4782,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 4875,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 5071,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 5115,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 5208,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 5071,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 5115,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 5208,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 5404,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 5448,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 5542,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 5404,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 5438,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 980,
+   "y": 5457,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 5545,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 5737,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 5781,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 5875,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 5737,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 5781,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 5875,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 6070,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 6114,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 6208,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 6070,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 6114,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 6208,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 6404,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 6447,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 6541,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 6404,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 6447,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 6541,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 6737,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 6780,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 6874,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 6737,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 6780,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 6874,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 7070,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 7114,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 7207,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 7070,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 7114,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 7207,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 7403,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 7447,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 7540,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 7403,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 7447,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 7540,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 7736,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 7780,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 7873,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 7736,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 7780,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 7873,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 8069,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 8113,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 8207,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 8069,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 8113,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 8207,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 8402,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 8446,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 8540,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 8402,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 8437,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 980,
+   "y": 8455,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 8543,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 8735,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 8779,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 8873,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 8735,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 8779,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 8873,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 9069,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 9103,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 9121,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 9209,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 9069,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 9112,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 9206,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 9402,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 9445,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 9539,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 9402,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 9445,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 9539,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 9735,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 9769,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 9787,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 9875,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 9735,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 9779,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 9872,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 10068,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 10102,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 10120,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 10208,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 10068,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 10112,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 10205,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 10401,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 10445,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 10539,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 10401,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 10445,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 10539,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 10734,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 10768,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 10787,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 10875,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 10734,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 10778,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 10872,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 11067,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 11111,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 11205,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 11067,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 11102,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 980,
+   "y": 11120,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 11208,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 11401,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 11444,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 11538,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 11401,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 11444,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 11538,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 11734,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 11768,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 11786,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 11874,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 11734,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 11777,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 11871,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 12067,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 12111,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 12204,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 12067,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 12111,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 12204,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 12400,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 12434,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 12452,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 12540,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 12400,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 12444,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 12537,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 12733,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 12777,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 12870,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 12733,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 12777,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 12870,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 13066,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 13110,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 13204,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 13066,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 13110,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 13204,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 13399,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 13443,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 13537,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 13399,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 13443,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 13537,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 13732,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 13776,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 13870,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 13732,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 13776,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 13870,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 14066,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 14100,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 14118,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 14206,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 14066,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 14109,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 14203,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 14399,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 14442,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 14536,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 14399,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 14442,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 14536,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 14732,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 14776,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 14869,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 14732,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 14776,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 14869,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 15065,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 15109,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 15202,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 15065,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 15109,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 15202,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 15398,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 15442,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 15536,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 15398,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 15442,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 15536,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 15731,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 15775,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 15869,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 15731,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 15775,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 15869,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 16064,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 16099,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 16117,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 16205,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 16064,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 16108,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 16202,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 16398,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 16441,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 16535,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 16398,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 16441,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 16535,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 16731,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 16774,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 16868,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 16731,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 16765,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 980,
+   "y": 16783,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 16871,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 17064,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 17108,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 17201,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 17064,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 17098,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 980,
+   "y": 17116,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 17204,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 17397,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 17431,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 413,
+   "y": 17449,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 17537,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 17397,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 17441,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 17534,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 17730,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 17774,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 17867,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 17730,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 17764,
+   "w": 277,
+   "h": 65,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "H2",
+   "cls": "",
+   "x": 980,
+   "y": 17783,
+   "w": 277,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 17871,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 18063,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 18107,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 18201,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 18063,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 18107,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 18201,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 18396,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 18440,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 18534,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 848,
+   "y": 18396,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 980,
+   "y": 18440,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 868,
+   "y": 18534,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "standard-meta-card",
+   "x": 282,
+   "y": 18730,
+   "w": 553,
+   "h": 320,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "standard-meta-card__title",
+   "x": 413,
+   "y": 18773,
+   "w": 277,
+   "h": 41,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DL",
+   "cls": "standard-meta-card__metrics",
+   "x": 302,
+   "y": 18867,
+   "w": 513,
+   "h": 59,
+   "txt": ""
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+# Зависимости: npm install (в video/) и npx skills add higgsfield-ai/skills (в корне, версии в skills-lock.json)
+video/node_modules/
+.agents/
+.claude/skills/higgsfield-*
+.claude/settings.local.json
+
+# Рендеры воспроизводятся из кода; список готовых файлов — video/src/ads/README.md
+video/out/
+
+# Полностраничные снимки сайта: ~390 МБ, часть снята из-под аккаунта. Координаты блоков (*.json) хранятся
+video/capture/*.png
+
+*.log

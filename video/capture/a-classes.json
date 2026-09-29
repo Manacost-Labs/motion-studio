@@ -1,0 +1,425 @@
+{
+ "total": 2448,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 258,
+   "y": 65,
+   "w": 1167,
+   "h": 2029,
+   "txt": "Классы Статистика побед на Арене — текущий патч Главная › Классы Винрейт классов"
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "arena-classes-page",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 1941,
+   "txt": "Классы Статистика побед на Арене — текущий патч Главная › Классы Винрейт классов"
+  },
+  {
+   "d": 2,
+   "tag": "HEADER",
+   "cls": "section-banner-modern",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 320,
+   "txt": "Классы Статистика побед на Арене — текущий патч"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "traditional-mode-banner__copy",
+   "x": 326,
+   "y": 195,
+   "w": 720,
+   "h": 107,
+   "txt": "Классы Статистика побед на Арене — текущий патч"
+  },
+  {
+   "d": 4,
+   "tag": "H1",
+   "cls": "",
+   "x": 326,
+   "y": 195,
+   "w": 720,
+   "h": 60,
+   "txt": "Классы"
+  },
+  {
+   "d": 2,
+   "tag": "NAV",
+   "cls": "mb-3",
+   "x": 282,
+   "y": 425,
+   "w": 1119,
+   "h": 58,
+   "txt": "Главная › Классы"
+  },
+  {
+   "d": 3,
+   "tag": "OL",
+   "cls": "flex items-center gap-1 flex-wrap text-xs text-[#8b6c42]",
+   "x": 284,
+   "y": 425,
+   "w": 1114,
+   "h": 44,
+   "txt": "Главная › Классы"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "",
+   "x": 282,
+   "y": 501,
+   "w": 1119,
+   "h": 67,
+   "txt": "Винрейт классов на Арене Hearthstone показывает процент побед каждого из 11 клас"
+  },
+  {
+   "d": 3,
+   "tag": "P",
+   "cls": "text-[#6b4c2a] text-sm leading-relaxed mb-5 px-1",
+   "x": 282,
+   "y": 501,
+   "w": 1119,
+   "h": 67,
+   "txt": "Винрейт классов на Арене Hearthstone показывает процент побед каждого из 11 клас"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "",
+   "x": 282,
+   "y": 589,
+   "w": 1119,
+   "h": 912,
+   "txt": "Источник: HSReplay. Обновлено: 28.09.2026, 18:13:43 UTC 1 Рыцарь смерти 55.6% 1 "
+  },
+  {
+   "d": 3,
+   "tag": "OL",
+   "cls": "arena-classes-board space-y-2.5 sm:space-y-3 relative",
+   "x": 282,
+   "y": 628,
+   "w": 1119,
+   "h": 813,
+   "txt": "1 Рыцарь смерти 55.6% 1 328 игр 2 Жрец 51.8% 1 079 игр 3 Охотник на демонов 50.4"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 643,
+   "w": 1119,
+   "h": 85,
+   "txt": "1 Рыцарь смерти 55.6% 1 328 игр"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 739,
+   "w": 1119,
+   "h": 68,
+   "txt": "2 Жрец 51.8% 1 079 игр"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 807,
+   "w": 1119,
+   "h": 74,
+   "txt": "3 Охотник на демонов 50.4% 888 игр"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "min-w-0 sm:flex-shrink-0 sm:w-40",
+   "x": 396,
+   "y": 820,
+   "w": 160,
+   "h": 48,
+   "txt": "Охотник на демонов"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 881,
+   "w": 1119,
+   "h": 68,
+   "txt": "4 Разбойник 49.8% 1 144 игр"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 949,
+   "w": 1119,
+   "h": 68,
+   "txt": "5 Воин 48.8% 602 игр"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 1017,
+   "w": 1119,
+   "h": 68,
+   "txt": "6 Друид 47.4% 410 игр"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 1085,
+   "w": 1119,
+   "h": 68,
+   "txt": "7 Маг 42.4% 536 игр"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 1153,
+   "w": 1119,
+   "h": 68,
+   "txt": "8 Охотник 39.2% 125 игр"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 1221,
+   "w": 1119,
+   "h": 68,
+   "txt": "9 Шаман 36.8% 105 игр"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 1289,
+   "w": 1119,
+   "h": 68,
+   "txt": "10 Паладин 36.4% 157 игр"
+  },
+  {
+   "d": 4,
+   "tag": "LI",
+   "cls": "arena-class-row group relative grid items-center gap-2.5 rounded-2xl overflow-hi",
+   "x": 282,
+   "y": 1357,
+   "w": 1119,
+   "h": 68,
+   "txt": "11 Чернокнижник 35.7% 98 игр"
+  },
+  {
+   "d": 3,
+   "tag": "BUTTON",
+   "cls": "arena-classes-retry",
+   "x": 282,
+   "y": 1457,
+   "w": 201,
+   "h": 44,
+   "txt": "Обновить статистику"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "mt-8 pt-4",
+   "x": 282,
+   "y": 1530,
+   "w": 1119,
+   "h": 89,
+   "txt": "СМОТРИ ТАКЖЕ Тир-лист карт → Легендарки → Статьи о Арене →"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "flex flex-wrap gap-2",
+   "x": 282,
+   "y": 1575,
+   "w": 1119,
+   "h": 44,
+   "txt": "Тир-лист карт → Легендарки → Статьи о Арене →"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "inline-flex min-h-11 items-center px-4 py-2 rounded-lg text-sm font-hs transitio",
+   "x": 282,
+   "y": 1575,
+   "w": 152,
+   "h": 44,
+   "txt": "Тир-лист карт →"
+  },
+  {
+   "d": 4,
+   "tag": "A",
+   "cls": "inline-flex min-h-11 items-center px-4 py-2 rounded-lg text-sm font-hs transitio",
+   "x": 587,
+   "y": 1575,
+   "w": 161,
+   "h": 44,
+   "txt": "Статьи о Арене →"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "faq-section",
+   "x": 282,
+   "y": 1651,
+   "w": 1119,
+   "h": 379,
+   "txt": "Частые вопросы Какой класс лучший на Арене Hearthstone? + Как пользоваться тир-л"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "faq-section__list",
+   "x": 282,
+   "y": 1697,
+   "w": 1119,
+   "h": 333,
+   "txt": "Какой класс лучший на Арене Hearthstone? + Как пользоваться тир-листом карт? + К"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 1697,
+   "w": 1119,
+   "h": 48,
+   "txt": "Какой класс лучший на Арене Hearthstone? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 282,
+   "y": 1697,
+   "w": 1119,
+   "h": 48,
+   "txt": "Какой класс лучший на Арене Hearthstone? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 1753,
+   "w": 1119,
+   "h": 49,
+   "txt": "Как пользоваться тир-листом карт? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 282,
+   "y": 1754,
+   "w": 1119,
+   "h": 48,
+   "txt": "Как пользоваться тир-листом карт? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 1810,
+   "w": 1119,
+   "h": 49,
+   "txt": "Как выбрать легендарку на Арене? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 282,
+   "y": 1811,
+   "w": 1119,
+   "h": 48,
+   "txt": "Как выбрать легендарку на Арене? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 1867,
+   "w": 1119,
+   "h": 49,
+   "txt": "Как часто обновляются данные? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 282,
+   "y": 1868,
+   "w": 1119,
+   "h": 48,
+   "txt": "Как часто обновляются данные? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 1924,
+   "w": 1119,
+   "h": 49,
+   "txt": "Что такое винрейт класса на Арене? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 282,
+   "y": 1925,
+   "w": 1119,
+   "h": 48,
+   "txt": "Что такое винрейт класса на Арене? +"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "faq-card",
+   "x": 282,
+   "y": 1981,
+   "w": 1119,
+   "h": 49,
+   "txt": "Сколько побед нужно для окупаемости Арены? +"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "faq-card__trigger",
+   "x": 282,
+   "y": 1982,
+   "w": 1119,
+   "h": 48,
+   "txt": "Сколько побед нужно для окупаемости Арены? +"
+  }
+ ]
+}

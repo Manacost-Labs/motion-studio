@@ -1,0 +1,1075 @@
+{
+ "total": 2879,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 258,
+   "y": 65,
+   "w": 1167,
+   "h": 2462,
+   "txt": "Vicious Syndicate Gold Расширенная статистика меты: популярность, готовые сборки"
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "vsgold",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 2374,
+   "txt": "Vicious Syndicate Gold Расширенная статистика меты: популярность, готовые сборки"
+  },
+  {
+   "d": 2,
+   "tag": "HEADER",
+   "cls": "traditional-mode-banner",
+   "x": 282,
+   "y": 89,
+   "w": 1119,
+   "h": 320,
+   "txt": "Vicious Syndicate Gold Расширенная статистика меты: популярность, готовые сборки"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "traditional-mode-banner__copy",
+   "x": 326,
+   "y": 183,
+   "w": 650,
+   "h": 131,
+   "txt": "Vicious Syndicate Gold Расширенная статистика меты: популярность, готовые сборки"
+  },
+  {
+   "d": 4,
+   "tag": "H1",
+   "cls": "",
+   "x": 326,
+   "y": 183,
+   "w": 650,
+   "h": 60,
+   "txt": "Vicious Syndicate Gold"
+  },
+  {
+   "d": 4,
+   "tag": "P",
+   "cls": "",
+   "x": 326,
+   "y": 267,
+   "w": 590,
+   "h": 47,
+   "txt": "Расширенная статистика меты: популярность, готовые сборки и Power Tier."
+  },
+  {
+   "d": 3,
+   "tag": "DL",
+   "cls": "traditional-mode-banner__summary",
+   "x": 1000,
+   "y": 289,
+   "w": 357,
+   "h": 75,
+   "txt": "ПАРТИЙ 224 837 ГОТОВЫХ СБОРОК 28/30"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 1000,
+   "y": 290,
+   "w": 178,
+   "h": 74,
+   "txt": "ПАРТИЙ 224 837"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 1178,
+   "y": 290,
+   "w": 178,
+   "h": 74,
+   "txt": "ГОТОВЫХ СБОРОК 28/30"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "vsgold__distribution-grid",
+   "x": 282,
+   "y": 425,
+   "w": 1119,
+   "h": 794,
+   "txt": "LIVE · STANDARD Распределение классов Жрец 20,97% Воин 18,72% Чернокнижник 11,73"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "vsgold__panel vsgold__classes",
+   "x": 282,
+   "y": 425,
+   "w": 417,
+   "h": 794,
+   "txt": "LIVE · STANDARD Распределение классов Жрец 20,97% Воин 18,72% Чернокнижник 11,73"
+  },
+  {
+   "d": 4,
+   "tag": "HEADER",
+   "cls": "vsgold__section-heading",
+   "x": 316,
+   "y": 459,
+   "w": 349,
+   "h": 100,
+   "txt": "LIVE · STANDARD Распределение классов"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 380,
+   "y": 459,
+   "w": 285,
+   "h": 86,
+   "txt": "LIVE · STANDARD Распределение классов"
+  },
+  {
+   "d": 6,
+   "tag": "H2",
+   "cls": "",
+   "x": 380,
+   "y": 484,
+   "w": 285,
+   "h": 61,
+   "txt": "Распределение классов"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "vsgold__class-bars",
+   "x": 316,
+   "y": 575,
+   "w": 349,
+   "h": 558,
+   "txt": "Жрец 20,97% Воин 18,72% Чернокнижник 11,73% Друид 8,57% Разбойник 7,30% Маг 7,09"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 575,
+   "w": 349,
+   "h": 45,
+   "txt": "Жрец 20,97%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 625,
+   "w": 349,
+   "h": 45,
+   "txt": "Воин 18,72%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 674,
+   "w": 349,
+   "h": 45,
+   "txt": "Чернокнижник 11,73%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 724,
+   "w": 349,
+   "h": 45,
+   "txt": "Друид 8,57%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 774,
+   "w": 349,
+   "h": 45,
+   "txt": "Разбойник 7,30%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 823,
+   "w": 349,
+   "h": 45,
+   "txt": "Маг 7,09%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 873,
+   "w": 349,
+   "h": 53,
+   "txt": "Рыцарь смерти 6,91%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 931,
+   "w": 349,
+   "h": 45,
+   "txt": "Шаман 6,12%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 981,
+   "w": 349,
+   "h": 45,
+   "txt": "Паладин 5,06%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 1030,
+   "w": 349,
+   "h": 53,
+   "txt": "Охотник на демонов 4,82%"
+  },
+  {
+   "d": 5,
+   "tag": "BUTTON",
+   "cls": "",
+   "x": 316,
+   "y": 1089,
+   "w": 349,
+   "h": 45,
+   "txt": "Охотник 2,72%"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "vsgold__panel vsgold__decks",
+   "x": 714,
+   "y": 425,
+   "w": 687,
+   "h": 794,
+   "txt": "ПОРОГ ≥ 0.5% Распределение колод Все классы Жрец Воин Чернокнижник Друид Разбойн"
+  },
+  {
+   "d": 4,
+   "tag": "HEADER",
+   "cls": "vsgold__section-heading",
+   "x": 748,
+   "y": 459,
+   "w": 619,
+   "h": 70,
+   "txt": "ПОРОГ ≥ 0.5% Распределение колод"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 812,
+   "y": 459,
+   "w": 332,
+   "h": 56,
+   "txt": "ПОРОГ ≥ 0.5% Распределение колод"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "vsgold__deck-list",
+   "x": 748,
+   "y": 595,
+   "w": 619,
+   "h": 590,
+   "txt": "Дракон Воин Dragon Warrior 13,49% Состав HSGuru Контроль Жрец Control Priest 8,3"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 599,
+   "w": 595,
+   "h": 122,
+   "txt": "Дракон Воин Dragon Warrior 13,49% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 721,
+   "w": 595,
+   "h": 122,
+   "txt": "Контроль Жрец Control Priest 8,32% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 843,
+   "w": 595,
+   "h": 122,
+   "txt": "Квест Жрец Quest Priest 7,12% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 964,
+   "w": 595,
+   "h": 122,
+   "txt": "Друид на атаке Attack Druid 6,59% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 1086,
+   "w": 595,
+   "h": 122,
+   "txt": "Рафаам Чернокнижник Rafaam Warlock 5,29% Состав Vicious Syndicate"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 1208,
+   "w": 595,
+   "h": 122,
+   "txt": "Жрец на воровстве Thief Priest 5,00% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 1329,
+   "w": 595,
+   "h": 122,
+   "txt": "Разбойник на возвещении Herald Rogue 3,55% Состав Hearthstone Decks"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 1451,
+   "w": 595,
+   "h": 122,
+   "txt": "Нечестивый Рыцарь смерти Unholy DeathKnight 3,44% Состав Hearthstone Decks · точ"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 1573,
+   "w": 595,
+   "h": 122,
+   "txt": "Пират Воин Pirate Warrior 3,44% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 1694,
+   "w": 595,
+   "h": 122,
+   "txt": "Лейлайн Маг Leyline Mage 3,36% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 1816,
+   "w": 595,
+   "h": 122,
+   "txt": "Чистый Паладин Pure Paladin 2,99% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 1938,
+   "w": 595,
+   "h": 122,
+   "txt": "Охотник на демонов Бездны Void DemonHunter 2,86% Состав Hearthstone Decks · точн"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 2059,
+   "w": 595,
+   "h": 122,
+   "txt": "Herald Warlock Herald Warlock 2,82% Состав HSGuru · точный синоним"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 2181,
+   "w": 595,
+   "h": 122,
+   "txt": "Зи Шаман Zee Shaman 2,55% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 2303,
+   "w": 595,
+   "h": 122,
+   "txt": "Рыцарь смерти на возвещении Herald DeathKnight 2,13% Состав MetaStats · точный с"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 2424,
+   "w": 595,
+   "h": 122,
+   "txt": "Айя Разбойник Ayaya Rogue 1,81% Состав Vicious Syndicate · точный синоним"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 2546,
+   "w": 595,
+   "h": 122,
+   "txt": "Шаман на возвещение Herald Shaman 1,69% Состав Vicious Syndicate"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 2668,
+   "w": 595,
+   "h": 122,
+   "txt": "Drake Warlock Drake Warlock 1,41% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 2789,
+   "w": 595,
+   "h": 122,
+   "txt": "Pig Warlock Pig Warlock 1,38% Состав Hearthstone Decks"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 2911,
+   "w": 595,
+   "h": 122,
+   "txt": "Агро Паладин Aggro Paladin 1,31% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 3033,
+   "w": 595,
+   "h": 122,
+   "txt": "Граб Шаман Mug Shaman 1,24% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 3154,
+   "w": 595,
+   "h": 122,
+   "txt": "СПД Маг Burn Mage 1,24% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 3276,
+   "w": 595,
+   "h": 122,
+   "txt": "Фейс Охотник Face Hunter 1,23% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 3398,
+   "w": 595,
+   "h": 122,
+   "txt": "Смутьян Разбойник Two Rogue 1,12% Состав HSGuru · точный синоним"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 3519,
+   "w": 595,
+   "h": 122,
+   "txt": "Шеф Друид Chef Druid 1,10% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 3641,
+   "w": 595,
+   "h": 122,
+   "txt": "Манашторм Маг Manastorm Mage 0,91% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 3763,
+   "w": 595,
+   "h": 122,
+   "txt": "Квест Маг Quest Mage 0,90% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 3884,
+   "w": 595,
+   "h": 70,
+   "txt": "Bot DemonHunter Bot DemonHunter 0,80% Сборная категория"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 3954,
+   "w": 595,
+   "h": 70,
+   "txt": "Bot Druid Bot Druid 0,74% Сборная категория"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 4024,
+   "w": 595,
+   "h": 70,
+   "txt": "Raza DemonHunter Raza DemonHunter 0,65% Сборка обновляется"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 4094,
+   "w": 595,
+   "h": 70,
+   "txt": "Bot Warlock Bot Warlock 0,65% Сборная категория"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 4164,
+   "w": 595,
+   "h": 70,
+   "txt": "Egg DeathKnight Egg DeathKnight 0,64% Сборка обновляется"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 4234,
+   "w": 595,
+   "h": 70,
+   "txt": "Bot Mage Bot Mage 0,59% Сборная категория"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 4304,
+   "w": 595,
+   "h": 70,
+   "txt": "Bot Shaman Bot Shaman 0,58% Сборная категория"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 4374,
+   "w": 595,
+   "h": 70,
+   "txt": "Bot DeathKnight Bot DeathKnight 0,55% Сборная категория"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 4444,
+   "w": 595,
+   "h": 122,
+   "txt": "Кровавый Воин Blood Warrior 0,54% Состав HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 4566,
+   "w": 595,
+   "h": 70,
+   "txt": "Bot Hunter Bot Hunter 0,53% Сборная категория"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "vsgold__deck-row",
+   "x": 752,
+   "y": 4636,
+   "w": 595,
+   "h": 70,
+   "txt": "Bot Paladin Bot Paladin 0,51% Сборная категория"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "vsgold__panel vsgold__power",
+   "x": 282,
+   "y": 1233,
+   "w": 1119,
+   "h": 1229,
+   "txt": "POWER RANKINGS Power Tier List Выберите диапазон рангов и класс. Винрейт и поряд"
+  },
+  {
+   "d": 3,
+   "tag": "HEADER",
+   "cls": "vsgold__power-heading",
+   "x": 316,
+   "y": 1267,
+   "w": 1051,
+   "h": 70,
+   "txt": "POWER RANKINGS Power Tier List Выберите диапазон рангов и класс. Винрейт и поряд"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "vsgold__section-heading",
+   "x": 316,
+   "y": 1267,
+   "w": 285,
+   "h": 70,
+   "txt": "POWER RANKINGS Power Tier List"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 380,
+   "y": 1267,
+   "w": 221,
+   "h": 56,
+   "txt": "POWER RANKINGS Power Tier List"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "vsgold__rank-tabs",
+   "x": 316,
+   "y": 1357,
+   "w": 1051,
+   "h": 47,
+   "txt": "Все ранги Легенда Алмаз 1–4 Алмаз 5–10 Платина Золото, Серебро, Бронза"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "vsgold__class-tabs",
+   "x": 316,
+   "y": 1412,
+   "w": 1051,
+   "h": 55,
+   "txt": "Все Жрец Воин Чернокнижник Друид Разбойник Маг Рыцарь смерти Шаман Паладин Охотн"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "vsgold__tier-board",
+   "x": 316,
+   "y": 1477,
+   "w": 1051,
+   "h": 951,
+   "txt": "#1 TIER 1 · ВОИН Дракон Воин Dragon Warrior 54,14% WR HSGuru #2 TIER 1 · ВОИН Пи"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--one",
+   "x": 316,
+   "y": 1477,
+   "w": 520,
+   "h": 100,
+   "txt": "#1 TIER 1 · ВОИН Дракон Воин Dragon Warrior 54,14% WR HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 439,
+   "y": 1497,
+   "w": 162,
+   "h": 60,
+   "txt": "TIER 1 · ВОИН Дракон Воин Dragon Warrior"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--one",
+   "x": 847,
+   "y": 1477,
+   "w": 520,
+   "h": 100,
+   "txt": "#2 TIER 1 · ВОИН Пират Воин Pirate Warrior 54,08% WR HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 970,
+   "y": 1497,
+   "w": 162,
+   "h": 60,
+   "txt": "TIER 1 · ВОИН Пират Воин Pirate Warrior"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--one",
+   "x": 316,
+   "y": 1587,
+   "w": 520,
+   "h": 111,
+   "txt": "#3 TIER 1 · ДРУИД Друид на атаке Attack Druid 53,54% WR HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 439,
+   "y": 1613,
+   "w": 162,
+   "h": 60,
+   "txt": "TIER 1 · ДРУИД Друид на атаке Attack Druid"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--two",
+   "x": 847,
+   "y": 1587,
+   "w": 520,
+   "h": 111,
+   "txt": "#4 TIER 2 · ЧЕРНОКНИЖНИК Рафаам Чернокнижник Rafaam Warlock 51,22% WR Vicious Sy"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 970,
+   "y": 1604,
+   "w": 162,
+   "h": 78,
+   "txt": "TIER 2 · ЧЕРНОКНИЖНИК Рафаам Чернокнижник Rafaam Warlock"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--two",
+   "x": 316,
+   "y": 1708,
+   "w": 520,
+   "h": 111,
+   "txt": "#5 TIER 2 · РЫЦАРЬ СМЕРТИ Нечестивый Рыцарь смерти Unholy DeathKnight 50,97% WR "
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 439,
+   "y": 1725,
+   "w": 162,
+   "h": 78,
+   "txt": "TIER 2 · РЫЦАРЬ СМЕРТИ Нечестивый Рыцарь смерти Unholy DeathKnight"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--two",
+   "x": 847,
+   "y": 1708,
+   "w": 520,
+   "h": 111,
+   "txt": "#6 TIER 2 · ЖРЕЦ Квест Жрец Quest Priest 50,72% WR HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 970,
+   "y": 1734,
+   "w": 162,
+   "h": 60,
+   "txt": "TIER 2 · ЖРЕЦ Квест Жрец Quest Priest"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--two",
+   "x": 316,
+   "y": 1830,
+   "w": 520,
+   "h": 100,
+   "txt": "#7 TIER 2 · ШАМАН Зи Шаман Zee Shaman 50,32% WR HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 439,
+   "y": 1850,
+   "w": 162,
+   "h": 60,
+   "txt": "TIER 2 · ШАМАН Зи Шаман Zee Shaman"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--two",
+   "x": 847,
+   "y": 1830,
+   "w": 520,
+   "h": 100,
+   "txt": "#8 TIER 2 · ПАЛАДИН Чистый Паладин Pure Paladin 50,25% WR HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 970,
+   "y": 1850,
+   "w": 162,
+   "h": 60,
+   "txt": "TIER 2 · ПАЛАДИН Чистый Паладин Pure Paladin"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--three",
+   "x": 316,
+   "y": 1940,
+   "w": 520,
+   "h": 135,
+   "txt": "#9 TIER 3 · ЖРЕЦ Жрец на воровстве Thief Priest 49,88% WR HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 439,
+   "y": 1969,
+   "w": 162,
+   "h": 78,
+   "txt": "TIER 3 · ЖРЕЦ Жрец на воровстве Thief Priest"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--three",
+   "x": 847,
+   "y": 1940,
+   "w": 520,
+   "h": 135,
+   "txt": "#10 TIER 3 · ОХОТНИК НА ДЕМОНОВ Охотник на демонов Бездны Void DemonHunter 49,77"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 970,
+   "y": 1957,
+   "w": 162,
+   "h": 102,
+   "txt": "TIER 3 · ОХОТНИК НА ДЕМОНОВ Охотник на демонов Бездны Void DemonHunter"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--three",
+   "x": 316,
+   "y": 2086,
+   "w": 520,
+   "h": 111,
+   "txt": "#11 TIER 3 · РАЗБОЙНИК Разбойник на возвещении Herald Rogue 47,20% WR Hearthston"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 439,
+   "y": 2102,
+   "w": 162,
+   "h": 78,
+   "txt": "TIER 3 · РАЗБОЙНИК Разбойник на возвещении Herald Rogue"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--four",
+   "x": 847,
+   "y": 2086,
+   "w": 520,
+   "h": 111,
+   "txt": "#12 TIER 4 · ЧЕРНОКНИЖНИК Herald Warlock Herald Warlock 46,51% WR HSGuru · точны"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 970,
+   "y": 2111,
+   "w": 162,
+   "h": 60,
+   "txt": "TIER 4 · ЧЕРНОКНИЖНИК Herald Warlock Herald Warlock"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--four",
+   "x": 316,
+   "y": 2207,
+   "w": 520,
+   "h": 100,
+   "txt": "#13 TIER 4 · МАГ Лейлайн Маг Leyline Mage 46,51% WR HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 439,
+   "y": 2227,
+   "w": 162,
+   "h": 60,
+   "txt": "TIER 4 · МАГ Лейлайн Маг Leyline Mage"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--four",
+   "x": 847,
+   "y": 2207,
+   "w": 520,
+   "h": 100,
+   "txt": "#14 TIER 4 · ЖРЕЦ Контроль Жрец Control Priest 44,47% WR HSGuru"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 970,
+   "y": 2227,
+   "w": 162,
+   "h": 60,
+   "txt": "TIER 4 · ЖРЕЦ Контроль Жрец Control Priest"
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--four",
+   "x": 316,
+   "y": 2317,
+   "w": 520,
+   "h": 111,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 439,
+   "y": 2334,
+   "w": 162,
+   "h": 78,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "ARTICLE",
+   "cls": "vsgold__tier-card vsgold__tier-card--four",
+   "x": 847,
+   "y": 2317,
+   "w": 520,
+   "h": 111,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 970,
+   "y": 2343,
+   "w": 162,
+   "h": 60,
+   "txt": ""
+  }
+ ]
+}

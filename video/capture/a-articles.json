@@ -1,0 +1,2575 @@
+{
+ "total": 5963,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 258,
+   "y": 65,
+   "w": 1167,
+   "h": 5543,
+   "txt": "Статьи Гайды, разборы мета и советы по режиму Арена Главная › Статьи Все Арена Г"
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "articles-page",
+   "x": 282,
+   "y": 65,
+   "w": 1119,
+   "h": 5487,
+   "txt": "Статьи Гайды, разборы мета и советы по режиму Арена Главная › Статьи Все Арена Г"
+  },
+  {
+   "d": 2,
+   "tag": "HEADER",
+   "cls": "section-banner-modern",
+   "x": 282,
+   "y": 65,
+   "w": 1119,
+   "h": 320,
+   "txt": "Статьи Гайды, разборы мета и советы по режиму Арена"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "traditional-mode-banner__copy",
+   "x": 326,
+   "y": 171,
+   "w": 720,
+   "h": 107,
+   "txt": "Статьи Гайды, разборы мета и советы по режиму Арена"
+  },
+  {
+   "d": 4,
+   "tag": "H1",
+   "cls": "",
+   "x": 326,
+   "y": 171,
+   "w": 720,
+   "h": 60,
+   "txt": "Статьи"
+  },
+  {
+   "d": 2,
+   "tag": "NAV",
+   "cls": "mb-3",
+   "x": 282,
+   "y": 401,
+   "w": 1119,
+   "h": 58,
+   "txt": "Главная › Статьи"
+  },
+  {
+   "d": 3,
+   "tag": "OL",
+   "cls": "flex items-center gap-1 flex-wrap text-xs text-[#8b6c42]",
+   "x": 284,
+   "y": 401,
+   "w": 1114,
+   "h": 44,
+   "txt": "Главная › Статьи"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "articles-toolbar-modern mb-5",
+   "x": 282,
+   "y": 477,
+   "w": 1119,
+   "h": 88,
+   "txt": "Все Арена Гайд Мета-отчет Поля Сражений"
+  },
+  {
+   "d": 3,
+   "tag": "LABEL",
+   "cls": "articles-search-modern",
+   "x": 282,
+   "y": 498,
+   "w": 326,
+   "h": 46,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "INPUT",
+   "cls": "",
+   "x": 322,
+   "y": 499,
+   "w": 271,
+   "h": 44,
+   "txt": ""
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "articles-tag-filter",
+   "x": 624,
+   "y": 498,
+   "w": 777,
+   "h": 44,
+   "txt": "Все Арена Гайд Мета-отчет Поля Сражений"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "articles-grid-modern grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5",
+   "x": 282,
+   "y": 589,
+   "w": 1119,
+   "h": 4963,
+   "txt": "Мета-отчет МАТРИАРХ меняет лидера Чернокнижника. Мета-отчет Vicious Syndicate #3"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 589,
+   "w": 360,
+   "h": 393,
+   "txt": "Мета-отчет МАТРИАРХ меняет лидера Чернокнижника. Мета-отчет Vicious Syndicate #3"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 598,
+   "w": 342,
+   "h": 310,
+   "txt": "Мета-отчет МАТРИАРХ меняет лидера Чернокнижника. Мета-отчет Vicious Syndicate #3"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 598,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 598,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 772,
+   "w": 342,
+   "h": 137,
+   "txt": "МАТРИАРХ меняет лидера Чернокнижника. Мета-отчет Vicious Syndicate #359 28.09.20"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 788,
+   "w": 310,
+   "h": 68,
+   "txt": "МАТРИАРХ меняет лидера Чернокнижника. Мета-отчет Vicious Syndicate #359"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 909,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 589,
+   "w": 360,
+   "h": 393,
+   "txt": "Мета-отчет Отголоски Чемпионата мира в Стандарте. Мета-отчет Vicious Syndicate #"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 598,
+   "w": 342,
+   "h": 310,
+   "txt": "Мета-отчет Отголоски Чемпионата мира в Стандарте. Мета-отчет Vicious Syndicate #"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 598,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 598,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 772,
+   "w": 342,
+   "h": 137,
+   "txt": "Отголоски Чемпионата мира в Стандарте. Мета-отчет Vicious Syndicate #358 19.09.2"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 788,
+   "w": 310,
+   "h": 68,
+   "txt": "Отголоски Чемпионата мира в Стандарте. Мета-отчет Vicious Syndicate #358"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 909,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 589,
+   "w": 360,
+   "h": 393,
+   "txt": "Мета-отчет Смена лидера, контра контролем и новое ОТК. Мета-отчет Vicious Syndic"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 598,
+   "w": 342,
+   "h": 310,
+   "txt": "Мета-отчет Смена лидера, контра контролем и новое ОТК. Мета-отчет Vicious Syndic"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 598,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 598,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 772,
+   "w": 342,
+   "h": 137,
+   "txt": "Смена лидера, контра контролем и новое ОТК. Мета-отчет Vicious Syndicate #357 13"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 788,
+   "w": 310,
+   "h": 68,
+   "txt": "Смена лидера, контра контролем и новое ОТК. Мета-отчет Vicious Syndicate #357"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 909,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 1003,
+   "w": 360,
+   "h": 393,
+   "txt": "Арена Попытка воскресить режим через патч. Мета-отчет по Арене #6 11.09.2026 Чит"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 1012,
+   "w": 342,
+   "h": 310,
+   "txt": "Арена Попытка воскресить режим через патч. Мета-отчет по Арене #6 11.09.2026 Чит"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 1012,
+   "w": 342,
+   "h": 173,
+   "txt": "Арена"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 1012,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 1185,
+   "w": 342,
+   "h": 137,
+   "txt": "Попытка воскресить режим через патч. Мета-отчет по Арене #6 11.09.2026 Читать VI"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 1201,
+   "w": 310,
+   "h": 68,
+   "txt": "Попытка воскресить режим через патч. Мета-отчет по Арене #6"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 1322,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 1003,
+   "w": 360,
+   "h": 393,
+   "txt": "Гайд Гайд на Хайлендер Ренатал Воина. 40 способов испортить планы соперника 09.0"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 1012,
+   "w": 342,
+   "h": 310,
+   "txt": "Гайд Гайд на Хайлендер Ренатал Воина. 40 способов испортить планы соперника 09.0"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 1012,
+   "w": 342,
+   "h": 173,
+   "txt": "Гайд"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 1012,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 1185,
+   "w": 342,
+   "h": 137,
+   "txt": "Гайд на Хайлендер Ренатал Воина. 40 способов испортить планы соперника 09.09.202"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 1201,
+   "w": 310,
+   "h": 68,
+   "txt": "Гайд на Хайлендер Ренатал Воина. 40 способов испортить планы соперника"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 1322,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 1003,
+   "w": 360,
+   "h": 393,
+   "txt": "Мета-отчет Разнообразие меты после Классовых наборов. Мета-отчет Vicious Syndica"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 1012,
+   "w": 342,
+   "h": 310,
+   "txt": "Мета-отчет Разнообразие меты после Классовых наборов. Мета-отчет Vicious Syndica"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 1012,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 1012,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 1185,
+   "w": 342,
+   "h": 137,
+   "txt": "Разнообразие меты после Классовых наборов. Мета-отчет Vicious Syndicate #356 06."
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 1201,
+   "w": 310,
+   "h": 68,
+   "txt": "Разнообразие меты после Классовых наборов. Мета-отчет Vicious Syndicate #356"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 1322,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 1416,
+   "w": 360,
+   "h": 393,
+   "txt": "Мета-отчет Мета Вольного после патча 36.4.2. Первые итоги и лидерство Воина 05.0"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 1425,
+   "w": 342,
+   "h": 310,
+   "txt": "Мета-отчет Мета Вольного после патча 36.4.2. Первые итоги и лидерство Воина 05.0"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 1425,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 1425,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 1598,
+   "w": 342,
+   "h": 137,
+   "txt": "Мета Вольного после патча 36.4.2. Первые итоги и лидерство Воина 05.09.2026 Чита"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 1614,
+   "w": 310,
+   "h": 68,
+   "txt": "Мета Вольного после патча 36.4.2. Первые итоги и лидерство Воина"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 1735,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 1416,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Крах омаров и закрепление наг в высшем эшелоне. Мета-отчет по Поля"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 1425,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Крах омаров и закрепление наг в высшем эшелоне. Мета-отчет по Поля"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 1425,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 1425,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 1598,
+   "w": 342,
+   "h": 137,
+   "txt": "Крах омаров и закрепление наг в высшем эшелоне. Мета-отчет по Полям сражений #10"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 1614,
+   "w": 310,
+   "h": 68,
+   "txt": "Крах омаров и закрепление наг в высшем эшелоне. Мета-отчет по Полям сражений #10"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 1735,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 1416,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Большой гайд по Темным Дарам в 14 сезоне Полей Сражений 28.08.2026"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 1425,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Большой гайд по Темным Дарам в 14 сезоне Полей Сражений 28.08.2026"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 1425,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 1425,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 1598,
+   "w": 342,
+   "h": 137,
+   "txt": "Большой гайд по Темным Дарам в 14 сезоне Полей Сражений 28.08.2026 Читать VIP →"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 1614,
+   "w": 310,
+   "h": 68,
+   "txt": "Большой гайд по Темным Дарам в 14 сезоне Полей Сражений"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 1735,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 1829,
+   "w": 360,
+   "h": 393,
+   "txt": "Мета-отчет Всего шесть рабочих архетипов. Мета-отчет Vicious Syndicate #355 16.0"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 1838,
+   "w": 342,
+   "h": 310,
+   "txt": "Мета-отчет Всего шесть рабочих архетипов. Мета-отчет Vicious Syndicate #355 16.0"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 1838,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 1838,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 2012,
+   "w": 342,
+   "h": 137,
+   "txt": "Всего шесть рабочих архетипов. Мета-отчет Vicious Syndicate #355 16.08.2026 Чита"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 2028,
+   "w": 310,
+   "h": 68,
+   "txt": "Всего шесть рабочих архетипов. Мета-отчет Vicious Syndicate #355"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 2149,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 1829,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Сезон который поменял правила режима. Мета отчет по Полям Сражений"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 1838,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Сезон который поменял правила режима. Мета отчет по Полям Сражений"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 1838,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 1838,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 2012,
+   "w": 342,
+   "h": 137,
+   "txt": "Сезон который поменял правила режима. Мета отчет по Полям Сражений #9 12.08.2026"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 2028,
+   "w": 310,
+   "h": 68,
+   "txt": "Сезон который поменял правила режима. Мета отчет по Полям Сражений #9"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 2149,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 1829,
+   "w": 360,
+   "h": 393,
+   "txt": "Гайд Гайд на Жреца на воровстве — как играть самой популярной колодой Вольного ф"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 1838,
+   "w": 342,
+   "h": 310,
+   "txt": "Гайд Гайд на Жреца на воровстве — как играть самой популярной колодой Вольного ф"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 1838,
+   "w": 342,
+   "h": 173,
+   "txt": "Гайд"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 1838,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 2012,
+   "w": 342,
+   "h": 137,
+   "txt": "Гайд на Жреца на воровстве — как играть самой популярной колодой Вольного формат"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 2028,
+   "w": 310,
+   "h": 68,
+   "txt": "Гайд на Жреца на воровстве — как играть самой популярной колодой Вольного формат"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 2149,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 2243,
+   "w": 360,
+   "h": 416,
+   "txt": "Мета-отчет Зи берет дело в свою руку! Мета-отчет Vicious Syndicate #354 02.08.20"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 2252,
+   "w": 342,
+   "h": 333,
+   "txt": "Мета-отчет Зи берет дело в свою руку! Мета-отчет Vicious Syndicate #354 02.08.20"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 2252,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 2252,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 2425,
+   "w": 342,
+   "h": 160,
+   "txt": "Зи берет дело в свою руку! Мета-отчет Vicious Syndicate #354 02.08.2026 Читать V"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 2441,
+   "w": 310,
+   "h": 68,
+   "txt": "Зи берет дело в свою руку! Мета-отчет Vicious Syndicate #354"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 2585,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 2243,
+   "w": 360,
+   "h": 416,
+   "txt": "Арена Сломанный баланс и доминация ДХ. Мета-отчет по Арене #5 29.07.2026 Читать "
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 2252,
+   "w": 342,
+   "h": 333,
+   "txt": "Арена Сломанный баланс и доминация ДХ. Мета-отчет по Арене #5 29.07.2026 Читать "
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 2252,
+   "w": 342,
+   "h": 173,
+   "txt": "Арена"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 2252,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 2425,
+   "w": 342,
+   "h": 160,
+   "txt": "Сломанный баланс и доминация ДХ. Мета-отчет по Арене #5 29.07.2026 Читать VIP →"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 2441,
+   "w": 310,
+   "h": 68,
+   "txt": "Сломанный баланс и доминация ДХ. Мета-отчет по Арене #5"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 2585,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 2243,
+   "w": 360,
+   "h": 416,
+   "txt": "Мета-отчет Ни одна живая душа не минует Бездну! Мета-отчет Аметистовой крепости "
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 2252,
+   "w": 342,
+   "h": 333,
+   "txt": "Мета-отчет Ни одна живая душа не минует Бездну! Мета-отчет Аметистовой крепости "
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 2252,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 2252,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 2425,
+   "w": 342,
+   "h": 160,
+   "txt": "Ни одна живая душа не минует Бездну! Мета-отчет Аметистовой крепости в патче 36."
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 2441,
+   "w": 310,
+   "h": 91,
+   "txt": "Ни одна живая душа не минует Бездну! Мета-отчет Аметистовой крепости в патче 36."
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 2585,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 2679,
+   "w": 360,
+   "h": 393,
+   "txt": "Мета-отчет Мета Вольного после патча 36.0.3. Первые итоги и засилье тир-2 Жреца "
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 2688,
+   "w": 342,
+   "h": 310,
+   "txt": "Мета-отчет Мета Вольного после патча 36.0.3. Первые итоги и засилье тир-2 Жреца "
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 2688,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 2688,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 2861,
+   "w": 342,
+   "h": 137,
+   "txt": "Мета Вольного после патча 36.0.3. Первые итоги и засилье тир-2 Жреца 26.07.2026 "
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 2877,
+   "w": 310,
+   "h": 68,
+   "txt": "Мета Вольного после патча 36.0.3. Первые итоги и засилье тир-2 Жреца"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 2998,
+   "w": 342,
+   "h": 65,
+   "txt": "1 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 2679,
+   "w": 360,
+   "h": 393,
+   "txt": "Мета-отчет Господство двух новых архетипов. Мета-отчет Vicious Syndicate #353 18"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 2688,
+   "w": 342,
+   "h": 310,
+   "txt": "Мета-отчет Господство двух новых архетипов. Мета-отчет Vicious Syndicate #353 18"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 2688,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 2688,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 2861,
+   "w": 342,
+   "h": 137,
+   "txt": "Господство двух новых архетипов. Мета-отчет Vicious Syndicate #353 18.07.2026 Чи"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 2877,
+   "w": 310,
+   "h": 68,
+   "txt": "Господство двух новых архетипов. Мета-отчет Vicious Syndicate #353"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 2998,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 2679,
+   "w": 360,
+   "h": 393,
+   "txt": "Мета-отчет Господство двух новых архетипов. Мета-отчет Vicious Syndicate #353 18"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 2688,
+   "w": 342,
+   "h": 310,
+   "txt": "Мета-отчет Господство двух новых архетипов. Мета-отчет Vicious Syndicate #353 18"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 2688,
+   "w": 342,
+   "h": 173,
+   "txt": "Мета-отчет"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 2688,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 2861,
+   "w": 342,
+   "h": 137,
+   "txt": "Господство двух новых архетипов. Мета-отчет Vicious Syndicate #353 18.07.2026 Чи"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 2877,
+   "w": 310,
+   "h": 68,
+   "txt": "Господство двух новых архетипов. Мета-отчет Vicious Syndicate #353"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 2998,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 3092,
+   "w": 360,
+   "h": 416,
+   "txt": "Гайд Летал одной картой? Большой гайд по Смутьян Разбойнику Аметистовой крепости"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 3101,
+   "w": 342,
+   "h": 333,
+   "txt": "Гайд Летал одной картой? Большой гайд по Смутьян Разбойнику Аметистовой крепости"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 3101,
+   "w": 342,
+   "h": 173,
+   "txt": "Гайд"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 3101,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 3274,
+   "w": 342,
+   "h": 160,
+   "txt": "Летал одной картой? Большой гайд по Смутьян Разбойнику Аметистовой крепости 13.0"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 3290,
+   "w": 310,
+   "h": 68,
+   "txt": "Летал одной картой? Большой гайд по Смутьян Разбойнику Аметистовой крепости"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 3434,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 3092,
+   "w": 360,
+   "h": 416,
+   "txt": "Арена Первый обзор меты по Арене в Побеге из Аметистовой крепости. Мета-отчет по"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 3101,
+   "w": 342,
+   "h": 333,
+   "txt": "Арена Первый обзор меты по Арене в Побеге из Аметистовой крепости. Мета-отчет по"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 3101,
+   "w": 342,
+   "h": 173,
+   "txt": "Арена"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 3101,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 3274,
+   "w": 342,
+   "h": 160,
+   "txt": "Первый обзор меты по Арене в Побеге из Аметистовой крепости. Мета-отчет по Арене"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 3290,
+   "w": 310,
+   "h": 91,
+   "txt": "Первый обзор меты по Арене в Побеге из Аметистовой крепости. Мета-отчет по Арене"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 3434,
+   "w": 342,
+   "h": 65,
+   "txt": "1 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 3092,
+   "w": 360,
+   "h": 416,
+   "txt": "Гайд Шаман на возвещении - лучшая темпо колода для взятия Легенды. Гайд по архет"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 3101,
+   "w": 342,
+   "h": 333,
+   "txt": "Гайд Шаман на возвещении - лучшая темпо колода для взятия Легенды. Гайд по архет"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 3101,
+   "w": 342,
+   "h": 173,
+   "txt": "Гайд"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 3101,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 3274,
+   "w": 342,
+   "h": 160,
+   "txt": "Шаман на возвещении - лучшая темпо колода для взятия Легенды. Гайд по архетипу 0"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 3290,
+   "w": 310,
+   "h": 91,
+   "txt": "Шаман на возвещении - лучшая темпо колода для взятия Легенды. Гайд по архетипу"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 3434,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 3528,
+   "w": 360,
+   "h": 393,
+   "txt": "Гайд Дракон Друид: провожаем КАТАКЛИЗМ интересным геймплеем 27.06.2026 Читать VI"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 3537,
+   "w": 342,
+   "h": 310,
+   "txt": "Гайд Дракон Друид: провожаем КАТАКЛИЗМ интересным геймплеем 27.06.2026 Читать VI"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 3537,
+   "w": 342,
+   "h": 173,
+   "txt": "Гайд"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 3537,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 3710,
+   "w": 342,
+   "h": 137,
+   "txt": "Дракон Друид: провожаем КАТАКЛИЗМ интересным геймплеем 27.06.2026 Читать VIP →"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 3726,
+   "w": 310,
+   "h": 68,
+   "txt": "Дракон Друид: провожаем КАТАКЛИЗМ интересным геймплеем"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 3847,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 3528,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Большой гайд по Аксессуарам: тир-лист и разбор Тринкетов 25.06.202"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 3537,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Большой гайд по Аксессуарам: тир-лист и разбор Тринкетов 25.06.202"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 3537,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 3537,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 3710,
+   "w": 342,
+   "h": 137,
+   "txt": "Большой гайд по Аксессуарам: тир-лист и разбор Тринкетов 25.06.2026 Читать VIP →"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 3726,
+   "w": 310,
+   "h": 45,
+   "txt": "Большой гайд по Аксессуарам: тир-лист и разбор Тринкетов"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 3847,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 3528,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Возвращение аномалий в мету. Мета-отчет по Полям Сражений #8 17.06"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 3537,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Возвращение аномалий в мету. Мета-отчет по Полям Сражений #8 17.06"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 3537,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 3537,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 3710,
+   "w": 342,
+   "h": 137,
+   "txt": "Возвращение аномалий в мету. Мета-отчет по Полям Сражений #8 17.06.2026 Читать V"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 3726,
+   "w": 310,
+   "h": 68,
+   "txt": "Возвращение аномалий в мету. Мета-отчет по Полям Сражений #8"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 3847,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 3941,
+   "w": 360,
+   "h": 393,
+   "txt": "Арена Абсолютная доминация возвещений. Мета-отчет по Арене #4 10.06.2026 Читать "
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 3950,
+   "w": 342,
+   "h": 310,
+   "txt": "Арена Абсолютная доминация возвещений. Мета-отчет по Арене #4 10.06.2026 Читать "
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 3950,
+   "w": 342,
+   "h": 173,
+   "txt": "Арена"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 3950,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 4124,
+   "w": 342,
+   "h": 137,
+   "txt": "Абсолютная доминация возвещений. Мета-отчет по Арене #4 10.06.2026 Читать VIP →"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 4140,
+   "w": 310,
+   "h": 68,
+   "txt": "Абсолютная доминация возвещений. Мета-отчет по Арене #4"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 4261,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 3941,
+   "w": 360,
+   "h": 393,
+   "txt": "Арена Мета дичайшего темпа и поломанных комбинаций.. Мета-отчет по Арене #3 19.0"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 3950,
+   "w": 342,
+   "h": 310,
+   "txt": "Арена Мета дичайшего темпа и поломанных комбинаций.. Мета-отчет по Арене #3 19.0"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 3950,
+   "w": 342,
+   "h": 173,
+   "txt": "Арена"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 3950,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 4124,
+   "w": 342,
+   "h": 137,
+   "txt": "Мета дичайшего темпа и поломанных комбинаций.. Мета-отчет по Арене #3 19.05.2026"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 4140,
+   "w": 310,
+   "h": 68,
+   "txt": "Мета дичайшего темпа и поломанных комбинаций.. Мета-отчет по Арене #3"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 4261,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 3941,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Нежить снова восстала из мертвых. Мета-отчет Полей Сражений #6 06."
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 3950,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Нежить снова восстала из мертвых. Мета-отчет Полей Сражений #6 06."
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 3950,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 3950,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 4124,
+   "w": 342,
+   "h": 137,
+   "txt": "Нежить снова восстала из мертвых. Мета-отчет Полей Сражений #6 06.05.2026 Читать"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 4140,
+   "w": 310,
+   "h": 68,
+   "txt": "Нежить снова восстала из мертвых. Мета-отчет Полей Сражений #6"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 4261,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 4355,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Коронация демонов и спад мурлоков: мета-отчет 13 сезона Полей сраж"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 4364,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Коронация демонов и спад мурлоков: мета-отчет 13 сезона Полей сраж"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 4364,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 4364,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 4537,
+   "w": 342,
+   "h": 137,
+   "txt": "Коронация демонов и спад мурлоков: мета-отчет 13 сезона Полей сражений 22.04.202"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 4553,
+   "w": 310,
+   "h": 68,
+   "txt": "Коронация демонов и спад мурлоков: мета-отчет 13 сезона Полей сражений"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 4674,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 4355,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Первый мета-отчет 13 сезона Полей Сражений с практическими советам"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 4364,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Первый мета-отчет 13 сезона Полей Сражений с практическими советам"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 4364,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 4364,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 4537,
+   "w": 342,
+   "h": 137,
+   "txt": "Первый мета-отчет 13 сезона Полей Сражений с практическими советами #5 18.04.202"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 4553,
+   "w": 310,
+   "h": 68,
+   "txt": "Первый мета-отчет 13 сезона Полей Сражений с практическими советами #5"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 4674,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 4355,
+   "w": 360,
+   "h": 393,
+   "txt": "Арена Упадок Друида и возвышение Артаса. Мета-отчет по Арене #2 13.04.2026 Читат"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 4364,
+   "w": 342,
+   "h": 310,
+   "txt": "Арена Упадок Друида и возвышение Артаса. Мета-отчет по Арене #2 13.04.2026 Читат"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 4364,
+   "w": 342,
+   "h": 173,
+   "txt": "Арена"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 4364,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 4537,
+   "w": 342,
+   "h": 137,
+   "txt": "Упадок Друида и возвышение Артаса. Мета-отчет по Арене #2 13.04.2026 Читать VIP "
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 4553,
+   "w": 310,
+   "h": 45,
+   "txt": "Упадок Друида и возвышение Артаса. Мета-отчет по Арене #2"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 4674,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 4768,
+   "w": 360,
+   "h": 393,
+   "txt": "Арена Первый мета-отчет по Арене в патче 35.0 30.03.2026 Читать VIP → 0 0"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 4777,
+   "w": 342,
+   "h": 310,
+   "txt": "Арена Первый мета-отчет по Арене в патче 35.0 30.03.2026 Читать VIP →"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 4777,
+   "w": 342,
+   "h": 173,
+   "txt": "Арена"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 4777,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 4951,
+   "w": 342,
+   "h": 137,
+   "txt": "Первый мета-отчет по Арене в патче 35.0 30.03.2026 Читать VIP →"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 4967,
+   "w": 310,
+   "h": 45,
+   "txt": "Первый мета-отчет по Арене в патче 35.0"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 5087,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 4768,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Мета-отчет по Полям Сражений с практическими советами №4 14.03.202"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 4777,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Мета-отчет по Полям Сражений с практическими советами №4 14.03.202"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 4777,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 4777,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 4951,
+   "w": 342,
+   "h": 137,
+   "txt": "Мета-отчет по Полям Сражений с практическими советами №4 14.03.2026 Читать VIP →"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 4967,
+   "w": 310,
+   "h": 45,
+   "txt": "Мета-отчет по Полям Сражений с практическими советами №4"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 5087,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 1041,
+   "y": 4768,
+   "w": 360,
+   "h": 393,
+   "txt": "Поля Сражений Как менять стратегию во время партии и постоянно побеждать на Поля"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 1050,
+   "y": 4777,
+   "w": 342,
+   "h": 310,
+   "txt": "Поля Сражений Как менять стратегию во время партии и постоянно побеждать на Поля"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 1050,
+   "y": 4777,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 1050,
+   "y": 4777,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 1050,
+   "y": 4951,
+   "w": 342,
+   "h": 137,
+   "txt": "Как менять стратегию во время партии и постоянно побеждать на Полях Сражений 03."
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 1066,
+   "y": 4967,
+   "w": 310,
+   "h": 68,
+   "txt": "Как менять стратегию во время партии и постоянно побеждать на Полях Сражений"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 1050,
+   "y": 5087,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 282,
+   "y": 5181,
+   "w": 360,
+   "h": 371,
+   "txt": "Поля Сражений Мета-отчет по Полям Сражений с практическими советами №2 17.02.202"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 291,
+   "y": 5190,
+   "w": 342,
+   "h": 288,
+   "txt": "Поля Сражений Мета-отчет по Полям Сражений с практическими советами №2 17.02.202"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 291,
+   "y": 5190,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 291,
+   "y": 5190,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 291,
+   "y": 5364,
+   "w": 342,
+   "h": 114,
+   "txt": "Мета-отчет по Полям Сражений с практическими советами №2 17.02.2026 Читать VIP →"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 307,
+   "y": 5380,
+   "w": 310,
+   "h": 45,
+   "txt": "Мета-отчет по Полям Сражений с практическими советами №2"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 291,
+   "y": 5478,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  },
+  {
+   "d": 3,
+   "tag": "ARTICLE",
+   "cls": "article-card-modern anim-scale-in rounded-2xl overflow-hidden flex flex-col tran",
+   "x": 662,
+   "y": 5181,
+   "w": 360,
+   "h": 371,
+   "txt": "Поля Сражений Мета-отчет по Полям Сражений с практическими советами 15.01.2026 Ч"
+  },
+  {
+   "d": 4,
+   "tag": "BUTTON",
+   "cls": "flex flex-col flex-grow w-full text-left bg-transparent border-0 p-0 cursor-poin",
+   "x": 671,
+   "y": 5190,
+   "w": 342,
+   "h": 288,
+   "txt": "Поля Сражений Мета-отчет по Полям Сражений с практическими советами 15.01.2026 Ч"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-image-shell relative w-full overflow-hidden flex-shrink-0",
+   "x": 671,
+   "y": 5190,
+   "w": 342,
+   "h": 173,
+   "txt": "Поля Сражений"
+  },
+  {
+   "d": 6,
+   "tag": "IMG",
+   "cls": "w-full h-full object-contain",
+   "x": 671,
+   "y": 5190,
+   "w": 342,
+   "h": 171,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "article-body-modern p-4 flex flex-col flex-grow gap-3",
+   "x": 671,
+   "y": 5364,
+   "w": 342,
+   "h": 114,
+   "txt": "Мета-отчет по Полям Сражений с практическими советами 15.01.2026 Читать VIP →"
+  },
+  {
+   "d": 6,
+   "tag": "H3",
+   "cls": "font-hs text-base leading-snug",
+   "x": 687,
+   "y": 5380,
+   "w": 310,
+   "h": 45,
+   "txt": "Мета-отчет по Полям Сражений с практическими советами"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "article-vote-row flex items-center gap-2 px-4 pt-1",
+   "x": 671,
+   "y": 5478,
+   "w": 342,
+   "h": 65,
+   "txt": "0 0"
+  }
+ ]
+}

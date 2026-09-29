@@ -1,0 +1,325 @@
+{
+ "total": 2185,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 258,
+   "y": 65,
+   "w": 1182,
+   "h": 1765,
+   "txt": "Легендарки Наборы карт для выбора первой легендарки на Арене Главная › Легендарк"
+  },
+  {
+   "d": 1,
+   "tag": "DIV",
+   "cls": "arena-legendaries-page",
+   "x": 282,
+   "y": 89,
+   "w": 1134,
+   "h": 1685,
+   "txt": "Легендарки Наборы карт для выбора первой легендарки на Арене Главная › Легендарк"
+  },
+  {
+   "d": 2,
+   "tag": "HEADER",
+   "cls": "section-banner-modern",
+   "x": 282,
+   "y": 89,
+   "w": 1134,
+   "h": 320,
+   "txt": "Легендарки Наборы карт для выбора первой легендарки на Арене"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "traditional-mode-banner__copy",
+   "x": 326,
+   "y": 195,
+   "w": 720,
+   "h": 107,
+   "txt": "Легендарки Наборы карт для выбора первой легендарки на Арене"
+  },
+  {
+   "d": 4,
+   "tag": "H1",
+   "cls": "",
+   "x": 326,
+   "y": 195,
+   "w": 720,
+   "h": 60,
+   "txt": "Легендарки"
+  },
+  {
+   "d": 2,
+   "tag": "NAV",
+   "cls": "mb-3",
+   "x": 282,
+   "y": 425,
+   "w": 1134,
+   "h": 58,
+   "txt": "Главная › Легендарки"
+  },
+  {
+   "d": 3,
+   "tag": "OL",
+   "cls": "flex items-center gap-1 flex-wrap text-xs text-[#8b6c42]",
+   "x": 284,
+   "y": 425,
+   "w": 1129,
+   "h": 44,
+   "txt": "Главная › Легендарки"
+  },
+  {
+   "d": 2,
+   "tag": "SECTION",
+   "cls": "",
+   "x": 282,
+   "y": 501,
+   "w": 1134,
+   "h": 67,
+   "txt": "На Арене Hearthstone легендарная карта предлагается в качестве первого выбора. Н"
+  },
+  {
+   "d": 3,
+   "tag": "P",
+   "cls": "text-[#6b4c2a] text-sm leading-relaxed mb-5 px-1",
+   "x": 282,
+   "y": 501,
+   "w": 1134,
+   "h": 67,
+   "txt": "На Арене Hearthstone легендарная карта предлагается в качестве первого выбора. Н"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "legendary-access-shell",
+   "x": 282,
+   "y": 588,
+   "w": 1134,
+   "h": 1186,
+   "txt": "HSReplay Firestone 0 групп Сортировка: Винрейт Поиск легендарок СМОТРИ ТАКЖЕ Тир"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "legendary-access-content",
+   "x": 282,
+   "y": 588,
+   "w": 1134,
+   "h": 1186,
+   "txt": "HSReplay Firestone 0 групп Сортировка: Винрейт Поиск легендарок СМОТРИ ТАКЖЕ Тир"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "legendary-toolbar flex items-center justify-between mb-4 -mt-2 flex-wrap gap-2",
+   "x": 282,
+   "y": 588,
+   "w": 1134,
+   "h": 71,
+   "txt": "HSReplay Firestone 0 групп"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-source-toggle flex items-center gap-1 p-1 rounded-xl",
+   "x": 282,
+   "y": 588,
+   "w": 224,
+   "h": 54,
+   "txt": "HSReplay Firestone"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "legendary-class-nav mb-5",
+   "x": 282,
+   "y": 729,
+   "w": 1134,
+   "h": 78,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "legendary-class-tabs flex items-center gap-1.5 sm:gap-2 px-3 py-2.5 rounded-2xl ",
+   "x": 282,
+   "y": 729,
+   "w": 1134,
+   "h": 78,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "legendary-groups-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4",
+   "x": 282,
+   "y": 828,
+   "w": 1134,
+   "h": 829,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "skeleton h-64 w-full rounded-2xl",
+   "x": 282,
+   "y": 837,
+   "w": 364,
+   "h": 256,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "skeleton h-64 w-full rounded-2xl",
+   "x": 667,
+   "y": 837,
+   "w": 364,
+   "h": 256,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "skeleton h-64 w-full rounded-2xl",
+   "x": 1052,
+   "y": 837,
+   "w": 364,
+   "h": 256,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "skeleton h-64 w-full rounded-2xl",
+   "x": 282,
+   "y": 1114,
+   "w": 364,
+   "h": 256,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "skeleton h-64 w-full rounded-2xl",
+   "x": 667,
+   "y": 1114,
+   "w": 364,
+   "h": 256,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "skeleton h-64 w-full rounded-2xl",
+   "x": 1052,
+   "y": 1114,
+   "w": 364,
+   "h": 256,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "skeleton h-64 w-full rounded-2xl",
+   "x": 282,
+   "y": 1392,
+   "w": 364,
+   "h": 256,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "skeleton h-64 w-full rounded-2xl",
+   "x": 667,
+   "y": 1392,
+   "w": 364,
+   "h": 256,
+   "txt": ""
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "skeleton h-64 w-full rounded-2xl",
+   "x": 1052,
+   "y": 1392,
+   "w": 364,
+   "h": 256,
+   "txt": ""
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "mt-8 pt-4",
+   "x": 282,
+   "y": 1685,
+   "w": 1134,
+   "h": 89,
+   "txt": "СМОТРИ ТАКЖЕ Тир-лист карт → Винрейт классов → Статьи о Арене →"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "flex flex-wrap gap-2",
+   "x": 282,
+   "y": 1730,
+   "w": 1134,
+   "h": 44,
+   "txt": "Тир-лист карт → Винрейт классов → Статьи о Арене →"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "",
+   "x": 282,
+   "y": 588,
+   "w": 1134,
+   "h": 1186,
+   "txt": "РАЗДЕЛ ДЛЯ ПОДПИСЧИКОВ Подтвердите подписку Манакоста Подписка открывает закрыты"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "",
+   "x": 509,
+   "y": 672,
+   "w": 680,
+   "h": 461,
+   "txt": "РАЗДЕЛ ДЛЯ ПОДПИСЧИКОВ Подтвердите подписку Манакоста Подписка открывает закрыты"
+  },
+  {
+   "d": 5,
+   "tag": "P",
+   "cls": "",
+   "x": 530,
+   "y": 757,
+   "w": 638,
+   "h": 40,
+   "txt": "Подписка открывает закрытые инструменты Арены и помогает Манакосту держать данны"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "",
+   "x": 530,
+   "y": 812,
+   "w": 638,
+   "h": 123,
+   "txt": "Платная статистика HSReplay Удобный доступ к платным данным по Арене: тир-листы,"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "arena-paywall__purchase-options",
+   "x": 530,
+   "y": 982,
+   "w": 638,
+   "h": 79,
+   "txt": "Оформить на Boosty Уровень Любитель Арены и выше → Оформить в Telegram Подписка "
+  }
+ ]
+}

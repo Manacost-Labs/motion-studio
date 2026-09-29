@@ -1,0 +1,1455 @@
+{
+ "total": 12958,
+ "blocks": [
+  {
+   "d": 0,
+   "tag": "DIV",
+   "cls": "arena-content w-full max-w-6xl mx-auto bg-parchment rounded-xl border-[3px] sm:b",
+   "x": 272,
+   "y": 65,
+   "w": 1138,
+   "h": 12538,
+   "txt": "Герои Полей сражений Рейтинг героев для соло и дуо, фильтры по MMR и подробная с"
+  },
+  {
+   "d": 1,
+   "tag": "SECTION",
+   "cls": "space-y-5",
+   "x": 306,
+   "y": 99,
+   "w": 1071,
+   "h": 12471,
+   "txt": "Герои Полей сражений Рейтинг героев для соло и дуо, фильтры по MMR и подробная с"
+  },
+  {
+   "d": 2,
+   "tag": "HEADER",
+   "cls": "traditional-mode-banner",
+   "x": 306,
+   "y": 99,
+   "w": 1071,
+   "h": 320,
+   "txt": "Герои Полей сражений Рейтинг героев для соло и дуо, фильтры по MMR и подробная с"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "traditional-mode-banner__copy",
+   "x": 350,
+   "y": 175,
+   "w": 619,
+   "h": 168,
+   "txt": "Герои Полей сражений Рейтинг героев для соло и дуо, фильтры по MMR и подробная с"
+  },
+  {
+   "d": 4,
+   "tag": "H1",
+   "cls": "",
+   "x": 350,
+   "y": 175,
+   "w": 619,
+   "h": 121,
+   "txt": "Герои Полей сражений"
+  },
+  {
+   "d": 2,
+   "tag": "DIV",
+   "cls": "bg-heroes-page space-y-5",
+   "x": 306,
+   "y": 435,
+   "w": 1071,
+   "h": 12135,
+   "txt": "ПОЛЯ СРАЖЕНИЙ Герои Рейтинг героев HSReplay для соло и дуо: выберите диапазон MM"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "text-center",
+   "x": 306,
+   "y": 435,
+   "w": 1071,
+   "h": 157,
+   "txt": "ПОЛЯ СРАЖЕНИЙ Герои Рейтинг героев HSReplay для соло и дуо: выберите диапазон MM"
+  },
+  {
+   "d": 3,
+   "tag": "SECTION",
+   "cls": "bg-heroes-tools",
+   "x": 306,
+   "y": 612,
+   "w": 1071,
+   "h": 250,
+   "txt": "ТИП ИГРЫ Соло Дуо РЕЙТИНГ ИГРОКОВ Топ 50% Топ 20% Топ 5% Топ 1% ВИД СПИСКА Карто"
+  },
+  {
+   "d": 4,
+   "tag": "DIV",
+   "cls": "bg-heroes-controls",
+   "x": 326,
+   "y": 632,
+   "w": 1031,
+   "h": 85,
+   "txt": "ТИП ИГРЫ Соло Дуо РЕЙТИНГ ИГРОКОВ Топ 50% Топ 20% Топ 5% Топ 1% ВИД СПИСКА Карто"
+  },
+  {
+   "d": 5,
+   "tag": "FIELDSET",
+   "cls": "bg-heroes-control-group",
+   "x": 326,
+   "y": 632,
+   "w": 152,
+   "h": 69,
+   "txt": "ТИП ИГРЫ Соло Дуо"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "bg-heroes-segmented",
+   "x": 326,
+   "y": 655,
+   "w": 152,
+   "h": 46,
+   "txt": "Соло Дуо"
+  },
+  {
+   "d": 5,
+   "tag": "FIELDSET",
+   "cls": "bg-heroes-control-group bg-heroes-control-group--mmr",
+   "x": 491,
+   "y": 632,
+   "w": 637,
+   "h": 69,
+   "txt": "РЕЙТИНГ ИГРОКОВ Топ 50% Топ 20% Топ 5% Топ 1%"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "bg-heroes-segmented",
+   "x": 491,
+   "y": 655,
+   "w": 311,
+   "h": 46,
+   "txt": "Топ 50% Топ 20% Топ 5% Топ 1%"
+  },
+  {
+   "d": 5,
+   "tag": "FIELDSET",
+   "cls": "bg-heroes-control-group bg-heroes-control-group--view",
+   "x": 1141,
+   "y": 632,
+   "w": 216,
+   "h": 69,
+   "txt": "ВИД СПИСКА Карточки Таблица"
+  },
+  {
+   "d": 6,
+   "tag": "DIV",
+   "cls": "bg-heroes-segmented bg-heroes-view-toggle",
+   "x": 1141,
+   "y": 655,
+   "w": 216,
+   "h": 46,
+   "txt": "Карточки Таблица"
+  },
+  {
+   "d": 4,
+   "tag": "LABEL",
+   "cls": "bg-heroes-search",
+   "x": 326,
+   "y": 789,
+   "w": 1031,
+   "h": 53,
+   "txt": "Поиск по героям 113 героев"
+  },
+  {
+   "d": 3,
+   "tag": "DIV",
+   "cls": "space-y-5",
+   "x": 306,
+   "y": 882,
+   "w": 1071,
+   "h": 11688,
+   "txt": "S S Тир 1 герой Дест'агат 3,57 81.34% A A Тир 25 героев Терон Кровожад 3,94 65.0"
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "rounded-lg border border-[#c4a46a]/35 bg-[#fff3d8]/65 p-3 sm:p-4",
+   "x": 306,
+   "y": 882,
+   "w": 1071,
+   "h": 437,
+   "txt": "S S Тир 1 герой Дест'агат 3,57 81.34%"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mb-3 flex items-center gap-3",
+   "x": 323,
+   "y": 899,
+   "w": 1037,
+   "h": 44,
+   "txt": "S S Тир 1 герой"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-6",
+   "x": 323,
+   "y": 955,
+   "w": 1037,
+   "h": 347,
+   "txt": "Дест'агат 3,57 81.34%"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 955,
+   "w": 247,
+   "h": 347,
+   "txt": "Дест'агат 3,57 81.34%"
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "rounded-lg border border-[#c4a46a]/35 bg-[#fff3d8]/65 p-3 sm:p-4",
+   "x": 306,
+   "y": 1338,
+   "w": 1071,
+   "h": 2612,
+   "txt": "A A Тир 25 героев Терон Кровожад 3,94 65.02% Сила героя: Быстрое воскрешение. Ти"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mb-3 flex items-center gap-3",
+   "x": 323,
+   "y": 1355,
+   "w": 1037,
+   "h": 44,
+   "txt": "A A Тир 25 героев"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-6",
+   "x": 323,
+   "y": 1411,
+   "w": 1037,
+   "h": 2522,
+   "txt": "Терон Кровожад 3,94 65.02% Сила героя: Быстрое воскрешение. Тир A. Торим, владык"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 1411,
+   "w": 247,
+   "h": 347,
+   "txt": "Терон Кровожад 3,94 65.02% Сила героя: Быстрое воскрешение. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 1411,
+   "w": 247,
+   "h": 347,
+   "txt": "Торим, владыка бури 3,96 51.45% Сила героя: Выберите защитника. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 1411,
+   "w": 247,
+   "h": 347,
+   "txt": "Лоскутик 4,00 33.01% Сила героя: Заплатки. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 1411,
+   "w": 247,
+   "h": 347,
+   "txt": "Лорд Джараксус 4,02 35.13% Сила героя: Кровавая ярость. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 1774,
+   "w": 247,
+   "h": 347,
+   "txt": "Трас'тат, паразит душ 4,04 65.04% Сила героя: Сила Бездны. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 1774,
+   "w": 247,
+   "h": 347,
+   "txt": "Кнопка 4,04 62.46% Сила героя: Растущая коллекция. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 1774,
+   "w": 247,
+   "h": 347,
+   "txt": "Н'Зот 4,05 36.41% Сила героя: Воплощение Н'Зота. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 1774,
+   "w": 247,
+   "h": 347,
+   "txt": "Король-лич 4,07 56.58% Сила героя: Ритуал перерождения. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 2136,
+   "w": 247,
+   "h": 347,
+   "txt": "Раканишу 4,09 26.27% Сила героя: Огонек таверны. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 2136,
+   "w": 247,
+   "h": 347,
+   "txt": "Менеджер Марин 4,12 68.14% Сила героя: Фантастическое сокровище. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 2136,
+   "w": 247,
+   "h": 347,
+   "txt": "Господин Часовщик 4,12 45.15% Сила героя: Ускоренный темп. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 2136,
+   "w": 247,
+   "h": 347,
+   "txt": "Йогг-Сарон 4,16 35.09% Сила героя: Шкатулка с секретом. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 2499,
+   "w": 247,
+   "h": 347,
+   "txt": "Повелитель кошмаров Ксавий 4,18 74.82% Сила героя: Познай силу разрушения!. Тир "
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 2499,
+   "w": 247,
+   "h": 347,
+   "txt": "А.Ф.Ка 4,18 62.39% Сила героя: Прокрастинация. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 2499,
+   "w": 247,
+   "h": 347,
+   "txt": "Мурлок Холмс 4,18 26.82% Сила героя: Наемный детектив. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 2499,
+   "w": 247,
+   "h": 347,
+   "txt": "Скаббс Маслорез 4,20 36.98% Сила героя: Я все вижу. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 2861,
+   "w": 247,
+   "h": 347,
+   "txt": "Смотритель 4,21 26.38% Сила героя: Доступ к зверинцу. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 2861,
+   "w": 247,
+   "h": 347,
+   "txt": "Экзарх Отаар 4,21 15.19% Сила героя: Тайное знание. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 2861,
+   "w": 247,
+   "h": 347,
+   "txt": "Вол'джин 4,21 14.25% Сила героя: Духовный обмен. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 2861,
+   "w": 247,
+   "h": 347,
+   "txt": "Кариэль Роум 4,22 23.53% Сила героя: Убежденность. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 3224,
+   "w": 247,
+   "h": 347,
+   "txt": "Танцор Дэрил 4,23 16.08% Сила героя: Дело в шляпе. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 3224,
+   "w": 247,
+   "h": 347,
+   "txt": "Ахалаймахалай 4,24 29.81% Сила героя: Престидижитация. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 3224,
+   "w": 247,
+   "h": 347,
+   "txt": "Лорд Баров 4,25 26.65% Сила героя: Дружеская ставка. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 3224,
+   "w": 247,
+   "h": 347,
+   "txt": "Иллидан 4,29 28.45% Сила героя: Два крыла. Тир A."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 3586,
+   "w": 247,
+   "h": 347,
+   "txt": "Тей'телан Кровавый Взор 4,29 13.87% Сила героя: Исследование реликвий. Тир A."
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "rounded-lg border border-[#c4a46a]/35 bg-[#fff3d8]/65 p-3 sm:p-4",
+   "x": 306,
+   "y": 3970,
+   "w": 1071,
+   "h": 3337,
+   "txt": "B B Тир 36 героев Исказительница Хроми 4,30 24.93% Сила героя: Мана в минуту. Ти"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mb-3 flex items-center gap-3",
+   "x": 323,
+   "y": 3987,
+   "w": 1037,
+   "h": 44,
+   "txt": "B B Тир 36 героев"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-6",
+   "x": 323,
+   "y": 4043,
+   "w": 1037,
+   "h": 3247,
+   "txt": "Исказительница Хроми 4,30 24.93% Сила героя: Мана в минуту. Тир B. Ло, живая лег"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 4043,
+   "w": 247,
+   "h": 347,
+   "txt": "Исказительница Хроми 4,30 24.93% Сила героя: Мана в минуту. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 4043,
+   "w": 247,
+   "h": 347,
+   "txt": "Ло, живая легенда 4,31 31.04% Сила героя: Героическое вдохновение. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 4043,
+   "w": 247,
+   "h": 347,
+   "txt": "Ал'акир 4,32 25.38% Сила героя: Назойливые мухи. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 4043,
+   "w": 247,
+   "h": 347,
+   "txt": "Король Мукла 4,32 14.35% Сила героя: Бананарама. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 4405,
+   "w": 247,
+   "h": 347,
+   "txt": "Предсказатель Нобундо 4,33 22.75% Сила героя: Галактическая линза. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 4405,
+   "w": 247,
+   "h": 347,
+   "txt": "Крагг Поднебесный 4,33 20.96% Сила героя: Свинка-копилка. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 4405,
+   "w": 247,
+   "h": 347,
+   "txt": "Сэр Финли Мрргглтон 4,34 50.01% Сила героя: Приключение!. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 4405,
+   "w": 247,
+   "h": 347,
+   "txt": "Доктор Гу'ляка 4,34 18.97% Сила героя: Благословение девяти лягушек. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 4768,
+   "w": 247,
+   "h": 347,
+   "txt": "Рок-мастер Вун 4,35 27.45% Сила героя: Бодрая гармония. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 4768,
+   "w": 247,
+   "h": 347,
+   "txt": "К'Тун 4,35 9.98% Сила героя: К'Тун-игрун!. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 4768,
+   "w": 247,
+   "h": 347,
+   "txt": "Билетикус 4,36 29.45% Сила героя: Витрина с призами. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 4768,
+   "w": 247,
+   "h": 347,
+   "txt": "Мутанус Пожиратель 4,36 23.21% Сила героя: Пожирание. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 5130,
+   "w": 247,
+   "h": 347,
+   "txt": "И'Шарадж 4,36 20.24% Сила героя: Отдайся ярости. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 5130,
+   "w": 247,
+   "h": 347,
+   "txt": "Капитан Юдора 4,38 38.51% Сила героя: Зарытое сокровище. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 5130,
+   "w": 247,
+   "h": 347,
+   "txt": "Королева Пыхлевих 4,38 10.25% Сила героя: Войска воска. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 5130,
+   "w": 247,
+   "h": 347,
+   "txt": "Змеиные глазки 4,39 50.26% Сила героя: Удачный бросок. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 5493,
+   "w": 247,
+   "h": 347,
+   "txt": "Суперзлодей Рафаам 4,39 26.92% Сила героя: Мне это нужно!. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 5493,
+   "w": 247,
+   "h": 347,
+   "txt": "Принц Кель'тас 4,39 14.98% Сила героя: Зеленеющие сферы. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 5493,
+   "w": 247,
+   "h": 347,
+   "txt": "Тавиш Грозовая Вершина 4,40 25.40% Сила героя: На изготовку!. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 5493,
+   "w": 247,
+   "h": 347,
+   "txt": "Вандар Грозовая Вершина 4,41 31.20% Сила героя: Сила Грозовой Вершины. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 5855,
+   "w": 247,
+   "h": 347,
+   "txt": "Бурекрыл 4,41 27.94% Сила героя: Грифон Дунгара. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 5855,
+   "w": 247,
+   "h": 347,
+   "txt": "Лич Баз'хиал 4,41 15.09% Сила героя: Темная лич-ность. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 5855,
+   "w": 247,
+   "h": 347,
+   "txt": "Тесс Седогрив 4,42 42.13% Сила героя: Взлом таверны. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 5855,
+   "w": 247,
+   "h": 347,
+   "txt": "Дрек'Тар 4,42 30.84% Сила героя: Рвение Северного Волка. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 6218,
+   "w": 247,
+   "h": 347,
+   "txt": "Мистер Бигглсуорт 4,42 21.09% Сила героя: Котик Кел'Тузада. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 6218,
+   "w": 247,
+   "h": 347,
+   "txt": "Инге Стальной Гимн 4,42 19.52% Сила героя: Мажорный гимн. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 6218,
+   "w": 247,
+   "h": 347,
+   "txt": "Вестник смерти Черношип 4,42 14.06% Сила героя: Узы крови. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 6218,
+   "w": 247,
+   "h": 347,
+   "txt": "Рокара 4,42 8.64% Сила героя: Слава боя. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 6580,
+   "w": 247,
+   "h": 347,
+   "txt": "Кит'икс 4,43 70.53%"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 6580,
+   "w": 247,
+   "h": 347,
+   "txt": "Зефрис Великий 4,43 33.52% Сила героя: Три желания. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 6580,
+   "w": 247,
+   "h": 347,
+   "txt": "Кок Пирожок 4,45 27.64% Сила героя: В котел!. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 6580,
+   "w": 247,
+   "h": 347,
+   "txt": "Капитан Кривоклык 4,45 20.52% Сила героя: Никудышное сокровище. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 6943,
+   "w": 247,
+   "h": 347,
+   "txt": "Рено Джексон 4,46 54.44% Сила героя: Нас ждет богатство!. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 6943,
+   "w": 247,
+   "h": 347,
+   "txt": "Сайлас Новолуний 4,46 24.63% Сила героя: Подходите, подходите все!. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 6943,
+   "w": 247,
+   "h": 347,
+   "txt": "Зирелла 4,47 25.41% Сила героя: Озарение Светом. Тир B."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 6943,
+   "w": 247,
+   "h": 347,
+   "txt": "Тамсин Роум 4,47 11.75% Сила героя: Благоухающая филактерия. Тир B."
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "rounded-lg border border-[#c4a46a]/35 bg-[#fff3d8]/65 p-3 sm:p-4",
+   "x": 306,
+   "y": 7327,
+   "w": 1071,
+   "h": 2974,
+   "txt": "C C Тир 30 героев Галакронд 4,48 44.03% Сила героя: Алчность Галакронда. Тир C. "
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mb-3 flex items-center gap-3",
+   "x": 323,
+   "y": 7344,
+   "w": 1037,
+   "h": 44,
+   "txt": "C C Тир 30 героев"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-6",
+   "x": 323,
+   "y": 7400,
+   "w": 1037,
+   "h": 2884,
+   "txt": "Галакронд 4,48 44.03% Сила героя: Алчность Галакронда. Тир C. Джордж Падший 4,48"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 7400,
+   "w": 247,
+   "h": 347,
+   "txt": "Галакронд 4,48 44.03% Сила героя: Алчность Галакронда. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 7400,
+   "w": 247,
+   "h": 347,
+   "txt": "Джордж Падший 4,48 21.38% Сила героя: Дар Света. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 7400,
+   "w": 247,
+   "h": 347,
+   "txt": "Элиза Звездочет 4,49 20.32% Сила героя: Ведущая исследовательница. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 7400,
+   "w": 247,
+   "h": 347,
+   "txt": "Крысиный король 4,50 22.52% Сила героя: Сказание о королях. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 7762,
+   "w": 247,
+   "h": 347,
+   "txt": "Майев Песнь Теней 4,50 14.07% Сила героя: Заточение. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 7762,
+   "w": 247,
+   "h": 347,
+   "txt": "Смертокрыл 4,50 6.16% Сила героя: Все сгорит!. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 7762,
+   "w": 247,
+   "h": 347,
+   "txt": "Мастер Нгуен 4,51 57.97% Сила героя: Сила бури. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 7762,
+   "w": 247,
+   "h": 347,
+   "txt": "Малигос 4,51 19.47% Сила героя: Чародейское превращение. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 8125,
+   "w": 247,
+   "h": 347,
+   "txt": "Бру'кан 4,51 11.26% Сила героя: Объятия стихий. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 8125,
+   "w": 247,
+   "h": 347,
+   "txt": "Варден Луч Рассвета 4,53 22.75% Сила героя: Две головы лучше. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 8125,
+   "w": 247,
+   "h": 347,
+   "txt": "Страж леса Ому 4,54 36.76% Сила героя: Вечное Цветение. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 8125,
+   "w": 247,
+   "h": 347,
+   "txt": "Механо-усилитель 4,54 26.85% Сила героя: Усиляция. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 8487,
+   "w": 247,
+   "h": 347,
+   "txt": "Сир Денатрий 4,56 69.16% Сила героя: Детективный роман. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 8487,
+   "w": 247,
+   "h": 347,
+   "txt": "Вечная Токи 4,56 31.46% Сила героя: Таверна времени. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 8487,
+   "w": 247,
+   "h": 347,
+   "txt": "Воевода Саурфанг 4,56 12.23% Сила героя: За Орду!. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 8487,
+   "w": 247,
+   "h": 347,
+   "txt": "Посол Фаэлин 4,57 51.01% Сила героя: Планирование экспедиции. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 8850,
+   "w": 247,
+   "h": 347,
+   "txt": "Дрыжеглот 4,57 30.87% Сила героя: Злопастность. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 8850,
+   "w": 247,
+   "h": 347,
+   "txt": "Ноздорму 4,57 18.90% Сила героя: Ясновидение. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 8850,
+   "w": 247,
+   "h": 347,
+   "txt": "Пирамидон 4,57 11.47% Сила героя: Камень за камнем. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 8850,
+   "w": 247,
+   "h": 347,
+   "txt": "Король воргенов Генн 4,58 57.63% Сила героя: Король двойственности. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 9212,
+   "w": 247,
+   "h": 347,
+   "txt": "Озумат 4,58 8.56% Сила героя: Чаща щупалец. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 9212,
+   "w": 247,
+   "h": 347,
+   "txt": "Алекстраза 4,59 17.67% Сила героя: Королева драконов. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 9212,
+   "w": 247,
+   "h": 347,
+   "txt": "Король воров Вихлепых 4,60 16.22% Сила героя: Идеальное преступление. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 9212,
+   "w": 247,
+   "h": 347,
+   "txt": "Клонист Зерек 4,62 45.64% Сила героя: Галерея клонов. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 9575,
+   "w": 247,
+   "h": 347,
+   "txt": "Куртрус Ливень Пепла 4,64 15.90% Сила героя: Рикошет глефы. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 9575,
+   "w": 247,
+   "h": 347,
+   "txt": "Керриган, Королева Клинков 4,64 5.48% Сила героя: Омут рождения. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 9575,
+   "w": 247,
+   "h": 347,
+   "txt": "Снид 4,65 12.25% Сила героя: Управление крошшером. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 9575,
+   "w": 247,
+   "h": 347,
+   "txt": "Тюремщик 4,67 16.00% Сила героя: Руна проклятия. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 9937,
+   "w": 247,
+   "h": 347,
+   "txt": "Джандис Барова 4,67 15.53% Сила героя: Честный обмен. Тир C."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 9937,
+   "w": 247,
+   "h": 347,
+   "txt": "Миллхаус Манашторм 4,68 9.95% Сила героя: Манашторм. Тир C."
+  },
+  {
+   "d": 4,
+   "tag": "SECTION",
+   "cls": "rounded-lg border border-[#c4a46a]/35 bg-[#fff3d8]/65 p-3 sm:p-4",
+   "x": 306,
+   "y": 10321,
+   "w": 1071,
+   "h": 2249,
+   "txt": "D D Тир 21 герой Аранна Звездочет 4,71 22.10% Сила героя: Уроки охоты на демонов"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "mb-3 flex items-center gap-3",
+   "x": 323,
+   "y": 10338,
+   "w": 1037,
+   "h": 44,
+   "txt": "D D Тир 21 герой"
+  },
+  {
+   "d": 5,
+   "tag": "DIV",
+   "cls": "grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-6",
+   "x": 323,
+   "y": 10394,
+   "w": 1037,
+   "h": 2159,
+   "txt": "Аранна Звездочет 4,71 22.10% Сила героя: Уроки охоты на демонов. Тир D. Лесной в"
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 10394,
+   "w": 247,
+   "h": 347,
+   "txt": "Аранна Звездочет 4,71 22.10% Сила героя: Уроки охоты на демонов. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 10394,
+   "w": 247,
+   "h": 347,
+   "txt": "Лесной властелин Кенарий 4,73 44.81% Сила героя: Мудрость Древних. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 10394,
+   "w": 247,
+   "h": 347,
+   "txt": "Изера 4,74 14.45% Сила героя: Портал в Сон. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 10394,
+   "w": 247,
+   "h": 347,
+   "txt": "Принц Галливикс 4,75 30.92% Сила героя: Хитрая заначка. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 10756,
+   "w": 247,
+   "h": 347,
+   "txt": "Рагнарос 4,76 8.76% Сила героя: КУПИ, НАСЕКОМОЕ!. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 10756,
+   "w": 247,
+   "h": 347,
+   "txt": "Укротитель ящеров Бранн 4,78 35.82% Сила героя: Бранное дело. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 10756,
+   "w": 247,
+   "h": 347,
+   "txt": "Серокрон 4,78 26.59% Сила героя: Пустим корни!. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 10756,
+   "w": 247,
+   "h": 347,
+   "txt": "Гафф Рунический Тотем 4,78 25.71% Сила героя: Равновесие природы. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 11119,
+   "w": 247,
+   "h": 347,
+   "txt": "Синдрагоса 4,83 27.48% Сила героя: Бодрящий мороз. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 11119,
+   "w": 247,
+   "h": 347,
+   "txt": "Музыкальный менеджер E.T.C. 4,84 29.40% Сила героя: Новый контракт. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 11119,
+   "w": 247,
+   "h": 347,
+   "txt": "Ини Штормоверть 4,86 15.38% Сила героя: МехГайвер. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 11119,
+   "w": 247,
+   "h": 347,
+   "txt": "Ониксия 4,86 10.02% Сила героя: Мать Драконов. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 11481,
+   "w": 247,
+   "h": 347,
+   "txt": "Нави'ла 4,89 26.71% Сила героя: Лавина. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 11481,
+   "w": 247,
+   "h": 347,
+   "txt": "Эдвин ван Клиф 4,92 5.19% Сила героя: Заточка клинков. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 11481,
+   "w": 247,
+   "h": 347,
+   "txt": "Артанис 4,97 11.31% Сила героя: Врата искривления. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 11481,
+   "w": 247,
+   "h": 347,
+   "txt": "Пират Глазастик 5,00 19.14% Сила героя: Пиратская команда!. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 11844,
+   "w": 247,
+   "h": 347,
+   "txt": "Миллифисент Манашторм 5,01 18.67% Сила героя: Изобретательность. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 586,
+   "y": 11844,
+   "w": 247,
+   "h": 347,
+   "txt": "Капитан Др-р-робитель 5,09 21.23% Сила героя: Теперь я тут капитан. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 850,
+   "y": 11844,
+   "w": 247,
+   "h": 347,
+   "txt": "Грибомант Флургл 5,16 13.97% Сила героя: Рыбалка. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 1113,
+   "y": 11844,
+   "w": 247,
+   "h": 347,
+   "txt": "Профессор Мерзоцид 5,19 10.01% Сила героя: Конструктор нежити. Тир D."
+  },
+  {
+   "d": 6,
+   "tag": "A",
+   "cls": "battleground-hero-card relative flex min-h-[252px] flex-col items-center overflo",
+   "x": 323,
+   "y": 12206,
+   "w": 247,
+   "h": 347,
+   "txt": "Джим Рейнор 5,26 11.47% Сила героя: Взлет. Тир D."
+  }
+ ]
+}

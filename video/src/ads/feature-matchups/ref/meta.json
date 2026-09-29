@@ -1,0 +1,36 @@
+{
+  "Feature-Matchups": {
+    "durationInFrames": 410,
+    "width": 1080,
+    "height": 1920,
+    "frames": [
+      20,
+      65,
+      110,
+      155,
+      200,
+      245,
+      290,
+      335,
+      380,
+      409
+    ]
+  },
+  "Feature-Matchups-16x9": {
+    "durationInFrames": 410,
+    "width": 1920,
+    "height": 1080,
+    "frames": [
+      20,
+      65,
+      110,
+      155,
+      200,
+      245,
+      290,
+      335,
+      380,
+      409
+    ]
+  }
+}
