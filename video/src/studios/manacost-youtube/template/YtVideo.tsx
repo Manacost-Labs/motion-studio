@@ -9,7 +9,7 @@ import {DISPLAY, FPS, MANACOST} from '../brand';
 import {Grain, hsRender, Page, Sfx, Subtitles, Vignette} from './parts';
 import {chapterOf, Scene, subtitleZone} from './scenes';
 import {H, parchmentBg, redBg, TEXT} from './theme';
-import {buildSubs, estimateVo, LEAD, minFor, tailFor, XFADE} from './timing';
+import {buildSubs, estimateVo, leadFor, minFor, stripTags, tailFor, XFADE} from './timing';
 import {SegTiming, YtConfig, YtProps, YtTiming} from './types';
 
 const MUSIC_VOL = 0.45; // музыка без голоса
@@ -45,8 +45,18 @@ export const calcYt: CalculateMetadataFunction<YtProps> = async ({props}) => {
       }
     }
     const voDur = sec ? Math.ceil(sec * FPS) : estimateVo(s.vo);
-    const dur = Math.max(minFor(s), LEAD + voDur + tailFor(s));
-    segments.push({id: s.id, chapter: chapterOf(s), from, dur, voFrom: LEAD, voDur, voice, subs: buildSubs(s.vo, LEAD, voDur)});
+    // время каждого символа из <сегмент>.json (scripts/tts.mjs или vo-align.mjs) — если текст с записи не менялся
+    let times: SegTiming['times'];
+    if (voice) {
+      const meta = await fetch(staticFile(`vo/${config.id}/${s.id}.json`))
+        .then((r) => (r.ok ? r.json() : null))
+        .catch(() => null);
+      if (meta?.text === stripTags(s.vo)) times = {start: meta.start, end: meta.end};
+      else if (meta) console.warn(`Текст сегмента «${s.id}» изменился после записи голоса — привязки по доле текста. Перезапишите голос.`);
+    }
+    const lead = leadFor(s);
+    const dur = Math.max(minFor(s), lead + voDur + tailFor(s));
+    segments.push({id: s.id, chapter: chapterOf(s), from, dur, voFrom: lead, voDur, voice, subs: buildSubs(s.vo, lead, voDur, times), times});
     from += dur;
   }
   const total = from;
@@ -110,7 +120,7 @@ export const YtVideo: React.FC<YtProps> = ({config, timing}) => {
         return (
           <Sequence key={s.id} from={t.from} durationInFrames={t.dur} name={s.id}>
             <SegFade dur={t.dur} first={i === 0} last={i === n - 1}>
-              <Scene seg={s} t={t} rankOf={rankOf} />
+              <Scene seg={s} t={t} rankOf={rankOf} subs={subsOn(t)} />
               {subsOn(t) && <Subtitles subs={t.subs} cx={zone.cx} bottom={26} maxW={zone.maxW} />}
             </SegFade>
             {t.voice && (
@@ -131,13 +141,15 @@ export const YtVideo: React.FC<YtProps> = ({config, timing}) => {
   );
 };
 
-// ─── Обложка 1280×720 «Компендиум»: слева красное сукно с заголовком, справа пергамент и три карты веером ───
+// ─── Обложка 1280×720 «Компендиум»: слева красное сукно с заголовком, справа пергамент и три карты веером.
+// Веер держится левее правого нижнего угла — там YouTube рисует плашку длительности. hook — сургучная печать ───
 export const YtThumb: React.FC<{config: YtConfig}> = ({config}) => {
   const {thumb} = config;
+  const H0 = 520; // высота карты
   const fan = [
-    {x: 960, y: 175, r: -10},
-    {x: 1165, y: 175, r: 10},
-    {x: 1062, y: 130, r: 0},
+    {x: 862, y: 138, r: -11},
+    {x: 1072, y: 128, r: 8},
+    {x: 968, y: 84, r: -1},
   ];
   return (
     <AbsoluteFill style={parchmentBg}>
@@ -147,9 +159,33 @@ export const YtThumb: React.FC<{config: YtConfig}> = ({config}) => {
         <Img
           key={id}
           src={hsRender(id)}
-          style={{position: 'absolute', left: fan[i].x - 158, top: fan[i].y, height: 480, rotate: `${fan[i].r}deg`, filter: 'drop-shadow(0 22px 22px rgba(60,25,10,0.45))'}}
+          style={{position: 'absolute', left: fan[i].x - (H0 * 512) / 776 / 2, top: fan[i].y, height: H0, rotate: `${fan[i].r}deg`, filter: 'drop-shadow(0 22px 22px rgba(60,25,10,0.45))'}}
         />
       ))}
+      {thumb.hook && (
+        <div
+          style={{
+            position: 'absolute',
+            left: 700 + 26,
+            top: 452,
+            width: 176,
+            height: 176,
+            borderRadius: '50%',
+            rotate: '-8deg',
+            background: 'radial-gradient(circle at 38% 32%, #b3262c, #7a1015 62%, #4d0a0e)',
+            boxShadow: `0 0 0 6px ${H.gold}, 0 0 0 9px ${H.wood}, 0 16px 26px rgba(40,5,8,0.5)`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontFamily: DISPLAY,
+            fontSize: 66,
+            color: H.goldBright,
+            textShadow: '0 3px 0 rgba(40,5,8,0.8)',
+          }}
+        >
+          {thumb.hook}
+        </div>
+      )}
       <div style={{position: 'absolute', left: 56, top: 64}}>
         <div style={{display: 'flex', alignItems: 'center', gap: 14, marginBottom: 18, fontFamily: TEXT, fontWeight: 800, fontSize: 30, letterSpacing: '0.14em', textTransform: 'uppercase', color: H.goldBright}}>
           <span style={{width: 12, height: 12, rotate: '45deg', background: H.goldBright}} />

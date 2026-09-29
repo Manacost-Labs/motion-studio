@@ -1,10 +1,12 @@
 // Вступление — «Компендиум»: шапка из сукна с логотипом, крупный заголовок чернилами на пергаменте,
-// строка гербов классов подборки (появляются по очереди) и полупрозрачный паладин справа
+// строка гербов классов подборки (появляются по очереди) и полупрозрачный паладин справа.
+// tease — постеры топа веером под размытием: кто на вершине, зритель узнает в конце
 import React from 'react';
 import {AbsoluteFill, Img, useCurrentFrame} from 'remotion';
 import {DISPLAY, MANACOST} from '../../brand';
 import {crestFor, HeaderBand, Mural, Page, Words} from '../parts';
-import {H, ramp, TEXT} from '../theme';
+import {H, ramp, TEXT, timber} from '../theme';
+import {timeAt} from '../timing';
 import {staticFile} from 'remotion';
 import {IntroSeg, SegTiming} from '../types';
 
@@ -15,7 +17,8 @@ export const IntroScene: React.FC<{seg: IntroSeg; t: SegTiming}> = ({seg, t}) =>
   return (
     <AbsoluteFill>
       <Page />
-      <Mural src={seg.mural ?? 'brand/arena/home-paladin-hero.webp'} x={1060} y={170} h={960} opacity={0.55} at={6} mask="linear-gradient(90deg, transparent 0%, #000 30%, #000 80%, transparent 100%)" />
+      <Mural src={seg.mural ?? 'brand/arena/home-paladin-hero.webp'} x={1060} y={170} h={960} opacity={seg.tease ? 0.4 : 0.55} at={6} mask="linear-gradient(90deg, transparent 0%, #000 30%, #000 80%, transparent 100%)" />
+      {seg.tease && <Tease srcs={seg.tease} at={timeAt(t, seg.vo, 24)('на вершине')} />}
       <HeaderBand kicker={MANACOST.site} title={MANACOST.name} crest={staticFile(MANACOST.logo)} crestRound={false} />
       <div style={{position: 'absolute', left: 96, top: 262, display: 'flex', alignItems: 'center', gap: 14, opacity: kp}}>
         <div style={{width: 11, height: 11, rotate: '45deg', background: H.red}} />
@@ -35,5 +38,47 @@ export const IntroScene: React.FC<{seg: IntroSeg; t: SegTiming}> = ({seg, t}) =>
         })}
       </div>
     </AbsoluteFill>
+  );
+};
+
+// Три постера веером под размытием, в деревянных рамах; на переднем — вопрос. Появляются по одному под голос
+const Tease: React.FC<{srcs: string[]; at: number}> = ({srcs, at}) => {
+  const f = useCurrentFrame();
+  const fan = [
+    {x: 1150, y: 300, r: -7},
+    {x: 1390, y: 250, r: 6},
+    {x: 1260, y: 420, r: -1},
+  ];
+  return (
+    <>
+      {srcs.slice(0, 3).map((src, i) => {
+        const p = ramp(f, at + i * 7, at + i * 7 + 20);
+        const front = i === srcs.length - 1;
+        return (
+          <div
+            key={i}
+            style={{
+              position: 'absolute',
+              left: fan[i].x,
+              top: fan[i].y,
+              width: 440,
+              height: 360,
+              rotate: `${fan[i].r}deg`,
+              opacity: p,
+              translate: `0 ${(1 - p) * 40}px`,
+              ...timber(14),
+              boxShadow: '0 22px 34px rgba(60,25,10,0.4)',
+              overflow: 'hidden',
+              background: H.parchment,
+            }}
+          >
+            <Img src={staticFile(src)} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', filter: 'blur(9px) sepia(0.25)', scale: 1.08}} />
+            {front && (
+              <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: DISPLAY, fontSize: 200, color: H.cream, textShadow: '0 6px 0 rgba(40,5,8,0.7), 0 0 30px rgba(40,5,8,0.35)'}}>?</div>
+            )}
+          </div>
+        );
+      })}
+    </>
   );
 };

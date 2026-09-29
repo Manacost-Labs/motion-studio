@@ -10,12 +10,13 @@ import {MulliganScene} from './Mulligan';
 import {OutroScene} from './Outro';
 import {PointsScene} from './Points';
 
-export const Scene: React.FC<{seg: YtSegment; t: SegTiming; rankOf?: number}> = ({seg, t, rankOf}) => {
+// subs — в кадре идут субтитры (сцена оставляет им нижнюю полосу)
+export const Scene: React.FC<{seg: YtSegment; t: SegTiming; rankOf?: number; subs?: boolean}> = ({seg, t, rankOf, subs}) => {
   switch (seg.kind) {
     case 'intro':
       return <IntroScene seg={seg} t={t} />;
     case 'deck':
-      return <DeckScene seg={seg} t={t} rankOf={rankOf} />;
+      return <DeckScene seg={seg} t={t} rankOf={rankOf} subs={subs} />;
     case 'cards':
       return <CardsScene seg={seg} t={t} />;
     case 'mulligan':

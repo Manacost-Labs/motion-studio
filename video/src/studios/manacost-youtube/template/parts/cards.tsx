@@ -2,7 +2,7 @@
 // Ряд карт с подписями (ключевые карты, муллиган), портрет героя в деревянной раме
 import React from 'react';
 import {Img, staticFile, useCurrentFrame} from 'remotion';
-import {HtmlInCanvasMotionBlur} from '@remotion/motion-blur';
+import {CameraMotionBlur} from '@remotion/motion-blur';
 import {DISPLAY} from '../../brand';
 import {H, ramp, TEXT, timber} from '../theme';
 import {hsArt, hsRender} from './stage';
@@ -13,9 +13,9 @@ const ENTER = 18;
 const Blur: React.FC<{active: boolean; x: number; y: number; w: number; h: number; children: React.ReactNode}> = ({active, x, y, w, h, children}) => (
   <div style={{position: 'absolute', left: x, top: y, width: w, height: h}}>
     {active ? (
-      <HtmlInCanvasMotionBlur width={w} height={h} samples={8} shutterAngle={180}>
+      <CameraMotionBlur samples={8} shutterAngle={180}>
         {children}
-      </HtmlInCanvasMotionBlur>
+      </CameraMotionBlur>
     ) : (
       children
     )}

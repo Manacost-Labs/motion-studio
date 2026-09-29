@@ -31,8 +31,13 @@ type Base = {
   highlight?: string[]; // слова, которые в субтитрах подсвечиваются (запас на будущее)
 };
 
-// Вступление: classes — гербы классов подборки по очереди (строка под заголовком)
-export type IntroSeg = Base & {kind: 'intro'; kicker: string; title: string; sub?: string; arts: string[]; classes?: string[]};
+// Вступление: classes — гербы классов подборки по очереди (строка под заголовком);
+// tease — картинки из public (постеры топа), которые мелькают под размытием: интрига, кто на вершине
+export type IntroSeg = Base & {kind: 'intro'; kicker: string; title: string; sub?: string; arts: string[]; classes?: string[]; tease?: string[]};
+
+// Матч-ап колоды из текста источника: против кого сильна (good) или слаба (bad). cls — класс (герб), label — подпись
+// (конкретная колода, если названа), at — фраза диктора, на которой строка загорается
+export type Versus = {cls: string; verdict: 'good' | 'bad'; label?: string; at?: string};
 
 // Колода: в подборке — с местом (rank), в гайде — без него. curve — кривая маны над списком
 export type DeckSeg = Base & {
@@ -47,6 +52,7 @@ export type DeckSeg = Base & {
   poster?: DeckPosterData; // есть — колода показывается постером с камерой; нет — списком
   cards?: SpokenCard[];
   points?: Point[];
+  vs?: Versus[]; // блок «Матч-апы» под тезисами
   curve?: boolean;
 };
 
@@ -83,7 +89,8 @@ export type YtConfig = {
   url?: string; // статья-источник
   music: string[]; // треки по кругу с перекрёстным затуханием
   subtitles?: 'auto' | 'on' | 'off'; // auto — только там, где ещё нет записи голоса
-  thumb: {title: string; badge: string; arts: string[]; cards: string[]}; // cards — 3 карты веером справа
+  // обложка: cards — 3 карты веером справа (последняя — передняя); hook — надпись на сургучной печати поверх веера
+  thumb: {title: string; badge: string; arts: string[]; cards: string[]; hook?: string};
   // Озвучка ElevenLabs (scripts/tts.mjs). id — voice_id диктора (иначе ELEVENLABS_VOICE_ID из .env);
   // speed 0.7–1.2, stability/similarity/style 0–1; seed — чтобы перезапись давала тот же дубль
   voice?: {id?: string; speed?: number; stability?: number; similarity?: number; style?: number; seed?: number};
@@ -95,7 +102,17 @@ export type YtConfig = {
 
 // ─── Рассчитывается в calculateMetadata (YtVideo.tsx) ───
 export type Sub = {from: number; to: number; text: string}; // кадры внутри сегмента
-export type SegTiming = {id: string; from: number; dur: number; voFrom: number; voDur: number; voice: string | null; subs: Sub[]};
+// times — время (с от начала записи) начала и конца каждого символа текста на экране; есть, когда голос записан
+export type SegTiming = {
+  id: string;
+  from: number;
+  dur: number;
+  voFrom: number;
+  voDur: number;
+  voice: string | null;
+  subs: Sub[];
+  times?: {start: number[]; end: number[]};
+};
 export type MusicCue = {src: string; from: number; dur: number};
 export type YtTiming = {segments: SegTiming[]; music: MusicCue[]; total: number};
 export type YtProps = {config: YtConfig; timing?: YtTiming};

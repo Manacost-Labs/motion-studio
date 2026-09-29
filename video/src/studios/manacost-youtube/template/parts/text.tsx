@@ -56,6 +56,7 @@ export const Subtitles: React.FC<{subs: Sub[]; cx: number; bottom: number; maxW:
           color: '#f7e3b7',
           textAlign: 'center',
           textWrap: 'balance',
+          whiteSpace: 'pre-line', // кусок уже разбит на две ровные строки (timing.ts → twoLines)
           boxShadow: '0 10px 24px rgba(30,8,8,0.3)',
         }}
       >

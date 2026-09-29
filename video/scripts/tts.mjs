@@ -8,9 +8,7 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
-import {studioDir} from './studios.mjs';
-import {createRequire} from 'node:module';
-import {build} from 'esbuild';
+import {loadConfig, speakable} from './vo-lib.mjs';
 
 const API = 'https://api.elevenlabs.io/v1';
 const PRICE = {eleven_v4: 0.022, eleven_v4_turbo: 0.011, eleven_v3: 0.08, eleven_multilingual_v2: 0.08}; // $ за 1000 знаков, прайс на 29.09.2026 (v4 — со скидкой до 12.10)
@@ -28,56 +26,6 @@ const only = args.slice(1).filter((a, i, all) => !a.startsWith('--') && !['--sam
 if (fs.existsSync('.env')) process.loadEnvFile('.env');
 const KEY = process.env.ELEVENLABS_API_KEY;
 const MODEL = process.env.ELEVENLABS_MODEL || 'eleven_v4';
-
-// Конфиг ролика — TypeScript: собираем esbuild-ом в кэш и берём экспорт с нужным id
-const loadConfig = async () => {
-  const out = path.resolve('node_modules/.cache', `tts-${id}.cjs`);
-  await build({entryPoints: [path.join(studioDir('youtube'), id, 'config.ts')], bundle: true, platform: 'node', format: 'cjs', outfile: out, logLevel: 'error'});
-  const mod = createRequire(import.meta.url)(out);
-  const config = Object.values(mod).find((v) => v && typeof v === 'object' && v.id === id);
-  if (!config) throw new Error(`В src/studios/manacost-youtube/${id}/config.ts нет конфига с id «${id}»`);
-  return config;
-};
-
-// Текст диктора → что говорим (с аудиотегами и заменами произношения) и что показываем (как написано).
-// map[i] — диапазон [от, до) в произносимом тексте для i-го символа показываемого
-const speakable = (vo, pronounce = {}) => {
-  const words = Object.keys(pronounce).sort((a, b) => b.length - a.length);
-  const isWord = (c) => !!c && /[\p{L}\p{N}]/u.test(c);
-  let spoken = '';
-  let shown = '';
-  const map = [];
-  for (let i = 0; i < vo.length; ) {
-    if (vo[i] === '[') {
-      const j = vo.indexOf(']', i);
-      if (j > i) {
-        let k = j + 1;
-        while (vo[k] === ' ') k++;
-        spoken += vo.slice(i, k);
-        i = k;
-        continue;
-      }
-    }
-    const w = words.find((w) => vo.startsWith(w, i) && !isWord(vo[i - 1]) && !isWord(vo[i + w.length]));
-    if (w) {
-      const from = spoken.length;
-      spoken += pronounce[w];
-      for (let k = 0; k < w.length; k++) {
-        const a = from + Math.floor((k / w.length) * pronounce[w].length);
-        const b = from + Math.max(1, Math.ceil(((k + 1) / w.length) * pronounce[w].length));
-        map.push([a, b]);
-        shown += vo[i + k];
-      }
-      i += w.length;
-      continue;
-    }
-    map.push([spoken.length, spoken.length + 1]);
-    spoken += vo[i];
-    shown += vo[i];
-    i++;
-  }
-  return {spoken, shown, map};
-};
 
 const call = async (url, init = {}, tries = 4) => {
   for (let t = 1; ; t++) {
@@ -120,7 +68,7 @@ const shownTimes = ({spoken, map}, alignment) => {
   return {start: start.map(r3), end: end.map(r3)};
 };
 
-const config = await loadConfig();
+const config = await loadConfig(id);
 const segs = config.segments.map((s) => ({id: s.id, ...speakable(s.vo, config.pronounce)}));
 const st = settingsOf(config);
 const price = PRICE[MODEL];

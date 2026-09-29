@@ -9,7 +9,7 @@ const ARTS = ['TLC_600', 'END_033', 'CAP_107', 'JAIL_200', 'CAP_405', 'JAIL_444'
 export const TEMPLATE_DEMO: YtConfig = {
   id: 'yt-template-demo',
   title: 'Дракон Воин — гайд (демо шаблона)',
-  music: ['lib/music/tavern-30.m4a', 'lib/music/mystic-30.m4a'],
+  music: ['lib/music/tavern-30-bed.m4a', 'lib/music/mystic-30-bed.m4a'],
   subtitles: 'on',
   thumb: {title: 'Дракон\nВоин', badge: 'Гайд', arts: ARTS.slice(0, 8), cards: ['CAP_107', 'END_033', 'TLC_600']},
   segments: [
