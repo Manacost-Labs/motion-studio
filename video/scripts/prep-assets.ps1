@@ -1,7 +1,7 @@
 ﻿# Готовит ассеты для Remotion: кадрирует интерфейс, уменьшает арты и персонажей.
 Add-Type -AssemblyName System.Drawing
 $root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)   # ...\video
-$proj = Split-Path -Parent $root                                              # ...\Hearthpulse Ads
+$proj = Join-Path (Split-Path -Parent $root) 'исходники'                      # ...\Hearthpulse Ads\исходники
 $pub = Join-Path $root 'public'
 
 $jpegCodec = [System.Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() | Where-Object { $_.MimeType -eq 'image/jpeg' }
@@ -60,7 +60,7 @@ $ui1x = @(
   @('карта.png', 0, 0, 1360, 822, 'card-aya.png')
 )
 foreach ($c in $ui1x) {
-  Save-Crop (Join-Path $proj $c[0]) $c[1] $c[2] $c[3] $c[4] (Join-Path $pub "ui\$($c[5])")
+  Save-Crop (Join-Path $proj "скриншоты сайта\$($c[0])") $c[1] $c[2] $c[3] $c[4] (Join-Path $pub "ui\$($c[5])")
 }
 
 # --- Арты Blizzard (JPEG, до 3200 px) и персонажи (PNG с прозрачностью, до 1600 px)
