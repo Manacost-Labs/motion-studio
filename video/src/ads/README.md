@@ -10,7 +10,11 @@
 | `feature-matchups` | Анонс раздела «Матчапы» | `Feature-Matchups`, `Feature-Matchups-16x9` | 410 кадров, 13,7 с | шаблон `src/templates/feature` | `out/feature-matchups-9x16.mp4`, `out/feature-matchups-16x9.mp4` | закреплён 29.09.2026 |
 | `library-showcase` | Витрина библиотеки ассетов `public/lib`, без звука | `Library-Showcase`, `Library-Showcase-16x9` | 1287 кадров, 42,9 с | компоненты `src/brand/library.tsx` | `out/library-showcase-9x16.mp4`, `out/library-showcase-16x9.mp4` | закреплён 29.09.2026 |
 
+| `yt-legend-decks-sep26` | YouTube (Манакост): «15 колод для Легенды в сентябре» по статье hs-manacost.ru, под озвучку | `yt-legend-decks-sep26`, обложка `yt-legend-decks-sep26-thumb` | ~8:10 без голоса (длина подстроится под запись) | шаблон `src/templates/youtube` | `out/yt-legend-decks-sep26/` (video.mp4 в 4K, thumbnail.png, description.txt, subtitles.srt, script.md) | черновик, ждёт озвучки |
+
 `out/hearthpulse-animatic.mp4` и `out/hearthpulse-v2-wip.mp4` — черновики первых версий, не для публикации.
+
+`yt-template-demo` (конфиг в `src/templates/youtube/demo.ts`) — демонстрация всех сцен YouTube-шаблона на примере гайда, не для публикации.
 
 ### launch30 — паспорт
 

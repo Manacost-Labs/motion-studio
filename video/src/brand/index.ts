@@ -5,3 +5,4 @@ export * from './scenes';
 export * from './audio';
 export * from './Spot';
 export * from './library';
+export * from './manacost';

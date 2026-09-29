@@ -2,6 +2,7 @@
 video/node_modules/
 .agents/
 .claude/skills/higgsfield-*
+.claude/skills/remotion-*
 .claude/settings.local.json
 
 # Рендеры воспроизводятся из кода; список готовых файлов — video/src/ads/README.md
@@ -11,3 +12,8 @@ video/out/
 video/capture/*.png
 
 *.log
+
+# Ключи API (ElevenLabs и др.) — только локально; образец полей в video/.env.example
+.env
+*.env
+!*.env.example

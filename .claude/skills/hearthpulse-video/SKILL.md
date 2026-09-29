@@ -12,11 +12,11 @@ description: Make motion videos for HearthPulse (hearthpulse.net, Hearthstone st
 | Путь | Что там |
 |---|---|
 | `video/src/brand/` | Дизайн-система: `theme.ts` (палитра, шрифты), `components.tsx` (Title, Kicker, Panel, Highlight, Char, Bg, LiveBg, PulseLine, GoldText…), `scenes.tsx` (HookScene, LogoScene, FeatureScene, CarouselScene, EndCardScene, PulseCut), `audio.tsx`, `Spot.tsx` (склейка сцен + звук) |
-| `video/src/templates/` | Шаблоны — движки роликов без содержимого. `feature/FeatureSpot.tsx` — «новая функция» (+ `FeatureCompositions` для регистрации) |
+| `video/src/templates/` | Шаблоны — движки роликов без содержимого. `feature/FeatureSpot.tsx` — «новая функция» (+ `FeatureCompositions` для регистрации); `youtube/` — YouTube-ролик по статье Манакоста (+ `YtCompositions`, README) |
 | `video/src/ads/` | **Готовые ролики, по папке на ролик**: `launch30` (основной, 36 с; стыки и тайминги в `timeline.ts`, `b(n)` — доли), `feature-matchups` (анонс по шаблону), `library-showcase` (витрина библиотеки). Реестр, паспорта роликов и правила закрепления — `video/src/ads/README.md`; регистрация композиций — `video/src/ads/index.tsx` |
 | `video/src/Root.tsx` | Только подключает `src/ads/index.tsx` |
 | `video/public/` | `brand/` логотип и шрифт, `ui/` кадры сайта, `art/` арты Blizzard, `chars/` персонажи, `cards/` рендеры карт, `audio/` музыка и эффекты, `live/` и `live-h/` клипы Higgsfield, `plates*/` стартовые кадры |
-| `video/scripts/` | `capture.mjs` (публичные страницы), `capture-auth.mjs` (из-под аккаунта), `crop-ui.ps1 -Only a.png,b.png` (вырезка блоков в `public/ui`), `beats.mjs` (темп и сильные доли трека), `stills.mjs`, `plates.mjs`, `gen-live.ps1`, `gen-audio.ps1`, `gen-library.mjs`, `render.ps1`, `qa.ps1` (поиск рывков), `check-ads.mjs` (сверка закреплённых роликов с эталоном) |
+| `video/scripts/` | `capture.mjs` (публичные страницы), `capture-auth.mjs` (из-под аккаунта), `crop-ui.ps1 -Only a.png,b.png` (вырезка блоков в `public/ui`), `beats.mjs` (темп и сильные доли трека), `stills.mjs`, `plates.mjs`, `gen-live.ps1`, `gen-audio.ps1`, `gen-library.mjs`, `render.ps1`, `qa.ps1` (поиск рывков), `check-ads.mjs` (сверка закреплённых роликов с эталоном), `fetch-article.mjs` / `hs-assets.mjs` / `yt-export.mjs` (YouTube по статьям) |
 
 ## Библиотека ассетов
 
@@ -39,6 +39,10 @@ description: Make motion videos for HearthPulse (hearthpulse.net, Hearthstone st
 6. **Проверка рывков перед сдачей:** `.\scripts\qa.ps1 out\<имя>-9x16.mp4 -Cuts <кадры стыков>` (и для 16:9). Всё, что помечено «проверить», вырежи ffmpeg-ом по кадрам и посмотри. Типичные причины: слишком быстрый сдвиг (растяни время, уменьши путь), резкое появление/исчезновение элемента (добавь затухание), перенос текста на анимации разрядки (у надзаголовка стоит `nowrap`, держи его до ~30 символов).
 7. **Сдача и закрепление:** строка в реестре `src/ads/README.md`, запись в `src/ads/frozen.json`, эталон `node scripts/check-ads.mjs --update <папка>`, коммит в git (репозиторий в корне проекта).
 
+## YouTube-ролик по статье Манакоста
+
+Бренд — Манакост (не HearthPulse), 16:9, под озвучку: текст диктора в `vo`, на экране тезисы и карты под голос, субтитры пока нет записи. Ролик собирается из сцен любого вида: `intro`, `deck` (с местом в топе или без), `cards`, `mulligan`, `matchups`, `points`, `image`, `outro` — так делаются и подборки, и гайды на колоды. Живой пример всех сцен — композиция `yt-template-demo`. Порядок — `video/src/templates/youtube/README.md`: `fetch-article.mjs` (статья → колоды и карты) → конфиг по образцу `src/ads/yt-legend-decks-sep26/config.ts` (подборка) или `src/templates/youtube/demo.ts` (гайд): пересказ своими словами, фразы-привязки `at` → `yt-export.mjs` (хронометраж, описание с таймкодами и кодами колод, `.srt`, сценарий для диктора) → стоп-кадры → `render.ps1`.
+
 ## Новый шаблон
 
 Движок — в `src/templates/<имя>/` (компонент, тип конфига, `<Имя>Compositions` по образцу `FeatureCompositions`), каждый ролик по нему — отдельная папка в `src/ads/`. Порядок и правила — `src/ads/README.md`, раздел «Новый шаблон и ролик по нему».
@@ -49,7 +53,7 @@ description: Make motion videos for HearthPulse (hearthpulse.net, Hearthstone st
 
 ## Правила, которые нельзя нарушать
 
-- Название только **HearthPulse**, цена **«от 99 ₽/мес»**, призыв ведёт на **boosty.to/kolodahearthstone**.
+- В роликах о продукте: название только **HearthPulse**, цена **«от 99 ₽/мес»**, призыв ведёт на **boosty.to/kolodahearthstone**. В YouTube-роликах по статьям — только **Манакост** (без рекламы HearthPulse), ссылки на hs-manacost.ru, Telegram, VK.
 - Цифры — только со скриншотов сайта. Не обещать побед и роста рейтинга.
 - Не рисовать интерфейс нейросетью: видеомодели искажают текст и цифры. ИИ — только для фонов и персонажей.
 - Новые визуальные решения добавлять в `src/brand/`, а не в конкретный ролик, и описывать в `BRAND.md`.
