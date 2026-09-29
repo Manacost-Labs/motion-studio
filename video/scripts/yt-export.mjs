@@ -7,11 +7,12 @@ import {bundle} from '@remotion/bundler';
 import {selectComposition} from '@remotion/renderer';
 import fs from 'node:fs';
 import path from 'node:path';
+import {entryPoint} from './studios.mjs';
 
 const id = process.argv[2];
 if (!id) throw new Error('node scripts/yt-export.mjs <id композиции>');
 const browserExecutable = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
-const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
+const serveUrl = await bundle({entryPoint: entryPoint('youtube')});
 const comp = await selectComposition({serveUrl, id, browserExecutable});
 const {config, timing} = comp.props;
 const fps = comp.fps;

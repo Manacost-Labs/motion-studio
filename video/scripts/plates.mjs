@@ -4,6 +4,7 @@
 import {bundle} from '@remotion/bundler';
 import {getCompositions, renderStill} from '@remotion/renderer';
 import path from 'node:path';
+import {entryPoint} from './studios.mjs';
 import fs from 'node:fs';
 
 const wide = process.argv[2] === 'h';
@@ -13,7 +14,7 @@ fs.mkdirSync(outDir, {recursive: true});
 
 const FRAME = {hook: 0, standard: 60, cards: 80, arena: 60, bg: 60, end: 0};
 const browserExecutable = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
-const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
+const serveUrl = await bundle({entryPoint: entryPoint('ads')});
 const comps = (await getCompositions(serveUrl, {browserExecutable})).filter(
   (c) => c.id.startsWith(prefix) && (wide || !c.id.startsWith('plate-h-')),
 );

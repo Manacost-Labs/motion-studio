@@ -8,6 +8,7 @@
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
+import {studioDir} from './studios.mjs';
 import {createRequire} from 'node:module';
 import {build} from 'esbuild';
 
@@ -31,10 +32,10 @@ const MODEL = process.env.ELEVENLABS_MODEL || 'eleven_v4';
 // Конфиг ролика — TypeScript: собираем esbuild-ом в кэш и берём экспорт с нужным id
 const loadConfig = async () => {
   const out = path.resolve('node_modules/.cache', `tts-${id}.cjs`);
-  await build({entryPoints: [`src/ads/${id}/config.ts`], bundle: true, platform: 'node', format: 'cjs', outfile: out, logLevel: 'error'});
+  await build({entryPoints: [path.join(studioDir('youtube'), id, 'config.ts')], bundle: true, platform: 'node', format: 'cjs', outfile: out, logLevel: 'error'});
   const mod = createRequire(import.meta.url)(out);
   const config = Object.values(mod).find((v) => v && typeof v === 'object' && v.id === id);
-  if (!config) throw new Error(`В src/ads/${id}/config.ts нет конфига с id «${id}»`);
+  if (!config) throw new Error(`В src/studios/manacost-youtube/${id}/config.ts нет конфига с id «${id}»`);
   return config;
 };
 

@@ -4,8 +4,8 @@
 
 - Файлы: `public/lib/…`
 - Промпты, модели, размеры: `public/lib/manifest.json`
-- Компоненты и имена для кода: `src/brand/library.tsx`
-- Видео-витрина: композиции `Library-Showcase` (9:16) и `Library-Showcase-16x9` в Remotion Studio (`npx remotion studio`)
+- Компоненты и имена для кода: `src/hearthpulse/library.tsx`
+- Видео-витрина: композиции `Library-Showcase` (9:16) и `Library-Showcase-16x9` в студии рекламы (`npm run studio:ads`)
 - Листы превью пересобираются скриптом `scripts/library-sheets.ps1`
 - Догенерировать недостающее или расширить библиотеку: дописать в `scripts/gen-library.mjs` и запустить `node scripts/gen-library.mjs` (готовые файлы пропускаются)
 

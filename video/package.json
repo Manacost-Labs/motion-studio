@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "studio:ads": "remotion studio src/studios/hp-ads/index.ts",
+    "studio:features": "remotion studio src/studios/hp-features/index.ts --port 3001",
+    "studio:youtube": "remotion studio src/studios/manacost-youtube/index.ts --port 3002",
+    "check-ads": "node scripts/check-ads.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

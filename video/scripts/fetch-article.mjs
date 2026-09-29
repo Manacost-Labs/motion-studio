@@ -1,11 +1,12 @@
-// Статья hs-manacost.ru → данные для YouTube-ролика (шаблон src/templates/youtube).
-//   node scripts/fetch-article.mjs <url> <папка ролика в src/ads>
-// Пишет src/ads/<папка>/article.json: вступление, разделы-колоды (место, название, класс, код, абзацы,
+// Статья hs-manacost.ru → данные для YouTube-ролика (шаблон src/studios/manacost-youtube/template).
+//   node scripts/fetch-article.mjs <url> <папка ролика в src/studios/manacost-youtube>
+// Пишет src/studios/manacost-youtube/<папка>/article.json: вступление, разделы-колоды (место, название, класс, код, абзацы,
 // упомянутые в тексте карты, 30 карт колоды из кода) и финал. Картинки карт кэшируются в public/hs:
 //   tiles/<id>.png — полоски для списка колоды, render/<id>.png — карта целиком (ruRU), art/<id>.jpg — арт.
 import puppeteer from 'puppeteer-core';
 import fs from 'node:fs';
 import path from 'node:path';
+import {studioDir} from './studios.mjs';
 import {cardDb, decodeDeck, download, HS} from './hs-lib.mjs';
 
 const [url, folder] = process.argv.slice(2);
@@ -115,7 +116,7 @@ for (let k = 0; k < jobs.length; k += 8) {
 }
 
 // ─── 4. Итог ───
-const outDir = path.resolve('src/ads', folder);
+const outDir = path.join(studioDir('youtube'), folder);
 fs.mkdirSync(outDir, {recursive: true});
 const article = {url, ...raw, cardNames: Object.fromEntries([...need.render].map((id) => [id, byId.get(id)?.name]))};
 fs.writeFileSync(path.join(outDir, 'article.json'), JSON.stringify(article, null, 1));

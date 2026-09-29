@@ -1,5 +1,0 @@
-[
-  {"ad": "launch30", "comps": ["HearthPulseAd", "HearthPulseAd16x9"], "step": 45, "offset": 20},
-  {"ad": "feature-matchups", "comps": ["Feature-Matchups", "Feature-Matchups-16x9"], "step": 45, "offset": 20},
-  {"ad": "library-showcase", "comps": ["Library-Showcase", "Library-Showcase-16x9"], "step": 60, "offset": 30}
-]

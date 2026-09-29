@@ -1,15 +1,16 @@
 // Точная раскладка карт на постере api.blizzcore.ru. Для каждой ячейки постера находит, какая карта там лежит
 // (среди карт той же стоимости: внутри одной стоимости сервис иногда ставит карты не в порядке кода колоды),
 // и её прямоугольник — сравнением с рендером HearthstoneJSON по непрозрачным пикселям (минимум разницы цвета).
-//   node scripts/poster-fit.mjs <папка ролика в src/ads> [место]
+//   node scripts/poster-fit.mjs <папка ролика в src/studios/manacost-youtube> [место]
 // Переписывает в article.json у poster: order, types, rarities (в порядке постера) и rects — [x, y, w, h] рендера
 // в пикселях постера. По rects шаблон кладёт поверх постера резкие рендеры карт и наводит камеру.
 import fs from 'node:fs';
 import path from 'node:path';
+import {studioDir} from './studios.mjs';
 import {spawnSync} from 'node:child_process';
 import {cardDb, decodeDeck} from './hs-lib.mjs';
 
-// сетки постеров: шаг ячеек и примерное положение рендера существа в первой ячейке (см. src/templates/youtube/poster.ts)
+// сетки постеров: шаг ячеек и примерное положение рендера существа в первой ячейке (см. src/studios/manacost-youtube/template/poster.ts)
 const GRID = {
   8: {cols: 8, dx: 235, dy: 328, s: 0.4601, ox: 25.3, oy: -9},
   6: {cols: 6, dx: 313, dy: 426, s: 0.6157, ox: 26.9, oy: -20},
@@ -118,7 +119,7 @@ const assign = (E) => {
 
 const [folder, only] = process.argv.slice(2);
 if (!folder) throw new Error('node scripts/poster-fit.mjs <папка ролика> [место]');
-const file = path.resolve('src/ads', folder, 'article.json');
+const file = path.join(studioDir('youtube'), folder, 'article.json');
 const article = JSON.parse(fs.readFileSync(file, 'utf8'));
 const byDbf = new Map((await cardDb()).map((c) => [c.dbfId, c]));
 const byId = new Map([...byDbf.values()].map((c) => [c.id, c]));

@@ -1,16 +1,17 @@
 // Постеры колод из api.blizzcore.ru (POST /render {deck_code, image_style}) для YouTube-роликов.
-//   node scripts/deck-posters.mjs <папка ролика в src/ads> [parchment|classic]
-// Для каждой колоды из src/ads/<папка>/article.json: скачивает постер в public/decks/<папка>/<место>.jpg и дописывает
+//   node scripts/deck-posters.mjs <папка ролика в src/studios/manacost-youtube> [parchment|classic]
+// Для каждой колоды из src/studios/manacost-youtube/<папка>/article.json: скачивает постер в public/decks/<папка>/<место>.jpg и дописывает
 // в article.json поле poster: {src, w, h, order, types, rarities, rects, dust}. Порядок сначала по стоимости,
 // затем scripts/poster-fit.mjs уточняет его по самому постеру и дописывает rects. По ним камера наезжает на названную карту.
 import fs from 'node:fs';
 import path from 'node:path';
+import {studioDir} from './studios.mjs';
 import {spawnSync} from 'node:child_process';
 import {cardDb, decodeDeck, download} from './hs-lib.mjs';
 
 const [folder, style = 'parchment'] = process.argv.slice(2);
 if (!folder) throw new Error('node scripts/deck-posters.mjs <папка ролика> [parchment|classic]');
-const file = path.resolve('src/ads', folder, 'article.json');
+const file = path.join(studioDir('youtube'), folder, 'article.json');
 const article = JSON.parse(fs.readFileSync(file, 'utf8'));
 const byDbf = new Map((await cardDb()).map((c) => [c.dbfId, c]));
 const outDir = path.resolve('public/decks', folder);

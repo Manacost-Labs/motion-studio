@@ -1,15 +1,18 @@
 ﻿# Рендер ролика + мастеринг звука под соцсети (-14 LUFS, пики не выше -1.5 dBTP)
+# -Studio — из какой студии композиция: ads (по умолчанию), features, youtube
 # .\scripts\render.ps1 -Comp HearthPulseAd -Out hearthpulse-9x16
+# .\scripts\render.ps1 -Studio features -Comp Feature-Matchups -Out feature-matchups-9x16
 # .\scripts\render.ps1 -Out hearthpulse-9x16 -MasterOnly   — только пересвести звук готового файла
-# .\scripts\render.ps1 -Comp yt-legend-decks-sep26 -Out yt-legend-decks-sep26\video -Scale 2 -JpegQuality 95   — YouTube в 4K
-param([string]$Comp = 'HearthPulseAd', [string]$Out = 'hearthpulse-9x16', [switch]$MasterOnly, [double]$Scale = 1, [int]$JpegQuality = 80)
+# .\scripts\render.ps1 -Studio youtube -Comp yt-legend-decks-sep26 -Out yt-legend-decks-sep26\video -Scale 2 -JpegQuality 95   — YouTube в 4K
+param([ValidateSet('ads', 'features', 'youtube')][string]$Studio = 'ads', [string]$Comp = 'HearthPulseAd', [string]$Out = 'hearthpulse-9x16', [switch]$MasterOnly, [double]$Scale = 1, [int]$JpegQuality = 80)
 $root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 Set-Location $root
+$entry = @{ads = 'hp-ads'; features = 'hp-features'; youtube = 'manacost-youtube'}[$Studio]
 $raw = "out\$Out-raw.mp4"
 if ($MasterOnly) {
   Move-Item "out\$Out.mp4" $raw -Force
 } else {
-  npx remotion render $Comp $raw --browser-executable="C:/Program Files/Google/Chrome/Application/chrome.exe" --codec=h264 --crf=18 --scale=$Scale --jpeg-quality=$JpegQuality 2>&1 | Select-Object -Last 2
+  npx remotion render "src/studios/$entry/index.ts" $Comp $raw --browser-executable="C:/Program Files/Google/Chrome/Application/chrome.exe" --codec=h264 --crf=18 --scale=$Scale --jpeg-quality=$JpegQuality 2>&1 | Select-Object -Last 2
 }
 
 # Двухпроходная нормализация: замер, затем точная линейная коррекция

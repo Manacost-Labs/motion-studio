@@ -1,5 +1,5 @@
-// Проверка закреплённых роликов (src/ads/frozen.json): рендерит контрольные кадры и сравнивает с эталоном
-// в src/ads/<ролик>/ref. Запускать после любых правок в src/brand — готовые ролики не должны меняться.
+// Проверка закреплённых роликов (src/studios/frozen.json): рендерит контрольные кадры и сравнивает с эталоном
+// в src/studios/<студия>/<ролик>/ref. Запускать после любых правок в src/hearthpulse — готовые ролики не должны меняться.
 //   node scripts/check-ads.mjs                    — сверить все ролики
 //   node scripts/check-ads.mjs launch30           — только один
 //   node scripts/check-ads.mjs --update <ролик>   — переснять эталон (только если ролик меняли намеренно)
@@ -9,14 +9,15 @@ import {openBrowser, renderStill, selectComposition} from '@remotion/renderer';
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
+import {entryPoint, studioDir} from './studios.mjs';
 
 const MIN_PSNR = 40; // дБ; одинаковый кадр даёт inf, заметная правка — меньше 35
 
 const args = process.argv.slice(2);
 const update = args.includes('--update');
 const only = args.filter((a) => !a.startsWith('--'));
-const ads = JSON.parse(fs.readFileSync('src/ads/frozen.json', 'utf8')).filter((a) => !only.length || only.includes(a.ad));
-if (!ads.length) throw new Error(`Нет таких роликов в src/ads/frozen.json: ${only.join(', ')}`);
+const ads = JSON.parse(fs.readFileSync('src/studios/frozen.json', 'utf8')).filter((a) => !only.length || only.includes(a.ad));
+if (!ads.length) throw new Error(`Нет таких роликов в src/studios/frozen.json: ${only.join(', ')}`);
 if (update && !only.length) throw new Error('--update переснимает эталон: укажи ролик явно, например --update launch30');
 
 const psnr = (a, b) => {
@@ -26,12 +27,13 @@ const psnr = (a, b) => {
 };
 
 const browserExecutable = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
-const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts')});
+const bundles = {}; // по сборке на студию
 const browser = await openBrowser('chrome', {browserExecutable});
 const problems = [];
 
 for (const ad of ads) {
-  const refDir = path.resolve('src/ads', ad.ad, 'ref');
+  const serveUrl = (bundles[ad.studio] ??= await bundle({entryPoint: entryPoint(ad.studio)}));
+  const refDir = path.join(studioDir(ad.studio), ad.ad, 'ref');
   const metaPath = path.join(refDir, 'meta.json');
   const meta = fs.existsSync(metaPath) ? JSON.parse(fs.readFileSync(metaPath, 'utf8')) : {};
   for (const id of ad.comps) {
@@ -78,7 +80,7 @@ for (const ad of ads) {
 await browser.close({silent: true}).catch(() => {});
 if (problems.length) {
   console.log('\n' + problems.join('\n'));
-  console.log('\nЕсли изменение не задумано — чини src/brand (новое поведение только через опции со старым по умолчанию).');
+  console.log('\nЕсли изменение не задумано — чини src/hearthpulse (новое поведение только через опции со старым по умолчанию).');
   process.exit(1);
 }
 console.log(update ? '\nЭталон записан.' : '\nЗакреплённые ролики не изменились.');
