@@ -3,18 +3,18 @@
 // Голос: public/vo/<config.id>/<сегмент>.mp3 (или .wav/.m4a). Есть файл — сцена длится по записи,
 // субтитры в режиме auto скрываются, музыка приглушается. Нет файла — длина по тексту (CPS в timing.ts).
 import React from 'react';
-import {AbsoluteFill, CalculateMetadataFunction, Composition, Html5Audio, Img, interpolate, Sequence, staticFile, Still, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, CalculateMetadataFunction, Composition, Html5Audio, Img, interpolate, Sequence, staticFile, Still} from 'remotion';
 import {getAudioDurationInSeconds} from '@remotion/media-utils';
 import {DISPLAY, FPS, MANACOST} from '../brand';
-import {Grain, hsRender, Page, Sfx, Subtitles, Vignette} from './parts';
+import {Grain, hsRender, OVL, Page, SceneMotion, Sfx, Subtitles, Vignette} from './parts';
 import {chapterOf, Scene, subtitleZone} from './scenes';
 import {H, parchmentBg, redBg, TEXT} from './theme';
+import {BASE_FPS, FrameScale, useK} from './fps';
 import {buildSubs, estimateVo, leadFor, minFor, stripTags, tailFor, XFADE} from './timing';
 import {SegTiming, YtConfig, YtProps, YtTiming} from './types';
 
 const MUSIC_VOL = 0.45; // музыка без голоса
 const MUSIC_DUCK = 0.3; // во сколько раз тише под голосом
-const DIP = 8; // кадров на уход сцены и появление следующей (склейка проходит через чистый пергамент)
 
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 
@@ -67,19 +67,15 @@ export const calcYt: CalculateMetadataFunction<YtProps> = async ({props}) => {
     music.push({src: config.music[i], from: t, dur: lens[i]});
     t += lens[i] - XFADE;
   }
-  const timing: YtTiming = {segments, music, total};
-  return {durationInFrames: total, props: {...props, timing}};
-};
-
-// Стык сцен: короткое растворение в чистый пергамент (фон всего ролика)
-const SegFade: React.FC<{dur: number; first: boolean; last: boolean; children: React.ReactNode}> = ({dur, first, last, children}) => {
-  const f = useCurrentFrame();
-  const o = Math.min(first ? 1 : interpolate(f, [0, DIP], [0, 1], clamp), last ? 1 : interpolate(f, [dur - DIP, dur], [1, 0], clamp));
-  return <AbsoluteFill style={{opacity: o}}>{children}</AbsoluteFill>;
+  // всё выше — в «кадрах-30» (fps.ts); ролик может рендериться в 60 к/с — тогда кадров вдвое больше
+  const fps = config.fps ?? FPS;
+  const timing: YtTiming = {segments, music, total, base: BASE_FPS};
+  return {durationInFrames: Math.round(total * (fps / BASE_FPS)), fps, props: {...props, timing}};
 };
 
 // Музыка по кругу; под голосом приглушается, к концу ролика уходит в тишину
 const Music: React.FC<{timing: YtTiming}> = ({timing}) => {
+  const K = useK();
   const raw = (g: number) => (timing.segments.find((s) => g >= s.from && g < s.from + s.dur)?.voice ? MUSIC_DUCK : 1);
   const duck = (g: number) => {
     const b = timing.segments.map((s) => s.from).find((x) => Math.abs(g - x) < 15);
@@ -88,15 +84,18 @@ const Music: React.FC<{timing: YtTiming}> = ({timing}) => {
   return (
     <>
       {timing.music.map((m, i) => (
-        <Sequence key={i} from={m.from} durationInFrames={m.dur} layout="none">
+        <Sequence key={i} from={Math.round(m.from * K)} durationInFrames={Math.round(m.dur * K)} layout="none">
           <Html5Audio
             src={staticFile(m.src)}
-            volume={(f) =>
+            volume={(real) => {
+              const f = real / K;
+              return (
               MUSIC_VOL *
               interpolate(f, [0, XFADE, m.dur - XFADE, m.dur], [i === 0 ? 1 : 0, 1, 1, 0], clamp) *
               duck(m.from + f) *
               interpolate(m.from + f, [timing.total - 90, timing.total], [1, 0], clamp)
-            }
+              );
+            }}
           />
         </Sequence>
       ))}
@@ -111,20 +110,28 @@ export const YtVideo: React.FC<YtProps> = ({config, timing}) => {
   const subsOn = (t: SegTiming) => mode === 'on' || (mode === 'auto' && !t.voice);
   const ranks = config.segments.flatMap((s) => (s.kind === 'deck' && s.rank !== undefined ? [s.rank] : []));
   const rankOf = ranks.length > 1 ? Math.max(...ranks) : undefined;
+  const decks = config.segments.flatMap((s) => (s.kind === 'deck' && s.rank !== undefined ? [{rank: s.rank, name: s.name, cls: s.cls, dust: s.poster?.dust}] : []));
+  const K = (config.fps ?? FPS) / BASE_FPS;
   return (
+    <FrameScale value={K}>
     <AbsoluteFill>
       <Page />
       {config.segments.map((s, i) => {
         const t = timing.segments[i];
         const zone = subtitleZone(s);
+        const last = i === n - 1;
+        // стык — перелистывание страницы (parts/motion.tsx): уходящая сцена живёт ещё OVL кадров поверх входа следующей
+        // место в шапке предыдущей сцены: следующая колода прокручивает номер с него, сцена без места — убирает его
+        const prev = config.segments[i - 1];
+        const prevRank = prev?.kind === 'deck' ? prev.rank : undefined;
         return (
-          <Sequence key={s.id} from={t.from} durationInFrames={t.dur} name={s.id}>
-            <SegFade dur={t.dur} first={i === 0} last={i === n - 1}>
-              <Scene seg={s} t={t} rankOf={rankOf} subs={subsOn(t)} />
+          <Sequence key={s.id} from={Math.round(t.from * K)} durationInFrames={Math.round((t.dur + (last ? 0 : OVL)) * K)} name={s.id}>
+            <SceneMotion dur={t.dur} first={i === 0} last={last} prevRank={prevRank} prevRankOf={prevRank !== undefined ? rankOf : undefined}>
+              <Scene seg={s} t={t} rankOf={rankOf} subs={subsOn(t)} decks={decks} />
               {subsOn(t) && <Subtitles subs={t.subs} cx={zone.cx} bottom={26} maxW={zone.maxW} />}
-            </SegFade>
+            </SceneMotion>
             {t.voice && (
-              <Sequence from={t.voFrom} layout="none">
+              <Sequence from={Math.round(t.voFrom * K)} layout="none">
                 <Html5Audio src={staticFile(t.voice)} />
               </Sequence>
             )}
@@ -132,12 +139,13 @@ export const YtVideo: React.FC<YtProps> = ({config, timing}) => {
         );
       })}
       {timing.segments.slice(1).map((t) => (
-        <Sfx key={`cut-${t.id}`} file="lib/sfx/magic-whoosh.wav" at={t.from - 5} volume={0.12} />
+        <Sfx key={`cut-${t.id}`} file="lib/sfx/page-turn.wav" at={t.from - 2} volume={0.24} />
       ))}
       <Vignette />
       <Grain />
       <Music timing={timing} />
     </AbsoluteFill>
+    </FrameScale>
   );
 };
 

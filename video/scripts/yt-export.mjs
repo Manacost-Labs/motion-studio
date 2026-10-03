@@ -15,7 +15,7 @@ const browserExecutable = 'C:/Program Files/Google/Chrome/Application/chrome.exe
 const serveUrl = await bundle({entryPoint: entryPoint('youtube')});
 const comp = await selectComposition({serveUrl, id, browserExecutable});
 const {config, timing} = comp.props;
-const fps = comp.fps;
+const fps = timing.base ?? comp.fps; // тайминги шаблона — в «кадрах-30», даже если ролик рендерится в 60 к/с
 const outDir = path.resolve('out', id);
 fs.mkdirSync(outDir, {recursive: true});
 
@@ -40,7 +40,8 @@ const script = [
   '',
   ...config.segments.flatMap((s, i) => {
     const t = timing.segments[i];
-    return [`## ${s.id} — ${label(s)}`, '', `Файл: \`${s.id}.mp3\` · ${t.voice ? `записан, ${(t.voDur / fps).toFixed(1)} с` : `≈ ${(t.voDur / fps).toFixed(0)} с`}`, '', s.vo, ''];
+    if (!s.vo.trim()) return []; // разделитель блоков — без голоса
+    return [`## ${s.id}${label(s) ? ` — ${label(s)}` : ''}`, '', `Файл: \`${s.id}.mp3\` · ${t.voice ? `записан, ${(t.voDur / fps).toFixed(1)} с` : `≈ ${(t.voDur / fps).toFixed(0)} с`}`, '', s.vo, ''];
   }),
 ].join('\n');
 fs.writeFileSync(path.join(outDir, 'script.md'), script);
@@ -53,7 +54,13 @@ const description = [
   config.url ? `Статья: ${config.url}` : null,
   '',
   'Таймкоды:',
-  ...config.segments.map((s, i) => `${clock(timing.segments[i].from)} ${label(s)}`),
+  // сцена без главы (начало, разделитель) входит в следующую: глава начинается с её начала — первая с 0:00
+  ...config.segments.flatMap((s, i) => {
+    if (!label(s)) return [];
+    let k = i;
+    while (k > 0 && !label(config.segments[k - 1])) k--;
+    return [`${clock(timing.segments[k].from)} ${label(s)}`];
+  }),
   '',
   ...(decks.length ? [decks.length > 1 ? 'Коды колод:' : 'Код колоды:', ...decks.flatMap((d) => [`${d.rank !== undefined ? `${d.rank}. ` : ''}${d.name} (${d.cls})`, d.code, ''])] : []),
   'Манакост:',

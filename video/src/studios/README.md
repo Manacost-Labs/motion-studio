@@ -23,6 +23,11 @@
 
 `yt-template-demo` (конфиг в `manacost-youtube/template/demo.ts`) — демонстрация всех сцен YouTube-шаблона на примере гайда, не для публикации.
 
+**Витрины анимаций** (не для публикации, не закреплены): каждый приём движения отдельно, с подписью «имя для кода · длительность · кривая». Перед тем как придумывать новое движение — смотри здесь, что уже есть.
+- `hp-ads/motion-showcase` — `Motion-Showcase`, `Motion-Showcase-16x9`: 20 приёмов бренда HearthPulse (`src/hearthpulse`): кривые, Kicker, Title, Wordmark, PulseLine, PulseCut, Bg, Embers, Char, варианты Panel, Highlight, HoverLayer, LibProp, LibFx, BrandBug.
+- `manacost-youtube/motion-showcase` — `yt-motion-showcase` (16:9): 13 приёмов «Компендиума»: кривые ramp, Words, HeaderBand, RankReveal, MainPoints, CardRow, DeckPoster + planCamera, DeckList, VersusBlock, OffDeckCard, HeroPortrait, стык SegFade, Grain.
+Новый приём, который пригодится другим роликам, — в бренд студии и строкой в её витрину.
+
 ### launch30 — паспорт
 
 - **Стыки сцен (кадры):** хук 0 → логотип 86 → Стандарт 134 → Матчапы 276 → Карты 371 → Арена 465 → Поля сражений 607 → Существо 749 → «И ещё» 844 → финал 986 → конец 1090. Все на сильных долях.

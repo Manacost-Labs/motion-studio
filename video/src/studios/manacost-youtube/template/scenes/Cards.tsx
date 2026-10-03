@@ -1,7 +1,7 @@
 // Ключевые карты / комбо — «Компендиум»: шапка из сукна, ряд крупных карт на пергаменте с подписями, под голос
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
-import {CardRow, HeaderBand, MainPoints, Mural, Page, Sfx} from '../parts';
+import {CardRow, HeaderBand, MainPoints, Mural, Page, SceneBody, Sfx} from '../parts';
 import {timeAt} from '../timing';
 import {CardsSeg, SegTiming} from '../types';
 
@@ -12,14 +12,16 @@ export const CardsScene: React.FC<{seg: CardsSeg; t: SegTiming}> = ({seg, t}) =>
   const side = points.length > 0;
   return (
     <AbsoluteFill>
-      <Page />
-      {seg.mural && <Mural src={seg.mural} x={1150} y={200} h={900} opacity={0.2} />}
-      {side && <MainPoints items={points} x={64} y={190} w={620} />}
-      <CardRow cards={cards} x={side ? 720 : 64} w={side ? 1136 : 1792} cy={540} h={600} />
+      <SceneBody>
+        <Page />
+        {seg.mural && <Mural src={seg.mural} x={1150} y={200} h={900} opacity={0.2} />}
+        {side && <MainPoints items={points} x={64} y={190} w={620} />}
+        <CardRow cards={cards} x={side ? 720 : 64} w={side ? 1136 : 1792} cy={540} h={600} />
+        {cards.map((c, i) => (
+          <Sfx key={`${c.id}-${i}`} file="lib/sfx/card-draw.wav" at={c.at} volume={0.2} />
+        ))}
+      </SceneBody>
       <HeaderBand kicker={seg.kicker} title={seg.title} />
-      {cards.map((c, i) => (
-        <Sfx key={`${c.id}-${i}`} file="lib/sfx/card-draw.wav" at={c.at} volume={0.2} />
-      ))}
     </AbsoluteFill>
   );
 };

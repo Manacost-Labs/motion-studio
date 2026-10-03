@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "ffmpeg": {
+      "source": "n0an/ffmpeg-skill",
+      "sourceType": "github",
+      "skillPath": "ffmpeg/SKILL.md",
+      "computedHash": "c1df73aff32efeae17f2b40328a6156b1fb718a25a92c1f935a9fbf9d3ecf21f"
+    },
     "higgsfield-brandkit": {
       "source": "higgsfield-ai/skills",
       "sourceType": "github",
@@ -48,6 +54,18 @@
       "sourceType": "github",
       "skillPath": "higgsfield-youtube-thumbnail/SKILL.md",
       "computedHash": "5be8dcced8ed024db24d6d7277384d1fa02341ad26d5c25edda331ba14070a50"
+    },
+    "motion-design": {
+      "source": "LottieFiles/motion-design-skill",
+      "sourceType": "github",
+      "skillPath": "skills/motion-design/SKILL.md",
+      "computedHash": "4f16f46c81f25a2a25b7a4720b7ea001e65f384b31b5b7f4b455fef87fbc9016"
+    },
+    "music": {
+      "source": "elevenlabs/skills",
+      "sourceType": "github",
+      "skillPath": "music/SKILL.md",
+      "computedHash": "cb47292bef57354c45a348c0aaced97624eec9ddb65a8ed3d236a3cf103f95b6"
     },
     "remotion-best-practices": {
       "source": "remotion-dev/skills",
@@ -120,6 +138,30 @@
       "sourceType": "github",
       "skillPath": "skills/remotion-upgrade/SKILL.md",
       "computedHash": "a59f4020e1bc7336409a575b8691d55b910d5b3ad74d1503644cbf6bf8b04d61"
+    },
+    "sound-effects": {
+      "source": "elevenlabs/skills",
+      "sourceType": "github",
+      "skillPath": "sound-effects/SKILL.md",
+      "computedHash": "f76a229156eaa302d0e64159f56055ce733ecf19da768398a6c5b1991ac1d940"
+    },
+    "speech-to-text": {
+      "source": "elevenlabs/skills",
+      "sourceType": "github",
+      "skillPath": "speech-to-text/SKILL.md",
+      "computedHash": "97871f51a5f7129a8586ef9871cc3d32e5524f131d7c0eb76b9e4f0f123d32c5"
+    },
+    "text-to-speech": {
+      "source": "elevenlabs/skills",
+      "sourceType": "github",
+      "skillPath": "text-to-speech/SKILL.md",
+      "computedHash": "e6107324e231080566051ae6ca0a7a69c68ffaceff297e96d28d42d754e65b6b"
+    },
+    "watch": {
+      "source": "bradautomates/claude-video",
+      "sourceType": "github",
+      "skillPath": "skills/watch/SKILL.md",
+      "computedHash": "cce63baad60cc888d2cf151cdcc913ce7d584c4db77ded357d932c5793955b6a"
     }
   }
 }

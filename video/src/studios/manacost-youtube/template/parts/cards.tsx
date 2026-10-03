@@ -1,11 +1,12 @@
 // Карты на пергаменте: въезжают снизу с торможением и размытием в движении, тёплая мягкая тень, дальше стоят.
 // Ряд карт с подписями (ключевые карты, муллиган), портрет героя в деревянной раме
 import React from 'react';
-import {Img, staticFile, useCurrentFrame} from 'remotion';
+import {Img, staticFile} from 'remotion';
 import {CameraMotionBlur} from '@remotion/motion-blur';
 import {DISPLAY} from '../../brand';
 import {H, ramp, TEXT, timber} from '../theme';
 import {hsArt, hsRender} from './stage';
+import {useFrame} from '../fps';
 
 const RATIO = 512 / 776;
 const ENTER = 18;
@@ -23,7 +24,7 @@ const Blur: React.FC<{active: boolean; x: number; y: number; w: number; h: numbe
 );
 
 const Card: React.FC<{id: string; at: number; cx: number; cy: number; h: number}> = ({id, at, cx, cy, h}) => {
-  const f = useCurrentFrame();
+  const f = useFrame();
   if (f < at - 1) return null;
   const p = ramp(f, at, at + ENTER);
   const w = h * RATIO;
@@ -48,7 +49,7 @@ const moving = (f: number, frames: number[]) => frames.some((a) => f >= a - 1 &&
 
 // Ряд карт с подписями «1 · текст» — карты появляются под голос
 export const CardRow: React.FC<{cards: {id: string; at: number; note?: string}[]; x: number; w: number; cy: number; h: number}> = ({cards, x, w, cy, h}) => {
-  const f = useCurrentFrame();
+  const f = useFrame();
   const n = cards.length;
   const gap = 56;
   const hh = Math.min(h, (w - gap * (n - 1)) / n / RATIO);
@@ -92,7 +93,7 @@ export const CardRow: React.FC<{cards: {id: string; at: number; note?: string}[]
 
 // Портрет героя в деревянной раме
 export const HeroPortrait: React.FC<{hero: string; cx: number; cy: number; w: number; h: number; at: number}> = ({hero, cx, cy, w, h, at}) => {
-  const f = useCurrentFrame();
+  const f = useFrame();
   const p = ramp(f, at, at + 22);
   return (
     <div

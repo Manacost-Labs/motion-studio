@@ -1,11 +1,12 @@
 // Студия YouTube-роликов Манакоста (hs-manacost.ru): npm run studio:youtube. Свой бренд — ./brand, шаблон — ./template
 // (описание — template/README.md). От бренда HearthPulse не зависит. Реестр — ../README.md
 import React from 'react';
-import {Folder, Still} from 'remotion';
+import {Composition, Folder, Still} from 'remotion';
 import {PosterCalib} from './template/PosterCalib';
 import {YtCompositions} from './template/YtVideo';
 import {TEMPLATE_DEMO} from './template/demo';
 import {LEGEND_DECKS_SEP26} from './yt-legend-decks-sep26/config';
+import {YT_MOTION_SHOWCASE_DURATION, YtMotionShowcase} from './motion-showcase/Showcase';
 
 export const Root: React.FC = () => (
   <>
@@ -25,6 +26,11 @@ export const Root: React.FC = () => (
     {/* Демо шаблона: все виды сцен на примере гайда (не для публикации) */}
     <Folder name="yt-template-demo">
       <YtCompositions config={TEMPLATE_DEMO} />
+    </Folder>
+
+    {/* Витрина анимаций шаблона: каждый приём движения отдельно, с подписью (не для публикации) */}
+    <Folder name="motion-showcase">
+      <Composition id="yt-motion-showcase" component={YtMotionShowcase} durationInFrames={YT_MOTION_SHOWCASE_DURATION} fps={30} width={1920} height={1080} />
     </Folder>
   </>
 );

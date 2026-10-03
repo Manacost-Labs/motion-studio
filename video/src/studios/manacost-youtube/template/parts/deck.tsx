@@ -1,17 +1,18 @@
 // Список колоды, когда постера нет: строки как в hsreplay-deck-view (компонент сайта HS-Arena) —
 // блок стоимости в цвете редкости, тёмная строка с артом и переходом под 65°, золотое количество; в деревянной раме
 import React from 'react';
-import {Img, useCurrentFrame} from 'remotion';
+import {Img} from 'remotion';
 import {DISPLAY} from '../../brand';
 import {H, ramp, TEXT, timber} from '../theme';
 import {DeckCard} from '../types';
 import {hsTile} from './stage';
+import {useFrame} from '../fps';
 
 const RARITY: Record<string, string> = {FREE: '#858585', COMMON: '#858585', RARE: '#315376', EPIC: '#644c82', LEGENDARY: '#866027'};
 const outline = (s: number) => `-${s}px -${s}px 0 #000, ${s}px -${s}px 0 #000, -${s}px ${s}px 0 #000, ${s}px ${s}px 0 #000, 0 ${s * 1.5}px 0 #000`;
 
 const Row: React.FC<{c: DeckCard; h: number; enter: number; lit?: number[]}> = ({c, h, enter, lit}) => {
-  const f = useCurrentFrame();
+  const f = useFrame();
   const p = ramp(f, enter, enter + 12);
   const last = lit?.filter((x) => x <= f).pop();
   const k = last === undefined ? 0 : ramp(f, last, last + 8) * (1 - 0.8 * ramp(f, last + 90, last + 110));
@@ -61,7 +62,7 @@ const Row: React.FC<{c: DeckCard; h: number; enter: number; lit?: number[]}> = (
 };
 
 export const DeckList: React.FC<{list: DeckCard[]; x: number; y: number; w: number; h: number; at: number; lit: Record<string, number[]>}> = ({list, x, y, w, h, at, lit}) => {
-  const f = useCurrentFrame();
+  const f = useFrame();
   const rowH = Math.min(40, (h - 90) / list.length - 1);
   const total = list.reduce((s, c) => s + c.count, 0);
   return (

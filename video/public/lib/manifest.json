@@ -668,5 +668,29 @@
   "width": 1080,
   "height": 1920,
   "prompt": "Seamless ambient loop from bg/arena-v.png (см. LOOPS в scripts/gen-library.mjs)"
+ },
+ "sfx/cam-swish.wav": {
+  "category": "sfx",
+  "model": "ffmpeg",
+  "from": "audio/sfx-whoosh.wav",
+  "recipe": "scripts/foley.mjs"
+ },
+ "sfx/quill-scratch.wav": {
+  "category": "sfx",
+  "model": "ffmpeg",
+  "from": "синтез",
+  "recipe": "scripts/foley.mjs"
+ },
+ "sfx/coin-trickle.wav": {
+  "category": "sfx",
+  "model": "ffmpeg",
+  "from": "lib/sfx/coin-pile.wav",
+  "recipe": "scripts/foley.mjs"
+ },
+ "sfx/seal-stamp.wav": {
+  "category": "sfx",
+  "model": "ffmpeg",
+  "from": "lib/sfx/drum-hit.wav",
+  "recipe": "scripts/foley.mjs"
  }
 }

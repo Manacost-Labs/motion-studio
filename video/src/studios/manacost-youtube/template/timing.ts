@@ -4,7 +4,7 @@
 // каждого символа текста — привязки и субтитры встают точно на слово.
 // Аудиотеги v4 в тексте ([pause], [excited]) диктор исполняет, а на экран и в субтитры они не попадают.
 import {FPS} from '../brand';
-import {SegTiming, Sub, YtSegment} from './types';
+import {OutroSeg, SegTiming, Sub, YtSegment} from './types';
 
 export const CPS = 15; // символов в секунду у диктора (≈ 900 знаков в минуту)
 export const LEAD = 10; // кадров до начала голоса
@@ -14,7 +14,8 @@ export const tailFor = (s: YtSegment) => (s.kind === 'outro' ? 150 : 14); // ф�
 // Пауза до голоса: у мест топ-3 — дольше, пока идёт заставка места (scenes/Deck.tsx → RankReveal)
 export const TOP_REVEAL = 3;
 export const leadFor = (s: YtSegment) => (s.kind === 'deck' && s.rank !== undefined && s.rank <= TOP_REVEAL ? 26 : LEAD);
-export const minFor = (s: YtSegment) => (s.kind === 'intro' || s.kind === 'outro' ? 120 : 150);
+export const DIVIDER = 78; // длина разделителя блоков (без голоса)
+export const minFor = (s: YtSegment) => (s.kind === 'divider' ? DIVIDER : s.kind === 'hook' || s.kind === 'intro' || s.kind === 'outro' ? 120 : 150);
 
 // Текст на экране: без аудиотегов
 export const stripTags = (vo: string) => vo.replace(/\[[^\]]*\]\s*/g, '');
@@ -36,6 +37,9 @@ export const spreadFrame = (t: SegTiming, i: number, n: number) => t.voFrom + Ma
 // Для сцены: at(фраза) — кадр фразы; at(undefined, i, n) — равномерно; min — не раньше этого кадра
 export const timeAt = (t: SegTiming, vo: string, min = 0) => (anchor: string | undefined, i = 0, n = 1) =>
   Math.max(min, anchor ? anchorFrame(t, vo, anchor) : spreadFrame(t, i, n));
+
+// Кадр, когда итоговая таблица финала перелистывается на конечную заставку (чуть раньше фразы recap.to)
+export const recapTurn = (seg: OutroSeg, t: SegTiming) => (seg.recap ? timeAt(t, seg.vo, 30)(seg.recap.to) - 6 : 0);
 
 // ── Субтитры: куски до двух строк по ~42 знака, разрыв по смыслу, без висящих слов ──
 const LINE = 42;

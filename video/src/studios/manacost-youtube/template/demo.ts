@@ -4,14 +4,14 @@ import article from '../yt-legend-decks-sep26/article.json';
 import {YtConfig} from './types';
 
 const dw = article.decks.find((d) => d.rank === 1)!;
-const ARTS = ['TLC_600', 'END_033', 'CAP_107', 'JAIL_200', 'CAP_405', 'JAIL_444', 'CATA_153', 'TIME_610', 'JAIL_719', 'BE_036', 'CAP_005', 'TLC_817', 'CATA_452', 'JAIL_805', 'CATA_473'];
 
 export const TEMPLATE_DEMO: YtConfig = {
   id: 'yt-template-demo',
   title: 'Дракон Воин — гайд (демо шаблона)',
   music: ['lib/music/tavern-30-bed.m4a', 'lib/music/mystic-30-bed.m4a'],
+  pronounce: {ДК: 'дэ-ка'},
   subtitles: 'on',
-  thumb: {title: 'Дракон\nВоин', badge: 'Гайд', arts: ARTS.slice(0, 8), cards: ['CAP_107', 'END_033', 'TLC_600']},
+  thumb: {title: 'Дракон\nВоин', badge: 'Гайд', cards: ['CAP_107', 'END_033', 'TLC_600']},
   segments: [
     {
       kind: 'intro',
@@ -19,7 +19,6 @@ export const TEMPLATE_DEMO: YtConfig = {
       kicker: 'Гайд · Стандарт',
       title: 'Дракон Воин',
       sub: 'Демо шаблона: все виды сцен',
-      arts: ARTS,
       vo: 'Разбираем лидера текущей меты — Дракон Воина. Это демонстрация шаблона: здесь собраны все виды сцен, из которых складывается гайд на колоду.',
     },
     {
@@ -33,7 +32,6 @@ export const TEMPLATE_DEMO: YtConfig = {
       code: dw.code,
       list: dw.list,
       poster: dw.poster,
-      bg: 'TLC_600',
       vo: 'Дракон Воин — агро колода Гарроша. В неё положили дешёвые карты Пират Воина, а стол держат драконы.',
       cards: [
         {id: 'CAP_107', at: 'дешёвые карты'},
@@ -102,13 +100,12 @@ export const TEMPLATE_DEMO: YtConfig = {
       src: 'lib/bg/tavern-h.png',
       caption: 'Пример: скриншот из статьи, игры или с Reddit',
       credit: 'Источник: автор · площадка',
-      vo: 'Сюда встаёт любая картинка: скриншот из статьи, из игры или с Reddit — с подписью и указанием автора.',
+      vo: 'Сюда встаёт любая картинка: скриншот из статьи, из игры или с Реддита — с подписью и указанием автора.',
     },
     {
       kind: 'outro',
       id: 'outro',
       title: 'Удачных игр\nв ладдере!',
-      arts: ARTS,
       links: [
         {text: 'hs-manacost.ru', label: 'полная статья'},
         {text: 't.me/manacost_ru', label: 'новости в Telegram'},

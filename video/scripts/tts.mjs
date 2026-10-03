@@ -9,6 +9,7 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import {loadConfig, speakable} from './vo-lib.mjs';
+import {processVoice} from './vo-fx.mjs';
 
 const API = 'https://api.elevenlabs.io/v1';
 const PRICE = {eleven_v4: 0.022, eleven_v4_turbo: 0.011, eleven_v3: 0.08, eleven_multilingual_v2: 0.08}; // $ за 1000 знаков, прайс на 29.09.2026 (v4 — со скидкой до 12.10)
@@ -126,10 +127,13 @@ for (const s of todo) {
   const prev = segs[i - 1]?.spoken.slice(-300);
   const next = segs[i + 1]?.spoken.slice(0, 300);
   const {audio, alignment} = await speak({...st, spoken: s.spoken, previous_text: prev, next_text: next});
-  fs.writeFileSync(path.join(dir, `${s.id}.mp3`), audio);
+  const dry = path.resolve('out', id, 'vo-raw', 'dry');
+  fs.mkdirSync(dry, {recursive: true});
+  fs.writeFileSync(path.join(dry, `${s.id}.mp3`), audio); // сухая запись; в ролик — после обработки (vo-fx.mjs)
   const times = shownTimes(s, alignment);
   const meta = {hash: hashOf(s), model: MODEL, voice: st.voice, seed: st.seed, settings: st.voice_settings, text: s.shown, spoken: s.spoken, ...times};
   fs.writeFileSync(path.join(dir, `${s.id}.json`), JSON.stringify(meta));
   console.log(`  ✓ ${s.id}: ${times.end.at(-1)?.toFixed(1)} с`);
 }
+processVoice(id, config.voice?.fx ?? 'broadcast', todo.map((s) => s.id));
 console.log(`Готово → public/vo/${id}/. Дальше: node scripts/yt-export.mjs ${id} и рендер.`);

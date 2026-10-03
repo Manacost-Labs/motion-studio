@@ -1,18 +1,23 @@
 // Сцена: пути к картинкам карт, звуки, классы (герой, герб), зерно плёнки, тёплая виньетка
 import React from 'react';
-import {AbsoluteFill, Html5Audio, Sequence, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Html5Audio, Sequence, staticFile} from 'remotion';
 import {A} from '../theme';
+import {useFrame, useK} from '../fps';
 
 export const hsTile = (id: string) => staticFile(`hs/tiles/${id}.png`);
 export const hsRender = (id: string) => staticFile(`hs/render/${id}.png`);
 export const hsArt = (id: string) => `hs/art/${id}.jpg`;
 
 // Звуковой эффект из public (например lib/sfx/card-draw.wav) на кадре at
-export const Sfx: React.FC<{file: string; at: number; volume?: number}> = ({file, at, volume = 0.3}) => (
-  <Sequence from={Math.max(0, Math.round(at))} durationInFrames={90} layout="none">
-    <Html5Audio src={staticFile(file)} volume={volume} />
-  </Sequence>
-);
+// at — в «кадрах-30» (fps.ts), Sequence — в настоящих кадрах ролика
+export const Sfx: React.FC<{file: string; at: number; volume?: number}> = ({file, at, volume = 0.3}) => {
+  const K = useK();
+  return (
+    <Sequence from={Math.max(0, Math.round(at * K))} durationInFrames={90 * K} layout="none">
+      <Html5Audio src={staticFile(file)} volume={volume} />
+    </Sequence>
+  );
+};
 
 // Класс: понимает и WARRIOR, и «Воин». Даёт базового героя (портрет) и герб (class_icon HS-Arena)
 const RU_CLASS: Record<string, string> = {
@@ -49,7 +54,7 @@ export const crestFor = (cls: string) => A(`class_icon/${classKey(cls).toLowerCa
 
 // Зерно плёнки: мелкий шум меняется каждый кадр
 export const Grain: React.FC<{opacity?: number}> = ({opacity = 0.05}) => {
-  const f = useCurrentFrame();
+  const f = useFrame();
   return (
     <AbsoluteFill style={{pointerEvents: 'none', mixBlendMode: 'overlay', opacity}}>
       <svg width="960" height="540" style={{width: '100%', height: '100%'}} preserveAspectRatio="none">

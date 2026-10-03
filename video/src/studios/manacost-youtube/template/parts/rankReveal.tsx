@@ -1,15 +1,16 @@
 // Заставка места для топ-3: красное сукно во весь кадр, крупная золотая цифра выезжает из-под маски,
 // затем сукно уходит вверх и открывает сцену колоды (её шапка — то же сукно, склейка читается как одно движение)
 import React from 'react';
-import {interpolate, useCurrentFrame} from 'remotion';
+import {interpolate} from 'remotion';
 import {DISPLAY} from '../../brand';
 import {EASE_IN_OUT, H, ramp, redBg, TEXT} from '../theme';
+import {useFrame} from '../fps';
 
 export const REVEAL_HOLD = 44; // кадров до начала ухода сукна
 const EXIT = 18;
 
 export const RankReveal: React.FC<{rank: number; of?: number}> = ({rank, of}) => {
-  const f = useCurrentFrame();
+  const f = useFrame();
   const exit = interpolate(f, [REVEAL_HOLD, REVEAL_HOLD + EXIT], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: EASE_IN_OUT});
   if (exit >= 1) return null;
   const n = ramp(f, 3, 20);

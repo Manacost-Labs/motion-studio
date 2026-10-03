@@ -1,5 +1,5 @@
 // Озвучка, записанная большими кусками (коннектор ElevenLabs, студия и т. п.), → файлы по сценам с таймингом каждого символа.
-//   node scripts/vo-align.mjs <id> --prepare [--max 2100]
+//   node scripts/vo-align.mjs <id> --prepare [--max 2100] [--only сцена,сцена]
 //        куски для записи: несколько сцен подряд, между сценами [long pause]. Пишет out/<id>/vo-raw/chunks.json
 //        и chunk-<n>.txt — этот текст целиком отдаётся диктору (модели), по одному куску за раз
 //   node scripts/vo-align.mjs <id> [--model small|medium]
@@ -10,7 +10,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {loadConfig, speakable} from './vo-lib.mjs';
+import {align, loadConfig, readWords, speakable, tokens} from './vo-lib.mjs';
+import {processVoice} from './vo-fx.mjs';
 
 const args = process.argv.slice(2);
 const id = args[0];
@@ -24,7 +25,8 @@ const segs = config.segments.map((s) => ({id: s.id, ...speakable(s.vo, config.pr
 if (args.includes('--prepare')) {
   const max = Number(opt('max') ?? 2100);
   const chunks = [];
-  for (const s of segs) {
+  const only = opt('only')?.split(','); // --only intro,deck-15 — перезаписать только эти сцены
+  for (const s of only ? segs.filter((x) => only.includes(x.id)) : segs) {
     const last = chunks.at(-1);
     if (last && last.text.length + SEP.length + s.spoken.length <= max) {
       last.segs.push(s.id);
@@ -40,63 +42,11 @@ if (args.includes('--prepare')) {
   process.exit(0);
 }
 
-// ── Сопоставление ──
-const norm = (w) => w.toLowerCase().replace(/ё/g, 'е').replace(/[^\p{L}\p{N}]/gu, '');
-const tokens = (text) => [...text.matchAll(/[\p{L}\p{N}][\p{L}\p{N}'’-]*/gu)].map((m) => ({w: norm(m[0]), a: m.index, b: m.index + m[0].length}));
-const lev = (a, b) => {
-  const d = Array.from({length: a.length + 1}, (_, i) => [i, ...Array(b.length).fill(0)]);
-  for (let j = 1; j <= b.length; j++) d[0][j] = j;
-  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
-  return d[a.length][b.length];
-};
-const sim = (a, b) => {
-  if (a === b) return 1;
-  if (a.length >= 4 && b.length >= 4 && (a.startsWith(b.slice(0, 4)) || b.startsWith(a.slice(0, 4)))) return 0.6;
-  return 1 - lev(a, b) / Math.max(a.length, b.length) >= 0.7 ? 0.5 : -0.6;
-};
-// Выравнивание двух последовательностей слов (Нидлман — Вунш): для каждого слова текста — индекс распознанного или -1
-const align = (A, B) => {
-  const GAP = -0.4;
-  const n = A.length;
-  const m = B.length;
-  const S = Array.from({length: n + 1}, () => new Float32Array(m + 1));
-  const P = Array.from({length: n + 1}, () => new Uint8Array(m + 1)); // 1 — диагональ, 2 — вверх, 3 — влево
-  for (let i = 1; i <= n; i++) (S[i][0] = i * GAP), (P[i][0] = 2);
-  for (let j = 1; j <= m; j++) (S[0][j] = j * GAP), (P[0][j] = 3);
-  for (let i = 1; i <= n; i++)
-    for (let j = 1; j <= m; j++) {
-      const d = S[i - 1][j - 1] + sim(A[i - 1].w, B[j - 1].w);
-      const u = S[i - 1][j] + GAP;
-      const l = S[i][j - 1] + GAP;
-      if (d >= u && d >= l) (S[i][j] = d), (P[i][j] = 1);
-      else if (u >= l) (S[i][j] = u), (P[i][j] = 2);
-      else (S[i][j] = l), (P[i][j] = 3);
-    }
-  const out = new Array(n).fill(-1);
-  for (let i = n, j = m; i > 0 || j > 0; ) {
-    if (P[i][j] === 1) {
-      if (sim(A[i - 1].w, B[j - 1].w) > 0) out[i - 1] = j - 1;
-      i--, j--;
-    } else if (P[i][j] === 2) i--;
-    else j--;
-  }
-  return out;
-};
-
-// Распознавание Scribe: принимаем {words:[{text,start,end,type}]} или просто массив слов
-const readWords = (file) => {
-  const j = JSON.parse(fs.readFileSync(file, 'utf8'));
-  const list = Array.isArray(j) ? j : j.words ?? j.transcripts?.[0]?.words ?? j.transcript?.words;
-  if (!list) throw new Error(`${file}: не нашёл список слов`);
-  return list
-    .filter((w) => (w.type ?? 'word') === 'word')
-    .map((w) => ({w: norm(w.text ?? w.word), start: w.start ?? w.start_time, end: w.end ?? w.end_time, text: w.text ?? w.word}))
-    .filter((w) => w.w);
-};
-
 const chunks = JSON.parse(fs.readFileSync(path.join(raw, 'chunks.json'), 'utf8'));
-const outDir = path.resolve('public/vo', id);
+const outDir = path.resolve('public/vo', id); // тайминги (.json) и обработанный голос
+const dryDir = path.join(raw, 'dry'); // сухие записи сцен — из них vo-fx.mjs делает обработанные
 fs.mkdirSync(outDir, {recursive: true});
+fs.mkdirSync(dryDir, {recursive: true});
 const r3 = (x) => Math.round(x * 1000) / 1000;
 const probe = (f) => Number(spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f], {encoding: 'utf8'}).stdout);
 
@@ -122,9 +72,13 @@ for (const c of chunks) {
   c.segs.forEach((sid, k) => {
     const a = k === 0 ? 0 : Math.max(0, cuts[k - 1].b - 0.1);
     const b = k === c.segs.length - 1 ? dur : cuts[k].a + 0.3;
-    const out = path.join(outDir, `${sid}.mp3`);
+    const out = path.join(dryDir, `${sid}.mp3`);
     const len = b - a;
-    spawnSync('ffmpeg', ['-y', '-v', 'error', '-ss', a.toFixed(3), '-t', len.toFixed(3), '-i', mp3, '-af', `afade=t=in:d=0.02,afade=t=out:st=${(len - 0.05).toFixed(3)}:d=0.05`, '-c:a', 'libmp3lame', '-b:a', '192k', out]);
+    // voice.tempo — темп без изменения высоты голоса (atempo); время слов потом считается уже по ускоренной записи
+    const tempo = config.voice?.tempo ?? 1;
+    const outLen = len / tempo;
+    const af = [tempo !== 1 && `atempo=${tempo}`, 'afade=t=in:d=0.02', `afade=t=out:st=${(outLen - 0.05).toFixed(3)}:d=0.05`].filter(Boolean).join(',');
+    spawnSync('ffmpeg', ['-y', '-v', 'error', '-ss', a.toFixed(3), '-t', len.toFixed(3), '-i', mp3, '-af', af, '-c:a', 'libmp3lame', '-b:a', '192k', out]);
     pieces.push({sid, chunk: c.n, from: r3(a), audio: out, words: path.join(raw, `${sid}.words.json`)});
   });
 }
@@ -186,3 +140,6 @@ for (const p of pieces) {
   const said = miss.map((i) => `«${s.shown.slice(toks[i].a, toks[i].b)}»→${match[i] >= 0 ? `«${heard[match[i]].text}»` : '—'}`);
   console.log(`${p.sid.padEnd(9)} ${dur.toFixed(1).padStart(5)} с  слов ${toks.length}, распознано иначе ${miss.length}${said.length ? ': ' + said.join(' ') : ''}`);
 }
+
+// 4) обработка голоса (адаптер vo-fx.mjs): сухие записи → public/vo
+if (pieces.length) processVoice(id, config.voice?.fx ?? 'broadcast', pieces.map((p) => p.sid));

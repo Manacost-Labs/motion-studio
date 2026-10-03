@@ -23,6 +23,10 @@ description: Make motion videos for HearthPulse (hearthpulse.net, Hearthstone st
 
 Перед генерацией нового загляни в `video/LIBRARY.md`: там готовые оригинальные фоны (обе ориентации), 5 зацикленных живых фонов, 14 героев, предметы и иконки, световые эффекты, 5 музыкальных треков и 19 звуков — всё в стиле бренда и без IP Blizzard (живые фоны не получат `ip_detected`). В коде: `libArt('tavern')`, `libLoop('tavern')`, `libChar('paladin')`, `<LibProp id="chest-open" …/>`, `<LibFx id="sparkle-burst" at={…}/>`, `libSfx('coin-single')`, `libMusic('announce-20')` из `src/hearthpulse`. Витрина — композиция `Library-Showcase`. Расширять библиотеку — через `scripts/gen-library.mjs`.
 
+## Движение
+
+Готовые приёмы движения с подписями (имя для кода, длительность, кривая) — витрины `Motion-Showcase` / `Motion-Showcase-16x9` (студия рекламы, `src/studios/hp-ads/motion-showcase`) и `yt-motion-showcase` (YouTube, `src/studios/manacost-youtube/motion-showcase`). Сначала бери оттуда; новое движение продумывай по скиллу `motion-design`, но реализуй только покадрово (`useCurrentFrame` + `interpolate`/`spring`, в Манакосте `ramp`) — CSS-анимации, transition, GSAP и Framer Motion в Remotion не рендерятся. Новый переиспользуемый приём — в бренд студии и строкой в её витрину. Готовый рендер можно посмотреть глазами скиллом `watch` (кадры локально, без ключей).
+
 ## Ролик про новую функцию
 
 1. **Кадры сайта.** Нужны реальные скриншоты в 2x.
@@ -42,7 +46,7 @@ description: Make motion videos for HearthPulse (hearthpulse.net, Hearthstone st
 
 ## YouTube-ролик по статье Манакоста
 
-Бренд — Манакост (не HearthPulse), 16:9, под озвучку: текст диктора в `vo`, на экране тезисы и карты под голос, субтитры пока нет записи. Ролик собирается из сцен любого вида: `intro`, `deck` (с местом в топе или без), `cards`, `mulligan`, `matchups`, `points`, `image`, `outro` — так делаются и подборки, и гайды на колоды. Живой пример всех сцен — композиция `yt-template-demo`. Студия `src/studios/manacost-youtube`, порядок — `video/src/studios/manacost-youtube/template/README.md`: `fetch-article.mjs` (статья → колоды и карты) → конфиг по образцу `yt-legend-decks-sep26/config.ts` (подборка) или `template/demo.ts` (гайд): пересказ своими словами, фразы-привязки `at` → `yt-export.mjs` (хронометраж, описание с таймкодами и кодами колод, `.srt`, сценарий для диктора) → стоп-кадры (`stills.mjs --studio youtube`) → `render.ps1 -Studio youtube`. Стиль YouTube меняется в `src/studios/manacost-youtube/brand` и `template` — на рекламу HearthPulse это не влияет.
+Отдельный навык — **`manacost-youtube`** (`.claude/skills/manacost-youtube/SKILL.md`): порядок работы, структура топа, приёмы «Компендиума», озвучка, проверки и грабли. Кратко: бренд — Манакост (не HearthPulse), 16:9, под озвучку ElevenLabs; сцены `hook`, `intro`, `deck`, `divider`, `cards`, `mulligan`, `matchups`, `points`, `image`, `outro` — так делаются и подборки, и гайды на колоды (живой пример всех сцен — `yt-template-demo`). Студия `src/studios/manacost-youtube`, детали — `template/README.md`. Стиль YouTube меняется в `src/studios/manacost-youtube/brand` и `template` — на рекламу HearthPulse это не влияет.
 
 ## Новый шаблон
 

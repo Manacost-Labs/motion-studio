@@ -1,8 +1,15 @@
-# Зависимости: npm install (в video/) и npx skills add higgsfield-ai/skills (в корне, версии в skills-lock.json)
+# Зависимости: npm install (в video/) и сторонние скиллы (в корне: npx skills experimental_install, версии в skills-lock.json)
 video/node_modules/
 .agents/
 .claude/skills/higgsfield-*
 .claude/skills/remotion-*
+.claude/skills/ffmpeg/
+.claude/skills/music/
+.claude/skills/sound-effects/
+.claude/skills/speech-to-text/
+.claude/skills/text-to-speech/
+.claude/skills/motion-design/
+.claude/skills/watch/
 .claude/settings.local.json
 
 # Рендеры воспроизводятся из кода; список готовых файлов — video/src/ads/README.md

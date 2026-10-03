@@ -7,6 +7,7 @@ import {AD_DURATION, HearthPulseAd} from './launch30/Ad';
 import {LiveId} from './launch30/live';
 import {Plate} from './launch30/scenes';
 import {LibraryShowcase, SHOWCASE_DURATION} from './library-showcase/Showcase';
+import {MOTION_SHOWCASE_DURATION, MotionShowcase} from './motion-showcase/Showcase';
 
 const PLATES: LiveId[] = ['hook', 'standard', 'cards', 'arena', 'bg', 'end'];
 
@@ -31,6 +32,12 @@ export const Root: React.FC = () => (
     <Folder name="library-showcase">
       <Composition id="Library-Showcase" component={LibraryShowcase} durationInFrames={SHOWCASE_DURATION} fps={FPS} width={W} height={H} />
       <Composition id="Library-Showcase-16x9" component={LibraryShowcase} durationInFrames={SHOWCASE_DURATION} fps={FPS} width={H} height={W} />
+    </Folder>
+
+    {/* Витрина анимаций: каждый приём движения из src/hearthpulse отдельно, с подписью */}
+    <Folder name="motion-showcase">
+      <Composition id="Motion-Showcase" component={MotionShowcase} durationInFrames={MOTION_SHOWCASE_DURATION} fps={FPS} width={W} height={H} />
+      <Composition id="Motion-Showcase-16x9" component={MotionShowcase} durationInFrames={MOTION_SHOWCASE_DURATION} fps={FPS} width={H} height={W} />
     </Folder>
   </>
 );
