@@ -15,6 +15,10 @@ video/node_modules/
 # Рендеры воспроизводятся из кода; список готовых файлов — video/src/ads/README.md
 video/out/
 
+# Свои записи игр (OBS) и клипы из них — гигабайты; в git только инструкция. Клип для ролика — в public/clips (rec.mjs take)
+video/recordings/*
+!video/recordings/README.md
+
 # Полностраничные снимки сайта: ~390 МБ, часть снята из-под аккаунта. Координаты блоков (*.json) хранятся
 video/capture/*.png
 
