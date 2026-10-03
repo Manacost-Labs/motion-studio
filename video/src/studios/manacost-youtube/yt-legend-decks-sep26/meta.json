@@ -1,0 +1,1344 @@
+{
+ "source": "HSReplay через api.kolodahearthstone.com",
+ "rank_range": "LEGEND",
+ "region": "REGION_EU",
+ "period": "LAST_7_DAYS",
+ "fetched_at": "2026-10-02T20:58:27.759791+00:00",
+ "decks": {
+  "1": {
+   "name": "Дракон Воин",
+   "archetype": "Драконо-воин",
+   "archetype_id": 19,
+   "url": "https://hsreplay.net/ru/archetypes/19/dragon-warrior",
+   "match": 0.97,
+   "winrate": 54.82,
+   "popularity": 14.2,
+   "games": 47810,
+   "deck": {
+    "winrate": 55.56,
+    "games": 57938,
+    "url": "https://hsreplay.net/decks/Tqcm39067GQSMafXBbErHe/#rankRange=LEGEND",
+    "turns": 7
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Ysera Rogue",
+     "cls": "ROGUE",
+     "winrate": 89.47,
+     "games": 304
+    },
+    {
+     "opponent": "Другое (Чернокнижник)",
+     "cls": "WARLOCK",
+     "winrate": 78.66,
+     "games": 553
+    },
+    {
+     "opponent": "Манипулятор маг",
+     "cls": "MAGE",
+     "winrate": 73.55,
+     "games": 2636
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Azalina Priest",
+     "cls": "PRIEST",
+     "winrate": 38.78,
+     "games": 8597
+    },
+    {
+     "opponent": "Chef Druid",
+     "cls": "DRUID",
+     "winrate": 41.66,
+     "games": 480
+    },
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 43.39,
+     "games": 11039
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "CATA_556",
+     "name": "Дракончик-носильщик",
+     "keep": 95.8,
+     "winrate": 55.82
+    },
+    {
+     "id": "EDR_456",
+     "name": "Темный наездник",
+     "keep": 93.26,
+     "winrate": 55.57
+    },
+    {
+     "id": "CAP_105",
+     "name": "Притягивающий крюк",
+     "keep": 92.57,
+     "winrate": 58.24
+    },
+    {
+     "id": "EDR_457",
+     "name": "Хранитель стаи",
+     "keep": 86.16,
+     "winrate": 57.19
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 14.36,
+    "popularity_to": 15.98
+   }
+  },
+  "2": {
+   "name": "Пират Воин",
+   "archetype": "Cannon Warrior",
+   "archetype_id": 885,
+   "url": "https://hsreplay.net/ru/archetypes/885/cannon-warrior",
+   "match": 1,
+   "winrate": 52.77,
+   "popularity": 2.39,
+   "games": 8040,
+   "deck": {
+    "winrate": 55.49,
+    "games": 1984,
+    "url": "https://hsreplay.net/decks/URa4B93IAv0eL01tY6XgAe/#rankRange=LEGEND",
+    "turns": 7
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Хэндлок",
+     "cls": "WARLOCK",
+     "winrate": 72.76,
+     "games": 1553
+    },
+    {
+     "opponent": "Agamaggan Warlock",
+     "cls": "WARLOCK",
+     "winrate": 72.19,
+     "games": 392
+    },
+    {
+     "opponent": "Разбойник на маскировке",
+     "cls": "ROGUE",
+     "winrate": 69.62,
+     "games": 405
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Corpse Death Knight",
+     "cls": "DEATHKNIGHT",
+     "winrate": 35.66,
+     "games": 429
+    },
+    {
+     "opponent": "Mug Shaman",
+     "cls": "SHAMAN",
+     "winrate": 36.92,
+     "games": 520
+    },
+    {
+     "opponent": "Attack Druid",
+     "cls": "DRUID",
+     "winrate": 39.75,
+     "games": 2065
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "CAP_107",
+     "name": "Главный канонир",
+     "keep": 98.71,
+     "winrate": 56.43
+    },
+    {
+     "id": "CAP_105",
+     "name": "Притягивающий крюк",
+     "keep": 98.58,
+     "winrate": 57.92
+    },
+    {
+     "id": "CAP_104",
+     "name": "Инженер-подрывник",
+     "keep": 63.2,
+     "winrate": 51.23
+    },
+    {
+     "id": "FIR_939",
+     "name": "Насыщение пламенем Тьмы",
+     "keep": 46.48,
+     "winrate": 52.1
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 3.61,
+    "popularity_to": 2.45
+   }
+  },
+  "3": {
+   "name": "Друид на атаке",
+   "archetype": "Attack Druid",
+   "archetype_id": 869,
+   "url": "https://hsreplay.net/ru/archetypes/869/attack-druid",
+   "match": 0.97,
+   "winrate": 52.93,
+   "popularity": 11.3,
+   "games": 38043,
+   "deck": {
+    "winrate": 55.02,
+    "games": 4503,
+    "url": "https://hsreplay.net/decks/l8e8RVOvVXiZ9uoPKNRqag/#rankRange=LEGEND",
+    "turns": 8
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Ramp Druid",
+     "cls": "DRUID",
+     "winrate": 69.63,
+     "games": 326
+    },
+    {
+     "opponent": "Herald Warrior",
+     "cls": "WARRIOR",
+     "winrate": 68.43,
+     "games": 434
+    },
+    {
+     "opponent": "Другое (Чернокнижник)",
+     "cls": "WARLOCK",
+     "winrate": 66.66,
+     "games": 393
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Zee Shaman",
+     "cls": "SHAMAN",
+     "winrate": 41.04,
+     "games": 1133
+    },
+    {
+     "opponent": "Другое (Шаман)",
+     "cls": "SHAMAN",
+     "winrate": 41.04,
+     "games": 670
+    },
+    {
+     "opponent": "Aura Paladin",
+     "cls": "PALADIN",
+     "winrate": 45.35,
+     "games": 1098
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "JAIL_202",
+     "name": "Паучок",
+     "keep": 97.57,
+     "winrate": 58.02
+    },
+    {
+     "id": "CATA_131",
+     "name": "Древень Оскверненного леса",
+     "keep": 95.64,
+     "winrate": 57.61
+    },
+    {
+     "id": "END_011",
+     "name": "Аура ускорения",
+     "keep": 89.65,
+     "winrate": 53.13
+    },
+    {
+     "id": "JAIL_875",
+     "name": "Посох коварства",
+     "keep": 89.58,
+     "winrate": 56
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 25.69,
+    "popularity_to": 5.31
+   }
+  },
+  "4": {
+   "name": "Рыцарь смерти Нечестивости",
+   "archetype": "Unholy Death Knight",
+   "archetype_id": 556,
+   "url": "https://hsreplay.net/ru/archetypes/556/unholy-death-knight",
+   "match": 1,
+   "winrate": 54.84,
+   "popularity": 0.21,
+   "games": 722,
+   "deck": {
+    "winrate": 51.89,
+    "games": 1983,
+    "url": "https://hsreplay.net/decks/tPhoxM0BN2rAHMl9Cwtkwe/#rankRange=LEGEND",
+    "turns": 7.5
+   },
+   "reliable": false,
+   "best": [
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 50.41,
+     "games": 363
+    },
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 49.24,
+     "games": 331
+    },
+    {
+     "opponent": "Attack Druid",
+     "cls": "DRUID",
+     "winrate": 49.2,
+     "games": 315
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Attack Druid",
+     "cls": "DRUID",
+     "winrate": 49.2,
+     "games": 315
+    },
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 49.24,
+     "games": 331
+    },
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 50.41,
+     "games": 363
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "CATA_210",
+     "name": "Сумеречное яйцо",
+     "keep": 96.93,
+     "winrate": 53.9
+    },
+    {
+     "id": "TLC_245",
+     "name": "Древний ящер",
+     "keep": 92.6,
+     "winrate": 51.64
+    },
+    {
+     "id": "CORE_ULD_723",
+     "name": "Мурмия",
+     "keep": 89.95,
+     "winrate": 50.55
+    },
+    {
+     "id": "JAIL_450",
+     "name": "Трупная пушка",
+     "keep": 89.32,
+     "winrate": 56.75
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 0.03,
+    "popularity_to": 0.14
+   }
+  },
+  "5": {
+   "name": "Граб Шаман",
+   "archetype": "Mug Shaman",
+   "archetype_id": 876,
+   "url": "https://hsreplay.net/ru/archetypes/876/mug-shaman",
+   "match": 1,
+   "winrate": 52.3,
+   "popularity": 3.32,
+   "games": 11193,
+   "deck": {
+    "winrate": 52.8,
+    "games": 23409,
+    "url": "https://hsreplay.net/decks/ryLxHHbRv2k3zefw9ClNHg/#rankRange=LEGEND",
+    "turns": 8
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Cannon Warrior",
+     "cls": "WARRIOR",
+     "winrate": 63.07,
+     "games": 520
+    },
+    {
+     "opponent": "Corpse Death Knight",
+     "cls": "DEATHKNIGHT",
+     "winrate": 59.14,
+     "games": 399
+    },
+    {
+     "opponent": "Egg Death Knight",
+     "cls": "DEATHKNIGHT",
+     "winrate": 58.21,
+     "games": 359
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Хэндлок",
+     "cls": "WARLOCK",
+     "winrate": 41.97,
+     "games": 1751
+    },
+    {
+     "opponent": "Rafaam Warlock",
+     "cls": "WARLOCK",
+     "winrate": 43.77,
+     "games": 418
+    },
+    {
+     "opponent": "Attack Druid",
+     "cls": "DRUID",
+     "winrate": 44.48,
+     "games": 3727
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "CORE_GIL_836",
+     "name": "Огненное заклятье",
+     "keep": 97.86,
+     "winrate": 54.07
+    },
+    {
+     "id": "CAP_407",
+     "name": "Плакат «Разыскивается»",
+     "keep": 91.58,
+     "winrate": 51.49
+    },
+    {
+     "id": "JAIL_803",
+     "name": "Колкий лед",
+     "keep": 54.69,
+     "winrate": 53.12
+    },
+    {
+     "id": "CATA_561",
+     "name": "Ритуал силы",
+     "keep": 52.33,
+     "winrate": 51.87
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 0.81,
+    "popularity_to": 7.84
+   }
+  },
+  "6": {
+   "name": "Зи Шаман",
+   "archetype": "Zee Shaman",
+   "archetype_id": 878,
+   "url": "https://hsreplay.net/ru/archetypes/878/zee-shaman",
+   "match": 0.77,
+   "winrate": 53.41,
+   "popularity": 1.6,
+   "games": 5405,
+   "deck": {
+    "winrate": 52.8,
+    "games": 4852,
+    "url": "https://hsreplay.net/decks/YwPkDz5DTgLWbQ7t4ZitQe/#rankRange=LEGEND",
+    "turns": 7.5
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Манипулятор маг",
+     "cls": "MAGE",
+     "winrate": 69.82,
+     "games": 338
+    },
+    {
+     "opponent": "Coin Rogue",
+     "cls": "ROGUE",
+     "winrate": 60.66,
+     "games": 389
+    },
+    {
+     "opponent": "Attack Druid",
+     "cls": "DRUID",
+     "winrate": 58.95,
+     "games": 1133
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 36.34,
+     "games": 1227
+    },
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 41.42,
+     "games": 1364
+    },
+    {
+     "opponent": "Cannon Warrior",
+     "cls": "WARRIOR",
+     "winrate": 47.98,
+     "games": 323
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "JAIL_850",
+     "name": "Страж Майев",
+     "keep": 97.48,
+     "winrate": 55.37
+    },
+    {
+     "id": "CORE_UNG_809",
+     "name": "Огневичок",
+     "keep": 96.01,
+     "winrate": 51.35
+    },
+    {
+     "id": "CATA_565",
+     "name": "Страж Небесной выси",
+     "keep": 95.32,
+     "winrate": 55.5
+    },
+    {
+     "id": "JAIL_802",
+     "name": "Бандюган из Галаджио",
+     "keep": 93.6,
+     "winrate": 51.34
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 1.53,
+    "popularity_to": 0.29
+   }
+  },
+  "7": {
+   "name": "Чистый Паладин",
+   "archetype": "Aura Paladin",
+   "archetype_id": 654,
+   "url": "https://hsreplay.net/ru/archetypes/654/aura-paladin",
+   "match": 0.83,
+   "winrate": 52.71,
+   "popularity": 1.75,
+   "games": 5896,
+   "deck": {
+    "winrate": 53.03,
+    "games": 6814,
+    "url": "https://hsreplay.net/decks/I5QgnH8sRCDQwzPmUaNw3/#rankRange=LEGEND",
+    "turns": 7.5
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Манипулятор маг",
+     "cls": "MAGE",
+     "winrate": 71.12,
+     "games": 381
+    },
+    {
+     "opponent": "Coin Rogue",
+     "cls": "ROGUE",
+     "winrate": 61.56,
+     "games": 333
+    },
+    {
+     "opponent": "Void Demon Hunter",
+     "cls": "DEMONHUNTER",
+     "winrate": 57.89,
+     "games": 361
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Хэндлок",
+     "cls": "WARLOCK",
+     "winrate": 40.7,
+     "games": 850
+    },
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 41.6,
+     "games": 1173
+    },
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 43.48,
+     "games": 1228
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "TLC_438",
+     "name": "Лиловый златожабр",
+     "keep": 98.69,
+     "winrate": 56.85
+    },
+    {
+     "id": "END_011",
+     "name": "Аура ускорения",
+     "keep": 64.33,
+     "winrate": 50.53
+    },
+    {
+     "id": "CATA_474",
+     "name": "Копьеносный часовой",
+     "keep": 46.25,
+     "winrate": 50.97
+    },
+    {
+     "id": "CATA_473",
+     "name": "Ноздорму, бронзовый Аспект",
+     "keep": 45.56,
+     "winrate": 56.34
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 0.42,
+    "popularity_to": 0.74
+   }
+  },
+  "8": {
+   "name": "Охотник на демонов Бездны",
+   "archetype": "Void Demon Hunter",
+   "archetype_id": 867,
+   "url": "https://hsreplay.net/ru/archetypes/867/void-demon-hunter",
+   "match": 1,
+   "winrate": 50.75,
+   "popularity": 3.71,
+   "games": 12502,
+   "deck": {
+    "winrate": 50.65,
+    "games": 456,
+    "url": "https://hsreplay.net/decks/ILImG40fqkuIYqkWNQadQd/#rankRange=LEGEND",
+    "turns": 7.5
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Манипулятор маг",
+     "cls": "MAGE",
+     "winrate": 61.46,
+     "games": 776
+    },
+    {
+     "opponent": "Broxigar Demon Hunter",
+     "cls": "DEMONHUNTER",
+     "winrate": 61.25,
+     "games": 351
+    },
+    {
+     "opponent": "Agamaggan Warlock",
+     "cls": "WARLOCK",
+     "winrate": 60.96,
+     "games": 415
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 37.38,
+     "games": 2937
+    },
+    {
+     "opponent": "Aura Paladin",
+     "cls": "PALADIN",
+     "winrate": 42.1,
+     "games": 361
+    },
+    {
+     "opponent": "Zee Shaman",
+     "cls": "SHAMAN",
+     "winrate": 46.59,
+     "games": 367
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "CATA_528",
+     "name": "Печать морей",
+     "keep": 95.22,
+     "winrate": 52.89
+    },
+    {
+     "id": "JAIL_732",
+     "name": "Душа Бездны",
+     "keep": 94.18,
+     "winrate": 53.82
+    },
+    {
+     "id": "EDR_840",
+     "name": "Мрачный урожай",
+     "keep": 87.58,
+     "winrate": 52.36
+    },
+    {
+     "id": "JAIL_733",
+     "name": "Злобный пусточешуйник",
+     "keep": 85.38,
+     "winrate": 49.06
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 1.8,
+    "popularity_to": 1.82
+   }
+  },
+  "9": {
+   "name": "Шаман на возвещении",
+   "archetype": "Herald Shaman",
+   "archetype_id": 857,
+   "url": "https://hsreplay.net/ru/archetypes/857/herald-shaman",
+   "match": 1,
+   "winrate": 52.63,
+   "popularity": 0.83,
+   "games": 2812,
+   "deck": {
+    "winrate": 49.46,
+    "games": 837,
+    "url": "https://hsreplay.net/decks/NIyHwsuOApYsYCYSht24j/#rankRange=LEGEND",
+    "turns": 8.5
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Azalina Priest",
+     "cls": "PRIEST",
+     "winrate": 69.17,
+     "games": 584
+    },
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 58.38,
+     "games": 829
+    },
+    {
+     "opponent": "Хэндлок",
+     "cls": "WARLOCK",
+     "winrate": 57.24,
+     "games": 538
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 37.04,
+     "games": 861
+    },
+    {
+     "opponent": "Attack Druid",
+     "cls": "DRUID",
+     "winrate": 41.04,
+     "games": 726
+    },
+    {
+     "opponent": "Хэндлок",
+     "cls": "WARLOCK",
+     "winrate": 57.24,
+     "games": 538
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "CATA_565",
+     "name": "Страж Небесной выси",
+     "keep": 99.67,
+     "winrate": 55.12
+    },
+    {
+     "id": "CATA_561",
+     "name": "Ритуал силы",
+     "keep": 98.44,
+     "winrate": 54.96
+    },
+    {
+     "id": "CORE_GIL_531",
+     "name": "Ученица ведьмы",
+     "keep": 67.78,
+     "winrate": 45.32
+    },
+    {
+     "id": "TIME_213",
+     "name": "Первозданная смотрительница",
+     "keep": 67.21,
+     "winrate": 50.77
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 0.33,
+    "popularity_to": 0.22
+   }
+  },
+  "10": {
+   "name": "Кхелос Рыцарь смерти",
+   "archetype": "Egg Death Knight",
+   "archetype_id": 811,
+   "url": "https://hsreplay.net/ru/archetypes/811/egg-death-knight",
+   "match": 1,
+   "winrate": 46.3,
+   "popularity": 1.16,
+   "games": 3894,
+   "deck": {
+    "winrate": 47.48,
+    "games": 1310,
+    "url": "https://hsreplay.net/decks/iKctx2OYodKQMNVBj4sZxf/#rankRange=LEGEND",
+    "turns": 8
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 56.38,
+     "games": 1387
+    },
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 51.36,
+     "games": 841
+    },
+    {
+     "opponent": "Coin Rogue",
+     "cls": "ROGUE",
+     "winrate": 51.23,
+     "games": 324
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Хэндлок",
+     "cls": "WARLOCK",
+     "winrate": 17.24,
+     "games": 551
+    },
+    {
+     "opponent": "Mug Shaman",
+     "cls": "SHAMAN",
+     "winrate": 41.78,
+     "games": 359
+    },
+    {
+     "opponent": "Attack Druid",
+     "cls": "DRUID",
+     "winrate": 45.78,
+     "games": 1280
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "DINO_411",
+     "name": "Священный яйценос",
+     "keep": 92.51,
+     "winrate": 51.24
+    },
+    {
+     "id": "JAIL_444",
+     "name": "Костоправ",
+     "keep": 90,
+     "winrate": 54.2
+    },
+    {
+     "id": "DINO_410",
+     "name": "Яйцо кхелоса",
+     "keep": 82.42,
+     "winrate": 51.12
+    },
+    {
+     "id": "JAIL_450",
+     "name": "Трупная пушка",
+     "keep": 67.88,
+     "winrate": 50.2
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 1.78,
+    "popularity_to": 2.3
+   }
+  },
+  "11": {
+   "name": "Стелс Разбойник на возвещении",
+   "archetype": "Разбойник на маскировке",
+   "archetype_id": 172,
+   "url": "https://hsreplay.net/ru/archetypes/172/stealth-rogue",
+   "match": 1,
+   "winrate": 49.36,
+   "popularity": 1.97,
+   "games": 6622,
+   "deck": {
+    "winrate": 48.96,
+    "games": 9009,
+    "url": "https://hsreplay.net/decks/DvxmSZoBGcB1SkITTPmAdf/#rankRange=LEGEND",
+    "turns": 8
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Coin Rogue",
+     "cls": "ROGUE",
+     "winrate": 58.83,
+     "games": 515
+    },
+    {
+     "opponent": "Azalina Priest",
+     "cls": "PRIEST",
+     "winrate": 57.92,
+     "games": 1293
+    },
+    {
+     "opponent": "Хэндлок",
+     "cls": "WARLOCK",
+     "winrate": 55.45,
+     "games": 1255
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 29.32,
+     "games": 2401
+    },
+    {
+     "opponent": "Cannon Warrior",
+     "cls": "WARRIOR",
+     "winrate": 30.12,
+     "games": 405
+    },
+    {
+     "opponent": "Void Demon Hunter",
+     "cls": "DEMONHUNTER",
+     "winrate": 50.29,
+     "games": 501
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "CAP_003",
+     "name": "Поставщик ШРУ",
+     "keep": 97.81,
+     "winrate": 52
+    },
+    {
+     "id": "CORE_BT_701",
+     "name": "Шпионка",
+     "keep": 95.54,
+     "winrate": 51.71
+    },
+    {
+     "id": "CATA_158",
+     "name": "Безумный приспешник",
+     "keep": 89.28,
+     "winrate": 49.76
+    },
+    {
+     "id": "CAP_005",
+     "name": "Матиас Шоу",
+     "keep": 86.57,
+     "winrate": 52.86
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 3.96,
+    "popularity_to": 1.67
+   }
+  },
+  "12": {
+   "name": "Чернокнижник на возвещении",
+   "archetype": "Хэндлок",
+   "archetype_id": 132,
+   "url": "https://hsreplay.net/ru/archetypes/132/hand-warlock",
+   "match": 1,
+   "winrate": 50.13,
+   "popularity": 7.28,
+   "games": 24524,
+   "deck": {
+    "winrate": 50.74,
+    "games": 6582,
+    "url": "https://hsreplay.net/decks/kIv22G8RyuDlvWryqqyKgg/#rankRange=LEGEND",
+    "turns": 9
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Egg Death Knight",
+     "cls": "DEATHKNIGHT",
+     "winrate": 82.75,
+     "games": 551
+    },
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 70.13,
+     "games": 6496
+    },
+    {
+     "opponent": "Azalina Priest",
+     "cls": "PRIEST",
+     "winrate": 65.51,
+     "games": 4871
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Cannon Warrior",
+     "cls": "WARRIOR",
+     "winrate": 27.1,
+     "games": 1553
+    },
+    {
+     "opponent": "Burn Mage",
+     "cls": "MAGE",
+     "winrate": 28.5,
+     "games": 607
+    },
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 30.59,
+     "games": 8045
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "JAIL_514",
+     "name": "Незримый атлас",
+     "keep": 96.35,
+     "winrate": 55.3
+    },
+    {
+     "id": "CAP_405",
+     "name": "Крестный отец Казакус",
+     "keep": 93.52,
+     "winrate": 56.76
+    },
+    {
+     "id": "JAIL_513",
+     "name": "Череп в клетке",
+     "keep": 57.9,
+     "winrate": 48.81
+    },
+    {
+     "id": "JAIL_399",
+     "name": "Подпевала из банды бесов",
+     "keep": 54.41,
+     "winrate": 47.97
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 7.77,
+    "popularity_to": 11.52
+   }
+  },
+  "13": {
+   "name": "Берн Маг",
+   "archetype": "Burn Mage",
+   "archetype_id": 594,
+   "url": "https://hsreplay.net/ru/archetypes/594/burn-mage",
+   "match": 1,
+   "winrate": 50.46,
+   "popularity": 1.05,
+   "games": 3521,
+   "deck": {
+    "winrate": 45.93,
+    "games": 246,
+    "url": "https://hsreplay.net/decks/iRcmmTt6Fugfmdwnaigq9b/#rankRange=LEGEND",
+    "turns": 7.5
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Хэндлок",
+     "cls": "WARLOCK",
+     "winrate": 71.49,
+     "games": 607
+    },
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 43.26,
+     "games": 839
+    },
+    {
+     "opponent": "Azalina Priest",
+     "cls": "PRIEST",
+     "winrate": 38.77,
+     "games": 539
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 31.68,
+     "games": 871
+    },
+    {
+     "opponent": "Attack Druid",
+     "cls": "DRUID",
+     "winrate": 38.33,
+     "games": 647
+    },
+    {
+     "opponent": "Azalina Priest",
+     "cls": "PRIEST",
+     "winrate": 38.77,
+     "games": 539
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "CORE_DRG_107",
+     "name": "Аметистовый чарокрыл",
+     "keep": 97.31,
+     "winrate": 54.1
+    },
+    {
+     "id": "CATA_458",
+     "name": "Верховный маг Кейлек",
+     "keep": 96.14,
+     "winrate": 55.92
+    },
+    {
+     "id": "FIR_929",
+     "name": "Живой жар",
+     "keep": 91.98,
+     "winrate": 50.31
+    },
+    {
+     "id": "CATA_487",
+     "name": "Заклинатель дождя",
+     "keep": 89.93,
+     "winrate": 51.43
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 0.31,
+    "popularity_to": 0.11
+   }
+  },
+  "14": {
+   "name": "Квест Жрец",
+   "archetype": "Квест жрец",
+   "archetype_id": 56,
+   "url": "https://hsreplay.net/ru/archetypes/56/quest-priest",
+   "match": 1,
+   "winrate": 49.41,
+   "popularity": 11.03,
+   "games": 37135,
+   "deck": {
+    "winrate": 52.81,
+    "games": 9971,
+    "url": "https://hsreplay.net/decks/G3bPkRMB2VzKaFcHQ7A7wd/#rankRange=LEGEND",
+    "turns": 8.5
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Другое (Паладин)",
+     "cls": "PALADIN",
+     "winrate": 65.75,
+     "games": 949
+    },
+    {
+     "opponent": "Chef Druid",
+     "cls": "DRUID",
+     "winrate": 64.37,
+     "games": 407
+    },
+    {
+     "opponent": "Zee Shaman",
+     "cls": "SHAMAN",
+     "winrate": 63.65,
+     "games": 1227
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Хэндлок",
+     "cls": "WARLOCK",
+     "winrate": 29.78,
+     "games": 6496
+    },
+    {
+     "opponent": "Agamaggan Warlock",
+     "cls": "WARLOCK",
+     "winrate": 34.97,
+     "games": 1438
+    },
+    {
+     "opponent": "Rafaam Warlock",
+     "cls": "WARLOCK",
+     "winrate": 36.66,
+     "games": 1882
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "TLC_817",
+     "name": "Достичь равновесия",
+     "keep": 99.79,
+     "winrate": 49.71
+    },
+    {
+     "id": "JAIL_912",
+     "name": "Гадалка",
+     "keep": 90.1,
+     "winrate": 56.55
+    },
+    {
+     "id": "CATA_308",
+     "name": "Триумф Медива",
+     "keep": 63.84,
+     "winrate": 52.99
+    },
+    {
+     "id": "CORE_BAR_311",
+     "name": "Всепожирающая чума",
+     "keep": 42.15,
+     "winrate": 50.32
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 12.22,
+    "popularity_to": 7.8
+   }
+  },
+  "15": {
+   "name": "ОТК Чернокнижник",
+   "archetype": "Хэндлок",
+   "archetype_id": 132,
+   "url": "https://hsreplay.net/ru/archetypes/132/hand-warlock",
+   "match": 1,
+   "winrate": 50.13,
+   "popularity": 7.28,
+   "games": 24524,
+   "deck": {
+    "winrate": 51.62,
+    "games": 7775,
+    "url": "https://hsreplay.net/decks/UzUVToK240F7rj0S7DpX0/#rankRange=LEGEND",
+    "turns": 8.5
+   },
+   "reliable": true,
+   "best": [
+    {
+     "opponent": "Egg Death Knight",
+     "cls": "DEATHKNIGHT",
+     "winrate": 82.75,
+     "games": 551
+    },
+    {
+     "opponent": "Квест жрец",
+     "cls": "PRIEST",
+     "winrate": 70.13,
+     "games": 6496
+    },
+    {
+     "opponent": "Azalina Priest",
+     "cls": "PRIEST",
+     "winrate": 65.51,
+     "games": 4871
+    }
+   ],
+   "worst": [
+    {
+     "opponent": "Cannon Warrior",
+     "cls": "WARRIOR",
+     "winrate": 27.1,
+     "games": 1553
+    },
+    {
+     "opponent": "Burn Mage",
+     "cls": "MAGE",
+     "winrate": 28.5,
+     "games": 607
+    },
+    {
+     "opponent": "Драконо-воин",
+     "cls": "WARRIOR",
+     "winrate": 30.59,
+     "games": 8045
+    }
+   ],
+   "mulligan": [
+    {
+     "id": "JAIL_514",
+     "name": "Незримый атлас",
+     "keep": 96.35,
+     "winrate": 55.3
+    },
+    {
+     "id": "CAP_405",
+     "name": "Крестный отец Казакус",
+     "keep": 93.52,
+     "winrate": 56.76
+    },
+    {
+     "id": "JAIL_513",
+     "name": "Череп в клетке",
+     "keep": 57.9,
+     "winrate": 48.81
+    },
+    {
+     "id": "JAIL_399",
+     "name": "Подпевала из банды бесов",
+     "keep": 54.41,
+     "winrate": 47.97
+    }
+   ],
+   "trend": {
+    "from": "2026-09-02",
+    "to": "2026-10-02",
+    "popularity_from": 7.77,
+    "popularity_to": 11.52
+   }
+  }
+ }
+}

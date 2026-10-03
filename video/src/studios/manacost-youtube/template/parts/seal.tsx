@@ -39,6 +39,7 @@ export const WaxSeal: React.FC<{rank: number; at: number; x: number; y: number; 
   const reps = Math.max(1, Math.round(38 / text.length)); // ~38 знаков по кругу — плотно, но без слипания
   return (
     <div
+      data-qa-ok="печать ложится на угол постера по замыслу"
       style={{
         position: 'absolute',
         left: x - size / 2,

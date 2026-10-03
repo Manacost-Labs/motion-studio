@@ -5,6 +5,7 @@ import {planCamera} from './parts/posterCam';
 import {recapTurn, stripTags, timeAt, TOP_REVEAL} from './timing';
 import {REVEAL_HOLD} from './parts/rankReveal';
 import {DeckSeg, SegTiming, YtConfig, YtSegment, YtTiming} from './types';
+import PRONOUNCE from '../pronounce.json';
 
 export type Issue = {level: 'error' | 'warn' | 'info'; seg: string; what: string};
 
@@ -87,17 +88,17 @@ const voIssues = (vo: string, pronounce: Record<string, string>) => {
   const digits = shown.match(/\d+/g);
   if (digits) issues.push(`в тексте диктора цифры (${[...new Set(digits)].slice(0, 4).join(', ')}) — напишите словами: «сорок восемь»`);
   const latin = shown.match(/[A-Za-z][A-Za-z'’-]*/g)?.filter((w) => !pronounce[w] && w !== 'TODO');
-  if (latin?.length) issues.push(`латиница в тексте диктора (${[...new Set(latin)].slice(0, 4).join(', ')}) — напишите по-русски или добавьте в pronounce`);
+  if (latin?.length) issues.push(`латиница в тексте диктора (${[...new Set(latin)].slice(0, 4).join(', ')}) — напишите по-русски или добавьте в pronounce.json`);
   if (/\[excited\]/i.test(vo)) issues.push('тег [excited] — диктор с ним кричит; живость словами и паузами, [warmly] или [curious]');
   const caps = shown.match(/(?<![А-ЯЁA-Z])[А-ЯЁ]{2,4}(?![А-ЯЁа-яё])/g)?.filter((w) => !pronounce[w]);
-  if (caps?.length) issues.push(`сокращения без подсказки, как читать (${[...new Set(caps)].join(', ')}) — добавьте в pronounce: {ДК: 'дэ-ка'}`);
+  if (caps?.length) issues.push(`сокращения без подсказки, как читать (${[...new Set(caps)].join(', ')}) — добавьте в src/studios/manacost-youtube/pronounce.json: "ДК": "дэ-ка"`);
   return issues;
 };
 
 export const audit = (config: YtConfig, timing: YtTiming): Issue[] => {
   const out: Issue[] = [];
   const mode = config.subtitles ?? 'auto';
-  const pronounce = config.pronounce ?? {};
+  const pronounce: Record<string, string> = {...PRONOUNCE, ...config.pronounce}; // общий словарь студии + слова ролика
   todosOf(config.thumb, 'thumb').forEach((p) => out.push({level: 'error', seg: 'thumb', what: `не заполнено (TODO): ${p}`}));
   if (new Set(config.thumb.cards).size !== config.thumb.cards.length) out.push({level: 'warn', seg: 'thumb', what: `карта на обложке повторяется (${config.thumb.cards.join(', ')}) — нужны три разные`});
   if (!config.segments.some((s) => s.kind === 'hook')) out.push({level: 'info', seg: 'ролик', what: 'нет сильного начала (hook) — первые секунды решают, досмотрят ли ролик'});

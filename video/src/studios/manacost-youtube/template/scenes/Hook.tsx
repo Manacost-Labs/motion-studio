@@ -39,6 +39,7 @@ export const HookScene: React.FC<{seg: HookSeg; t: SegTiming}> = ({seg, t}) => {
             <Img
               key={i}
               src={hsRender(c.id)}
+              data-qa-clear="карта веера"
               style={{
                 position: 'absolute',
                 left: FAN.cx + k * FAN.step,

@@ -692,5 +692,25 @@
   "model": "ffmpeg",
   "from": "lib/sfx/drum-hit.wav",
   "recipe": "scripts/foley.mjs"
+ },
+ "amb/tavern-crowd.wav": {
+  "category": "ambience",
+  "model": "eleven_text_to_sound_v2",
+  "loop": true,
+  "date": "2026-10-03",
+  "recipe": "бесшовная петля: фильтры по утроенной петле, середина; громкость выровнена (TASTE: фон тише голоса на 25 дБ)",
+  "prompt": "Distant tavern crowd murmur, indistinct low chatter, steady room tone, no clear words",
+  "duration": 22,
+  "fx": "highpass 80, lowpass 5000, −26 LUFS"
+ },
+ "amb/tavern-fire.wav": {
+  "category": "ambience",
+  "model": "eleven_text_to_sound_v2",
+  "loop": true,
+  "date": "2026-10-03",
+  "recipe": "бесшовная петля: фильтры по утроенной петле, середина; громкость выровнена (TASTE: фон тише голоса на 25 дБ)",
+  "prompt": "Soft crackling fireplace in a wooden room, gentle steady crackle, warm, no loud pops",
+  "duration": 17,
+  "fx": "highpass 120, lowpass 6500, компрессор, лимитер −9 дБ, −29,7 LUFS"
  }
 }

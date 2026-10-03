@@ -168,6 +168,7 @@ export const DeckPoster: React.FC<{p: DeckPosterData; plan: PosterPlan; x: numbe
   const moving = plan.moves.some(([a, b]) => f >= a - 1 && f <= b + 1);
   return (
     <div
+      data-qa-clear="постер колоды"
       style={{
         position: 'absolute',
         left: x,

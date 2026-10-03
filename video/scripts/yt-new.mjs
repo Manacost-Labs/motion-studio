@@ -2,6 +2,7 @@
 //   node scripts/yt-new.mjs <url статьи> yt-<тема> [--no-posters]
 // 1) scripts/fetch-article.mjs → src/studios/manacost-youtube/yt-<тема>/article.json (колоды, коды, 30 карт, абзацы, карты в тексте)
 // 2) scripts/deck-posters.mjs → постеры колод и точная раскладка карт (~1 мин на колоду; --no-posters — пропустить)
+// 2б) scripts/meta-stats.mjs → meta.json: винрейт, доля в мете, матч-апы и муллиган по данным HSReplay (Koloda API)
 // 3) config.ts — заготовка со всеми сценами: сильное начало, вступление, колоды с последнего места, разделители блоков,
 //    финал с итоговой таблицей. Черновик текста диктора — абзацы статьи, карты под голос — карты, упомянутые в тексте.
 //    Всё, что пишет автор, помечено TODO: пока TODO есть, node scripts/yt-qa.mjs <id> --no-video выдаёт ошибки
@@ -30,6 +31,15 @@ let article = JSON.parse(fs.readFileSync(articleFile, 'utf8'));
 if (!args.includes('--no-posters') && article.decks.some((d) => !d.poster)) {
   run('deck-posters.mjs', id);
   article = JSON.parse(fs.readFileSync(articleFile, 'utf8'));
+}
+
+// 2б. Статистика меты (не обязательна: если API недоступен — заготовка всё равно создаётся)
+if (!fs.existsSync(path.join(dir, 'meta.json'))) {
+  try {
+    run('meta-stats.mjs', id);
+  } catch (e) {
+    console.log(`статистика не получена (${e.message}) — позже: node scripts/meta-stats.mjs ${id}`);
+  }
 }
 
 // 3. Заготовка конфига

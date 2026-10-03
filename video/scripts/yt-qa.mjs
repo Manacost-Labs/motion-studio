@@ -2,6 +2,7 @@
 // 1) данные ролика (template/qa.ts): голос, субтитры, простои колоды, длина надписей, авторы врезок;
 // 2) ассеты: рендеры карт, постеры, врезки, музыка, голос;
 // 3) произношение: слова, которые распознавание услышало иначе, чем написано (out/<id>/vo-raw/<сцена>.words.json);
+//    термины (имена, карты, сокращения) — предупреждением с подсказкой пополнить словарь pronounce.json;
 // 4) готовое видео: громкость и пики, чёрные и застывшие кадры, рывки вне стыков сцен, провалы звука.
 // Пишет out/<id>/qa-report.md. Код выхода 1, если есть ошибки (❌).
 import fs from 'node:fs';
@@ -12,7 +13,7 @@ import {build} from 'esbuild';
 import {bundle} from '@remotion/bundler';
 import {selectComposition} from '@remotion/renderer';
 import {entryPoint, studioDir} from './studios.mjs';
-import {align, readWords, tokens} from './vo-lib.mjs';
+import {align, dictionary, lev, readWords, tokens} from './vo-lib.mjs';
 
 process.on('unhandledRejection', () => {}); // шрифты шаблона в Node не грузятся — для проверки они не нужны
 
@@ -50,8 +51,18 @@ for (const s of config.segments) {
 }
 
 // ── 3. Произношение по распознаванию ──
+// Термин (имя, название карты, сокращение) услышан непохоже на написанное — предупреждение: послушать и, если диктор
+// читает неверно, добавить в общий словарь pronounce.json. Обычные слова — к сведению. Слова словаря пишутся
+// не так, как читаются, — их не сверяем
 const raw = path.resolve('out', id, 'vo-raw');
-const skip = new Set(Object.keys(config.pronounce ?? {}).map((w) => w.toLowerCase()));
+const skip = new Set(Object.keys({...dictionary(), ...config.pronounce}).map((w) => w.toLowerCase()));
+const isTerm = (shown, t) => {
+  const word = shown.slice(t.a, t.b);
+  const sentenceStart = /(^|[.!?…:—«"(]\s*)$/.test(shown.slice(0, t.a));
+  return /['’]/.test(word) || /^[А-ЯЁA-Z]{2,}$/.test(word) || (/^[А-ЯЁA-Z]/.test(word) && !sentenceStart);
+};
+// похоже: «Грабзи» вместо «Граб'Зи» (так и надо) или другой падеж — «Бездной» вместо «Бездны» (общее начало)
+const close = (a, b) => (a.length >= 5 && b.length >= 5 && a.slice(0, 4) === b.slice(0, 4)) || 1 - lev(a, b) / Math.max(a.length, b.length) >= 0.75;
 for (const s of config.segments) {
   const file = path.join(raw, `${s.id}.words.json`);
   if (!fs.existsSync(file)) continue;
@@ -59,10 +70,23 @@ for (const s of config.segments) {
   const toks = tokens(shown);
   const heard = readWords(file);
   const m = align(toks, heard);
+  // h = null — слово не сопоставилось ни с чем услышанным (прочитано до неузнаваемости или пропущено). Но сначала —
+  // склейка услышанного между соседними сопоставленными словами: распознавание дробит имена («Ал 'акир», «Хлад -Ванпир»)
+  const gapHeard = (i) => {
+    let p = i - 1;
+    while (p >= 0 && m[p] < 0) p--;
+    let q = i + 1;
+    while (q < m.length && m[q] < 0) q++;
+    return heard.slice(p >= 0 ? m[p] : 0, q < m.length ? m[q] + 1 : heard.length).map((h) => h.w).join('');
+  };
   const odd = toks
-    .map((t, i) => ({t, h: m[i] >= 0 ? heard[m[i]] : null, word: shown.slice(t.a, t.b)}))
-    .filter(({t, h, word}) => h && h.w !== t.w && !/^\d+$/.test(h.w) && !skip.has(word.toLowerCase()) && t.w.length > 3);
-  if (odd.length) add('info', s.id, `послушать: ${odd.map(({word, h}) => `«${word}» → «${h.text}»`).join(', ')}`);
+    .map((t, i) => ({t, h: m[i] >= 0 ? heard[m[i]] : null, word: shown.slice(t.a, t.b), i}))
+    .filter(({t, h, word, i}) => h?.w !== t.w && !/^\d+$/.test(h?.w ?? '') && !skip.has(word.toLowerCase()) && (h || !gapHeard(i).includes(t.w)));
+  const terms = odd.filter(({t, h}) => isTerm(shown, t) && t.w.length > 1 && !(h && close(t.w, h.w)));
+  const rest = odd.filter((o) => o.h && !terms.includes(o) && o.t.w.length > 3);
+  const list = (xs) => xs.map(({word, h}) => `«${word}» → «${h?.text ?? 'не услышано'}»`).join(', ');
+  if (terms.length) add('warn', s.id, `термин звучит иначе: ${list(terms)} — послушать; если диктор читает неверно, добавить в src/studios/manacost-youtube/pronounce.json ("${terms[0].word}": "как читать") и перезаписать сцену`);
+  if (rest.length) add('info', s.id, `послушать: ${list(rest)}`);
 }
 
 // ── 4. Видео ──

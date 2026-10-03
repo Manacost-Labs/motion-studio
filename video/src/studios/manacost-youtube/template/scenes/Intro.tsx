@@ -4,7 +4,7 @@
 import React from 'react';
 import {AbsoluteFill, Img} from 'remotion';
 import {DISPLAY, MANACOST} from '../../brand';
-import {crestFor, HeaderBand, Mural, Page, SceneBody, Words} from '../parts';
+import {crestFor, HeaderBand, Mural, Page, SceneBody, useFitSize, Words} from '../parts';
 import {H, ramp, TEXT, timber} from '../theme';
 import {timeAt} from '../timing';
 import {staticFile} from 'remotion';
@@ -12,6 +12,7 @@ import {IntroSeg, SegTiming} from '../types';
 import {useFrame} from '../fps';
 
 export const IntroScene: React.FC<{seg: IntroSeg; t: SegTiming}> = ({seg, t}) => {
+  const titleSize = useFitSize(seg.title, {width: 940, max: 150, min: 80}); // до мурала и постеров справа
   const f = useFrame();
   const classes = seg.classes ?? [];
   const kp = ramp(f, 16, 34);
@@ -26,7 +27,7 @@ export const IntroScene: React.FC<{seg: IntroSeg; t: SegTiming}> = ({seg, t}) =>
           <div style={{width: 11, height: 11, rotate: '45deg', background: H.red}} />
           <span style={{fontFamily: TEXT, fontWeight: 800, fontSize: 24, letterSpacing: '0.14em', color: H.inkMuted, textTransform: 'uppercase'}}>{seg.kicker}</span>
         </div>
-        <Words text={seg.title} at={20} stagger={3} dur={20} style={{position: 'absolute', left: 90, top: 312, fontFamily: DISPLAY, fontSize: 150, lineHeight: 1.02, color: H.ink}} />
+        <Words text={seg.title} at={20} stagger={3} dur={20} style={{position: 'absolute', left: 90, top: 312, fontFamily: DISPLAY, fontSize: titleSize, lineHeight: 1.02, color: H.ink}} />
         {seg.sub && (
           <div style={{position: 'absolute', left: 96, top: 640, fontFamily: TEXT, fontWeight: 500, fontSize: 36, color: H.inkMuted, opacity: ramp(f, 40, 58), translate: `0 ${(1 - ramp(f, 40, 58)) * 12}px`}}>
             {seg.sub}

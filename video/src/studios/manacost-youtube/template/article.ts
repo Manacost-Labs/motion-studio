@@ -56,11 +56,12 @@ export const manacostOutro = (opts: {kicker: string; title?: string; vo?: string
 });
 
 // Общие настройки всех роликов: музыка-подложка (*-bed.m4a — треки, выровненные под голос: мягкая компрессия, −16 LUFS), 60 к/с, голос Alex Bell (+6 % темпа), без субтитров в кадре
-// (только .srt), как читать частые сокращения. В конфиге: {...YT_BASE, id, title, …, pronounce: {...YT_BASE.pronounce, …}}
+// (только .srt). Произношение частых сокращений и имён — общий словарь ../pronounce.json (подмешивается сам).
+// В конфиге: {...YT_BASE, id, title, …, pronounce: {…особые слова ролика}}
 export const YT_BASE: Pick<YtConfig, 'music' | 'fps' | 'subtitles' | 'voice' | 'pronounce'> = {
   music: ['lib/music/tavern-30-bed.m4a', 'lib/music/mystic-30-bed.m4a'],
   fps: 60,
   subtitles: 'auto',
   voice: {id: 'TUQNWEvVPBLzMBSVDPUA', tempo: 1.06},
-  pronounce: {ОТК: 'о-тэ-ка', ДК: 'дэ-ка', ДХ: 'дэ-ха'},
+  pronounce: {}, // частые сокращения и имена — в общем словаре ../pronounce.json; здесь — только особые слова ролика
 };

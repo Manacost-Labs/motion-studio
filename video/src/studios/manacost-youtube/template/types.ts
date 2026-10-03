@@ -109,6 +109,8 @@ export type YtConfig = {
   title: string; // название ролика на YouTube
   url?: string; // статья-источник
   music: string[]; // треки по кругу с перекрёстным затуханием
+  // фон-атмосфера под всем роликом — бесшовные петли из public (YtVideo.tsx, Ambience): ['lib/amb/tavern-crowd.wav', 'lib/amb/tavern-fire.wav']
+  ambience?: string[];
   fps?: 30 | 60; // частота кадров ролика (по умолчанию 30); тайминги шаблона — всегда в «кадрах-30» (fps.ts)
   subtitles?: 'auto' | 'on' | 'off'; // auto — только там, где ещё нет записи голоса
   // обложка: cards — 3 карты веером справа (последняя — передняя); hook — надпись на сургучной печати поверх веера

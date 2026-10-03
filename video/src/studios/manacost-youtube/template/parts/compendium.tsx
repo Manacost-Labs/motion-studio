@@ -6,6 +6,7 @@ import {EASE_IN_OUT, H, parchmentBg, ramp, redBg, TEXT} from '../theme';
 import {useSceneMotion} from './motion';
 import {Sfx} from './stage';
 import {Words} from './text';
+import {useFitSize} from './fit';
 import {useFrame, useK} from '../fps';
 
 export const BAND = 150; // высота шапки
@@ -41,8 +42,13 @@ export const HeaderBand: React.FC<{
   const of = rankOf ?? (rank === undefined ? prevRankOf : undefined);
   // круглый герб 106 px; прямоугольный логотип Манакоста 321×234 при высоте 106 → ~145 px
   const tx = crest ? (crestRound ? 196 : 64 + 146 + 30) : 72;
+  // кегль заголовка: по длине (как раньше), а если всё равно не влезает до блока места справа — fitText уменьшит
+  const sizeFor = (t: string) => (t.length <= 18 ? 70 : t.length <= 26 ? 62 : 54);
+  const titleW = 1920 - tx - 420;
+  const titleSize = useFitSize(title, {width: titleW, max: sizeFor(title), min: 36});
+  const nextSize = useFitSize(next?.title ?? '', {width: titleW, max: sizeFor(next?.title ?? ''), min: 36});
   // надзаголовок и заголовок; out — кадр, с которого они уходят вверх (их сменяют надписи next)
-  const texts = (k: string | undefined, t: string, a: number, out?: number) => {
+  const texts = (k: string | undefined, t: string, size: number, a: number, out?: number) => {
     const o = out === undefined ? 0 : ramp(f, out, out + 10, EASE_IN_OUT);
     if (o >= 1) return null;
     return (
@@ -69,7 +75,7 @@ export const HeaderBand: React.FC<{
         <Words
           text={t}
           at={a + 10}
-          style={{position: 'absolute', left: tx, top: k ? 54 : 38, fontFamily: DISPLAY, fontSize: t.length <= 18 ? 70 : t.length <= 26 ? 62 : 54, lineHeight: 1.04, color: H.cream, whiteSpace: 'nowrap', textShadow: '0 3px 0 rgba(40,5,8,0.7)'}}
+          style={{position: 'absolute', left: tx, top: k ? 54 : 38, fontFamily: DISPLAY, fontSize: size, lineHeight: 1.04, color: H.cream, whiteSpace: 'nowrap', textShadow: '0 3px 0 rgba(40,5,8,0.7)'}}
         />
       </div>
     );
@@ -93,8 +99,8 @@ export const HeaderBand: React.FC<{
           }}
         />
       )}
-      {texts(kicker, title, at, next?.at)}
-      {next && f >= next.at && texts(next.kicker, next.title, next.at)}
+      {texts(kicker, title, titleSize, at, next?.at)}
+      {next && f >= next.at && texts(next.kicker, next.title, nextSize, next.at)}
       {(rank !== undefined || leave < 1) && (
         <div style={{position: 'absolute', right: 72, top: 14, display: 'flex', alignItems: 'center', gap: 18, opacity: rank !== undefined ? rp : 1}}>
           {of && (

@@ -1,0 +1,27 @@
+#!/bin/sh
+# Git-хук перед коммитом (подключён: git config core.hooksPath video/scripts/hooks).
+# Сломанное в git не попадает: типы, автопроверка данных YouTube-роликов (если менялась их студия),
+# сверка закреплённых рекламных роликов (если менялся бренд HearthPulse или студии рекламы).
+# Пропускать хук (--no-verify) — только по прямой просьбе пользователя.
+top=$(git rev-parse --show-toplevel) || exit 1
+staged=$(git diff --cached --name-only)
+echo "$staged" | grep -qE '^video/(src|scripts)/' || exit 0
+cd "$top/video" || exit 1
+
+echo "pre-commit: проверка типов…"
+npx tsc --noEmit -p . || { echo "✗ ошибки типов — коммит остановлен"; exit 1; }
+
+if echo "$staged" | grep -qE '^video/(src/studios/manacost-youtube/|scripts/(yt-|vo-|meta-))'; then
+  for d in src/studios/manacost-youtube/yt-*/; do
+    id=$(basename "$d")
+    [ -f "$d/config.ts" ] || continue
+    echo "pre-commit: yt-qa $id…"
+    node scripts/yt-qa.mjs "$id" --no-video > /dev/null 2>&1 || { echo "✗ yt-qa $id: ошибки — out/$id/qa-report.md"; exit 1; }
+  done
+fi
+
+if echo "$staged" | grep -qE '^video/src/(hearthpulse/|studios/hp-)'; then
+  echo "pre-commit: сверка закреплённых роликов…"
+  node scripts/check-ads.mjs || { echo "✗ закреплённые ролики изменились"; exit 1; }
+fi
+echo "pre-commit: ок"

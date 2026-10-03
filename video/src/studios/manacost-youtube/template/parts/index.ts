@@ -13,3 +13,5 @@ export * from './motion';
 export * from './recap';
 export * from './ink';
 export * from './seal';
+export * from './fit';
+export * from './depth';

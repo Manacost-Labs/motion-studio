@@ -3,11 +3,12 @@
 // Голос: public/vo/<config.id>/<сегмент>.mp3 (или .wav/.m4a). Есть файл — сцена длится по записи,
 // субтитры в режиме auto скрываются, музыка приглушается. Нет файла — длина по тексту (CPS в timing.ts).
 import React from 'react';
-import {AbsoluteFill, CalculateMetadataFunction, Composition, Html5Audio, Img, interpolate, Sequence, staticFile, Still} from 'remotion';
+import {AbsoluteFill, CalculateMetadataFunction, Composition, Html5Audio, Img, interpolate, Sequence, staticFile, Still, useVideoConfig} from 'remotion';
 import {getAudioDurationInSeconds} from '@remotion/media-utils';
 import {DISPLAY, FPS, MANACOST} from '../brand';
-import {Grain, hsRender, OVL, Page, SceneMotion, Sfx, Subtitles, Vignette} from './parts';
+import {Grain, hsRender, OVL, Page, SceneMotion, Sfx, Subtitles, useFitSize, Vignette} from './parts';
 import {chapterOf, Scene, subtitleZone} from './scenes';
+import {LintProbe} from './lint';
 import {H, parchmentBg, redBg, TEXT} from './theme';
 import {BASE_FPS, FrameScale, useK} from './fps';
 import {buildSubs, estimateVo, leadFor, minFor, stripTags, tailFor, XFADE} from './timing';
@@ -36,7 +37,7 @@ export const calcYt: CalculateMetadataFunction<YtProps> = async ({props}) => {
   for (const s of config.segments) {
     let voice: string | null = null;
     let sec: number | null = null;
-    for (const ext of ['mp3', 'wav', 'm4a']) {
+    for (const ext of s.vo.trim() ? ['mp3', 'wav', 'm4a'] : []) { // сцена без текста (разделитель) — голос не ищем
       const p = `vo/${config.id}/${s.id}.${ext}`;
       sec = await probe(p);
       if (sec) {
@@ -68,18 +69,58 @@ export const calcYt: CalculateMetadataFunction<YtProps> = async ({props}) => {
     t += lens[i] - XFADE;
   }
   // всё выше — в «кадрах-30» (fps.ts); ролик может рендериться в 60 к/с — тогда кадров вдвое больше
-  const fps = config.fps ?? FPS;
+  // черновик (render.ps1 -Draft → REMOTION_DRAFT): 30 к/с для быстрых проб; тайминги в «кадрах-30» от этого не меняются
+  const fps = process.env.REMOTION_DRAFT ? BASE_FPS : config.fps ?? FPS;
   const timing: YtTiming = {segments, music, total, base: BASE_FPS};
   return {durationInFrames: Math.round(total * (fps / BASE_FPS)), fps, props: {...props, timing}};
 };
 
-// Музыка по кругу; под голосом приглушается, к концу ролика уходит в тишину
+// Где диктор говорит (кадры-30 от начала ролика): по времени символов из <сцена>.json, паузы короче GAP — внутри речи.
+// Без json — вся запись сцены
+const GAP = 30; // пауза от 1 с — музыке можно чуть подняться
+const speechOf = (segments: SegTiming[]) => {
+  const out: [number, number][] = [];
+  for (const s of segments) {
+    if (!s.voice) continue;
+    const at = (sec: number) => s.from + s.voFrom + sec * BASE_FPS;
+    const t = s.times;
+    if (!t) {
+      out.push([s.from + s.voFrom, s.from + s.voFrom + s.voDur]);
+      continue;
+    }
+    for (let i = 0; i < t.start.length; i++) {
+      if (!(t.end[i] > t.start[i])) continue;
+      const [a, b] = [at(t.start[i]), at(t.end[i])];
+      const last = out[out.length - 1];
+      if (last && a - last[1] < GAP && last[0] >= s.from) last[1] = Math.max(last[1], b);
+      else out.push([a, b]);
+    }
+  }
+  return out;
+};
+
+// Музыка по кругу; под голосом приглушается, в паузах диктора от 1 с мягко поднимается (между сценами — до полной,
+// внутри сцены — наполовину), к концу ролика уходит в тишину
 const Music: React.FC<{timing: YtTiming}> = ({timing}) => {
   const K = useK();
-  const raw = (g: number) => (timing.segments.find((s) => g >= s.from && g < s.from + s.dur)?.voice ? MUSIC_DUCK : 1);
+  const speech = React.useMemo(() => speechOf(timing.segments), [timing]);
+  const PRE = 6; // приглушиться за 0,2 с до слова
+  const POST = 9; // и держать 0,3 с после
+  const DOWN = 9; // спуск, кадров-30
+  const UP = 24; // подъём — медленнее спуска, чтобы не «качало»
   const duck = (g: number) => {
-    const b = timing.segments.map((s) => s.from).find((x) => Math.abs(g - x) < 15);
-    return b === undefined ? raw(g) : interpolate(g, [b - 15, b + 15], [raw(b - 1), raw(b)], clamp);
+    let k = speech.findIndex(([a]) => a - PRE > g); // следующий кусок речи
+    if (k < 0) k = speech.length;
+    const prev = speech[k - 1];
+    const next = speech[k];
+    if (prev && g <= prev[1] + POST) return MUSIC_DUCK;
+    const seg = timing.segments.find((s) => g >= s.from && g < s.from + s.dur);
+    const inside = !!seg?.voice && g >= seg.from + seg.voFrom && g < seg.from + seg.voFrom + seg.voDur; // пауза внутри записи сцены
+    const top = inside ? MUSIC_DUCK + (1 - MUSIC_DUCK) * 0.5 : 1;
+    const up = prev ? interpolate(g - prev[1] - POST, [0, UP], [0, 1], clamp) : 1;
+    const down = next ? interpolate(next[0] - PRE - g, [0, DOWN], [0, 1], clamp) : 1;
+    const e = Math.min(up, down);
+    return MUSIC_DUCK + (top - MUSIC_DUCK) * e * e * (3 - 2 * e);
   };
   return (
     <>
@@ -103,6 +144,28 @@ const Music: React.FC<{timing: YtTiming}> = ({timing}) => {
   );
 };
 
+// Фон-атмосфера (config.ambience): тихие бесшовные петли под всем роликом — гул зала, камин. Петли разной длины
+// (22 и 17 с), поэтому вместе не повторяются в такт. Уровень — на ~25 дБ тише голоса; вступает за 2 с, к концу уходит
+const AMB_VOL = 0.16;
+const Ambience: React.FC<{timing: YtTiming; layers: string[]}> = ({timing, layers}) => {
+  const K = useK();
+  return (
+    <>
+      {layers.map((src) => (
+        <Html5Audio
+          key={src}
+          src={staticFile(src)}
+          loop
+          volume={(real) => {
+            const f = real / K;
+            return AMB_VOL * interpolate(f, [0, 60], [0, 1], clamp) * interpolate(f, [timing.total - 90, timing.total], [1, 0], clamp);
+          }}
+        />
+      ))}
+    </>
+  );
+};
+
 export const YtVideo: React.FC<YtProps> = ({config, timing}) => {
   if (!timing) return null;
   const n = config.segments.length;
@@ -111,7 +174,8 @@ export const YtVideo: React.FC<YtProps> = ({config, timing}) => {
   const ranks = config.segments.flatMap((s) => (s.kind === 'deck' && s.rank !== undefined ? [s.rank] : []));
   const rankOf = ranks.length > 1 ? Math.max(...ranks) : undefined;
   const decks = config.segments.flatMap((s) => (s.kind === 'deck' && s.rank !== undefined ? [{rank: s.rank, name: s.name, cls: s.cls, dust: s.poster?.dust}] : []));
-  const K = (config.fps ?? FPS) / BASE_FPS;
+  // настоящая частота композиции, а не config.fps: черновик (REMOTION_DRAFT) идёт в 30 к/с при config.fps = 60
+  const K = useVideoConfig().fps / BASE_FPS;
   return (
     <FrameScale value={K}>
     <AbsoluteFill>
@@ -144,6 +208,9 @@ export const YtVideo: React.FC<YtProps> = ({config, timing}) => {
       <Vignette />
       <Grain />
       <Music timing={timing} />
+      {config.ambience?.length ? <Ambience timing={timing} layers={config.ambience} /> : null}
+      {/* проверка раскладки (scripts/yt-lint.mjs) — только при её рендере */}
+      {process.env.REMOTION_LINT ? <LintProbe /> : null}
     </AbsoluteFill>
     </FrameScale>
   );
@@ -153,6 +220,7 @@ export const YtVideo: React.FC<YtProps> = ({config, timing}) => {
 // Веер держится левее правого нижнего угла — там YouTube рисует плашку длительности. hook — сургучная печать ───
 export const YtThumb: React.FC<{config: YtConfig}> = ({config}) => {
   const {thumb} = config;
+  const titleSize = useFitSize(thumb.title, {width: 600, max: 96, min: 56}); // слева от веера карт
   const H0 = 520; // высота карты
   const fan = [
     {x: 862, y: 138, r: -11},
@@ -199,7 +267,7 @@ export const YtThumb: React.FC<{config: YtConfig}> = ({config}) => {
           <span style={{width: 12, height: 12, rotate: '45deg', background: H.goldBright}} />
           {thumb.badge}
         </div>
-        <div style={{fontFamily: DISPLAY, fontSize: 96, lineHeight: 1.02, whiteSpace: 'pre', color: H.cream, textShadow: '0 4px 0 rgba(40,5,8,0.7)'}}>{thumb.title}</div>
+        <div style={{fontFamily: DISPLAY, fontSize: titleSize, lineHeight: 1.02, whiteSpace: 'pre', color: H.cream, textShadow: '0 4px 0 rgba(40,5,8,0.7)'}}>{thumb.title}</div>
       </div>
       <Img src={staticFile(MANACOST.logo)} style={{position: 'absolute', left: 56, bottom: 40, height: 130}} />
     </AbsoluteFill>

@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/video/scripts/hooks/stop-typecheck.mjs\"",
+            "timeout": 120,
+            "statusMessage": "Проверка типов video/"
+          }
+        ]
+      }
+    ]
+  }
+}

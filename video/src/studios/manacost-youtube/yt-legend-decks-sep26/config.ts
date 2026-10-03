@@ -14,8 +14,9 @@ export const LEGEND_DECKS_SEP26: YtConfig = {
   id: 'yt-legend-decks-sep26',
   title: '15 колод для Легенды в сентябре — Аметистовая крепость | Hearthstone',
   url: article.url,
-  // как читать диктору (на экране остаётся написание из текста)
-  pronounce: {ОТК: 'о-тэ-ка', ДК: 'дэ-ка', МАТРИАРХ: 'Матриарх', ШРУ: 'шру', "Граб'Зи": 'Граб-Зи'},
+  // как читать диктору (на экране остаётся написание из текста); общие сокращения — в ../pronounce.json
+  pronounce: {МАТРИАРХ: 'Матриарх'},
+  ambience: ['lib/amb/tavern-crowd.wav', 'lib/amb/tavern-fire.wav'], // проба фона таверны (03.10, ждёт отзыва)
   thumb: {
     title: '15 колод\nдля Легенды',
     badge: 'Сентябрь 2026',
@@ -381,6 +382,21 @@ export const LEGEND_DECKS_SEP26: YtConfig = {
       cards: [
         {id: 'END_033', at: 'Драконы держат стол'},
         {id: 'TLC_600', at: 'залог успеха', ink: true},
+      ],
+      inserts: [
+        // ПРИМЕР 03.10: найден eyes.mjs find "hearthstone dragon warrior" --yt --cc, разобран look (момент 285 с — добивание),
+        // вырезан cut → паспорт public/clips/dragon-warrior-lethal.json (SilentDaddyTV, «Dragon Warrior Rank Climb», 11.02.2026,
+        // CC BY). Сборка февральская — для публикации лучше запись этой колоды. crop убирает трекеры колод по бокам
+        {
+          kind: 'clip',
+          at: 'Именно поэтому',
+          to: 'И напоследок',
+          src: 'clips/dragon-warrior-lethal.mp4',
+          start: 2.4,
+          crop: [280, 0, 1360, 1080],
+          caption: 'Дракон Воин добивает соперника',
+          credit: 'Геймплей: SilentDaddyTV · YouTube · CC BY',
+        },
       ],
     }),
     manacostOutro({

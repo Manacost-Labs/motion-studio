@@ -5,7 +5,12 @@ import {createRequire} from 'node:module';
 import {build} from 'esbuild';
 import {studioDir} from './studios.mjs';
 
-// Конфиг ролика — TypeScript: собираем esbuild-ом в кэш и берём экспорт с нужным id
+// Общий словарь произношения студии (src/studios/manacost-youtube/pronounce.json): {как написано: как читать}.
+// Пополняется по предупреждениям yt-qa «термин звучит иначе»; pronounce в конфиге ролика — только его особые слова
+export const PRONOUNCE_FILE = path.join(studioDir('youtube'), 'pronounce.json');
+export const dictionary = () => JSON.parse(fs.readFileSync(PRONOUNCE_FILE, 'utf8'));
+
+// Конфиг ролика — TypeScript: собираем esbuild-ом в кэш и берём экспорт с нужным id. pronounce — словарь + слова ролика
 export const loadConfig = async (id) => {
   const out = path.resolve('node_modules/.cache', `vo-${id}.cjs`);
   await build({entryPoints: [path.join(studioDir('youtube'), id, 'config.ts')], bundle: true, platform: 'node', format: 'cjs', outfile: out, logLevel: 'error'});
@@ -13,7 +18,7 @@ export const loadConfig = async (id) => {
   delete req.cache[out];
   const config = Object.values(req(out)).find((v) => v && typeof v === 'object' && v.id === id);
   if (!config) throw new Error(`В src/studios/manacost-youtube/${id}/config.ts нет конфига с id «${id}»`);
-  return config;
+  return {...config, pronounce: {...dictionary(), ...config.pronounce}};
 };
 
 // Текст диктора → что говорим (с аудиотегами и заменами произношения) и что показываем (как написано).

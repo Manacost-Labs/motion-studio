@@ -49,18 +49,21 @@
    - тезисы — `{text: заголовок до ~28 знаков, detail: пояснение до ~45, at}`; цифры — только из источника;
    - карты под голос — `cards: [{id, at}]`; рендеры докачать `node scripts/hs-assets.mjs <id…>`.
 3. **Регистрация** (`yt-new.mjs` делает сам) в `src/studios/manacost-youtube/Root.tsx`: `<Folder name="yt-<тема>"><YtCompositions config={…} /></Folder>` → композиции `yt-<тема>` и `yt-<тема>-thumb`.
+   Статистика меты для тезисов и матч-апов — `meta.json` (`scripts/meta-stats.mjs`, Koloda API: винрейт, доля, матч-апы, муллиган по HSReplay; `yt-new` запускает сам). Разбор чужих роликов и отбор геймплея — `scripts/eyes.mjs` (`look`, `search --cc`, `cut`). Установлены и готовы к новым приёмам `@remotion/noise` (живая неровная подвижка) и `@remotion/three` (3D, например переворот карты).
 4. **Проверка:** `node scripts/yt-export.mjs yt-<тема>` печатает хронометраж → раскадровка `node scripts/yt-board.mjs yt-<тема> [сцены…]` (кадры каждой сцены, листы в `out/<id>/board/`) → `node scripts/yt-qa.mjs yt-<тема> --no-video`. Плавность камеры в готовом видео — `.venv-vo/Scripts/python.exe scripts/cam-jitter.py <видео> <с> <длина>`.
 5. **Голос** — раздел «Озвучка» ниже. **Рендер (4K):** `.\scripts\render.ps1 -Studio youtube -Comp yt-<тема> -Out "yt-<тема>\video" -Scale 2 -JpegQuality 95` (~1 ч на 8 минут ролика), обложка `npx remotion still src/studios/manacost-youtube/index.ts yt-<тема>-thumb out/yt-<тема>/thumbnail.png`, проверка `.\scripts\qa.ps1 out\yt-<тема>\video.mp4 -Cuts <кадры стыков>`.
 6. **К загрузке:** `node scripts/yt-export.mjs yt-<тема>` → `out/yt-<тема>/description.txt` (главы, коды колод, ссылки), `subtitles.srt`, `script.md` (сценарий для диктора).
 
 ## Новая сцена
 
-Файл в `scenes/`, строка в `Scene` (`scenes/index.tsx`), тип в `types.ts`. Детали — в `parts/`: `Page`, `HeaderBand`, `WoodRule`, `MainPoints`, `Mural`, `DeckFooter`, `DeckPoster` + `planCamera`, `VersusBlock`, `OffDeckCard`, `RankReveal`, `CardRow`, `HeroPortrait`, `DeckList`, `Words`, `Subtitles`, `Grain`, `Vignette`, `Sfx`.
+Файл в `scenes/`, строка в `Scene` (`scenes/index.tsx`), тип в `types.ts`. Детали — в `parts/`: `useFitSize` (`fit.tsx`: кегль по ширине через `@remotion/layout-utils` — для любого крупного текста, длина которого заранее неизвестна), `Page`, `HeaderBand`, `WoodRule`, `MainPoints`, `Mural`, `DeckFooter`, `DeckPoster` + `planCamera`, `VersusBlock`, `OffDeckCard`, `RankReveal`, `CardRow`, `HeroPortrait`, `DeckList`, `Words`, `Subtitles`, `Grain`, `Vignette`, `Sfx`, `DepthArt` (`depth.tsx`: «живой» арт — параллакс по карте глубины из `scripts/depth.py`, рендер с `--gl=angle`; проба 03.10).
+
+Звук ролика (`YtVideo.tsx`): музыка приглушается под словами диктора (по времени символов из `<сцена>.json`) и мягко поднимается в паузах от 1 с — внутри сцены наполовину, между сценами до полной; `config.ambience` — тихие бесшовные петли под всем роликом (`lib/amb/tavern-crowd.wav`, `lib/amb/tavern-fire.wav`, проба 03.10).
 
 ## Озвучка (ElevenLabs, модель eleven_v4)
 
-- **Голос и произношение** — в конфиге: `voice.id` (сейчас Alex Bell, `TUQNWEvVPBLzMBSVDPUA`), `pronounce` — как читать аббревиатуры
-  и имена (ОТК → «о-тэ-ка»), на экране остаётся написание из `vo`. Аудиотеги v4 в `vo` (`[pause]`, `[warmly]`, `[curious]`) диктор исполняет,
+- **Голос и произношение** — в конфиге: `voice.id` (сейчас Alex Bell, `TUQNWEvVPBLzMBSVDPUA`); как читать аббревиатуры
+  и имена (ОТК → «о-тэ-ка») — общий словарь `../pronounce.json` (подмешивается сам) и `pronounce` ролика для его особых слов; на экране остаётся написание из `vo`. Аудиотеги v4 в `vo` (`[pause]`, `[warmly]`, `[curious]`) диктор исполняет,
   на экран они не попадают. `[excited]` не ставить — Alex Bell с ним кричит (02.10); живость — словами и паузами. Латиницу и цифры в `vo` не писать.
 - **Через коннектор ElevenLabs** (без ключа):
   1. `node scripts/vo-align.mjs <id> --prepare` → `out/<id>/vo-raw/chunk-<n>.txt` (куски по ~2000 знаков, между сценами `[long pause]`);
