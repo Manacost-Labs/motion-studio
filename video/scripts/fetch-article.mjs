@@ -1,4 +1,4 @@
-// Статья hs-manacost.ru → данные для YouTube-ролика (шаблон src/studios/manacost-youtube/template).
+// Статья hs-manacost.ru → данные для YouTube-ролика (канал src/studios/manacost-youtube/channel.ts).
 //   node scripts/fetch-article.mjs <url> <папка ролика в src/studios/manacost-youtube>
 // Пишет src/studios/manacost-youtube/<папка>/article.json: вступление, разделы-колоды (место, название, класс, код, абзацы,
 // упомянутые в тексте карты, 30 карт колоды из кода) и финал. Картинки карт кэшируются в public/hs:
@@ -6,14 +6,18 @@
 import puppeteer from 'puppeteer-core';
 import fs from 'node:fs';
 import path from 'node:path';
-import {studioDir} from './studios.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {CHROME} from './lib/remotion.mjs';
+import {videoDir} from './lib/studios.mjs';
 import {cardDb, decodeDeck, download, HS} from './hs-lib.mjs';
+
+process.chdir(VIDEO);
 
 const [url, folder] = process.argv.slice(2);
 if (!url || !folder) throw new Error('node scripts/fetch-article.mjs <url> <папка ролика>');
 
 // ─── 1. Текст статьи ───
-const browser = await puppeteer.launch({executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe', headless: true});
+const browser = await puppeteer.launch({executablePath: CHROME, headless: true});
 const page = await browser.newPage();
 await page.goto(url, {waitUntil: 'networkidle2', timeout: 90000});
 const raw = await page.evaluate(() => {
@@ -39,7 +43,7 @@ const raw = await page.evaluate(() => {
     if (loose) push(clean(loose.text), loose.cards);
     loose = null;
   };
-  for (const n of box.childNodes) {
+  for (const n of /** @type {NodeListOf<HTMLElement>} */ (box.childNodes)) {
     const tag = n.nodeType === 1 ? n.tagName : '#text';
     if (tag === '#text' || tag === 'SPAN' || tag === 'A' || tag === 'STRONG' || tag === 'EM' || tag === 'B') {
       loose ??= {text: '', cards: []};
@@ -57,7 +61,7 @@ const raw = await page.evaluate(() => {
       cur.mode = clean(n.querySelector('.deck-mode')?.textContent ?? '');
       const btn = n.querySelector('.copy-code-btn, [data-clipboard-text], [data-code], [data-deckcode]');
       cur.code = btn && (btn.getAttribute('data-clipboard-text') || btn.getAttribute('data-code') || btn.getAttribute('data-deckcode'));
-      cur.page = n.querySelector('.deck-title a')?.href;
+      cur.page = /** @type {HTMLAnchorElement | null} */ (n.querySelector('.deck-title a'))?.href;
     } else if (tag === 'H4') {
       for (const img of n.querySelectorAll('img')) out.images.push(img.getAttribute('data-lazy-src') || img.src);
     } else if (tag === 'P' || tag === 'UL' || tag === 'OL') {
@@ -116,7 +120,7 @@ for (let k = 0; k < jobs.length; k += 8) {
 }
 
 // ─── 4. Итог ───
-const outDir = path.join(studioDir('youtube'), folder);
+const outDir = videoDir(folder, 'youtube');
 fs.mkdirSync(outDir, {recursive: true});
 const article = {url, ...raw, cardNames: Object.fromEntries([...need.render].map((id) => [id, byId.get(id)?.name]))};
 fs.writeFileSync(path.join(outDir, 'article.json'), JSON.stringify(article, null, 1));

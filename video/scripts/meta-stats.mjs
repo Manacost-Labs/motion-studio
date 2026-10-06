@@ -9,22 +9,24 @@
 // данные публичные, с токеном выше лимит запросов.
 import fs from 'node:fs';
 import path from 'node:path';
-import {studioDir} from './studios.mjs';
+import {hasKey, loadEnv} from './lib/env.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {videoDir} from './lib/studios.mjs';
 
+process.chdir(VIDEO);
 const API = 'https://api.kolodahearthstone.com';
 const args = process.argv.slice(2);
-const id = args.find((a) => !a.startsWith('--'));
+const id = args.find((a, i) => !a.startsWith('--') && args[i - 1] !== '--min-games');
 if (!id) throw new Error('node scripts/meta-stats.mjs yt-<тема> [--min-games 300]');
 const minGames = Number(args.includes('--min-games') ? args[args.indexOf('--min-games') + 1] : 300);
-const dir = path.join(studioDir('youtube'), id);
+const dir = videoDir(id);
 const article = JSON.parse(fs.readFileSync(path.join(dir, 'article.json'), 'utf8'));
-const env = fs.existsSync('.env') ? fs.readFileSync('.env', 'utf8') : '';
-const token = env.match(/^KOLODA_API_TOKEN=(.+)$/m)?.[1].trim();
+const token = hasKey('KOLODA_API_TOKEN') ? loadEnv().KOLODA_API_TOKEN.trim() : undefined;
 
 const get = async (p) => {
   const r = await fetch(API + p, {headers: token ? {Authorization: `Bearer ${token}`} : {}});
   if (!r.ok) throw new Error(`${r.status} ${p}`);
-  return r.json();
+  return /** @type {Promise<any>} */ (r.json());
 };
 
 // все архетипы последнего снимка (Легенда, EU)

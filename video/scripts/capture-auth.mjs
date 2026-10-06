@@ -8,12 +8,16 @@ import {spawn} from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
+import {VIDEO} from './lib/paths.mjs';
+import {CHROME} from './lib/remotion.mjs';
 
+process.chdir(VIDEO);
 const OUT = path.resolve('capture');
 fs.mkdirSync(OUT, {recursive: true});
 const PROFILE = fs.mkdtempSync(path.join(os.tmpdir(), 'hp-capture-'));
 
 // [имя, адрес, максимум высоты в CSS px, действие перед съёмкой]
+/** @type {[string, string, number, string?][]} */
 const PAGES = [
   ['a-home', '/', 2600],
   ['a-meta', '/standard/meta', 5200],
@@ -46,7 +50,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const PORT = 9333;
 const running = await fetch(`http://127.0.0.1:${PORT}/json/version`).then(() => true).catch(() => false);
 const chrome = running ? null : spawn(
-  'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  CHROME,
   [
     `--remote-debugging-port=${PORT}`,
     `--user-data-dir=${PROFILE}`,
@@ -66,7 +70,7 @@ for (let i = 0; i < 60 && !wsEndpoint; i++) {
   await sleep(500);
   wsEndpoint = await fetch(`http://127.0.0.1:${PORT}/json/version`)
     .then((r) => r.json())
-    .then((j) => j.webSocketDebuggerUrl)
+    .then((/** @type {any} */ j) => j.webSocketDebuggerUrl)
     .catch(() => undefined);
 }
 if (!wsEndpoint) throw new Error('Chrome не запустился');
@@ -94,7 +98,7 @@ const actions = {
   },
   async tab(page, label) {
     await page.evaluate((l) => {
-      const el = [...document.querySelectorAll('button, a, [role="tab"], div')].find(
+      const el = [.../** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll('button, a, [role="tab"], div'))].find(
         (e) => e.children.length < 4 && e.innerText && e.innerText.trim().startsWith(l),
       );
       el?.click();
@@ -114,7 +118,7 @@ try {
       if (!p.url().startsWith('https://hearthpulse.net')) continue;
       // После входа ссылка /?login остаётся, но превращается в «Профиль <имя>»
       const ok = await p
-        .evaluate(() => [...document.querySelectorAll('a[href="/?login"]')].some((a) => /Профиль/.test(a.innerText)))
+        .evaluate(() => [.../** @type {NodeListOf<HTMLAnchorElement>} */ (document.querySelectorAll('a[href="/?login"]'))].some((a) => /Профиль/.test(a.innerText)))
         .catch(() => false);
       if (ok) loggedIn = true;
     }

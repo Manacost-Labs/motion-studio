@@ -3,13 +3,18 @@
 //   node scripts/tts.mjs <id ролика> --go [сегмент…]           — записать изменившиеся сегменты (или только названные)
 //   node scripts/tts.mjs <id ролика> --go --force [сегмент…]    — перезаписать, даже если текст не менялся
 //   node scripts/tts.mjs <id ролика> --samples intro,deck-01 --voices <id>,<id>   — пробы голосов в out/<id>/voice-samples/
-// Пишет public/vo/<id>/<сегмент>.mp3 и <сегмент>.json. В json — время начала и конца каждого символа текста, который
+// Пишет public/vo/<id>/<сегмент>.json и голос (vo-fx.mjs: wav у нового ролика, mp3 — если ролик уже в mp3). В json — время начала и конца каждого символа текста, который
 // на экране (без аудиотегов и до замен из pronounce): шаблон ставит по нему субтитры, карты и тезисы точно на слово.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
-import {loadConfig, speakable} from './vo-lib.mjs';
+import {loadEnv} from './lib/env.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {slug} from './lib/text.mjs';
+import {loadConfig, speakable, voiceFile} from './vo-lib.mjs';
 import {processVoice} from './vo-fx.mjs';
+
+process.chdir(VIDEO);
 
 const API = 'https://api.elevenlabs.io/v1';
 const PRICE = {eleven_v4: 0.022, eleven_v4_turbo: 0.011, eleven_v3: 0.08, eleven_multilingual_v2: 0.08}; // $ за 1000 знаков, прайс на 29.09.2026 (v4 — со скидкой до 12.10)
@@ -24,14 +29,14 @@ const option = (name) => {
 };
 const only = args.slice(1).filter((a, i, all) => !a.startsWith('--') && !['--samples', '--voices'].includes(all[i - 1]));
 
-if (fs.existsSync('.env')) process.loadEnvFile('.env');
+loadEnv();
 const KEY = process.env.ELEVENLABS_API_KEY;
 const MODEL = process.env.ELEVENLABS_MODEL || 'eleven_v4';
 
 const call = async (url, init = {}, tries = 4) => {
   for (let t = 1; ; t++) {
     const r = await fetch(url, {...init, headers: {'xi-api-key': KEY, 'content-type': 'application/json', ...init.headers}});
-    if (r.ok) return r.json();
+    if (r.ok) return /** @type {Promise<any>} */ (r.json());
     const body = await r.text();
     if ((r.status === 429 || r.status >= 500) && t < tries) {
       await new Promise((ok) => setTimeout(ok, 2000 * t));
@@ -51,7 +56,7 @@ const settingsOf = (config) => {
 };
 
 // Один запрос with-timestamps; соседние сегменты передаются как контекст, чтобы интонация не обрывалась на стыках
-const speak = async ({spoken, voice, seed, voice_settings, previous_text, next_text}) => {
+const speak = async ({spoken, voice, seed, voice_settings, previous_text = undefined, next_text = undefined}) => {
   const body = {text: spoken, model_id: MODEL, language_code: 'ru', voice_settings, seed, previous_text, next_text};
   const r = await call(`${API}/text-to-speech/${voice}/with-timestamps?output_format=mp3_44100_128`, {method: 'POST', body: JSON.stringify(body)});
   return {audio: Buffer.from(r.audio_base64, 'base64'), alignment: r.alignment};
@@ -85,7 +90,7 @@ if (option('samples')) {
   fs.mkdirSync(dir, {recursive: true});
   for (const v of voices) {
     const info = await call(`${API}/voices/${v}`).catch(() => ({name: v}));
-    const name = String(info.name ?? v).replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');
+    const name = slug(info.name ?? v);
     for (const sid of pick) {
       const s = segs.find((x) => x.id === sid);
       if (!s) throw new Error(`Нет сегмента ${sid}`);
@@ -105,7 +110,7 @@ const todo = segs.filter((s) => {
   if (only.length && !only.includes(s.id)) return false;
   if (flag('force')) return true;
   const meta = path.join(dir, `${s.id}.json`);
-  return !(fs.existsSync(meta) && JSON.parse(fs.readFileSync(meta, 'utf8')).hash === hashOf(s) && fs.existsSync(path.join(dir, `${s.id}.mp3`)));
+  return !(fs.existsSync(meta) && JSON.parse(fs.readFileSync(meta, 'utf8')).hash === hashOf(s) && voiceFile(dir, s.id));
 });
 const chars = todo.reduce((n, s) => n + s.spoken.length, 0);
 console.log(`${config.id}: модель ${MODEL}, голос ${st.voice || '— не задан —'}`);

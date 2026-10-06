@@ -3,15 +3,20 @@
 //        куски для записи: несколько сцен подряд, между сценами [long pause]. Пишет out/<id>/vo-raw/chunks.json
 //        и chunk-<n>.txt — этот текст целиком отдаётся диктору (модели), по одному куску за раз
 //   node scripts/vo-align.mjs <id> [--model small|medium]
-//        берёт out/<id>/vo-raw/chunk-<n>.mp3, режет по самым длинным паузам на сцены (их столько, сколько стыков),
+//        берёт out/<id>/vo-raw/chunk-<n>.mp3 (или .wav), режет по самым длинным паузам на сцены (их столько, сколько стыков;
+//        сухие сцены — без потерь, out/<id>/vo-raw/dry/<сцена>.wav),
 //        распознаёт каждую сцену локально со временем слов (scripts/vo-words.py, faster-whisper), сопоставляет слова
 //        с текстом и пишет public/vo/<id>/<сцена>.mp3 + <сцена>.json — {text, start[], end[]}: время каждого символа
 //        текста на экране. Слова, распознанные иначе, чем написано, печатаются для проверки на слух.
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {align, loadConfig, readWords, speakable, tokens} from './vo-lib.mjs';
+import {probeDur} from './lib/media.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {align, loadConfig, readWords, speakable, tokens, voiceFile} from './vo-lib.mjs';
 import {processVoice} from './vo-fx.mjs';
+
+process.chdir(VIDEO);
 
 const args = process.argv.slice(2);
 const id = args[0];
@@ -48,13 +53,13 @@ const dryDir = path.join(raw, 'dry'); // сухие записи сцен — и
 fs.mkdirSync(outDir, {recursive: true});
 fs.mkdirSync(dryDir, {recursive: true});
 const r3 = (x) => Math.round(x * 1000) / 1000;
-const probe = (f) => Number(spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f], {encoding: 'utf8'}).stdout);
+const probe = probeDur;
 
 // 1) нарезка кусков на сцены по паузам [long pause]
 const pieces = [];
 for (const c of chunks) {
-  const mp3 = path.join(raw, `chunk-${c.n}.mp3`);
-  if (!fs.existsSync(mp3)) {
+  const mp3 = voiceFile(raw, `chunk-${c.n}`, ['mp3', 'wav']); // запись куска: mp3 от ElevenLabs или wav
+  if (!mp3) {
     console.log(`chunk-${c.n}: нет записи — пропуск`);
     continue;
   }
@@ -72,24 +77,24 @@ for (const c of chunks) {
   c.segs.forEach((sid, k) => {
     const a = k === 0 ? 0 : Math.max(0, cuts[k - 1].b - 0.1);
     const b = k === c.segs.length - 1 ? dur : cuts[k].a + 0.3;
-    const out = path.join(dryDir, `${sid}.mp3`);
+    const out = path.join(dryDir, `${sid}.wav`); // без потерь: с потерями голос сжимается один раз — в финальном рендере
     const len = b - a;
     // voice.tempo — темп без изменения высоты голоса (atempo); время слов потом считается уже по ускоренной записи
     const tempo = config.voice?.tempo ?? 1;
     const outLen = len / tempo;
     const af = [tempo !== 1 && `atempo=${tempo}`, 'afade=t=in:d=0.02', `afade=t=out:st=${(outLen - 0.05).toFixed(3)}:d=0.05`].filter(Boolean).join(',');
-    spawnSync('ffmpeg', ['-y', '-v', 'error', '-ss', a.toFixed(3), '-t', len.toFixed(3), '-i', mp3, '-af', af, '-c:a', 'libmp3lame', '-b:a', '192k', out]);
-    pieces.push({sid, chunk: c.n, from: r3(a), audio: out, words: path.join(raw, `${sid}.words.json`)});
+    spawnSync('ffmpeg', ['-y', '-v', 'error', '-ss', a.toFixed(3), '-t', len.toFixed(3), '-i', mp3, '-af', af, '-c:a', 'pcm_s16le', out]);
+    pieces.push({sid, chunk: c.n, src: mp3, from: r3(a), audio: out, words: path.join(raw, `${sid}.words.json`)});
   });
 }
 
 // 2) время слов — локальное распознавание (одним запуском модели); уже распознанные и не изменившиеся — пропускаем
-const todo = pieces.filter((p) => !fs.existsSync(p.words) || fs.statSync(p.words).mtimeMs < fs.statSync(path.join(raw, `chunk-${p.chunk}.mp3`)).mtimeMs);
+const todo = pieces.filter((p) => !fs.existsSync(p.words) || fs.statSync(p.words).mtimeMs < fs.statSync(p.src).mtimeMs);
 if (todo.length) {
   const jobs = path.join(raw, 'jobs.json');
   fs.writeFileSync(jobs, JSON.stringify(todo.map((p) => ({audio: p.audio, out: p.words, hint: segs.find((s) => s.id === p.sid).spoken}))));
   const py = path.resolve('.venv-vo/Scripts/python.exe');
-  if (!fs.existsSync(py)) throw new Error('Нет .venv-vo: python -m venv .venv-vo && .venv-vo/Scripts/python -m pip install faster-whisper');
+  if (!fs.existsSync(py)) throw new Error('Нет .venv-vo: python -m venv .venv-vo && .venv-vo/Scripts/python -m pip install -r requirements.txt');
   const r = spawnSync(py, ['scripts/vo-words.py', jobs, '--model', opt('model') ?? 'small'], {stdio: ['ignore', 'inherit', 'pipe'], env: {...process.env, PYTHONIOENCODING: 'utf-8', HF_HUB_DISABLE_SYMLINKS_WARNING: '1'}});
   if (r.status !== 0) throw new Error(`vo-words.py: ${r.stderr?.toString().slice(-800)}`);
 }

@@ -1,28 +1,17 @@
 // Витрина анимаций Манакоста (композиция yt-motion-showcase, 16:9): каждый приём движения шаблона «Компендиум»
 // отдельно, с подписью — имя для кода, длительность, кривая. Кадр приёма показан уменьшенным (0,8), под ним
-// неподвижная подпись. Данные для колоды — из статьи yt-legend-decks-sep26 (1-е место). Не для публикации.
+// неподвижная подпись. Данные для колоды — образец статьи (games/hearthstone/fixtures, 1-е место). Не для публикации.
 import React, {useMemo} from 'react';
 import {AbsoluteFill, interpolate, Sequence, useCurrentFrame} from 'remotion';
-import {clamp, DISPLAY} from '../brand';
-import article from '../yt-legend-decks-sep26/article.json';
-import {EASE_IN, EASE_IN_OUT, EASE_OUT, H, ramp, redBg, TEXT} from '../template/theme';
-import {
-  CardRow,
-  crestFor,
-  DeckList,
-  DeckPoster,
-  Grain,
-  HeaderBand,
-  HeroPortrait,
-  MainPoints,
-  OffDeckCard,
-  Page,
-  planCamera,
-  RankReveal,
-  VersusBlock,
-  Words,
-} from '../template/parts';
-import {DeckPosterData} from '../template/types';
+import {clamp} from '../../../core/time/ease';
+import {Grain} from '../../../core/fx/Grain';
+import {SAMPLE_ARTICLE as article} from '../../../games/hearthstone/fixtures';
+import {DISPLAY, EASE_IN, EASE_IN_OUT, EASE_OUT, H, ramp, redBg, TEXT} from '../../../looks/compendium/theme';
+import {HeaderBand, MainPoints, Page, RankReveal, Words} from '../../../looks/compendium/parts';
+import {CardRow, crestFor, DeckList, DeckPoster, HeroPortrait, OffDeckCard, VersusBlock} from '../../../games/hearthstone/scenes/parts';
+import {planCamera} from '../../../games/hearthstone/data/camera';
+import type {DeckPosterData} from '../../../games/hearthstone/data/types';
+import {MANACOST} from '../../../brands/manacost/channel';
 
 const W = 1920;
 const HGT = 1080;
@@ -81,7 +70,7 @@ const Curves: React.FC = () => {
   );
 };
 
-// Копия стыка сегментов из YtVideo (SegFade): растворение в чистый пергамент за 8 кадров
+// Копия стыка сегментов движка (VoicedVideo, переход стиля): растворение в чистый пергамент за 8 кадров
 const DIP = 8;
 const SegFadeDemo: React.FC = () => {
   const f = useCurrentFrame();
@@ -145,7 +134,7 @@ const ITEMS: Item[] = [
     len: 80,
     render: () => (
       <Page>
-        <RankReveal rank={1} of={15} />
+        <RankReveal rank={1} of={15} leaderLabel={MANACOST.leaderLabel} />
       </Page>
     ),
   },

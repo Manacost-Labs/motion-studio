@@ -1,0 +1,18 @@
+{
+  // Проверка типов скриптов (.mjs) без сборки: npx tsc -p tsconfig.scripts.json
+  // Не строгая: скрипты на JS, типы — из @types/node и пакетов Remotion; цель — ловить опечатки в именах и вызовах.
+  "compilerOptions": {
+    "target": "ES2024",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2024", "DOM"], // DOM — код внутри page.evaluate (puppeteer) выполняется в браузере
+    "types": ["node"],
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "strict": false
+  },
+  "include": ["scripts/**/*.mjs", "scripts/**/*.js"]
+}

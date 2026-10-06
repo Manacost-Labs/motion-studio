@@ -2,6 +2,10 @@
 import puppeteer from 'puppeteer-core';
 import fs from 'node:fs';
 import path from 'node:path';
+import {VIDEO} from './lib/paths.mjs';
+import {CHROME} from './lib/remotion.mjs';
+
+process.chdir(VIDEO);
 
 const OUT = path.resolve('capture');
 fs.mkdirSync(OUT, { recursive: true });
@@ -27,7 +31,7 @@ const only = process.argv.slice(2);
 const MAX_H = 4200;
 
 const browser = await puppeteer.launch({
-  executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  executablePath: CHROME,
   headless: true,
   defaultViewport: { width: 1440, height: 900, deviceScaleFactor: 2 },
 });

@@ -1,26 +1,42 @@
 #!/bin/sh
 # Git-хук перед коммитом (подключён: git config core.hooksPath video/scripts/hooks).
-# Сломанное в git не попадает: типы, автопроверка данных YouTube-роликов (если менялась их студия),
-# сверка закреплённых рекламных роликов (если менялся бренд HearthPulse или студии рекламы).
+# Сломанное в git не попадает: типы, слои импортов (scripts/check-layers.mjs --strict), автопроверка данных YouTube-роликов (если менялись
+# их студии, общие слои src/core, looks, games, brands, голос, статьи, ассеты Hearthstone или паспорта клипов), сверка закреплённых роликов (если менялись бренд HearthPulse,
+# студии рекламы, их ассеты в public/ или сама проверка). Список студий — из src/studios/studios.json.
 # Пропускать хук (--no-verify) — только по прямой просьбе пользователя.
 top=$(git rev-parse --show-toplevel) || exit 1
 staged=$(git diff --cached --name-only)
-echo "$staged" | grep -qE '^video/(src|scripts)/' || exit 0
+echo "$staged" | grep -qE '^video/(src|scripts|public)/' || exit 0
 cd "$top/video" || exit 1
 
 echo "pre-commit: проверка типов…"
 npx tsc --noEmit -p . || { echo "✗ ошибки типов — коммит остановлен"; exit 1; }
 
-if echo "$staged" | grep -qE '^video/(src/studios/manacost-youtube/|scripts/(yt-|vo-|meta-))'; then
-  for d in src/studios/manacost-youtube/yt-*/; do
-    id=$(basename "$d")
-    [ -f "$d/config.ts" ] || continue
-    echo "pre-commit: yt-qa $id…"
-    node scripts/yt-qa.mjs "$id" --no-video > /dev/null 2>&1 || { echo "✗ yt-qa $id: ошибки — out/$id/qa-report.md"; exit 1; }
+# слои импортов: новое нарушение правил слоёв (core, looks, games, brands, studios) останавливает коммит
+node scripts/check-layers.mjs --strict --quiet || { echo "✗ нарушены слои импортов — коммит остановлен (правила — scripts/check-layers.mjs)"; exit 1; }
+
+# студии YouTube из реестра: их папки и ролики
+ytdirs=$(node scripts/studios.mjs dirs youtube) || { echo "✗ реестр студий не читается (src/studios/studios.json)"; exit 1; }
+ytre=$(echo $ytdirs | tr ' ' '|')
+# yt-qa: ролик, чьи файлы в коммите (папка ролика, его голос public/vo/<id>/ …), — полностью, TODO тоже останавливают;
+# при правке общего кода (core, looks, games, brands, корень YouTube-студии — channel.ts, videos.ts, Root.tsx …, studios.json,
+# скрипты, общие ассеты) — все ролики в git, но незаполненные TODO черновиков коммит не останавливают (yt-qa --allow-todo)
+if [ -n "$ytre" ]; then
+  shared=0
+  echo "$staged" | grep -qE "^video/(src/(core|looks|games|brands)/|src/studios/($ytre)/[^/]+$|src/studios/studios\.json|scripts/(yt-|vo-|meta-|deck-posters|poster-fit|calib-poster|fetch-article|hs-|tts|foley|studios\.mjs|lib/)|public/(hs|decks|lib|clips)/)" && shared=1
+  ids=$(node scripts/studios.mjs videos youtube) || { echo "✗ реестр студий не читается"; exit 1; }
+  for id in $ids; do
+    if echo "$staged" | grep -qF "/$id/"; then mode=""
+    # чужой черновик, которого нет в git (config.ts не в индексе), коммит не составляет — не проверяем
+    elif [ $shared = 1 ] && [ -n "$(git ls-files -- "src/studios/*/$id/config.ts")" ]; then mode="--allow-todo"
+    else continue
+    fi
+    echo "pre-commit: yt-qa $id $mode…"
+    node scripts/yt-qa.mjs "$id" --no-video $mode > /dev/null 2>&1 || { echo "✗ yt-qa $id: ошибки — out/$id/qa-report.md"; exit 1; }
   done
 fi
 
-if echo "$staged" | grep -qE '^video/src/(hearthpulse/|studios/hp-)'; then
+if echo "$staged" | grep -qE '^video/(src/(hearthpulse/|studios/hp-|studios/frozen\.json|studios/studios\.json)|scripts/(check-ads|studios)\.mjs|scripts/lib/(studios|remotion|paths)\.mjs|public/(ui|art|chars|live|live-h|audio|lib)/)'; then
   echo "pre-commit: сверка закреплённых роликов…"
   node scripts/check-ads.mjs || { echo "✗ закреплённые ролики изменились"; exit 1; }
 fi

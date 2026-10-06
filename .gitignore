@@ -12,7 +12,7 @@ video/node_modules/
 .claude/skills/watch/
 .claude/settings.local.json
 
-# Рендеры воспроизводятся из кода; список готовых файлов — video/src/ads/README.md
+# Рендеры воспроизводятся из кода; список готовых файлов — video/src/studios/README.md
 video/out/
 
 # Свои записи игр (OBS) и клипы из них — гигабайты; в git только инструкция. Клип для ролика — в public/clips (rec.mjs take)

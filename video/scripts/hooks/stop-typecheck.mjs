@@ -1,6 +1,8 @@
 // Хук Claude Code «Stop» (.claude/settings.json): перед тем как закончить ход, проверить типы, если в рабочем дереве
 // изменены .ts/.tsx в video/src. Ошибки возвращаются модели (decision: block) — ход не закончится со сломанной сборкой.
 // Те же файлы с теми же датами уже проверены и чисты — не гоняет tsc повторно (отпечаток в node_modules/.cache).
+// Заодно — слои импортов (scripts/check-layers.mjs --strict): новое нарушение тоже блокирует ход и видно пользователю
+// (systemMessage); чистым (отпечаток в кэше) считается только ход без ошибок типов и без нарушений слоёв.
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
@@ -30,9 +32,17 @@ if (stamp === last) process.exit(0);
 
 const tsc = spawnSync('npx tsc --noEmit -p .', {cwd: path.join(root, 'video'), encoding: 'utf8', shell: true});
 const out = `${tsc.stdout}${tsc.stderr}`.split('\n').filter((l) => /error TS/.test(l));
-if (!out.length) {
+// слои: --strict --quiet печатает только новые нарушения и выходит с кодом 1, если они есть
+const check = spawnSync(process.execPath, [path.join(root, 'video', 'scripts', 'check-layers.mjs'), '--strict', '--quiet'], {cwd: path.join(root, 'video'), encoding: 'utf8'});
+const layers = check.status ? check.stdout.trim() || check.stderr.trim() || `check-layers: код выхода ${check.status}` : '';
+if (!out.length && !layers) {
   fs.mkdirSync(path.dirname(cacheFile), {recursive: true});
   fs.writeFileSync(cacheFile, JSON.stringify({stamp}));
   process.exit(0);
 }
-console.log(JSON.stringify({decision: 'block', reason: `Проверка типов (npx tsc --noEmit в video/) нашла ошибки — исправь до конца хода:\n${out.slice(0, 15).join('\n')}${out.length > 15 ? `\n… и ещё ${out.length - 15}` : ''}`}));
+if (!out.length) {
+  const reason = `Слои импортов нарушены (node scripts/check-layers.mjs --strict) — исправь до конца хода:\n${layers}`;
+  console.log(JSON.stringify({decision: 'block', reason, systemMessage: layers}));
+  process.exit(0);
+}
+console.log(JSON.stringify({decision: 'block', reason: `Проверка типов (npx tsc --noEmit в video/) нашла ошибки — исправь до конца хода:\n${out.slice(0, 15).join('\n')}${out.length > 15 ? `\n… и ещё ${out.length - 15}` : ''}${layers ? `\n\n${layers}` : ''}`}));

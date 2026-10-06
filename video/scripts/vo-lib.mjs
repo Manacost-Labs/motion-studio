@@ -1,24 +1,42 @@
-// Общее для озвучки YouTube-роликов (tts.mjs, vo-align.mjs): загрузка конфига ролика и подготовка текста диктора
+// Общее для озвучки YouTube-роликов (tts.mjs, vo-align.mjs, vo-fx.mjs, vo-takes.mjs, yt-qa.mjs): загрузка конфига ролика
+// и подготовка текста диктора. Студия ролика — по его папке (scripts/lib/studios.mjs findVideo), cwd не важен.
 import fs from 'node:fs';
 import path from 'node:path';
 import {createRequire} from 'node:module';
 import {build} from 'esbuild';
-import {studioDir} from './studios.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {findVideo, STUDIOS, studioDir} from './lib/studios.mjs';
 
-// Общий словарь произношения студии (src/studios/manacost-youtube/pronounce.json): {как написано: как читать}.
-// Пополняется по предупреждениям yt-qa «термин звучит иначе»; pronounce в конфиге ролика — только его особые слова
+// Словари произношения {как написано: как читать}, склеиваются по порядку (позже — главнее):
+//   src/games/<игра>/data/pronounce.json — термины игры (имена, карты, сокращения; игра — поле game студии в studios.json);
+//   src/studios/<студия>/pronounce.json — бренд-слова канала; pronounce в конфиге ролика — только его особые слова.
+// Пополняются по предупреждениям yt-qa «термин звучит иначе». Тот же порядок — в проверке канала (channel.qa.pronounce → core/qa/audit.ts)
 export const PRONOUNCE_FILE = path.join(studioDir('youtube'), 'pronounce.json');
-export const dictionary = () => JSON.parse(fs.readFileSync(PRONOUNCE_FILE, 'utf8'));
+export const gameDictionaryFile = (game) => path.join(VIDEO, 'src', 'games', game, 'data', 'pronounce.json');
+const readDict = (file) => (fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {});
+// dictionary() — словарь YouTube-студии Манакоста; dictionary('<ключ студии>' | '<id ролика>') — словарь его студии (игра + студия)
+export const dictionary = (of) => {
+  const key = !of ? 'youtube' : STUDIOS.some((s) => s.key === of) ? of : findVideo(of).key;
+  const game = STUDIOS.find((s) => s.key === key).game;
+  return {...(game ? readDict(gameDictionaryFile(game)) : {}), ...readDict(path.join(studioDir(key), 'pronounce.json'))};
+};
 
-// Конфиг ролика — TypeScript: собираем esbuild-ом в кэш и берём экспорт с нужным id. pronounce — словарь + слова ролика
+// Конфиг ролика — TypeScript: собираем esbuild-ом в кэш и берём экспорт с нужным id. pronounce — словари игры и студии + слова ролика
 export const loadConfig = async (id) => {
-  const out = path.resolve('node_modules/.cache', `vo-${id}.cjs`);
-  await build({entryPoints: [path.join(studioDir('youtube'), id, 'config.ts')], bundle: true, platform: 'node', format: 'cjs', outfile: out, logLevel: 'error'});
+  const video = findVideo(id);
+  const out = path.join(VIDEO, 'node_modules', '.cache', `vo-${id}.cjs`);
+  await build({entryPoints: [video.configPath], bundle: true, platform: 'node', format: 'cjs', outfile: out, logLevel: 'error'});
   const req = createRequire(import.meta.url);
   delete req.cache[out];
   const config = Object.values(req(out)).find((v) => v && typeof v === 'object' && v.id === id);
-  if (!config) throw new Error(`В src/studios/manacost-youtube/${id}/config.ts нет конфига с id «${id}»`);
-  return {...config, pronounce: {...dictionary(), ...config.pronounce}};
+  if (!config) throw new Error(`В ${path.relative(VIDEO, video.configPath).replace(/\\/g, '/')} нет конфига с id «${id}»`);
+  return {...config, pronounce: {...dictionary(video.key), ...config.pronounce}};
+};
+
+// Файл голоса сцены: <папка>/<сцена>.wav или .mp3 (если есть оба — более свежий) или null
+export const voiceFile = (dir, seg, exts = ['wav', 'mp3']) => {
+  const found = exts.map((e) => path.join(dir, `${seg}.${e}`)).filter((f) => fs.existsSync(f));
+  return found.sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs)[0] ?? null;
 };
 
 // Текст диктора → что говорим (с аудиотегами и заменами произношения) и что показываем (как написано).

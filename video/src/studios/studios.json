@@ -1,0 +1,6 @@
+[
+  {"key": "ads", "dir": "hp-ads", "kind": "ads", "title": "Реклама HearthPulse", "game": "hearthstone", "brand": "hearthpulse", "look": "hearthpulse", "idPrefix": null, "port": 3000, "freeze": "check-ads"},
+  {"key": "features", "dir": "hp-features", "kind": "features", "title": "Обзоры новых функций HearthPulse", "game": "hearthstone", "brand": "hearthpulse", "look": "hearthpulse", "idPrefix": null, "port": 3001, "freeze": "check-ads"},
+  {"key": "youtube", "dir": "manacost-youtube", "kind": "youtube", "title": "YouTube Манакоста", "game": "hearthstone", "brand": "manacost", "look": "compendium", "idPrefix": "yt-", "port": 3002, "freeze": "golden"},
+  {"key": "lol", "dir": "lol-youtube", "kind": "youtube", "title": "YouTube по League of Legends (канал — TODO)", "game": "lol", "brand": "lol-channel", "look": "gazette", "idPrefix": "lol-", "port": 3003, "freeze": "golden"}
+]

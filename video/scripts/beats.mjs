@@ -2,8 +2,11 @@
 //   node scripts/beats.mjs public/audio/music-v2.m4a
 // Печатает BPM, длину доли в кадрах (30 fps), первую долю и сильные доли тактов.
 import {execFileSync} from 'node:child_process';
+import {userPath, VIDEO} from './lib/paths.mjs';
 
-const file = process.argv[2];
+if (!process.argv[2]) throw new Error('node scripts/beats.mjs <аудиофайл>');
+const file = userPath(process.argv[2]); // от папки запуска или от video/
+process.chdir(VIDEO);
 const SR = 11025;
 const HOP = 256;
 const pcm = execFileSync('ffmpeg', ['-v', 'error', '-i', file, '-ac', '1', '-ar', String(SR), '-f', 'f32le', '-'], {maxBuffer: 1 << 28});

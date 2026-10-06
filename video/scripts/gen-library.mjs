@@ -6,6 +6,9 @@ import {execFile} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
+import {VIDEO} from './lib/paths.mjs';
+
+process.chdir(VIDEO);
 
 const HF = path.join(os.homedir(), 'AppData/Roaming/npm/node_modules/@higgsfield/cli/vendor/hf.exe');
 const LIB = path.resolve('public/lib');

@@ -4,7 +4,10 @@
 //   node scripts/hs-assets.mjs --trim                      — обрезать белые поля у уже скачанных артов и полосок
 import fs from 'node:fs';
 import path from 'node:path';
+import {VIDEO} from './lib/paths.mjs';
 import {download, HS, trimTile, trimWhite} from './hs-lib.mjs';
+
+process.chdir(VIDEO);
 
 const args = process.argv.slice(2);
 if (args.includes('--trim')) {

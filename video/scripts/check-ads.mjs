@@ -4,12 +4,15 @@
 //   node scripts/check-ads.mjs launch30           — только один
 //   node scripts/check-ads.mjs --update <ролик>   — переснять эталон (только если ролик меняли намеренно)
 // Расхождения кладутся в out/check/<композиция>/diff-*.jpg: слева эталон, справа сейчас.
-import {bundle} from '@remotion/bundler';
 import {openBrowser, renderStill, selectComposition} from '@remotion/renderer';
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import {entryPoint, studioDir} from './studios.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {bundleStudio, CHROME} from './lib/remotion.mjs';
+import {studioDir} from './lib/studios.mjs';
+
+process.chdir(VIDEO);
 
 const MIN_PSNR = 40; // дБ; одинаковый кадр даёт inf, заметная правка — меньше 35
 
@@ -26,13 +29,13 @@ const psnr = (a, b) => {
   return !m ? 0 : m[1] === 'inf' ? Infinity : Number(m[1]);
 };
 
-const browserExecutable = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+const browserExecutable = CHROME;
 const bundles = {}; // по сборке на студию
 const browser = await openBrowser('chrome', {browserExecutable});
 const problems = [];
 
 for (const ad of ads) {
-  const serveUrl = (bundles[ad.studio] ??= await bundle({entryPoint: entryPoint(ad.studio)}));
+  const serveUrl = (bundles[ad.studio] ??= await bundleStudio(ad.studio));
   const refDir = path.join(studioDir(ad.studio), ad.ad, 'ref');
   const metaPath = path.join(refDir, 'meta.json');
   const meta = fs.existsSync(metaPath) ? JSON.parse(fs.readFileSync(metaPath, 'utf8')) : {};

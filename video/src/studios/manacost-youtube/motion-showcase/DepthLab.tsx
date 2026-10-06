@@ -1,9 +1,9 @@
-// Проба «живого» арта (template/parts/depth.tsx): 10 с камеры по одному арту, не для публикации.
+// Проба «живого» арта (core/fx/DepthArt.tsx): 10 с камеры по одному арту, не для публикации.
 // Другой арт: --props='{"src":"art/badlands.jpg"}' (карта глубины — scripts/depth.py). Рендер с --gl=angle.
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
-import {FrameScale} from '../template/fps';
-import {DepthArt} from '../template/parts';
+import {FrameScale} from '../../../core/time/fps';
+import {DepthArt} from '../../../core/fx/DepthArt';
 
 export const DEPTH_LAB_DURATION = 600; // 10 с при 60 к/с
 

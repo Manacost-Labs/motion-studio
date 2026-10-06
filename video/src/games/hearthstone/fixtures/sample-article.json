@@ -1,0 +1,5397 @@
+{
+ "url": "https://hs-manacost.ru/kolody-ametistovoj-kreposti-dlya-vzyatiya-legendy-sentyabr/",
+ "title": "15 колод Аметистовой крепости для взятия Легенды в сентябре",
+ "date": "2026-09-20T19:00:19+03:00",
+ "intro": [
+  {
+   "text": "Сентябрьский рейтинговый сезон в Аметистовой крепости понемногу истекает. До конца осталось еще целых 10 дней, поэтому еще полно времени, чтобы взяться за фарм рангов, даже если вы не играли в этом месяце. Несмотря на господство Воина, в мете предостаточно интересных архетипов — от контроля до комбо колод. А кому-то подойдут и агро колоды.",
+   "cards": []
+  },
+  {
+   "text": "Знакомьтесь с подборкой из 15 колод, которые лучше всего подходят для того, чтобы взять Легенду в сентябре.",
+   "cards": []
+  }
+ ],
+ "decks": [
+  {
+   "rank": 15,
+   "name": "ОТК Чернокнижник",
+   "paragraphs": [
+    {
+     "text": "В начале этой недели в честь анонса нового дополнения «Власть Темной Империи» в игру была добавлена предрелизная легендарка МАТРИАРХ. Эксперименты с ней кипели всю неделю, и хотя поначалу ее перспективы казались сомнительными, одна из колод смогла пробиться наверх.",
+     "cards": []
+    },
+    {
+     "text": "Основная комбинация состоит всего из двух карт: Земляного дракона и Маски нетопыря. Семь драконов на столе нанесут в конце хода 28 урона — этого будет достаточно в большинстве ситуаций. Довести урон до 48 единиц можно, поставив Хронолорда Дейоса.",
+     "cards": [
+      {
+       "id": "CATA_999",
+       "name": "Земляного дракона"
+      },
+      {
+       "id": "DINO_402",
+       "name": "Маски нетопыря"
+      },
+      {
+       "id": "TIME_064",
+       "name": "Хронолорда Дейоса"
+      }
+     ]
+    },
+    {
+     "text": "МАТРИАРХ нужна как раз для того, чтобы сыграть все эти карты в один ход. Новая легендарка удешевляет выбранную карту на (5), затем две соседние карты на (4), следующие за ними на (3) и т. д.",
+     "cards": [
+      {
+       "id": "BE_036",
+       "name": "МАТРИАРХ"
+      }
+     ]
+    }
+   ],
+   "cls": "Чернокнижник",
+   "mode": "Стандарт",
+   "code": "AAECAf0GCLGfBIadB5mxB63ZB47cB9vgB7roB4TpBwuPnwTnoATTngaqrQeTvgfgvgfd1wew2Qex2Qe32QeN3AcAAA==",
+   "page": "https://hs-manacost.ru/deck/otk-chernoknizhnik/",
+   "hero": "HERO_07",
+   "heroClass": "WARLOCK",
+   "list": [
+    {
+     "id": "CORE_UNG_205",
+     "name": "Ледниковый осколок",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_EX1_302",
+     "name": "Лик тлена",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CORE_ICC_055",
+     "name": "Похищение души",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_496",
+     "name": "Проклятые цепи",
+     "cost": 2,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_515",
+     "name": "Темные выстрелы",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CATA_725",
+     "name": "Ученик Приверженцев Тени",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_CS2_062",
+     "name": "Адское пламя",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CAP_405",
+     "name": "Крестный отец Казакус",
+     "cost": 3,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_399",
+     "name": "Подпевала из банды бесов",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_513",
+     "name": "Череп в клетке",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_509",
+     "name": "Годфри Предатель",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TIME_031",
+     "name": "ЛЕСТНИЦА ИЗ РАФААМОВ!",
+     "cost": 4,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_999",
+     "name": "Земляной дракон",
+     "cost": 5,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_511",
+     "name": "Шпиль Уединения",
+     "cost": 5,
+     "rarity": "EPIC",
+     "type": "LOCATION",
+     "count": 2
+    },
+    {
+     "id": "TIME_064",
+     "name": "Хронолорд Дейос",
+     "cost": 7,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_510",
+     "name": "Аннигиляция",
+     "cost": 8,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "DINO_402",
+     "name": "Маска нетопыря",
+     "cost": 8,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "BE_036",
+     "name": "МАТРИАРХ",
+     "cost": 9,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_514",
+     "name": "Незримый атлас",
+     "cost": 10,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/15.jpg",
+    "w": 1920,
+    "h": 1483,
+    "order": [
+     "CORE_EX1_302",
+     "CORE_UNG_205",
+     "JAIL_515",
+     "CORE_ICC_055",
+     "CATA_725",
+     "CATA_496",
+     "CAP_405",
+     "CORE_CS2_062",
+     "JAIL_399",
+     "JAIL_513",
+     "JAIL_509",
+     "TIME_031",
+     "CATA_999",
+     "JAIL_511",
+     "TIME_064",
+     "DINO_402",
+     "JAIL_510",
+     "BE_036",
+     "JAIL_514"
+    ],
+    "types": [
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "LOCATION",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "SPELL"
+    ],
+    "rarities": [
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "COMMON",
+     "COMMON",
+     "EPIC",
+     "LEGENDARY",
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "LEGENDARY",
+     "RARE",
+     "RARE",
+     "EPIC",
+     "LEGENDARY",
+     "COMMON",
+     "RARE",
+     "LEGENDARY",
+     "COMMON"
+    ],
+    "dust": 5840,
+    "rects": [
+     [
+      21.3,
+      -16,
+      244,
+      369.8
+     ],
+     [
+      259.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      491.3,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      726.3,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      964.3,
+      -10,
+      236,
+      357.7
+     ],
+     [
+      1195.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      1437.3,
+      3.5,
+      226.1,
+      342.7
+     ],
+     [
+      1665.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      24.8,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      259.8,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      497.8,
+      332.5,
+      226.1,
+      342.7
+     ],
+     [
+      725.8,
+      313.5,
+      244,
+      369.8
+     ],
+     [
+      964.8,
+      320,
+      235.1,
+      356.3
+     ],
+     [
+      1200.3,
+      342,
+      220.9,
+      334.8
+     ],
+     [
+      1437.3,
+      332.5,
+      226.1,
+      342.7
+     ],
+     [
+      1665.3,
+      313.5,
+      244,
+      369.8
+     ],
+     [
+      21.3,
+      642.5,
+      244,
+      369.8
+     ],
+     [
+      263.3,
+      662,
+      225.6,
+      341.9
+     ],
+     [
+      490.8,
+      642.5,
+      244,
+      369.8
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 14,
+   "name": "Квест Жрец",
+   "paragraphs": [
+    {
+     "text": "С выходом Классовых наборов Достичь равновесия наконец-то перестал быть активатором Триумфа Медива и превратился в полноценный способ победы. Награду за квест теперь можно копировать Экспертом по духам, перепризывать Скользкой смертью и воскрешать Хладом ван Пиром. Новые карты отлично сочетаются и с Гадалкой.",
+     "cards": [
+      {
+       "id": "TLC_817",
+       "name": "Достичь равновесия"
+      },
+      {
+       "id": "CATA_308",
+       "name": "Триумфа Медива"
+      },
+      {
+       "id": "CAP_804",
+       "name": "Экспертом по духам"
+      },
+      {
+       "id": "CAP_805",
+       "name": "Скользкой смертью"
+      },
+      {
+       "id": "CAP_806",
+       "name": "Хладом ван Пиром"
+      },
+      {
+       "id": "JAIL_912",
+       "name": "Гадалкой"
+      }
+     ]
+    },
+    {
+     "text": "Квест Жрец сейчас — одна из самых популярных колод в мете. Ее геймплей многих привлекает, несмотря на сложные матч-апы. Кроме того, у Квест Жреца есть огромное преимущество — хороший матч-ап с ее лидером меты Дракон Воином.",
+     "cards": []
+    }
+   ],
+   "cls": "Жрец",
+   "mode": "Стандарт",
+   "code": "AAECAa0GBISfBMODB6iWB9zgBw2G/QbFlAfkngfSrwebvweyxQevyQeT3wew3wfV4AfZ4Af04AeW/AcAAA==",
+   "page": "https://hs-manacost.ru/deck/kvest-zhrecz-20/",
+   "hero": "HERO_09",
+   "heroClass": "PRIEST",
+   "list": [
+    {
+     "id": "TLC_817",
+     "name": "Достичь равновесия",
+     "cost": 1,
+     "rarity": "LEGENDARY",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CATA_302",
+     "name": "Излечение",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_940",
+     "name": "Посмертный приговор",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_CS2_004",
+     "name": "Слово силы: Щит",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "DINO_426",
+     "name": "Ритуал жизни",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_941",
+     "name": "Священные объятия",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "EDR_463",
+     "name": "Сумеречное влияние",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CAP_801",
+     "name": "Блуждающий дух",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_BAR_311",
+     "name": "Всепожирающая чума",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_CS1_112",
+     "name": "Кольцо света",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CAP_804",
+     "name": "Эксперт по духам",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "EDR_856",
+     "name": "Повелитель кошмаров Ксавий",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CAP_805",
+     "name": "Скользкая смерть",
+     "cost": 4,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TLC_816",
+     "name": "Смертозарный солнцецвет",
+     "cost": 4,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_308",
+     "name": "Триумф Медива",
+     "cost": 5,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_912",
+     "name": "Гадалка",
+     "cost": 7,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CAP_806",
+     "name": "Хлад ван Пир",
+     "cost": 7,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/14.jpg",
+    "w": 1920,
+    "h": 1775,
+    "order": [
+     "TLC_817",
+     "CORE_CS2_004",
+     "CATA_302",
+     "JAIL_940",
+     "EDR_463",
+     "DINO_426",
+     "JAIL_941",
+     "CORE_CS1_112",
+     "CAP_801",
+     "CAP_804",
+     "CORE_BAR_311",
+     "EDR_856",
+     "TLC_816",
+     "CAP_805",
+     "CATA_308",
+     "CAP_806",
+     "JAIL_912"
+    ],
+    "types": [
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION"
+    ],
+    "rarities": [
+     "LEGENDARY",
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "RARE",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "LEGENDARY",
+     "COMMON",
+     "EPIC",
+     "EPIC",
+     "LEGENDARY",
+     "RARE"
+    ],
+    "dust": 3920,
+    "rects": [
+     [
+      6.4,
+      -25,
+      323.2,
+      489.8
+     ],
+     [
+      334.4,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      647.4,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      960.9,
+      -28,
+      325.1,
+      492.7
+     ],
+     [
+      1273.9,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      1586.9,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      21.4,
+      398.5,
+      325.1,
+      492.7
+     ],
+     [
+      334.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      647.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      965.9,
+      405.5,
+      315,
+      477.4
+     ],
+     [
+      1273.9,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      1596.4,
+      424,
+      301.1,
+      456.4
+     ],
+     [
+      21.4,
+      824.5,
+      325.1,
+      492.7
+     ],
+     [
+      334.4,
+      824,
+      325.7,
+      493.7
+     ],
+     [
+      647.4,
+      824,
+      325.7,
+      493.7
+     ],
+     [
+      969.9,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      1279.4,
+      832.5,
+      314.4,
+      476.5
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 13,
+   "name": "Берн Маг",
+   "paragraphs": [
+    {
+     "text": "Магу после нерфа Квест Мага ничего не остается, кроме как вернуться к единственной рабочей колоде — Берн Магу. Недавно игроки экспериментировали с Аметистовой тревогой, однако старые сборки показывают себя лучше. Можно отметить, что все они используют Гениальность Хранителя Магии.",
+     "cards": [
+      {
+       "id": "JAIL_735",
+       "name": "Аметистовой тревогой"
+      },
+      {
+       "id": "CATA_452",
+       "name": "Гениальность Хранителя Магии"
+      }
+     ]
+    },
+    {
+     "text": "Берн Маг успешно наказывает Чернокнижников и Разбойников всех мастей.",
+     "cards": []
+    }
+   ],
+   "cls": "Маг",
+   "mode": "Стандарт",
+   "code": "AAECAf0EBJegBIi+B9fDB5PaBw39ngSF5gazhwfHhweflgfopQeLsQfWsgfWvAeGxAeSxAebxAesxgcAAA==",
+   "page": "https://hs-manacost.ru/deck/bern-mag-10/",
+   "hero": "HERO_08",
+   "heroClass": "MAGE",
+   "list": [
+    {
+     "id": "CORE_DRG_107",
+     "name": "Аметистовый чарокрыл",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_484",
+     "name": "Дракончик Зимних Ключей",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "END_022",
+     "name": "Искаженный временем провидец",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_485",
+     "name": "Ледяной дождь",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_SW_108",
+     "name": "Первый огонь",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "FIR_911",
+     "name": "Дымящаяся роща",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "FIR_929",
+     "name": "Живой жар",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_487",
+     "name": "Заклинатель дождя",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_CS2_024",
+     "name": "Ледяная стрела",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_EX1_012",
+     "name": "Маг крови Талнос",
+     "cost": 2,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TLC_226",
+     "name": "Сотворенный библиотекарь",
+     "cost": 3,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TIME_855",
+     "name": "Чародейский обстрел",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_458",
+     "name": "Верховный маг Кейлек",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_483",
+     "name": "Нестабильный заклинатель",
+     "cost": 4,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CORE_CS2_029",
+     "name": "Огненный шар",
+     "cost": 4,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_489",
+     "name": "Чародейский поток",
+     "cost": 4,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_452",
+     "name": "Гениальность Хранителя Магии",
+     "cost": 10,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/13.jpg",
+    "w": 1920,
+    "h": 1775,
+    "order": [
+     "CORE_SW_108",
+     "CORE_DRG_107",
+     "END_022",
+     "CATA_484",
+     "CATA_485",
+     "CORE_EX1_012",
+     "CORE_CS2_024",
+     "FIR_911",
+     "FIR_929",
+     "CATA_487",
+     "TLC_226",
+     "TIME_855",
+     "CATA_458",
+     "CATA_483",
+     "CORE_CS2_029",
+     "CATA_489",
+     "CATA_452"
+    ],
+    "types": [
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "SPELL"
+    ],
+    "rarities": [
+     "RARE",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "LEGENDARY",
+     "COMMON",
+     "RARE",
+     "COMMON",
+     "RARE",
+     "EPIC",
+     "COMMON",
+     "LEGENDARY",
+     "EPIC",
+     "COMMON",
+     "RARE",
+     "COMMON"
+    ],
+    "dust": 2880,
+    "rects": [
+     [
+      21.4,
+      -28,
+      325.1,
+      492.7
+     ],
+     [
+      339.9,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      652.9,
+      -20.5,
+      315,
+      477.4
+     ],
+     [
+      966.4,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      1273.9,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      1596.4,
+      -2,
+      301.1,
+      456.4
+     ],
+     [
+      21.4,
+      398.5,
+      325.1,
+      492.7
+     ],
+     [
+      334.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      652.9,
+      405.5,
+      315,
+      477.4
+     ],
+     [
+      966.4,
+      406.5,
+      314.4,
+      476.5
+     ],
+     [
+      1279.4,
+      406.5,
+      314.4,
+      476.5
+     ],
+     [
+      1586.9,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      30.4,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      339.9,
+      832.5,
+      314.4,
+      476.5
+     ],
+     [
+      647.4,
+      824,
+      325.7,
+      493.7
+     ],
+     [
+      960.9,
+      824.5,
+      325.1,
+      492.7
+     ],
+     [
+      1273.9,
+      824,
+      325.7,
+      493.7
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 12,
+   "name": "Чернокнижник на возвещении",
+   "paragraphs": [
+    {
+     "text": "Крестный отец Казакус из Классового набора помог Чернокнижнику как классу в целом. Карта очень гибкая и очень сильная по кривой маны. Обратите внимание, что одно из лучших применений Казакуса — это сгенерировать большой стол на 4-м ходу с помощью трех 3-х дропов и массового баффа.",
+     "cards": [
+      {
+       "id": "CAP_405",
+       "name": "Крестный отец Казакус"
+      }
+     ]
+    },
+    {
+     "text": "Чернокнижник на возвещении по-прежнему не использует своего гиганта, поскольку намного лучше справляется с призывом больших угроз другими картами. Одна из сильнейших карт класса в текущей мете — Проклятые цепи. Заклинание особенно полезно против Жрецов, которых сейчас так много в ладдере.",
+     "cards": [
+      {
+       "id": "CATA_726",
+       "name": "гиганта"
+      },
+      {
+       "id": "CATA_496",
+       "name": "Проклятые цепи"
+      }
+     ]
+    },
+    {
+     "text": "Чернокнижник на возвещении — очень хорошая колода, но матч-апы с Воинами значительно занижают ее эффективность.",
+     "cards": []
+    }
+   ],
+   "cls": "Чернокнижник",
+   "mode": "Стандарт",
+   "code": "AAECAf0GBNC/B5vUB63ZB9vgBw2PnwTnoATTngaEmQeTvgfYvgfgvgfd1wew2Qex2Qe32QeN3AeO3AcAAA==",
+   "page": "https://hs-manacost.ru/deck/chernoknizhnik-na-vozveshhenii-22/",
+   "hero": "HERO_07",
+   "heroClass": "WARLOCK",
+   "list": [
+    {
+     "id": "TLC_451",
+     "name": "Проклятые катакомбы",
+     "cost": 0,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_UNG_205",
+     "name": "Ледниковый осколок",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_ICC_055",
+     "name": "Похищение души",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_496",
+     "name": "Проклятые цепи",
+     "cost": 2,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_515",
+     "name": "Темные выстрелы",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_725",
+     "name": "Ученик Приверженцев Тени",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_CS2_062",
+     "name": "Адское пламя",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CAP_405",
+     "name": "Крестный отец Казакус",
+     "cost": 3,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_399",
+     "name": "Подпевала из банды бесов",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_513",
+     "name": "Череп в клетке",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_509",
+     "name": "Годфри Предатель",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_492",
+     "name": "Сумеречное святилище",
+     "cost": 4,
+     "rarity": "RARE",
+     "type": "LOCATION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_511",
+     "name": "Шпиль Уединения",
+     "cost": 5,
+     "rarity": "EPIC",
+     "type": "LOCATION",
+     "count": 2
+    },
+    {
+     "id": "CATA_497",
+     "name": "Ультраксион",
+     "cost": 6,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_510",
+     "name": "Аннигиляция",
+     "cost": 8,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_514",
+     "name": "Незримый атлас",
+     "cost": 10,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_190h",
+     "name": "Смертокрыл Разрушитель миров",
+     "cost": 10,
+     "rarity": "LEGENDARY",
+     "type": "HERO",
+     "count": 1
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/12.jpg",
+    "w": 1920,
+    "h": 1775,
+    "order": [
+     "TLC_451",
+     "CORE_UNG_205",
+     "CORE_ICC_055",
+     "CATA_725",
+     "CATA_496",
+     "JAIL_515",
+     "CAP_405",
+     "CORE_CS2_062",
+     "JAIL_399",
+     "JAIL_513",
+     "JAIL_509",
+     "CATA_492",
+     "JAIL_511",
+     "CATA_497",
+     "JAIL_510",
+     "CATA_190h",
+     "JAIL_514"
+    ],
+    "types": [
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "LOCATION",
+     "LOCATION",
+     "MINION",
+     "SPELL",
+     "HERO",
+     "SPELL"
+    ],
+    "rarities": [
+     "EPIC",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "EPIC",
+     "RARE",
+     "LEGENDARY",
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "LEGENDARY",
+     "RARE",
+     "EPIC",
+     "LEGENDARY",
+     "RARE",
+     "LEGENDARY",
+     "COMMON"
+    ],
+    "dust": 9040,
+    "rects": [
+     [
+      21.4,
+      -28,
+      325.1,
+      492.7
+     ],
+     [
+      339.9,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      647.4,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      966.4,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      1273.9,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      1586.9,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      30.4,
+      424,
+      301.1,
+      456.4
+     ],
+     [
+      334.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      652.9,
+      405.5,
+      315,
+      477.4
+     ],
+     [
+      965.9,
+      405.5,
+      315,
+      477.4
+     ],
+     [
+      1283.4,
+      424.5,
+      300.5,
+      455.5
+     ],
+     [
+      1593.4,
+      436,
+      295.5,
+      447.8
+     ],
+     [
+      27.9,
+      862.5,
+      294.8,
+      446.9
+     ],
+     [
+      343.4,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      647.4,
+      824,
+      325.7,
+      493.7
+     ],
+     [
+      958.4,
+      830.5,
+      300.5,
+      455.5
+     ],
+     [
+      1273.9,
+      824,
+      325.7,
+      493.7
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 11,
+   "name": "Стелс Разбойник на возвещении",
+   "paragraphs": [
+    {
+     "text": "У Валиры в Классовом наборе появились очень сильные карты, которые нашли место в Разбойнике на возвещении. В особенности отличились Матиас Шоу и Истребитель из ШРУ. Чтобы правильно их реализовать, нужно постараться не выводить из маскировки более мелкие угрозы.",
+     "cards": [
+      {
+       "id": "CAP_005",
+       "name": "Матиас Шоу"
+      },
+      {
+       "id": "CAP_000",
+       "name": "Истребитель из ШРУ"
+      }
+     ]
+    },
+    {
+     "text": "Благодаря новым картам Разбойник на возвещении с завидной регулярностью снежным комом наваливается на противника, побеждая задолго до своих больших угроз. Такая стратегия очень эффективна и превосходит сборки архетипа, где используется один только Шоу.",
+     "cards": []
+    },
+    {
+     "text": "Разбойник на возвещении — очень уверенный архетип, который, как и Чернокнижник на возвещении, страдает от Воинов.",
+     "cards": []
+    }
+   ],
+   "cls": "Разбойник",
+   "mode": "Стандарт",
+   "code": "AAECAaIHDKGBB5KDB4KYB+ylB4aoB4eoB4ioB9C/B4rUB5vUB4jZB9DgBwn3nwTBlwe0wQfAwQedxQfVxQej4AfO4AfD8gcAAA==",
+   "page": "https://hs-manacost.ru/deck/stels-razbojnik-na-vozveshhenii-6/",
+   "hero": "HERO_03",
+   "heroClass": "ROGUE",
+   "list": [
+    {
+     "id": "CORE_RLK_567",
+     "name": "Гибельная тень",
+     "cost": 0,
+     "rarity": "LEGENDARY",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CORE_EX1_145",
+     "name": "Подготовка",
+     "cost": 0,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_200",
+     "name": "Агент Древних",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_BT_701",
+     "name": "Шпионка",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TLC_515",
+     "name": "Карта сектантов",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CAP_003",
+     "name": "Поставщик ШРУ",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_785",
+     "name": "Сумеречный обряд",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TIME_875t1",
+     "name": "Убийцы Королей",
+     "cost": 2,
+     "type": "WEAPON",
+     "count": 1
+    },
+    {
+     "id": "CATA_158",
+     "name": "Безумный приспешник",
+     "cost": 3,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CAP_000",
+     "name": "Истребитель из ШРУ",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TIME_875t",
+     "name": "Король Ллейн",
+     "cost": 3,
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TIME_875",
+     "name": "Гарона Полуорчиха",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CAP_005",
+     "name": "Матиас Шоу",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TLC_100",
+     "name": "Навигатор Элиза",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TLC_522",
+     "name": "Незримый Опу",
+     "cost": 6,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_154",
+     "name": "Синестра",
+     "cost": 6,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_497",
+     "name": "Ультраксион",
+     "cost": 6,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "EDR_844",
+     "name": "Глашатай драконов Наралекс",
+     "cost": 7,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "EDR_846",
+     "name": "Шаладрассил",
+     "cost": 8,
+     "rarity": "LEGENDARY",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CATA_201",
+     "name": "Сумеречная госпожа",
+     "cost": 9,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_190h",
+     "name": "Смертокрыл Разрушитель миров",
+     "cost": 10,
+     "rarity": "LEGENDARY",
+     "type": "HERO",
+     "count": 1
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/11.jpg",
+    "w": 1920,
+    "h": 1483,
+    "order": [
+     "CORE_RLK_567",
+     "CORE_EX1_145",
+     "CATA_200",
+     "CORE_BT_701",
+     "TLC_515",
+     "CATA_785",
+     "CAP_003",
+     "CATA_158",
+     "CAP_000",
+     "TLC_100",
+     "TIME_875",
+     "TIME_875t",
+     "TIME_875t1",
+     "CAP_005",
+     "TLC_522",
+     "CATA_497",
+     "CATA_154",
+     "EDR_844",
+     "EDR_846",
+     "CATA_201",
+     "CATA_190h"
+    ],
+    "types": [
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "WEAPON",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "HERO"
+    ],
+    "rarities": [
+     "LEGENDARY",
+     "EPIC",
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "RARE",
+     "COMMON",
+     "EPIC",
+     "COMMON",
+     "LEGENDARY",
+     "LEGENDARY",
+     null,
+     null,
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "EPIC",
+     "LEGENDARY"
+    ],
+    "dust": 10040,
+    "rects": [
+     [
+      10.3,
+      -13,
+      241.7,
+      366.3
+     ],
+     [
+      256.3,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      494.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      729.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      960.8,
+      -16,
+      244,
+      369.8
+     ],
+     [
+      1195.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      1434.3,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      1669.3,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      24.8,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      263.3,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      497.8,
+      332.5,
+      226.1,
+      342.7
+     ],
+     [
+      732.8,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      961.8,
+      330,
+      229.4,
+      347.7
+     ],
+     [
+      1202.8,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      1437.3,
+      332.5,
+      226.1,
+      342.7
+     ],
+     [
+      1672.3,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      28.3,
+      662,
+      225.6,
+      341.9
+     ],
+     [
+      263.3,
+      662,
+      225.6,
+      341.9
+     ],
+     [
+      479.8,
+      645,
+      242.1,
+      367
+     ],
+     [
+      727.3,
+      648.5,
+      236,
+      357.7
+     ],
+     [
+      958.3,
+      647,
+      225.6,
+      341.9
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 10,
+   "name": "Кхелос Рыцарь смерти",
+   "paragraphs": [
+    {
+     "text": "Победитель Чемпионата мира OTHxhh показал всем, как правильно играть Кхелос ДК, после чего дела архетипа пошли в гору. Ключевое значение здесь занимает Костоправ, который позволяет Рыцарю смерти выходить сухим из воды в самых сложных ситуациях. Подготовка карты до 0 или 1 маны очень важна. Тогда в сложном положении ДК сможет потратить намного больше маны, чем имеет, и одновременно найти ответы на угрозы противника.",
+     "cards": [
+      {
+       "id": "JAIL_444",
+       "name": "Костоправ"
+      }
+     ]
+    },
+    {
+     "text": "Кхелос ДК хорошо справляется со всеми архетипами Воина и невероятно популярным Квест Жрецом.",
+     "cards": []
+    }
+   ],
+   "cls": "Рыцарь Смерти",
+   "mode": "Стандарт",
+   "code": "AAECAfHhBArDgwf1mAfsmwfXnQfgnQftnwfSrgfa1wed2we/3wcKodQEl4IHvJQHupUHn54HkqQH4rEHrtoHtNoHptwHAAA=",
+   "page": "https://hs-manacost.ru/deck/khelos-ryczar-smerti-10/",
+   "hero": "HERO_11",
+   "heroClass": "DEATHKNIGHT",
+   "list": [
+    {
+     "id": "EDR_813",
+     "name": "Болезненный рой",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "DINO_417",
+     "name": "Церемония упокоения",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_441",
+     "name": "Питье крови",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "DINO_411",
+     "name": "Священный яйценос",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CORE_EDR_002",
+     "name": "Тлетворное дыхание",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_450",
+     "name": "Трупная пушка",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "WEAPON",
+     "count": 2
+    },
+    {
+     "id": "CORE_NEW1_020",
+     "name": "Яростный пиромант",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_998",
+     "name": "Контрабандист Братства",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TLC_EVENT_402",
+     "name": "Посох Вестницы гибели",
+     "cost": 3,
+     "rarity": "LEGENDARY",
+     "type": "WEAPON",
+     "count": 1
+    },
+    {
+     "id": "TLC_252",
+     "name": "Растворяющий слизнюк",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TIME_003",
+     "name": "Страж портала",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_EDR_003",
+     "name": "Фалрик",
+     "cost": 3,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "DINO_410",
+     "name": "Яйцо кхелоса",
+     "cost": 3,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_446",
+     "name": "Лекарь крови Тал'ена",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "EDR_856",
+     "name": "Повелитель кошмаров Ксавий",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TLC_436",
+     "name": "Воскрешенный терродактиль",
+     "cost": 5,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_444",
+     "name": "Костоправ",
+     "cost": 5,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_454",
+     "name": "Срочная операция",
+     "cost": 5,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "TLC_106",
+     "name": "Вестница гибели Умбра",
+     "cost": 7,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "END_004",
+     "name": "Отголосок ярости",
+     "cost": 7,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/10.jpg",
+    "w": 1920,
+    "h": 1483,
+    "order": [
+     "EDR_813",
+     "DINO_417",
+     "DINO_411",
+     "CORE_NEW1_020",
+     "CORE_EDR_002",
+     "JAIL_441",
+     "JAIL_450",
+     "TLC_252",
+     "DINO_410",
+     "CORE_EDR_003",
+     "TLC_EVENT_402",
+     "JAIL_998",
+     "TIME_003",
+     "EDR_856",
+     "JAIL_446",
+     "JAIL_454",
+     "TLC_436",
+     "JAIL_444",
+     "TLC_106",
+     "END_004"
+    ],
+    "types": [
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "WEAPON",
+     "MINION",
+     "MINION",
+     "MINION",
+     "WEAPON",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION"
+    ],
+    "rarities": [
+     "RARE",
+     "COMMON",
+     "RARE",
+     "RARE",
+     "RARE",
+     "RARE",
+     "COMMON",
+     "RARE",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "COMMON",
+     "RARE",
+     "LEGENDARY",
+     "LEGENDARY",
+     "COMMON",
+     "EPIC",
+     "RARE",
+     "LEGENDARY",
+     "COMMON"
+    ],
+    "dust": 2240,
+    "rects": [
+     [
+      24.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      256.3,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      494.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      729.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      960.8,
+      -16,
+      244,
+      369.8
+     ],
+     [
+      1199.3,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      1427.8,
+      -14.5,
+      241.2,
+      365.6
+     ],
+     [
+      1669.3,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      28.3,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      263.3,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      491.8,
+      329.5,
+      229.9,
+      348.4
+     ],
+     [
+      729.8,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      964.8,
+      320,
+      235.1,
+      356.3
+     ],
+     [
+      1202.8,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      1438.8,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      1668.8,
+      313.5,
+      244,
+      369.8
+     ],
+     [
+      24.8,
+      648.5,
+      236,
+      357.7
+     ],
+     [
+      259.8,
+      648.5,
+      235.5,
+      357
+     ],
+     [
+      497.8,
+      662,
+      226.1,
+      342.7
+     ],
+     [
+      729.3,
+      648.5,
+      236,
+      357.7
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 9,
+   "name": "Шаман на возвещении",
+   "paragraphs": [
+    {
+     "text": "В мету вернулась еще одна колода на возвещении — Шаман. В мете очень популярны Жрецы и становится популярным Кхелос ДК, поэтому просчитать выгоду от двух Сглазов нетрудно. Колода также хорошо справляется с Чернокнижником.",
+     "cards": []
+    },
+    {
+     "text": "Сам архетип совершенно не изменился, поэтому и популярность у него небольшая.",
+     "cards": []
+    }
+   ],
+   "cls": "Шаман",
+   "mode": "Стандарт",
+   "code": "AAECAaoIDv2fBM2eBsODB+aWB4KYB9umB9+mB+WmB7GwB4++B9C/B4LUB5vUB+/jBwivnwTgnQf1rAe8sQfDwAfJwAf3wAfm/QcAAA==",
+   "page": "https://hs-manacost.ru/deck/shaman-na-vozveshhenii-50/",
+   "hero": "HERO_02",
+   "heroClass": "SHAMAN",
+   "list": [
+    {
+     "id": "TIME_218",
+     "name": "Статический разряд",
+     "cost": 0,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_GIL_531",
+     "name": "Ученица ведьмы",
+     "cost": 0,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_WC_042",
+     "name": "Стенающее испарение",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TIME_213",
+     "name": "Первозданная смотрительница",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_561",
+     "name": "Ритуал силы",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "DINO_411",
+     "name": "Священный яйценос",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_565",
+     "name": "Страж Небесной выси",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_EX1_259",
+     "name": "Гроза",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CORE_SW_072",
+     "name": "Коррозионная гадюка",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TIME_209t2",
+     "name": "Облик аватары",
+     "cost": 3,
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "TLC_222",
+     "name": "Полет огненного ястреба",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CORE_EX1_246",
+     "name": "Сглаз",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_LOOT_373",
+     "name": "Целительный ливень",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "TLC_100",
+     "name": "Навигатор Элиза",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "EDR_856",
+     "name": "Повелитель кошмаров Ксавий",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TIME_209",
+     "name": "Верховный король Мурадин",
+     "cost": 5,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_722",
+     "name": "Глашатай конца времен",
+     "cost": 5,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TIME_209t",
+     "name": "Королевский молот",
+     "cost": 6,
+     "type": "WEAPON",
+     "count": 1
+    },
+    {
+     "id": "CATA_497",
+     "name": "Ультраксион",
+     "cost": 6,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_153",
+     "name": "Ал'акир, повелитель бурь",
+     "cost": 8,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_568",
+     "name": "Последний бой Мурадина",
+     "cost": 9,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_190h",
+     "name": "Смертокрыл Разрушитель миров",
+     "cost": 10,
+     "rarity": "LEGENDARY",
+     "type": "HERO",
+     "count": 1
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/09.jpg",
+    "w": 1920,
+    "h": 1483,
+    "order": [
+     "TIME_218",
+     "CORE_GIL_531",
+     "CORE_WC_042",
+     "DINO_411",
+     "TIME_213",
+     "CATA_561",
+     "CATA_565",
+     "CORE_EX1_259",
+     "CORE_SW_072",
+     "TLC_222",
+     "CORE_LOOT_373",
+     "CORE_EX1_246",
+     "EDR_856",
+     "TLC_100",
+     "TIME_209",
+     "TIME_209t",
+     "TIME_209t2",
+     "CATA_722",
+     "CATA_497",
+     "CATA_153",
+     "CATA_568",
+     "CATA_190h"
+    ],
+    "types": [
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "WEAPON",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "HERO"
+    ],
+    "rarities": [
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "COMMON",
+     "RARE",
+     "RARE",
+     "RARE",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     null,
+     null,
+     "COMMON",
+     "LEGENDARY",
+     "LEGENDARY",
+     "RARE",
+     "LEGENDARY"
+    ],
+    "dust": 7240,
+    "rects": [
+     [
+      21.3,
+      -16,
+      244,
+      369.8
+     ],
+     [
+      259.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      494.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      729.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      964.3,
+      -10,
+      236,
+      357.7
+     ],
+     [
+      1195.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      1434.3,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      1665.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      25.3,
+      320,
+      235.1,
+      356.3
+     ],
+     [
+      256.3,
+      313.5,
+      244,
+      369.8
+     ],
+     [
+      491.3,
+      313.5,
+      243.6,
+      369.1
+     ],
+     [
+      725.8,
+      313.5,
+      244,
+      369.8
+     ],
+     [
+      967.8,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      1202.8,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      1437.3,
+      332.5,
+      226.1,
+      342.7
+     ],
+     [
+      1666.3,
+      329.5,
+      229.9,
+      348.4
+     ],
+     [
+      10.3,
+      645.5,
+      241.7,
+      366.3
+     ],
+     [
+      259.8,
+      648.5,
+      236,
+      357.7
+     ],
+     [
+      497.8,
+      662,
+      226.1,
+      342.7
+     ],
+     [
+      732.8,
+      662,
+      225.6,
+      341.9
+     ],
+     [
+      960.8,
+      642.5,
+      244,
+      369.8
+     ],
+     [
+      1193.3,
+      647,
+      225.6,
+      341.9
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 8,
+   "name": "Охотник на демонов Бездны",
+   "paragraphs": [
+    {
+     "text": "ДХ Бездны залег на дно в последние полтора месяца. Колодой играли, но каких-то больших достижений после нерфа у нее не было. Однако в текущей расстановке сил она чувствует себя очень комфортно и имеет хорошие шансы в абсолютно любой встрече, кроме Воина.",
+     "cards": []
+    },
+    {
+     "text": "Сборка архетипа почти не меняется. Ирида Искатель Греха стала неотъемлемой частью колоды, и, что интересно, ради обычного темпа игроки активно используют Кватсона.",
+     "cards": [
+      {
+       "id": "JAIL_719",
+       "name": "Ирида Искатель Греха"
+      },
+      {
+       "id": "JAIL_EVENT_100",
+       "name": "Кватсона"
+      }
+     ]
+    }
+   ],
+   "cls": "Охотник на демонов",
+   "mode": "Стандарт",
+   "code": "AAECAea5AwSongahsQeD2gen9wcN4fgF0J4G054G3v8G/oMHtpcH550Hlb8HxN0Hxt0Hx90HteEHt+EHAAA=",
+   "page": "https://hs-manacost.ru/deck/ohotnik-na-demonov-bezdny-36/",
+   "hero": "HERO_10",
+   "heroClass": "DEMONHUNTER",
+   "list": [
+    {
+     "id": "JAIL_732",
+     "name": "Душа Бездны",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_YOP_001",
+     "name": "Иллидариведение",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_UNG_205",
+     "name": "Ледниковый осколок",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_528",
+     "name": "Печать морей",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TIME_444",
+     "name": "Хроноаномальная глефа",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "WEAPON",
+     "count": 1
+    },
+    {
+     "id": "JAIL_891",
+     "name": "Взрыв Бездны",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_EVENT_100",
+     "name": "Кватсон",
+     "cost": 2,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_892",
+     "name": "Космические воплощения",
+     "cost": 2,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "EDR_840",
+     "name": "Мрачный урожай",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_SCH_713",
+     "name": "Неофитка культа",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TLC_902",
+     "name": "Они повсюду",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_733",
+     "name": "Злобный пусточешуйник",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "EDR_820",
+     "name": "Сон виверны",
+     "cost": 3,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_719",
+     "name": "Ирида Искатель Греха",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CORE_BT_187",
+     "name": "Кайн Ярость Солнца",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_730",
+     "name": "Коса Звездной Пыли",
+     "cost": 4,
+     "rarity": "COMMON",
+     "type": "WEAPON",
+     "count": 2
+    },
+    {
+     "id": "DINO_136",
+     "name": "Рог пиршества",
+     "cost": 4,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/08.jpg",
+    "w": 1920,
+    "h": 1775,
+    "order": [
+     "TIME_444",
+     "CORE_YOP_001",
+     "CORE_UNG_205",
+     "CATA_528",
+     "JAIL_732",
+     "JAIL_EVENT_100",
+     "CORE_SCH_713",
+     "EDR_840",
+     "TLC_902",
+     "JAIL_891",
+     "JAIL_892",
+     "EDR_820",
+     "JAIL_733",
+     "CORE_BT_187",
+     "JAIL_719",
+     "DINO_136",
+     "JAIL_730"
+    ],
+    "types": [
+     "WEAPON",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "WEAPON"
+    ],
+    "rarities": [
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "LEGENDARY",
+     "RARE",
+     "COMMON",
+     "RARE",
+     "RARE",
+     "EPIC",
+     "EPIC",
+     "RARE",
+     "LEGENDARY",
+     "LEGENDARY",
+     "COMMON",
+     "COMMON"
+    ],
+    "dust": 3400,
+    "rects": [
+     [
+      15.4,
+      -26,
+      321.3,
+      487
+     ],
+     [
+      334.4,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      652.9,
+      -20.5,
+      315,
+      477.4
+     ],
+     [
+      960.9,
+      -28,
+      325.1,
+      492.7
+     ],
+     [
+      1273.9,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      1596.4,
+      -2,
+      301.1,
+      456.4
+     ],
+     [
+      26.9,
+      406.5,
+      314.4,
+      476.5
+     ],
+     [
+      334.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      647.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      960.9,
+      398.5,
+      325.1,
+      492.7
+     ],
+     [
+      1273.9,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      1586.9,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      26.9,
+      832.5,
+      314.4,
+      476.5
+     ],
+     [
+      343.9,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      656.9,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      960.9,
+      824.5,
+      325.1,
+      492.7
+     ],
+     [
+      1267.9,
+      826.5,
+      321.3,
+      487
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 7,
+   "name": "Чистый Паладин",
+   "paragraphs": [
+    {
+     "text": "Чистый Паладин открывает блок колод, которыми почти никто не играет, потому что у них слишком простой геймплей и/или они были понерфлены. Даже хорошая статистика на пути в Легенду не спасает их от низкого плейрейта.",
+     "cards": []
+    },
+    {
+     "text": "У Чистого Паладина относительно ровный разброс матч-апов и есть важное преимущество над Друидом на атаке — самой популярной колодой меты.",
+     "cards": []
+    }
+   ],
+   "cls": "Паладин",
+   "mode": "Стандарт",
+   "code": "AAECAZ8FBvD+Bu6oB++oB/CoB+XBB53dBwzJoAS6lgfLqQfErge+sgfiwQfowQfqwQeDwgfc1QeZ3QfX4gcAAQGa3Qed3QcAAA==",
+   "page": "https://hs-manacost.ru/deck/chistyj-paladin-15/",
+   "hero": "HERO_04",
+   "heroClass": "PALADIN",
+   "list": [
+    {
+     "id": "CORE_ICC_038",
+     "name": "Праведная защитница",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "END_011",
+     "name": "Аура ускорения",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_472",
+     "name": "Воодушевляющий молот",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "WEAPON",
+     "count": 2
+    },
+    {
+     "id": "TLC_438",
+     "name": "Лиловый златожабр",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_327",
+     "name": "Аура подкрепления",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_035",
+     "name": "Бдительный страж",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_479",
+     "name": "Воздушные маневры",
+     "cost": 4,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TIME_009t1",
+     "name": "Гномья аура",
+     "cost": 4,
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CATA_474",
+     "name": "Копьеносный часовой",
+     "cost": 4,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TIME_019",
+     "name": "Ожившие потоки времени",
+     "cost": 4,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_516",
+     "name": "Алая вербовщица",
+     "cost": 5,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TIME_009t2",
+     "name": "Аура Меггакрута",
+     "cost": 5,
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "JAIL_397",
+     "name": "Командир Беатриса",
+     "cost": 5,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_473",
+     "name": "Ноздорму, бронзовый Аспект",
+     "cost": 5,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "EDR_258",
+     "name": "Торет Несокрушимый",
+     "cost": 5,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TIME_700",
+     "name": "Хронологическая аура",
+     "cost": 5,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_475",
+     "name": "Заступник-чешуелом",
+     "cost": 6,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TIME_009",
+     "name": "Гелбин из будущего",
+     "cost": 8,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/07.jpg",
+    "w": 1920,
+    "h": 1483,
+    "order": [
+     "CORE_ICC_038",
+     "TLC_438",
+     "END_011",
+     "CATA_472",
+     "JAIL_035",
+     "JAIL_327",
+     "TIME_019",
+     "CATA_474",
+     "CATA_479",
+     "EDR_258",
+     "CATA_473",
+     "JAIL_397",
+     "TIME_700",
+     "JAIL_516",
+     "CATA_475",
+     "TIME_009",
+     "TIME_009t1",
+     "TIME_009t2"
+    ],
+    "types": [
+     "MINION",
+     "MINION",
+     "SPELL",
+     "WEAPON",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "SPELL"
+    ],
+    "rarities": [
+     "COMMON",
+     "RARE",
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "RARE",
+     "RARE",
+     "RARE",
+     "EPIC",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "COMMON",
+     "RARE",
+     "COMMON",
+     "LEGENDARY",
+     null,
+     null
+    ],
+    "dust": 6960,
+    "rects": [
+     [
+      24.8,
+      -10,
+      236,
+      357.7
+     ],
+     [
+      259.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      491.3,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      721.3,
+      -14,
+      240.7,
+      364.8
+     ],
+     [
+      964.3,
+      -10,
+      236,
+      357.7
+     ],
+     [
+      1195.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      1434.3,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      1669.3,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      21.3,
+      313.5,
+      244,
+      369.8
+     ],
+     [
+      263.3,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      497.8,
+      332.5,
+      226.1,
+      342.7
+     ],
+     [
+      732.8,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      960.8,
+      313.5,
+      244,
+      369.8
+     ],
+     [
+      1199.3,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      1434.3,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      1672.3,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      10.3,
+      646,
+      241.2,
+      365.6
+     ],
+     [
+      244.8,
+      645,
+      242.1,
+      367
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 6,
+   "name": "Зи Шаман",
+   "paragraphs": [
+    {
+     "text": "Зи Шаман очень похож по эффективности на Шамана на возвещении, однако отсутствие доступа к заклинаниям, а именно к Сглазу, создает огромный провал против Квест Жреца. Тем не менее, многие другие матч-апы он разыгрывает лучше (Друид, ДХ, Разбойник), а потому стоит выше.",
+     "cards": []
+    }
+   ],
+   "cls": "Шаман",
+   "mode": "Стандарт",
+   "code": "AAECAaoICMODB4++B9C/B4LUB5vUB9DbB4jdB9/lBwvTngbt5gbIhwfXlwfOmwfgnQeYrAexsAfJwAfI5Qfm/QcAAA==",
+   "page": "https://hs-manacost.ru/deck/zi-shaman-19/",
+   "hero": "HERO_02",
+   "heroClass": "SHAMAN",
+   "list": [
+    {
+     "id": "CORE_GIL_531",
+     "name": "Ученица ведьмы",
+     "cost": 0,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TLC_603",
+     "name": "Клювозавр",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_UNG_205",
+     "name": "Ледниковый осколок",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TLC_249",
+     "name": "Обжигающий уголек",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_UNG_809",
+     "name": "Огневичок",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_WC_042",
+     "name": "Стенающее испарение",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "DINO_411",
+     "name": "Священный яйценос",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_850",
+     "name": "Страж Майев",
+     "cost": 2,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_565",
+     "name": "Страж Небесной выси",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "FIR_927",
+     "name": "Обгоревший дракончик",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_458",
+     "name": "Маленький дружок",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "WEAPON",
+     "count": 1
+    },
+    {
+     "id": "EDR_856",
+     "name": "Повелитель кошмаров Ксавий",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_457",
+     "name": "Похищенный охранобот",
+     "cost": 4,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_722",
+     "name": "Глашатай конца времен",
+     "cost": 5,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TLC_482",
+     "name": "Шлаковый коготь",
+     "cost": 5,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_800",
+     "name": "Граб'Зи",
+     "cost": 6,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_497",
+     "name": "Ультраксион",
+     "cost": 6,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_153",
+     "name": "Ал'акир, повелитель бурь",
+     "cost": 8,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_190h",
+     "name": "Смертокрыл Разрушитель миров",
+     "cost": 10,
+     "rarity": "LEGENDARY",
+     "type": "HERO",
+     "count": 1
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/06.jpg",
+    "w": 1920,
+    "h": 1483,
+    "order": [
+     "CORE_GIL_531",
+     "CORE_UNG_205",
+     "CORE_UNG_809",
+     "TLC_603",
+     "TLC_249",
+     "CORE_WC_042",
+     "JAIL_850",
+     "DINO_411",
+     "CATA_565",
+     "FIR_927",
+     "EDR_856",
+     "JAIL_458",
+     "JAIL_457",
+     "CATA_722",
+     "TLC_482",
+     "CATA_497",
+     "JAIL_800",
+     "CATA_153",
+     "CATA_190h"
+    ],
+    "types": [
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "WEAPON",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "HERO"
+    ],
+    "rarities": [
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "LEGENDARY",
+     "RARE",
+     "RARE",
+     "RARE",
+     "LEGENDARY",
+     "LEGENDARY",
+     "COMMON",
+     "COMMON",
+     "EPIC",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY"
+    ],
+    "dust": 8320,
+    "rects": [
+     [
+      24.8,
+      -10,
+      236,
+      357.7
+     ],
+     [
+      259.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      494.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      729.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      964.8,
+      -9,
+      235.1,
+      356.3
+     ],
+     [
+      1199.3,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      1437.3,
+      3.5,
+      226.1,
+      342.7
+     ],
+     [
+      1669.3,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      24.8,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      259.8,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      497.8,
+      332.5,
+      226.1,
+      342.7
+     ],
+     [
+      726.8,
+      329.5,
+      229.9,
+      348.4
+     ],
+     [
+      964.8,
+      320,
+      235.1,
+      356.3
+     ],
+     [
+      1199.3,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      1434.3,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      1672.3,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      28.3,
+      662,
+      225.6,
+      341.9
+     ],
+     [
+      263.3,
+      662,
+      225.6,
+      341.9
+     ],
+     [
+      488.8,
+      647,
+      225.1,
+      341.2
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 5,
+   "name": "Граб Шаман",
+   "paragraphs": [
+    {
+     "text": "Еще больше на Шамана на возвещении похож Граб Шаман. Эти две колоды отличаются только тем, что Шаман на возвещении проигрывает Воину, но побеждает Чернокнижника, а Граб Шаман — наоборот. Воин в текущей мете намного опаснее Лока, поэтому Граб Шаман оказывается полезнее.",
+     "cards": []
+    }
+   ],
+   "cls": "Шаман",
+   "mode": "Стандарт",
+   "code": "AAECAaoIAtDbB9/lBw6vnwTRmwfQnQfwqgf8rQe8sQfLtgfDwAfTwAfH2wfK2wfN2wfa3wfg9gcAAA==",
+   "page": "https://hs-manacost.ru/deck/grab-shaman-45/",
+   "hero": "HERO_02",
+   "heroClass": "SHAMAN",
+   "list": [
+    {
+     "id": "TIME_218",
+     "name": "Статический разряд",
+     "cost": 0,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TLC_464",
+     "name": "Карта горы",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_987",
+     "name": "Небезопасная секция",
+     "cost": 1,
+     "rarity": "EPIC",
+     "type": "LOCATION",
+     "count": 2
+    },
+    {
+     "id": "CORE_GIL_836",
+     "name": "Огненное заклятье",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TIME_EVENT_999",
+     "name": "Пески времени",
+     "cost": 1,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TIME_215",
+     "name": "Громовой раскат",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CAP_407",
+     "name": "Плакат «Разыскивается»",
+     "cost": 2,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_561",
+     "name": "Ритуал силы",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_801",
+     "name": "Жидкое золото",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "DINO_406",
+     "name": "Огненное дыхание",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CORE_EX1_246",
+     "name": "Сглаз",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_458",
+     "name": "Маленький дружок",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "WEAPON",
+     "count": 1
+    },
+    {
+     "id": "CATA_567",
+     "name": "Перерождение",
+     "cost": 4,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_803",
+     "name": "Колкий лед",
+     "cost": 5,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_800",
+     "name": "Граб'Зи",
+     "cost": 6,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_805",
+     "name": "Неистовство бури",
+     "cost": 7,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/05.jpg",
+    "w": 1920,
+    "h": 1775,
+    "order": [
+     "TIME_218",
+     "TLC_464",
+     "CORE_GIL_836",
+     "TIME_EVENT_999",
+     "JAIL_987",
+     "TIME_215",
+     "CATA_561",
+     "CAP_407",
+     "CORE_EX1_246",
+     "DINO_406",
+     "JAIL_801",
+     "JAIL_458",
+     "CATA_567",
+     "JAIL_803",
+     "JAIL_800",
+     "JAIL_805"
+    ],
+    "types": [
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "LOCATION",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "WEAPON",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "SPELL"
+    ],
+    "rarities": [
+     "COMMON",
+     "RARE",
+     "RARE",
+     "EPIC",
+     "EPIC",
+     "RARE",
+     "RARE",
+     "EPIC",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "LEGENDARY",
+     "EPIC",
+     "RARE",
+     "LEGENDARY",
+     "EPIC"
+    ],
+    "dust": 7160,
+    "rects": [
+     [
+      21.4,
+      -28,
+      325.1,
+      492.7
+     ],
+     [
+      334.4,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      647.4,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      960.9,
+      -28,
+      325.1,
+      492.7
+     ],
+     [
+      1280.4,
+      10,
+      294.8,
+      446.9
+     ],
+     [
+      1586.9,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      21.4,
+      398.5,
+      325.1,
+      492.7
+     ],
+     [
+      334.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      647.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      960.9,
+      398.5,
+      325.1,
+      492.7
+     ],
+     [
+      1273.9,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      1588.4,
+      420,
+      306.8,
+      465
+     ],
+     [
+      21.4,
+      824.5,
+      325.1,
+      492.7
+     ],
+     [
+      334.4,
+      824,
+      325.7,
+      493.7
+     ],
+     [
+      656.9,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      960.9,
+      824.5,
+      325.1,
+      492.7
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 4,
+   "name": "Рыцарь смерти Нечестивости",
+   "paragraphs": [
+    {
+     "text": "ДК Нечестивости в текущей мете несколько отличается от своего положения ранее, поскольку он способен победить и Дракон Воина, и Пират Воина. При этом остальной разброс матч-апов у него очень неплохой, что делает его актуальным даже среди топовых игроков. Его слабое место — это Жрецы и ДХ Бездны.",
+     "cards": []
+    }
+   ],
+   "cls": "Рыцарь Смерти",
+   "mode": "Стандарт",
+   "code": "AAECAfHhBASfngftnwfSrgfa1wcNhfYEh/YE1J4GupUHopcH0JsH0q0H4rEH/78H9sEHrNoHtNoHptwHAAA=",
+   "page": "https://hs-manacost.ru/deck/ryczar-smerti-nechestivosti-17/",
+   "hero": "HERO_11",
+   "heroClass": "DEATHKNIGHT",
+   "list": [
+    {
+     "id": "CORE_ULD_723",
+     "name": "Мурмия",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_210",
+     "name": "Сумеречное яйцо",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "DINO_417",
+     "name": "Церемония упокоения",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "TLC_245",
+     "name": "Древний ящер",
+     "cost": 2,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_450",
+     "name": "Трупная пушка",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "WEAPON",
+     "count": 2
+    },
+    {
+     "id": "RLK_708",
+     "name": "Замерзший барон",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_998",
+     "name": "Контрабандист Братства",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TLC_443",
+     "name": "Погонщик поневоле",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TLC_EVENT_402",
+     "name": "Посох Вестницы гибели",
+     "cost": 3,
+     "rarity": "LEGENDARY",
+     "type": "WEAPON",
+     "count": 1
+    },
+    {
+     "id": "CORE_EDR_003",
+     "name": "Фалрик",
+     "cost": 3,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_440",
+     "name": "Башня из вурдалаков",
+     "cost": 4,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "RLK_707",
+     "name": "Могильная сила",
+     "cost": 4,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TLC_436",
+     "name": "Воскрешенный терродактиль",
+     "cost": 5,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_444",
+     "name": "Костоправ",
+     "cost": 5,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_471",
+     "name": "Последний бой Таланджи",
+     "cost": 5,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TIME_610",
+     "name": "Тени вчерашнего дня",
+     "cost": 6,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "END_004",
+     "name": "Отголосок ярости",
+     "cost": 7,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/04.jpg",
+    "w": 1920,
+    "h": 1775,
+    "order": [
+     "DINO_417",
+     "CORE_ULD_723",
+     "CATA_210",
+     "TLC_245",
+     "JAIL_450",
+     "CORE_EDR_003",
+     "TLC_EVENT_402",
+     "JAIL_998",
+     "RLK_708",
+     "TLC_443",
+     "RLK_707",
+     "JAIL_440",
+     "TLC_436",
+     "CATA_471",
+     "JAIL_444",
+     "TIME_610",
+     "END_004"
+    ],
+    "types": [
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "WEAPON",
+     "MINION",
+     "WEAPON",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "MINION"
+    ],
+    "rarities": [
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "EPIC",
+     "COMMON",
+     "LEGENDARY",
+     "LEGENDARY",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "EPIC",
+     "EPIC",
+     "EPIC",
+     "RARE",
+     "RARE",
+     "RARE",
+     "COMMON"
+    ],
+    "dust": 1680,
+    "rects": [
+     [
+      21.4,
+      -28,
+      325.1,
+      492.7
+     ],
+     [
+      339.9,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      652.9,
+      -20.5,
+      315,
+      477.4
+     ],
+     [
+      966.4,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      1270.9,
+      -26,
+      321.3,
+      487
+     ],
+     [
+      1596.4,
+      -2,
+      301.1,
+      456.4
+     ],
+     [
+      22.4,
+      420,
+      306.8,
+      465
+     ],
+     [
+      339.9,
+      406,
+      314.4,
+      476.5
+     ],
+     [
+      652.9,
+      405.5,
+      315,
+      477.4
+     ],
+     [
+      966.4,
+      406.5,
+      314.4,
+      476.5
+     ],
+     [
+      1276.4,
+      398.5,
+      325.1,
+      492.7
+     ],
+     [
+      1592.4,
+      405.5,
+      315,
+      477.4
+     ],
+     [
+      26.9,
+      832.5,
+      314.4,
+      476.5
+     ],
+     [
+      337.4,
+      824.5,
+      325.1,
+      492.7
+     ],
+     [
+      652.9,
+      832.5,
+      314.4,
+      476.5
+     ],
+     [
+      963.4,
+      824,
+      325.7,
+      493.7
+     ],
+     [
+      1279.4,
+      832.5,
+      314.4,
+      476.5
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 3,
+   "name": "Друид на атаке",
+   "paragraphs": [
+    {
+     "text": "Самая популярная колода и колода, против которой нет жесткой контры, — все это Друид на атаке. Архетип слегка уступает только трем агро колодам: Зи Шаману, ДК Нечестивости и Чистому Паладину. В остальном у нее нет слабых сторон.",
+     "cards": []
+    },
+    {
+     "text": "Сборок у Друида на атаке очень много. В основном они отличаются составом лейтгейма: кто-то не использует его вовсе, кто-то использует только Меритру из Сна, а кто-то берет полный набор драконов с Наралексом. В последнее время также стал популярным Жизнецвет — сборки с ним сейчас выглядят лучше всего.",
+     "cards": [
+      {
+       "id": "CATA_140",
+       "name": "Меритру из Сна"
+      },
+      {
+       "id": "EDR_844",
+       "name": "Наралексом"
+      },
+      {
+       "id": "MEND_042",
+       "name": "Жизнецвет"
+      }
+     ]
+    },
+    {
+     "text": "Однако лейтгейм — не главное в этой колоде. Главное — найти Паучка на 1-й ход и разогнать эффект Заражения кладовой, чтобы как можно раньше задавить противника большими статами.",
+     "cards": [
+      {
+       "id": "JAIL_202",
+       "name": "Паучка"
+      },
+      {
+       "id": "JAIL_200",
+       "name": "Заражения кладовой"
+      }
+     ]
+    }
+   ],
+   "cls": "Друид",
+   "mode": "Стандарт",
+   "code": "AAECAZICCs2eBpKDB6+HB4KYB+DAB+LAB93EB+XEB+TZB6PaBwqunwSqrwesrwfosQe+sgfXwAeR2gfH5ge85wfK5wcAAA==",
+   "page": "https://hs-manacost.ru/deck/druid-na-atake-45/",
+   "hero": "HERO_06",
+   "heroClass": "DRUID",
+   "list": [
+    {
+     "id": "CORE_EX1_169",
+     "name": "Озарение",
+     "cost": 0,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_201",
+     "name": "Секретный ингредиент",
+     "cost": 0,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_202",
+     "name": "Паучок",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TIME_701",
+     "name": "Управление волнами",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "END_011",
+     "name": "Аура ускорения",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_131",
+     "name": "Древень Оскверненного леса",
+     "cost": 2,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "END_007",
+     "name": "Закрепление успеха",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_872",
+     "name": "Наездник на пауке",
+     "cost": 2,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TIME_702",
+     "name": "Прилив и отлив",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "JAIL_436",
+     "name": "Укус вдовы",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "CORE_SW_072",
+     "name": "Коррозионная гадюка",
+     "cost": 3,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TLC_100",
+     "name": "Навигатор Элиза",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_875",
+     "name": "Посох коварства",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "WEAPON",
+     "count": 1
+    },
+    {
+     "id": "FIR_907",
+     "name": "Амирдрассил",
+     "cost": 5,
+     "rarity": "LEGENDARY",
+     "type": "LOCATION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_200",
+     "name": "Заражение кладовой",
+     "cost": 5,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_139",
+     "name": "Плетеный Клык",
+     "cost": 6,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "MEND_046",
+     "name": "Башана Рунический Тотем",
+     "cost": 7,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CATA_140",
+     "name": "Меритра из Сна",
+     "cost": 8,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "EDR_846",
+     "name": "Шаладрассил",
+     "cost": 8,
+     "rarity": "LEGENDARY",
+     "type": "SPELL",
+     "count": 1
+    },
+    {
+     "id": "MEND_042",
+     "name": "Жизнецвет",
+     "cost": 9,
+     "rarity": "EPIC",
+     "type": "SPELL",
+     "count": 1
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/03.jpg",
+    "w": 1920,
+    "h": 1483,
+    "order": [
+     "CORE_EX1_169",
+     "JAIL_201",
+     "TIME_701",
+     "JAIL_202",
+     "JAIL_436",
+     "TIME_702",
+     "END_007",
+     "END_011",
+     "CATA_131",
+     "JAIL_872",
+     "CORE_SW_072",
+     "TLC_100",
+     "JAIL_875",
+     "FIR_907",
+     "JAIL_200",
+     "CATA_139",
+     "MEND_046",
+     "EDR_846",
+     "CATA_140",
+     "MEND_042"
+    ],
+    "types": [
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "WEAPON",
+     "LOCATION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "SPELL"
+    ],
+    "rarities": [
+     "RARE",
+     "COMMON",
+     "RARE",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "EPIC",
+     "COMMON",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "RARE",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "LEGENDARY",
+     "EPIC"
+    ],
+    "dust": 8680,
+    "rects": [
+     [
+      21.3,
+      -16,
+      244,
+      369.8
+     ],
+     [
+      256.3,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      491.3,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      729.8,
+      -9.5,
+      235.5,
+      357
+     ],
+     [
+      960.8,
+      -16,
+      244,
+      369.8
+     ],
+     [
+      1195.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      1430.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      1665.8,
+      -15.5,
+      243.6,
+      369.1
+     ],
+     [
+      25.3,
+      320,
+      235.1,
+      356.3
+     ],
+     [
+      259.8,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      494.8,
+      319.5,
+      235.5,
+      357
+     ],
+     [
+      732.8,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      961.8,
+      330,
+      229.4,
+      347.7
+     ],
+     [
+      1202.8,
+      349,
+      215.7,
+      326.9
+     ],
+     [
+      1430.3,
+      313,
+      244.5,
+      370.6
+     ],
+     [
+      1672.3,
+      333,
+      225.6,
+      341.9
+     ],
+     [
+      28.3,
+      662,
+      225.6,
+      341.9
+     ],
+     [
+      244.8,
+      645,
+      242.1,
+      367
+     ],
+     [
+      497.3,
+      662,
+      225.6,
+      341.9
+     ],
+     [
+      725.8,
+      642.5,
+      244,
+      369.8
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 2,
+   "name": "Пират Воин",
+   "paragraphs": [
+    {
+     "text": "Пират Воин стремительно ворвался в мету Стандарта в августе с новым геймплеем вокруг Канониров. Мало того, что они агрессивно захватывают стол и наносят много урона, так еще и могут организовать огромный взрывной урон с помощью Ручницы.",
+     "cards": []
+    },
+    {
+     "text": "Пират Воин проигрывает Друиду на атаке — именно этот матч-ап определил, кто будет лидером меты.",
+     "cards": []
+    }
+   ],
+   "cls": "Воин",
+   "mode": "Стандарт",
+   "code": "AAECAQcGzp4G4+YGt60H69YHstgHq+AHDKWFB8eHB+iHB9CyB5XCB5vCB5zCB6bgB6fgB6jgB6ngB/vgBwAA",
+   "page": "https://hs-manacost.ru/deck/pirat-voin-12/",
+   "hero": "HERO_01",
+   "heroClass": "WARRIOR",
+   "list": [
+    {
+     "id": "END_020",
+     "name": "Вечная каторга",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CAP_107",
+     "name": "Главный канонир",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_REV_990",
+     "name": "Кровавые катакомбы",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "LOCATION",
+     "count": 1
+    },
+    {
+     "id": "CATA_585",
+     "name": "Факел",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "FIR_929",
+     "name": "Живой жар",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CAP_104",
+     "name": "Инженер-подрывник",
+     "cost": 2,
+     "rarity": "EPIC",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "FIR_939",
+     "name": "Насыщение пламенем Тьмы",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_582",
+     "name": "Опаляющая расщелина",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CAP_105",
+     "name": "Притягивающий крюк",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_584",
+     "name": "Извергающийся вулкан",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "LOCATION",
+     "count": 2
+    },
+    {
+     "id": "CAP_103",
+     "name": "Ручница",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "WEAPON",
+     "count": 2
+    },
+    {
+     "id": "JAIL_421",
+     "name": "Астралозуб",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CAP_102",
+     "name": "Земля!",
+     "cost": 4,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "TIME_034",
+     "name": "Комментатор на стадионе",
+     "cost": 4,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CORE_SW_066",
+     "name": "Королевский библиотекарь",
+     "cost": 4,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "EDR_492",
+     "name": "Мама-утка",
+     "cost": 4,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CAP_106",
+     "name": "Капитан Краули",
+     "cost": 5,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "JAIL_384",
+     "name": "Сорвавшийся с цепи Дробитель",
+     "cost": 8,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/02.jpg",
+    "w": 1920,
+    "h": 1775,
+    "order": [
+     "CORE_REV_990",
+     "END_020",
+     "CATA_585",
+     "CAP_107",
+     "FIR_929",
+     "FIR_939",
+     "CATA_582",
+     "CAP_104",
+     "CAP_105",
+     "CATA_584",
+     "CAP_103",
+     "CORE_SW_066",
+     "TIME_034",
+     "JAIL_421",
+     "EDR_492",
+     "CAP_102",
+     "CAP_106",
+     "JAIL_384"
+    ],
+    "types": [
+     "LOCATION",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "MINION",
+     "SPELL",
+     "LOCATION",
+     "WEAPON",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION"
+    ],
+    "rarities": [
+     "RARE",
+     "RARE",
+     "RARE",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "EPIC",
+     "COMMON",
+     "RARE",
+     "RARE",
+     "COMMON",
+     "RARE",
+     "LEGENDARY",
+     "COMMON",
+     "RARE",
+     "LEGENDARY",
+     "LEGENDARY"
+    ],
+    "dust": 6940,
+    "rects": [
+     [
+      27.9,
+      10,
+      294.8,
+      446.9
+     ],
+     [
+      334.4,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      647.4,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      966.4,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      1279.4,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      1586.9,
+      -28.5,
+      325.7,
+      493.7
+     ],
+     [
+      21.4,
+      398.5,
+      325.1,
+      492.7
+     ],
+     [
+      339.9,
+      406,
+      314.4,
+      476.5
+     ],
+     [
+      647.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      965.9,
+      436.5,
+      294.8,
+      446.9
+     ],
+     [
+      1267.9,
+      400.5,
+      321.3,
+      487
+     ],
+     [
+      1592.4,
+      406,
+      315,
+      477.4
+     ],
+     [
+      26.9,
+      832.5,
+      314.4,
+      476.5
+     ],
+     [
+      343.4,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      652.9,
+      832.5,
+      314.4,
+      476.5
+     ],
+     [
+      960.4,
+      824,
+      325.7,
+      493.7
+     ],
+     [
+      1282.9,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      1595.9,
+      850.5,
+      301.1,
+      456.4
+     ]
+    ]
+   }
+  },
+  {
+   "rank": 1,
+   "name": "Дракон Воин",
+   "paragraphs": [
+    {
+     "text": "Игрокам потребовалось некоторое время, чтобы понять, что дешевые карты Пират Воина сильны даже в вакууме — без дополнительных синергий. А раз у Гарроша есть еще одна агро колода, почему бы не положить их и в нее. Так появился, как его часто называют, Дракон Пират Воин. Однако одна из главных ошибок здесь — брать вместе с дешевыми картами пиратов еще и Дария Краули. Он Дракон Воину совершенно не нужен и делает архетип слабее.",
+     "cards": []
+    },
+    {
+     "text": "Драконы гораздо увереннее занимают присутствие на столе, чем пираты, что является залогом успеха против Друида, которому тяжело бороться за стол в начале партии. Обратите внимание, что Друид намного популярнее Воина, поэтому успех в этом матч-апе критически важен. Именно поэтому лидер меты — Дракон Воин, а не Пират Воин.",
+     "cards": []
+    },
+    {
+     "text": "Воина также побеждают Кхелос ДК, ДК Нечестивости и Граб Шаман. То же относится и к Пират Воину.",
+     "cards": []
+    }
+   ],
+   "cls": "Воин",
+   "mode": "Стандарт",
+   "code": "AAECAQcEzp4Gt60H69YHstgHDePmBqr8Bqv8BqWFB+iHB9KXB+yyB7XAB5XCB5vCB5zCB6ngB/vgBwAA",
+   "page": "https://hs-manacost.ru/deck/drakon-voin-128/",
+   "hero": "HERO_01",
+   "heroClass": "WARRIOR",
+   "list": [
+    {
+     "id": "CAP_107",
+     "name": "Главный канонир",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_556",
+     "name": "Дракончик-носильщик",
+     "cost": 1,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CORE_REV_990",
+     "name": "Кровавые катакомбы",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "LOCATION",
+     "count": 2
+    },
+    {
+     "id": "EDR_456",
+     "name": "Темный наездник",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_585",
+     "name": "Факел",
+     "cost": 1,
+     "rarity": "RARE",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "FIR_939",
+     "name": "Насыщение пламенем Тьмы",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CATA_582",
+     "name": "Опаляющая расщелина",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "CAP_105",
+     "name": "Притягивающий крюк",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "SPELL",
+     "count": 2
+    },
+    {
+     "id": "EDR_457",
+     "name": "Хранитель стаи",
+     "cost": 2,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "CATA_584",
+     "name": "Извергающийся вулкан",
+     "cost": 3,
+     "rarity": "RARE",
+     "type": "LOCATION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_421",
+     "name": "Астралозуб",
+     "cost": 4,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "TIME_034",
+     "name": "Комментатор на стадионе",
+     "cost": 4,
+     "rarity": "RARE",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "CORE_SW_066",
+     "name": "Королевский библиотекарь",
+     "cost": 4,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 1
+    },
+    {
+     "id": "EDR_492",
+     "name": "Мама-утка",
+     "cost": 4,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "END_033",
+     "name": "Прозорливый дракозмей",
+     "cost": 7,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "TLC_600",
+     "name": "Змей ветреных вершин",
+     "cost": 8,
+     "rarity": "COMMON",
+     "type": "MINION",
+     "count": 2
+    },
+    {
+     "id": "JAIL_384",
+     "name": "Сорвавшийся с цепи Дробитель",
+     "cost": 8,
+     "rarity": "LEGENDARY",
+     "type": "MINION",
+     "count": 1
+    }
+   ],
+   "poster": {
+    "src": "decks/yt-legend-decks-sep26/01.jpg",
+    "w": 1920,
+    "h": 1775,
+    "order": [
+     "CORE_REV_990",
+     "EDR_456",
+     "CATA_556",
+     "CATA_585",
+     "CAP_107",
+     "EDR_457",
+     "FIR_939",
+     "CATA_582",
+     "CAP_105",
+     "CATA_584",
+     "CORE_SW_066",
+     "TIME_034",
+     "JAIL_421",
+     "EDR_492",
+     "END_033",
+     "JAIL_384",
+     "TLC_600"
+    ],
+    "types": [
+     "LOCATION",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "MINION",
+     "MINION",
+     "SPELL",
+     "SPELL",
+     "SPELL",
+     "LOCATION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION",
+     "MINION"
+    ],
+    "rarities": [
+     "RARE",
+     "RARE",
+     "COMMON",
+     "RARE",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "COMMON",
+     "RARE",
+     "COMMON",
+     "RARE",
+     "LEGENDARY",
+     "COMMON",
+     "COMMON",
+     "LEGENDARY",
+     "COMMON"
+    ],
+    "dust": 4100,
+    "rects": [
+     [
+      27.9,
+      10,
+      294.8,
+      446.9
+     ],
+     [
+      339.9,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      652.9,
+      -20.5,
+      315,
+      477.4
+     ],
+     [
+      960.9,
+      -28,
+      325.1,
+      492.7
+     ],
+     [
+      1279.4,
+      -20,
+      314.4,
+      476.5
+     ],
+     [
+      1592.4,
+      -20.5,
+      315,
+      477.4
+     ],
+     [
+      21.4,
+      398.5,
+      325.1,
+      492.7
+     ],
+     [
+      334.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      647.4,
+      398,
+      325.7,
+      493.7
+     ],
+     [
+      965.9,
+      436.5,
+      294.8,
+      446.9
+     ],
+     [
+      1279.4,
+      406.5,
+      314.4,
+      476.5
+     ],
+     [
+      1592.4,
+      406,
+      315,
+      477.4
+     ],
+     [
+      30.4,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      339.9,
+      832.5,
+      314.4,
+      476.5
+     ],
+     [
+      652.9,
+      832.5,
+      314.4,
+      476.5
+     ],
+     [
+      969.4,
+      850.5,
+      301.1,
+      456.4
+     ],
+     [
+      1279.4,
+      832.5,
+      314.4,
+      476.5
+     ]
+    ]
+   }
+  }
+ ],
+ "outro": [
+  {
+   "text": "Удачных игр в ладдере!",
+   "cards": []
+  }
+ ],
+ "images": [
+  "https://hs-manacost.ru/wp-content/uploads/2022/03/sunken-city-separator.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2025/10/separator-3.png",
+  "https://hs-manacost.ru/wp-content/uploads/2022/03/sunken-city-separator.png",
+  "https://hs-manacost.ru/wp-content/uploads/2021/10/blinkfox-separator1.png"
+ ],
+ "cardNames": {
+  "CATA_999": "Земляной дракон",
+  "DINO_402": "Маска нетопыря",
+  "TIME_064": "Хронолорд Дейос",
+  "BE_036": "МАТРИАРХ",
+  "TLC_817": "Достичь равновесия",
+  "CATA_308": "Триумф Медива",
+  "CAP_804": "Эксперт по духам",
+  "CAP_805": "Скользкая смерть",
+  "CAP_806": "Хлад ван Пир",
+  "JAIL_912": "Гадалка",
+  "JAIL_735": "Аметистовая тревога",
+  "CATA_452": "Гениальность Хранителя Магии",
+  "CAP_405": "Крестный отец Казакус",
+  "CATA_726": "Лидер Чо'Галл",
+  "CATA_496": "Проклятые цепи",
+  "CAP_005": "Матиас Шоу",
+  "CAP_000": "Истребитель из ШРУ",
+  "JAIL_444": "Костоправ",
+  "JAIL_719": "Ирида Искатель Греха",
+  "JAIL_EVENT_100": "Кватсон",
+  "CATA_140": "Меритра из Сна",
+  "EDR_844": "Глашатай драконов Наралекс",
+  "MEND_042": "Жизнецвет",
+  "JAIL_202": "Паучок",
+  "JAIL_200": "Заражение кладовой"
+ }
+}

@@ -1,5 +1,5 @@
 # «Уши» студии: объективные цифры по звуку, чтобы судить о голосе и отделке, не слыша их.
-#   .venv-vo/Scripts/python.exe scripts/ears.py <id> [сцена ...]       — голос по сценам: public/vo/<id>/<сцена>.mp3 (+ .json)
+#   .venv-vo/Scripts/python.exe scripts/ears.py <id> [сцена ...]       — голос по сценам: public/vo/<id>/<сцена>.mp3 или .wav (+ .json)
 #   .venv-vo/Scripts/python.exe scripts/ears.py --video <файл.mp4>     — готовое видео: громкость и звуки, которые громче голоса
 #   .venv-vo/Scripts/python.exe scripts/ears.py --compare <дубль1> <дубль2> — два дубля одного текста: какой спокойнее
 #   .venv-vo/Scripts/python.exe scripts/ears.py --metrics <файл...>    — цифры в JSON (для vo-takes.mjs)
@@ -84,13 +84,18 @@ def where(text, start, t):
 def scenes(vid, only):
     root = os.path.join('public', 'vo', vid)
     rows = []
-    for f in sorted(os.listdir(root)):
-        if not f.endswith('.mp3'):
-            continue
-        seg = f[:-4]
+    # голос сцены — <сцена>.mp3 или .wav; если есть оба — более свежий
+    found = {}
+    for f in os.listdir(root):
+        seg, ext = os.path.splitext(f)
+        if ext in ('.mp3', '.wav'):
+            p = os.path.join(root, f)
+            if seg not in found or os.path.getmtime(p) > os.path.getmtime(found[seg]):
+                found[seg] = p
+    for seg in sorted(found):
         if only and not any(re.search(p, seg) for p in only):
             continue
-        path = os.path.join(root, f)
+        path = found[seg]
         meta = json.load(open(os.path.join(root, seg + '.json'), encoding='utf-8')) if os.path.exists(os.path.join(root, seg + '.json')) else None
         x = pcm(path)
         dur = len(x) / SR
@@ -192,8 +197,9 @@ if __name__ == '__main__':
         out = os.path.join(os.path.dirname(a[2]) or '.', 'ears-compare.md')
     elif a[0] == '--video':
         lines = report_video(a[1])
-        out = os.path.join(os.path.dirname(a[1]), 'ears-video.md')
+        out = os.path.join(os.path.dirname(a[1]) or '.', 'ears-video.md')
     else:
+        os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # по id — пути от video/, откуда бы ни запустили
         rows = scenes(a[0], a[1:])
         lines = report_scenes(a[0], rows)
         out = os.path.join('out', a[0], 'ears-report.md')

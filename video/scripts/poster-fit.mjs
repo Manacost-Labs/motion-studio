@@ -6,18 +6,21 @@
 // в пикселях постера. По rects шаблон кладёт поверх постера резкие рендеры карт и наводит камеру.
 import fs from 'node:fs';
 import path from 'node:path';
-import {studioDir} from './studios.mjs';
 import {spawnSync} from 'node:child_process';
+import {dims} from './lib/media.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {videoDir} from './lib/studios.mjs';
 import {cardDb, decodeDeck} from './hs-lib.mjs';
 
-// сетки постеров: шаг ячеек и примерное положение рендера существа в первой ячейке (см. src/studios/manacost-youtube/template/poster.ts)
+process.chdir(VIDEO);
+
+// сетки постеров: шаг ячеек и примерное положение рендера существа в первой ячейке (см. src/games/hearthstone/data/poster.ts)
 const GRID = {
   8: {cols: 8, dx: 235, dy: 328, s: 0.4601, ox: 25.3, oy: -9},
   6: {cols: 6, dx: 313, dy: 426, s: 0.6157, ox: 26.9, oy: -20},
 };
 
 const raw = (file, vf, fmt) => spawnSync('ffmpeg', ['-v', 'error', '-i', file, ...(vf ? ['-vf', vf] : []), '-f', 'rawvideo', '-pix_fmt', fmt, '-'], {maxBuffer: 1 << 28}).stdout;
-const dims = (file) => spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', file], {encoding: 'utf8'}).stdout.trim().split(',').map(Number);
 
 // Рендер карты, заранее уменьшенный до примерного масштаба постера; непрозрачные точки с шагом step
 const renderCache = new Map();
@@ -119,7 +122,7 @@ const assign = (E) => {
 
 const [folder, only] = process.argv.slice(2);
 if (!folder) throw new Error('node scripts/poster-fit.mjs <папка ролика> [место]');
-const file = path.join(studioDir('youtube'), folder, 'article.json');
+const file = path.join(videoDir(folder, 'youtube'), 'article.json');
 const article = JSON.parse(fs.readFileSync(file, 'utf8'));
 const byDbf = new Map((await cardDb()).map((c) => [c.dbfId, c]));
 const byId = new Map([...byDbf.values()].map((c) => [c.id, c]));

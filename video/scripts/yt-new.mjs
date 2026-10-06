@@ -6,22 +6,26 @@
 // 3) config.ts — заготовка со всеми сценами: сильное начало, вступление, колоды с последнего места, разделители блоков,
 //    финал с итоговой таблицей. Черновик текста диктора — абзацы статьи, карты под голос — карты, упомянутые в тексте.
 //    Всё, что пишет автор, помечено TODO: пока TODO есть, node scripts/yt-qa.mjs <id> --no-video выдаёт ошибки
-// 4) регистрация в src/studios/manacost-youtube/Root.tsx → композиции yt-<тема> и yt-<тема>-thumb
+// 4) регистрация — строка в src/studios/manacost-youtube/videos.ts (Root.tsx регистрирует список → композиции yt-<тема> и yt-<тема>-thumb)
 // Готовое не перезаписывает: повторный запуск докачивает недостающее. Дальше — навык manacost-youtube, «Быстрый старт».
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {studioDir} from './studios.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {studio as studioRec, studioDir} from './lib/studios.mjs';
+import {addVideo} from './lib/text.mjs';
 
+process.chdir(VIDEO);
 const args = process.argv.slice(2);
 const [url, id] = args.filter((a) => !a.startsWith('--'));
-if (!url || !id || !/^yt-[a-z0-9-]+$/.test(id)) throw new Error('node scripts/yt-new.mjs <url статьи> yt-<тема латиницей через дефис> [--no-posters]');
+const prefix = studioRec('youtube').idPrefix; // студия Манакоста: статьи hs-manacost.ru, шаблон «Компендиум»
+if (!url || !id || !new RegExp(`^${prefix}[a-z0-9-]+$`).test(id)) throw new Error(`node scripts/yt-new.mjs <url статьи> ${prefix}<тема латиницей через дефис> [--no-posters]`);
 const studio = studioDir('youtube');
 const dir = path.join(studio, id);
 const articleFile = path.join(dir, 'article.json');
 const run = (script, ...a) => {
   console.log(`\n→ node scripts/${script} ${a.join(' ')}`);
-  const r = spawnSync('node', [path.join('scripts', script), ...a], {stdio: 'inherit'});
+  const r = spawnSync('node', [path.join(VIDEO, 'scripts', script), ...a], {stdio: 'inherit', cwd: VIDEO});
   if (r.status) throw new Error(`${script} завершился с ошибкой`);
 };
 
@@ -91,15 +95,14 @@ const config = `// YouTube: «${article.title}» (${article.url}).
 // Заготовка — scripts/yt-new.mjs. Данные колод — article.json (fetch-article.mjs, deck-posters.mjs). Здесь — текст диктора (vo)
 // и то, что показывается под голос: at — фраза из vo, на которой это появляется. Как заполнять — навык manacost-youtube.
 // Готовность: node scripts/yt-qa.mjs ${id} --no-video — 0 ошибок (пока есть TODO, ошибки будут).
-import {articleClasses, articleDeck, articleTease, DeckText, divider, manacostOutro, YT_BASE} from '../template/article';
-import {YtConfig} from '../template/types';
+import {articleClasses, articleDeck, articleTease, DeckText, divider, manacostOutro, YT_BASE, YtConfig} from '../channel';
 import article from './article.json';
 
 // колода №rank: данные статьи (название, класс, код, 30 карт, постер) + текст ниже
 const deck = (rank: number, text: DeckText) => articleDeck(article, rank, text);
 
 export const ${constName}: YtConfig = {
-  ...YT_BASE, // музыка-подложка, 60 к/с, голос Alex Bell (+6 % темпа), без субтитров в кадре — template/article.ts
+  ...YT_BASE, // музыка-подложка, 60 к/с, голос Alex Bell (+6 % темпа), без субтитров в кадре — brands/manacost/channel.ts
   id: '${id}',
   title: 'TODO название на YouTube до 70 знаков | Hearthstone',
   url: article.url,
@@ -148,18 +151,17 @@ else {
   console.log(`\nзаготовка: ${path.relative(process.cwd(), configFile)} (${N} колод, разделители перед ${[...dividers].join(', ') || '—'})`);
 }
 
-// 4. Регистрация
-const rootFile = path.join(studio, 'Root.tsx');
-let root = fs.readFileSync(rootFile, 'utf8');
-if (!root.includes(`'./${id}/config'`)) {
-  const imports = [...root.matchAll(/^import .*from '\.\/yt-[^']+\/config';$/gm)];
-  const at = imports.length ? imports.at(-1).index + imports.at(-1)[0].length : root.indexOf("import {YT_MOTION");
-  root = root.slice(0, at) + `\nimport {${constName}} from './${id}/config';` + root.slice(at);
-  const block = `    {/* «${article.title}» по статье hs-manacost.ru — черновик */}\n    <Folder name="${id}">\n      <YtCompositions config={${constName}} />\n    </Folder>\n\n`;
-  const calib = root.indexOf('    {/* Калибровка геометрии постеров');
-  root = root.slice(0, calib) + block + root.slice(calib);
-  fs.writeFileSync(rootFile, root);
-  console.log(`зарегистрирован в Root.tsx: ${id}, ${id}-thumb`);
+// 4. Регистрация: импорт конфига и строка в списке VIDEOS (src/studios/manacost-youtube/videos.ts); Root.tsx регистрирует список сам
+const videosFile = path.join(studio, 'videos.ts');
+let videos = fs.readFileSync(videosFile, 'utf8');
+if (!videos.includes(`'./${id}/config'`)) {
+  // концы строк файла (LF или CRLF) сохраняются — scripts/lib/text.mjs → addVideo
+  const next = addVideo(videos, {constName, id, note: `«${article.title}» по статье hs-manacost.ru — черновик`});
+  // разметка videos.ts не та — не портить файл вставкой «куда-нибудь»
+  if (!next) throw new Error(`videos.ts: не нашёл импорты или список VIDEOS — добавь вручную import {${constName}} from './${id}/config' и строку ${constName}, в VIDEOS`);
+  videos = next;
+  fs.writeFileSync(videosFile, videos);
+  console.log(`зарегистрирован в videos.ts: ${id}, ${id}-thumb`);
 }
 
 console.log(`

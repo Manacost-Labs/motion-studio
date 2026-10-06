@@ -8,8 +8,10 @@
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
+import {VIDEO} from './lib/paths.mjs';
 
-const PUB = path.resolve('public');
+process.chdir(VIDEO);
+const PUB = path.join(VIDEO, 'public');
 const OUT = path.join(PUB, 'lib/sfx');
 const MANIFEST = path.join(PUB, 'lib/manifest.json');
 const PEAK = -1.5;

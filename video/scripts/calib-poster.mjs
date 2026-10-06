@@ -1,14 +1,17 @@
 // Калибровка геометрии постеров api.blizzcore.ru: для нескольких карт подбирает масштаб и сдвиг рендера
 // HearthstoneJSON (512×776), при которых он лучше всего совпадает с картой на постере (минимум разницы пикселей).
 //   node scripts/calib-poster.mjs <папка ролика> <место колоды> <индексы карт через запятую>
-// Печатает для каждой карты sx, sy и левый верх холста → по ним обновляются POSTER_8 / POSTER_6 в src/studios/manacost-youtube/template/poster.ts
+// Печатает для каждой карты sx, sy и левый верх холста → по ним обновляются POSTER_8 / POSTER_6 в src/games/hearthstone/data/poster.ts
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import {studioDir} from './studios.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {videoDir} from './lib/studios.mjs';
+
+process.chdir(VIDEO);
 
 const [folder, rank, list] = process.argv.slice(2);
-const article = JSON.parse(fs.readFileSync(path.join(studioDir('youtube'), folder, 'article.json'), 'utf8'));
+const article = JSON.parse(fs.readFileSync(path.join(videoDir(folder, 'youtube'), 'article.json'), 'utf8'));
 const deck = article.decks.find((d) => String(d.rank) === rank);
 const {src, w: PW, h: PH, order} = deck.poster;
 const six = PH / PW > 0.85;

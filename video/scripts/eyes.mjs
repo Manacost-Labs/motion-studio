@@ -16,7 +16,9 @@
 //        конец) — out/eyes/<имя>/scenes.md. Длинные планы — кандидаты на врезку геймплея; в своей записи без склеек
 //        «планами» становятся резкие смены картинки (розыгрыш, смена хода)
 //   node scripts/eyes.mjs cut <url | файл> --from 35 --to 52 --name <имя> [--own | --permission "<как получено>"]
-//        кусок геймплея → public/clips/<имя>.mp4 (1080p, без звука) + <имя>.json (источник, автор, лицензия, отрезок).
+//        [--deck "<колода в кадре>"] [--context "<что происходит>"]
+//        кусок геймплея → public/clips/<имя>.mp4 (1080p, без звука) + паспорт <имя>.json: источник, автор, лицензия, отрезок,
+//        date — дата публикации источника (своя запись — дата файла; yt-qa сверяет её с датой статьи), deck и context.
 //        Чужое видео: Creative Commons (CC BY — автор в кадре, поле credit во врезке clip) или разрешение автора
 //        (--permission "написал в Telegram 03.10, ответил да" — сохраняется в .json). Своя запись (OBS) — с --own.
 // Указание автора — не разрешение: клипы Twitch и обычные ролики YouTube без согласия автора в ролик не берём
@@ -25,6 +27,8 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
+import {loadEnv} from './lib/env.mjs';
+import {mmss as clock} from './lib/text.mjs';
 
 const [cmd, target, ...rest] = process.argv.slice(2);
 const opt = (n, d) => (rest.includes(`--${n}`) ? rest[rest.indexOf(`--${n}`) + 1] : d);
@@ -61,8 +65,8 @@ const fetchPart = (src, h = 720) => {
 };
 const spanOf = (from, to) => ['-ss', String(from), '-t', String(to - from)];
 
-const env = Object.fromEntries((fs.existsSync('.env') ? fs.readFileSync('.env', 'utf8') : '').split('\n').map((l) => l.match(/^(\w+)=(.*)$/)).filter(Boolean).map((m) => [m[1], m[2].trim()]));
-const mmss = (s) => (s ? `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, '0')}` : '?');
+const env = loadEnv(); // video/.env (lib/env.mjs): значения не печатаются
+const mmss = (s) => clock(s, true); // до ближайшей секунды; '?' — только если времени нет
 const ymd = (d) => (d ? `${d.slice(6, 8)}.${d.slice(4, 6)}.${d.slice(0, 4)}` : '?');
 const rightsOf = (site, license) =>
   site === 'YouTube' && CC.test(license ?? '') ? 'CC BY — можно, автор в кадре' : site === 'Twitch' ? 'нужно разрешение стримера' : 'нужно разрешение автора';
@@ -268,7 +272,7 @@ if (cmd === 'find') {
   const from = Number(opt('from'));
   const to = Number(opt('to'));
   const name = opt('name');
-  if (!target || !name || !(to > from)) throw new Error('node scripts/eyes.mjs cut <url | файл> --from 35 --to 52 --name <имя> [--own | --permission "<как получено>"]');
+  if (!target || !name || !(to > from)) throw new Error('node scripts/eyes.mjs cut <url | файл> --from 35 --to 52 --name <имя> [--own | --permission "<как получено>"] [--deck "<колода>"] [--context "<что в кадре>"]');
   const info = isUrl(target) ? meta(target) : {title: path.basename(target)};
   const site = isTwitch(target) ? 'Twitch' : 'YouTube';
   const cc = isUrl(target) && CC.test(info.license ?? '');
@@ -282,7 +286,11 @@ if (cmd === 'find') {
   fs.mkdirSync(path.dirname(out), {recursive: true});
   run('ffmpeg', ['-v', 'error', '-y', ...spanOf(from, to), '-i', src, '-an', '-vf', 'scale=-2:1080:flags=lanczos', '-c:v', 'libx264', '-crf', '18', '-preset', 'slow', '-pix_fmt', 'yuv420p', out]);
   const credit = isUrl(target) ? `Геймплей: ${author(info)} · ${site}${cc ? ' · CC BY' : ''}` : 'Геймплей: запись Манакоста';
-  fs.writeFileSync(out.replace(/\.mp4$/, '.json'), JSON.stringify({source: isUrl(target) ? target : 'своя запись', title: info.title, author: isUrl(target) ? author(info) : 'Манакост', clipper: site === 'Twitch' ? info.uploader : undefined, license: isUrl(target) ? (cc ? info.license : 'по согласию автора') : 'своя запись', permission, from, to, credit}, null, 1) + '\n');
+  // дата источника: публикация ролика (upload_date) или, у своей записи, дата файла
+  const date = isUrl(target) ? info.upload_date?.replace(/^(\d{4})(\d{2})(\d{2})$/, '$1-$2-$3') : fs.statSync(target).mtime.toISOString().slice(0, 10);
+  const passport = {source: isUrl(target) ? target : 'своя запись', title: info.title, author: isUrl(target) ? author(info) : 'Манакост', clipper: site === 'Twitch' ? info.uploader : undefined, license: isUrl(target) ? (cc ? info.license : 'по согласию автора') : 'своя запись', permission, date, deck: opt('deck'), context: opt('context'), from, to, credit};
+  fs.writeFileSync(out.replace(/\.mp4$/, '.json'), JSON.stringify(passport, null, 1) + '\n');
+  if (!passport.deck) console.warn('⚠ в паспорте нет --deck: какая колода в кадре (по нему видно, что врезка от той колоды)');
   console.log(`→ public/clips/${name}.mp4 (+ .json)\nво врезке: {kind: 'clip', src: 'clips/${name}.mp4', start: 0, credit: '${credit}', at: '…', to: '…'}`);
 } else {
   console.log(fs.readFileSync(new URL(import.meta.url), 'utf8').split('\n').filter((l) => l.startsWith('//')).join('\n'));

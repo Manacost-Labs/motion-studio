@@ -7,11 +7,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {bundle} from '@remotion/bundler';
-import {renderStill, selectComposition} from '@remotion/renderer';
-import {entryPoint} from './studios.mjs';
+import {renderStill} from '@remotion/renderer';
+import {VIDEO} from './lib/paths.mjs';
+import {CHROME, openComposition, quietFonts} from './lib/remotion.mjs';
 
-process.on('unhandledRejection', () => {}); // шрифты шаблона в Node не грузятся — для кадров они грузятся в браузере
+process.chdir(VIDEO);
+quietFonts(); // шрифты шаблона в Node не грузятся — для кадров они грузятся в браузере
 
 const args = process.argv.slice(2);
 const id = args[0];
@@ -25,10 +26,9 @@ const scale = Number(opt('scale') ?? 0.25);
 const out = path.resolve('out', id, 'board');
 fs.mkdirSync(out, {recursive: true});
 
-const browserExecutable = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
-const serveUrl = await bundle({entryPoint: entryPoint('youtube')});
-const composition = await selectComposition({serveUrl, id, browserExecutable});
-const {timing} = composition.props;
+const browserExecutable = CHROME;
+const {serveUrl, composition} = await openComposition(id);
+const {timing} = /** @type {any} */ (composition.props); // props YouTube-композиции: {config, timing}
 const K = composition.fps / (timing.base ?? 30);
 const segs = timing.segments.filter((t) => !pats.length || pats.some((p) => p.test(t.id)));
 

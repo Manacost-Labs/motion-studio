@@ -1,13 +1,18 @@
 // Обработка голоса диктора («адаптер»): сухие записи сцен → обработанные файлы, которые идут в ролик.
-//   node scripts/vo-fx.mjs <id> [--preset broadcast|warm|off]
-// Берёт out/<id>/vo-raw/dry/<сцена>.mp3 (их пишут vo-align.mjs и tts.mjs; при первом запуске сюда переносятся
-// уже лежащие в public записи), пишет public/vo/<id>/<сцена>.mp3. Пресет по умолчанию — voice.fx в конфиге или broadcast.
+//   node scripts/vo-fx.mjs <id> [--preset broadcast|warm|off] [--format wav|mp3] [сцена…]
+// Берёт out/<id>/vo-raw/dry/<сцена>.wav или .mp3 (их пишут vo-align.mjs и tts.mjs; есть оба — более свежий; при первом
+// запуске сюда переносятся уже лежащие в public записи), пишет public/vo/<id>/<сцена>.<формат>. Пресет по умолчанию —
+// voice.fx в конфиге или broadcast. Формат: у сцены, уже записанной в mp3, остаётся mp3 (данные готового ролика не
+// меняются); новый ролик — wav: голос сжимается с потерями один раз, в финальном рендере. Файл другого формата той же
+// сцены удаляется — иначе движок (core/voice/calc.ts ищет mp3 → wav → m4a) взял бы старую запись.
 // Цепочка не сдвигает звук во времени — тайминги слов (<сцена>.json) остаются верными.
 // Громкость каждой сцены приводится к −18 LUFS двумя проходами (замер → точная линейная поправка), без «качания».
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
-import {loadConfig} from './vo-lib.mjs';
+import {fileURLToPath} from 'node:url';
+import {VIDEO} from './lib/paths.mjs';
+import {loadConfig, voiceFile} from './vo-lib.mjs';
 
 export const PRESETS = {
   // вещательный голос: срез гула, меньше «бубнения», больше разборчивости, мягче шипящие, ровнее громкость
@@ -23,6 +28,8 @@ export const PRESETS = {
   off: [],
 };
 const TARGET = 'I=-18:TP=-2:LRA=7';
+const CODEC = {mp3: ['-c:a', 'libmp3lame', '-b:a', '192k'], wav: ['-c:a', 'pcm_s16le']};
+const AUDIO = /\.(mp3|wav)$/;
 
 const loudnorm = (file, pre) => {
   const chain = [...pre, `loudnorm=${TARGET}:print_format=json`].join(',');
@@ -31,33 +38,44 @@ const loudnorm = (file, pre) => {
   return `loudnorm=${TARGET}:measured_I=${m.input_i}:measured_TP=${m.input_tp}:measured_LRA=${m.input_lra}:measured_thresh=${m.input_thresh}:offset=${m.target_offset}:linear=true`;
 };
 
-export const processVoice = (id, preset = 'broadcast', only = []) => {
+// format — 'wav' | 'mp3' для всех сцен; по умолчанию у каждой сцены свой (см. шапку)
+export const processVoice = (id, preset = 'broadcast', only = [], format) => {
   const chain = PRESETS[preset];
   if (!chain) throw new Error(`Нет пресета «${preset}»: ${Object.keys(PRESETS).join(', ')}`);
-  const pub = path.resolve('public/vo', id);
-  const dry = path.resolve('out', id, 'vo-raw', 'dry');
+  if (format && !CODEC[format]) throw new Error(`Нет формата «${format}»: ${Object.keys(CODEC).join(', ')}`);
+  const pub = path.join(VIDEO, 'public', 'vo', id);
+  const dry = path.join(VIDEO, 'out', id, 'vo-raw', 'dry');
   fs.mkdirSync(dry, {recursive: true});
+  fs.mkdirSync(pub, {recursive: true});
+  const segOf = (f) => f.replace(AUDIO, '');
   // первый запуск: всё, что лежит в public и ещё не сохранено сухим, — и есть сухие записи
-  for (const f of fs.existsSync(pub) ? fs.readdirSync(pub) : []) {
-    if (f.endsWith('.mp3') && !fs.existsSync(path.join(dry, f))) fs.copyFileSync(path.join(pub, f), path.join(dry, f));
+  for (const f of fs.readdirSync(pub).filter((x) => AUDIO.test(x))) {
+    if (!voiceFile(dry, segOf(f))) fs.copyFileSync(path.join(pub, f), path.join(dry, f));
   }
-  const files = fs.readdirSync(dry).filter((f) => f.endsWith('.mp3') && (!only.length || only.includes(f.replace(/\.mp3$/, ''))));
-  for (const f of files) {
-    const src = path.join(dry, f);
-    const out = path.join(pub, f);
+  const published = fs.readdirSync(pub).filter((x) => AUDIO.test(x));
+  const usual = published.length ? (published.filter((f) => f.endsWith('.mp3')).length * 2 >= published.length ? 'mp3' : 'wav') : 'wav';
+  const segs = [...new Set(fs.readdirSync(dry).filter((f) => AUDIO.test(f)).map(segOf))].filter((s) => !only.length || only.includes(s));
+  const made = {mp3: 0, wav: 0};
+  for (const seg of segs) {
+    const src = voiceFile(dry, seg);
+    const fmt = format ?? voiceFile(pub, seg)?.match(AUDIO)[1] ?? usual;
+    const out = path.join(pub, `${seg}.${fmt}`);
     const af = [...chain, loudnorm(src, chain)].join(',');
-    const r = spawnSync('ffmpeg', ['-y', '-v', 'error', '-i', src, '-af', af, '-ar', '44100', '-c:a', 'libmp3lame', '-b:a', '192k', out]);
-    if (r.status !== 0) throw new Error(`${f}: ${r.stderr}`);
+    const r = spawnSync('ffmpeg', ['-y', '-v', 'error', '-i', src, '-af', af, '-ar', '44100', ...CODEC[fmt], out]);
+    if (r.status !== 0) throw new Error(`${seg}: ${r.stderr}`);
+    for (const e of ['mp3', 'wav', 'm4a']) if (e !== fmt) fs.rmSync(path.join(pub, `${seg}.${e}`), {force: true});
+    made[fmt]++;
   }
-  console.log(`vo-fx: ${files.length} сцен, пресет ${preset} → public/vo/${id}/`);
+  console.log(`vo-fx: ${segs.length} сцен, пресет ${preset}${made.wav ? `, wav ${made.wav}` : ''}${made.mp3 ? `, mp3 ${made.mp3}` : ''} → public/vo/${id}/`);
 };
 
-if (import.meta.url === `file:///${process.argv[1].replace(/\\/g, '/')}` || process.argv[1]?.endsWith('vo-fx.mjs')) {
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  process.chdir(VIDEO);
   const args = process.argv.slice(2);
   const id = args[0];
-  if (!id) throw new Error('node scripts/vo-fx.mjs <id> [--preset broadcast|warm|off] [сцена…]');
-  const i = args.indexOf('--preset');
+  if (!id) throw new Error('node scripts/vo-fx.mjs <id> [--preset broadcast|warm|off] [--format wav|mp3] [сцена…]');
+  const opt = (n) => (args.includes(`--${n}`) ? args[args.indexOf(`--${n}`) + 1] : undefined);
   const config = await loadConfig(id);
-  const preset = i >= 0 ? args[i + 1] : config.voice?.fx ?? 'broadcast';
-  processVoice(id, preset, args.slice(1).filter((a, k, all) => !a.startsWith('--') && all[k - 1] !== '--preset'));
+  const preset = opt('preset') ?? config.voice?.fx ?? 'broadcast';
+  processVoice(id, preset, args.slice(1).filter((a, k, all) => !a.startsWith('--') && !['--preset', '--format'].includes(all[k - 1])), opt('format'));
 }

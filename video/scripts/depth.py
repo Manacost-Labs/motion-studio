@@ -1,4 +1,4 @@
-# Карта глубины для «живого» арта: параллакс в Remotion (manacost-youtube/template/parts/depth.tsx).
+# Карта глубины для «живого» арта: параллакс в Remotion (src/core/fx/DepthArt.tsx).
 #   .venv-vo/Scripts/python.exe scripts/depth.py public/art/nathria.jpg [ещё.jpg ...]
 # Модель — Depth Anything V2 Small (ONNX, Apache 2.0; веса Base/Large — только некоммерческие, их не брать),
 # скачивается один раз в кэш Hugging Face (~100 МБ). Пишет public/depth/<имя>.png: серый, белое — близко,

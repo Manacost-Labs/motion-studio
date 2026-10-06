@@ -1,4 +1,9 @@
 ﻿# Готовит ассеты для Remotion: кадрирует интерфейс, уменьшает арты и персонажей.
+# НЕ ЗАПУСКАТЬ: рецепт первичной сборки ассетов рекламы (сентябрь 2026), оставлен для истории. Он перезапишет кадры сайта
+# в public/ui, которые закреплённый launch30 берёт из crop-ui.ps1. Источник public/ui — crop-ui.ps1; новые ассеты — LIBRARY.md.
+Write-Host 'prep-assets.ps1 — рецепт первичной сборки, не запускать; источник public/ui — crop-ui.ps1 (см. LIBRARY.md для новых ассетов)' -ForegroundColor Yellow
+exit 1
+
 Add-Type -AssemblyName System.Drawing
 $root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)   # ...\video
 $proj = Join-Path (Split-Path -Parent $root) 'исходники'                      # ...\Hearthpulse Ads\исходники

@@ -2,18 +2,19 @@
 //   ElevenLabs — по ключу ELEVENLABS_API_KEY из video/.env (озвучка: ≈ 1 кредит за знак; коннектор тратит с того же счёта);
 //   Higgsfield — через CLI (higgsfield account status).
 // --need N — хватит ли N кредитов ElevenLabs на запланированную запись (сумма знаков vo: vo-align.mjs --prepare печатает).
-import fs from 'node:fs';
 import {spawnSync} from 'node:child_process';
+import {hasKey, loadEnv} from './lib/env.mjs';
+import {VIDEO} from './lib/paths.mjs';
 
+process.chdir(VIDEO);
 const args = process.argv.slice(2);
 const need = args.includes('--need') ? Number(args[args.indexOf('--need') + 1]) : 0;
-const env = fs.existsSync('.env') ? fs.readFileSync('.env', 'utf8') : '';
-const key = env.match(/^ELEVENLABS_API_KEY=(.+)$/m)?.[1].trim();
+const key = hasKey('ELEVENLABS_API_KEY') ? loadEnv().ELEVENLABS_API_KEY.trim() : undefined;
 
 if (key) {
   try {
     const r = await fetch('https://api.elevenlabs.io/v1/user/subscription', {headers: {'xi-api-key': key}});
-    const s = await r.json();
+    const s = /** @type {any} */ (await r.json());
     if (!r.ok) throw new Error(s.detail?.message ?? r.status);
     const left = s.character_limit - s.character_count;
     const reset = s.next_character_count_reset_unix ? new Date(s.next_character_count_reset_unix * 1000).toLocaleDateString('ru-RU') : '?';

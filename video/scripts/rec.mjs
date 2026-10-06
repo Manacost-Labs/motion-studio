@@ -5,12 +5,13 @@
 //        новые записи → клипы recordings/clips/<запись>-m<n>.mp4 (1080p, со звуком игры): вокруг каждой метки
 //        [−before, +after] с; запись без меток — самые активные моменты (до 8, не ближе 30 с друг к другу; кандидаты).
 //        Обзор — recordings/clips/index.md: у каждого клипа полоска из 4 кадров. --all — переделать и старые записи
-//   node scripts/rec.mjs take <клип> --name <имя> [--trim 2-9]
-//        клип в ролик: public/clips/<имя>.mp4 + паспорт (своя запись) через eyes.mjs cut --own; --trim — только часть
-//        клипа (секунды от его начала). Во врезке: {kind: 'clip', src: 'clips/<имя>.mp4', start: 0, credit: …}
+//   node scripts/rec.mjs take <клип> --name <имя> [--trim 2-9] [--deck "<колода>"] [--context "<что в кадре>"]
+//        клип в ролик: public/clips/<имя>.mp4 + паспорт (своя запись, дата записи, колода) через eyes.mjs cut --own;
+//        --trim — только часть клипа (секунды от его начала). Во врезке: {kind: 'clip', src: 'clips/<имя>.mp4', start: 0, credit: …}
 import fs from 'node:fs';
 import path from 'node:path';
 import {spawnSync} from 'node:child_process';
+import {mmss, slug as slugOf} from './lib/text.mjs';
 
 const args = process.argv.slice(2);
 const opt = (n, d) => (args.includes(`--${n}`) ? args[args.indexOf(`--${n}`) + 1] : d);
@@ -23,19 +24,19 @@ const run = (bin, a) => {
   if (r.status) throw new Error(`${bin}: ${(r.stderr || r.stdout || '').slice(-500)}`);
   return r;
 };
-const mmss = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`;
-const slug = (s) => s.replace(/\.[^.]+$/, '').replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');
+const slug = (s) => slugOf(s, {ext: true}); // имя записи без расширения → начало имени клипа
 const index = () => (fs.existsSync(INDEX) ? JSON.parse(fs.readFileSync(INDEX, 'utf8')) : []);
 
 if (args[0] === 'take') {
   const name = opt('name');
   const clip = index().find((c) => c.clip === args[1] || c.clip === path.basename(args[1] ?? '', '.mp4'));
   if (!clip || !name) {
-    console.error('✗ node scripts/rec.mjs take <клип из recordings/clips/index.md> --name <имя> [--trim 2-9]');
+    console.error('✗ node scripts/rec.mjs take <клип из recordings/clips/index.md> --name <имя> [--trim 2-9] [--deck "<колода>"] [--context "<что в кадре>"]');
     process.exit(1);
   }
   const [a, b] = (opt('trim') ?? `0-${clip.to - clip.from}`).split('-').map(Number);
-  const r = spawnSync('node', ['scripts/eyes.mjs', 'cut', path.join(REC, clip.rec), '--from', String(clip.from + a), '--to', String(clip.from + b), '--name', name, '--own'], {stdio: 'inherit'});
+  const pass = ['deck', 'context'].flatMap((k) => (opt(k) ? [`--${k}`, opt(k)] : [])); // в паспорт: какая колода, что в кадре
+  const r = spawnSync('node', ['scripts/eyes.mjs', 'cut', path.join(REC, clip.rec), '--from', String(clip.from + a), '--to', String(clip.from + b), '--name', name, '--own', ...pass], {stdio: 'inherit'});
   process.exit(r.status ?? 1);
 }
 

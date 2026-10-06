@@ -5,13 +5,17 @@
 // затем scripts/poster-fit.mjs уточняет его по самому постеру и дописывает rects. По ним камера наезжает на названную карту.
 import fs from 'node:fs';
 import path from 'node:path';
-import {studioDir} from './studios.mjs';
 import {spawnSync} from 'node:child_process';
+import {dims} from './lib/media.mjs';
+import {VIDEO} from './lib/paths.mjs';
+import {videoDir} from './lib/studios.mjs';
 import {cardDb, decodeDeck, download} from './hs-lib.mjs';
+
+process.chdir(VIDEO);
 
 const [folder, style = 'parchment'] = process.argv.slice(2);
 if (!folder) throw new Error('node scripts/deck-posters.mjs <папка ролика> [parchment|classic]');
-const file = path.join(studioDir('youtube'), folder, 'article.json');
+const file = path.join(videoDir(folder, 'youtube'), 'article.json');
 const article = JSON.parse(fs.readFileSync(file, 'utf8'));
 const byDbf = new Map((await cardDb()).map((c) => [c.dbfId, c]));
 const outDir = path.resolve('public/decks', folder);
@@ -23,7 +27,7 @@ for (const d of article.decks) {
     headers: {'content-type': 'application/json'},
     body: JSON.stringify({deck_code: d.code, image_style: style}),
   });
-  const r = await res.json();
+  const r = /** @type {any} */ (await res.json());
   if (!r.success) {
     console.log(`${d.rank}. ${d.name}: ошибка ${r.error ?? res.status}`);
     continue;
@@ -31,10 +35,7 @@ for (const d of article.decks) {
   const img = await fetch(r.image_url);
   const name = `${String(d.rank ?? d.name).padStart(2, '0')}.jpg`;
   fs.writeFileSync(path.join(outDir, name), Buffer.from(await img.arrayBuffer()));
-  const [w, h] = spawnSync('ffprobe', ['-v', 'error', '-show_entries', 'stream=width,height', '-of', 'csv=p=0', path.join(outDir, name)], {encoding: 'utf8'})
-    .stdout.trim()
-    .split(',')
-    .map(Number);
+  const [w, h] = dims(path.join(outDir, name));
   // порядок карт на постере: стабильная сортировка порядка кода по стоимости
   const cards = decodeDeck(d.code)
     .cards.map(([dbf], i) => ({id: byDbf.get(dbf).id, cost: byDbf.get(dbf).cost ?? 0, type: byDbf.get(dbf).type, rarity: byDbf.get(dbf).rarity, i}))

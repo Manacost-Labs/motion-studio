@@ -2,11 +2,12 @@
 import {spawnSync} from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
+import {VIDEO} from './lib/paths.mjs';
 
-export const HS = path.resolve('public/hs');
+export const HS = path.join(VIDEO, 'public', 'hs');
 
 // База карт HearthstoneJSON (ruRU), кэш обновляется раз в сутки
-const CACHE = path.resolve('node_modules/.cache/hs-cards.ruRU.json');
+const CACHE = path.join(VIDEO, 'node_modules', '.cache', 'hs-cards.ruRU.json');
 export const cardDb = async () => {
   fs.mkdirSync(path.dirname(CACHE), {recursive: true});
   if (!fs.existsSync(CACHE) || Date.now() - fs.statSync(CACHE).mtimeMs > 24 * 3600e3) {

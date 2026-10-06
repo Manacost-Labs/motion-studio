@@ -1,0 +1,9 @@
+# Python-окружение video/.venv-vo: голос (тайминги слов), «уши», «глаза», глубина арта. Версии — как в рабочем окружении 04.10.2026.
+#   python -m venv .venv-vo && .venv-vo/Scripts/python -m pip install -r requirements.txt
+# Проверка: node scripts/doctor.mjs
+faster-whisper==1.2.1  # scripts/vo-words.py — локальное распознавание речи (vo-align.mjs, vo-takes.mjs)
+numpy==2.5.3  # scripts/ears.py, cam-jitter.py, depth.py
+scenedetect==0.7.1  # scripts/scenes.py — склейки чужих роликов (eyes.mjs scenes)
+opencv-python==5.0.0.93  # для scenedetect (его зависимость)
+onnxruntime==1.30.0  # scripts/depth.py — карта глубины для «живого арта»
+huggingface_hub==1.33.0  # scripts/depth.py — модель Depth Anything v2
