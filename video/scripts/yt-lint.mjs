@@ -1,4 +1,4 @@
-// Проверка раскладки YouTube-ролика без взгляда человека: node scripts/yt-lint.mjs <id> [сцена…] [--at 0.3,0.6,0.92]
+// Проверка раскладки YouTube-ролика без взгляда человека: node scripts/yt-lint.mjs <id> [сцена…] [--at 0.3,0.6,0.92] [--no-read]
 // Рендерит кадры сцен со встроенным зондом (src/core/qa/lint.tsx, REMOTION_LINT) и собирает из браузера настоящие границы
 // надписей: текст за краем кадра, текст на тексте из разных блоков, текст поверх постера или карт веера (data-qa-clear).
 // Пишет out/<id>/lint-report.md; код выхода 1, если что-то нашлось. Кадры — посередине и к концу сцен, когда всё
@@ -7,10 +7,14 @@
 // LIMITS.readMinPx (px кадра 1080p; мелкий по замыслу — data-qa-small-ok) и контраст с однотонным фоном ниже
 // LIMITS.readMinContrast (пороги — VIDEO_LIMITS, src/core/qa/limits.ts). Надпись сцены судится по лучшему из проверенных
 // кадров (появление, уход и наезд камеры не в счёт); место — файл компонента (по именам React-компонентов из зонда).
+// Раздел «Время чтения» — тоже только ⚠: смысловая надпись должна быть на экране не меньше LIMITS.readMinSec +
+// LIMITS.readPerWordSec за слово сверх LIMITS.readFreeWords, в финальной сцене — не меньше LIMITS.readOutroSec (правило —
+// github.com/whaleyxbt/claude-motion, MIT). Замер — проход выбранных сцен частыми кадрами без снимков (зонд в режиме seen);
+// --no-read — пропустить проход.
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import {renderStill} from '@remotion/renderer';
+import {renderFrames, renderStill} from '@remotion/renderer';
 import {VIDEO} from './lib/paths.mjs';
 import {CHROME, openComposition, quietFonts} from './lib/remotion.mjs';
 import {loadChannel} from './lib/channel.mjs';
@@ -18,13 +22,13 @@ import {studio} from './lib/studios.mjs';
 
 process.chdir(VIDEO);
 quietFonts();
-// строки зонда «YTLINT {…}» Remotion сам печатает в терминал (console.debug из бандла → verbose) — их читает onBrowserLog,
-// в терминал не пускаем
+// строки зонда «YTLINT {…}» и «YTSEEN {…}» Remotion сам печатает в терминал (console.debug из бандла → verbose) — их читает
+// onBrowserLog, в терминал не пускаем
 const print = console.log;
-console.log = (...a) => (a.some((x) => String(x).includes('YTLINT ')) ? undefined : print(...a));
+console.log = (...a) => (a.some((x) => /YT(LINT|SEEN) /.test(String(x))) ? undefined : print(...a));
 const args = process.argv.slice(2);
 const id = args[0];
-if (!id || id.startsWith('--')) throw new Error('node scripts/yt-lint.mjs <id> [сцена…] [--at 0.3,0.6,0.92]');
+if (!id || id.startsWith('--')) throw new Error('node scripts/yt-lint.mjs <id> [сцена…] [--at 0.3,0.6,0.92] [--no-read]');
 const opt = (n) => (args.includes(`--${n}`) ? args[args.indexOf(`--${n}`) + 1] : undefined);
 const pats = args.slice(1).filter((a) => !a.startsWith('--') && a !== opt('at')).map((a) => new RegExp(a));
 const at = (opt('at') ?? '0.3,0.6,0.92').split(',').map(Number);
@@ -40,7 +44,8 @@ const tmp = path.join(os.tmpdir(), 'yt-lint.jpg');
 const found = [];
 const read = []; // замеры читаемости (src/core/qa/lint.tsx → readDom)
 let checked = 0;
-for (const t of timing.segments.filter((s) => !pats.length || pats.some((p) => p.test(s.id)))) {
+const chosen = timing.segments.filter((s) => !pats.length || pats.some((p) => p.test(s.id)));
+for (const t of chosen) {
   for (const q of at) {
     const frame = Math.min(composition.durationInFrames - 1, Math.round((t.from + q * t.dur) * K));
     let report;
@@ -132,9 +137,109 @@ lines.push(
   ...[...byPlace].flatMap(([place, ls]) => ['', `### ${place}`, '', ...ls.map((l) => `- ⚠ ${l}`)]),
 );
 
+// ── Время чтения (⚠): сколько смысловая надпись на экране ──
+// Правило — из github.com/whaleyxbt/claude-motion (MIT): надпись видна не меньше readMinSec + readPerWordSec за каждое слово
+// сверх readFreeWords, надпись финальной сцены — не меньше readOutroSec (VIDEO_LIMITS). Замер — кадры выбранных сцен на сетке
+// каждые READ_STEP с одним проходом renderFrames без снимков (зонд seen: только список видимых надписей). «На экране» —
+// opacity с предками от READ_OPACITY. Не судятся: субтитры (их длину и скорость проверяет yt-qa), мелкое по замыслу
+// (data-qa-small-ok), надписи, обрезанные краем выбранных сцен или кадром, на который зонд не ответил. Счётчик (надпись из
+// одних цифр: «12» → «54») — одна надпись. Без ложных тревог: ⚠, только если даже с запасом в шаг ((n + 1)·шаг) надпись короче
+const READ_STEP = 0.2; // с между кадрами прохода
+const READ_OPACITY = 0.5;
+let readRun = null; // итог прохода для консоли
+if (!args.includes('--no-read')) {
+  const t0 = Date.now();
+  const step = Math.max(1, Math.round(READ_STEP * composition.fps));
+  const grid = new Set();
+  for (const t of chosen) for (let f = Math.ceil((t.from * K) / step) * step; f < Math.min(composition.durationInFrames, (t.from + t.dur) * K); f += step) grid.add(f);
+  const frames = [...grid].sort((a, b) => a - b);
+  const seenAt = new Map(); // кадр → {chains, seen} от зонда
+  await renderFrames({
+    serveUrl,
+    composition,
+    inputProps: {},
+    frames,
+    imageFormat: 'none',
+    outputDir: null,
+    muted: true,
+    browserExecutable,
+    envVariables: {REMOTION_LINT: 'seen'},
+    logLevel: 'error',
+    onStart: () => {},
+    onFrameUpdate: () => {},
+    onBrowserLog: (log) => {
+      if (log.text.startsWith('YTSEEN ')) {
+        const r = JSON.parse(log.text.slice(7));
+        seenAt.set(r.frame, r);
+      }
+    },
+  });
+  const norm = (s) => s.replace(/\s+/g, ' ').trim();
+  const subTexts = new Set(timing.segments.flatMap((s) => (s.subs ?? []).map((u) => norm(u.text))));
+  const keyOf = (s) => (/\p{L}/u.test(s) ? norm(s) : norm(s).replace(/\d+([.,]\d+)?/g, '#'));
+  // серии: надпись видна на кадрах сетки подряд
+  const runs = [];
+  const open = new Map(); // ключ → серия
+  let prev = null;
+  for (const f of frames) {
+    const r = seenAt.get(f);
+    const here = new Map();
+    for (const [text, o, smallOk, ci] of r?.seen ?? []) {
+      if (o < READ_OPACITY || smallOk || subTexts.has(norm(text))) continue;
+      const k = keyOf(text);
+      if (!here.has(k)) here.set(k, {text, comp: r.chains[ci] ?? []});
+    }
+    const next = r && prev !== null && f - prev === step; // этот кадр продолжает предыдущий
+    for (const [k, run] of open)
+      if (!next || !here.has(k)) {
+        runs.push(run);
+        open.delete(k);
+      }
+    for (const [k, v] of here) {
+      const run = open.get(k);
+      if (run) Object.assign(run, {b: f, n: run.n + 1});
+      else open.set(k, {key: k, text: v.text, comp: v.comp, a: f, b: f, n: 1});
+    }
+    prev = r ? f : null;
+  }
+  runs.push(...open.values());
+  const answered = new Set(seenAt.keys());
+  // обрезана: перед первым или после последнего кадра серии ролик идёт, а замера нет (край выбранных сцен, зонд молчал)
+  const cut = (run) => (run.a >= step && !answered.has(run.a - step)) || (run.b + step < composition.durationInFrames && !answered.has(run.b + step));
+  const lastFrom = timing.segments.at(-1).from * K;
+  const segAt = (f) => [...timing.segments].reverse().find((t) => f >= t.from * K) ?? timing.segments[0];
+  const words = (s) => s.split(/\s+/).filter((w) => /[\p{L}\p{N}]/u.test(w)).length;
+  const brief = [];
+  for (const run of runs.filter((x) => !cut(x))) {
+    const w = words(run.text);
+    const outro = run.a >= lastFrom;
+    const need = Math.max(LIMITS.readMinSec + LIMITS.readPerWordSec * Math.max(0, w - LIMITS.readFreeWords), outro ? LIMITS.readOutroSec : 0);
+    if (((run.n + 1) * step) / composition.fps < need) brief.push({...run, w, need, outro, sec: (run.n * step) / composition.fps, seg: segAt(run.a).id});
+  }
+  const byPlaceR = new Map();
+  for (const b of brief) {
+    const place = placeOf(b.comp);
+    const line = `${b.seg} · ${(b.a / composition.fps).toFixed(1)} с — «${b.text.slice(0, 50)}» на экране ≈ ${num(b.sec)} с (нужно ${num(b.need, 2)} с: слов ${b.w}${b.outro ? ', финальная сцена' : ''})`;
+    byPlaceR.set(place, [...(byPlaceR.get(place) ?? []), line]);
+  }
+  const silent = frames.length - seenAt.size;
+  const cutN = runs.filter(cut).length;
+  readRun = {frames: frames.length, sec: (Date.now() - t0) / 1000, brief: brief.length};
+  lines.push(
+    '',
+    '## Время чтения (⚠)',
+    '',
+    `Только предупреждения: в код выхода и в число находок не входят. Порог — от ${num(LIMITS.readMinSec)} с + ${num(LIMITS.readPerWordSec, 2)} с за слово сверх ${LIMITS.readFreeWords}, в финальной сцене — от ${num(LIMITS.readOutroSec)} с (правило github.com/whaleyxbt/claude-motion). Замер — кадры каждые ${num(step / composition.fps, 2)} с (точность — шаг), «на экране» — opacity от ${num(READ_OPACITY)}; субтитры и data-qa-small-ok не судятся.`,
+    '',
+    `Коротких: ${brief.length} · надписей: ${new Set(runs.map((r) => r.key)).size} (появлений ${runs.length}, обрезано краем замера ${cutN}) · кадров: ${frames.length}${silent ? `, зонд не ответил на ${silent}` : ''}`,
+    ...[...byPlaceR].flatMap(([place, ls]) => ['', `### ${place}`, '', ...ls.map((l) => `- ⚠ ${l}`)]),
+  );
+}
+
 fs.mkdirSync(path.resolve('out', id), {recursive: true});
 fs.writeFileSync(path.resolve('out', id, 'lint-report.md'), lines.join('\n') + '\n');
 console.log(layoutText);
 console.log(`⚠ читаемость (код выхода не меняет): мест ${readFound.length} — мелкий текст ${small.length}, низкий контраст ${pale.length}`);
+if (readRun) console.log(`⚠ время чтения (код выхода не меняет): коротких надписей ${readRun.brief} — кадров ${readRun.frames} за ${Math.round(readRun.sec)} с`);
 console.log(`→ out/${id}/lint-report.md`);
 process.exit(uniq.length ? 1 : (process.exitCode ?? 0));

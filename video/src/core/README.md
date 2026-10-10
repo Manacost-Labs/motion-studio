@@ -11,6 +11,7 @@
 |---|---|
 | `time/fps.ts` | «кадры-30»: `BASE_FPS`, `FrameScale` (множитель K = fps / 30), `useK`, `useFrame` |
 | `time/ease.ts` | `EASE_OUT`, `EASE_IN`, `EASE_IN_OUT` (и объект `EASE`), `clamp`, `ramp` |
+| `time/motion.ts` | следствия движения без состояния: `lagged` — слой, запаздывающий на n кадров (тень за картой) |
 | `voice/timing.ts` | расчёт под голос: `CPS`, `stripTags`, `estimateVo`, `anchorFrame`, `spreadFrame`, `timeAt`, субтитры (`splitSubs`, `twoLines`, `buildSubs`); типы `Sub`, `VoTimes`, `VoSpan` |
 | `audio/Music.tsx` | музыка по кругу с перекрёстным затуханием `XFADE`, приглушение под речь; типы `MusicCue`, `MusicTiming` |
 | `audio/Ambience.tsx` | фон-атмосфера: тихие петли под всем роликом |
@@ -18,12 +19,13 @@
 | `fx/Grain.tsx` | зерно плёнки |
 | `fx/DepthArt.tsx` | «живой» арт: параллакс по карте глубины (WebGL2, `scripts/depth.py`) |
 | `layout/fit.tsx` | `useFitSize` — подгонка кегля под ширину; шрифт — `fontFamily` (по умолчанию `FIT_DISPLAY` = HSDisplay). Меряет только после загрузки шрифта (`delayRender`, ждёт семейство в `document.fonts`) |
-| `qa/lint.tsx` | зонд раскладки кадра для `scripts/yt-lint.mjs` (`REMOTION_LINT`): `lintDom` — край, наложения, `data-qa-clear`; `readDom` — замеры читаемости (кегль в px 1080p с учётом transform, контраст с однотонным фоном, имена компонентов); размер кадра — из `useVideoConfig` |
+| `qa/lint.tsx` | зонд раскладки кадра для `scripts/yt-lint.mjs` (`REMOTION_LINT`): `lintDom` — край, наложения, `data-qa-clear`; `readDom` — замеры читаемости (кегль в px 1080p с учётом transform, контраст с однотонным фоном, имена компонентов); `seenDom` (`REMOTION_LINT=seen`) — только видимые смысловые надписи для прохода «Время чтения»; размер кадра — из `useVideoConfig` |
 | `voice/calc.ts` | `calcVoiced(channel)` — calculateMetadata ролика под голос: длина сцен по записи или тексту, паузы по реестру (`LEAD`, `TAIL`, `MIN` — умолчания; `leadOf`, `tailOf`, `minOf`, `chapterOf`), музыка по кругу |
 | `video/types.ts` | `BaseSeg`, `Point`, `VoiceSettings`, `VoicedConfig<S>`, `SegTiming`, `VoicedTiming`, `VoicedProps`; `BrandLegal` — юридический блок бренда (`legal` в `brands/<канал>/channel.ts`) |
 | `video/registry.ts` | реестр сцен: `SceneDef` (kind, Component, lead/tail/min, chapter, subtitleZone, audit, assets, silent, jumps, pace, thumb), `defineScene`, стиль `VoicedLook` (фон, переход `Frame`, субтитры, поверх, перекрытие, звук стыка), `defineChannel({look, brand, game, context, fields, scenes, qa})`, `sceneOf`, типы `SegOf`, `ConfigOf<typeof channel>` (union сцен канала — чужой `kind` не проходит tsc) |
 | `video/VoicedVideo.tsx` | движок: сцены по реестру канала, переход и субтитры стиля, голос, звук стыка, музыка, атмосфера, `LintProbe`, плашка черновика |
-| `qa/limits.ts` | `VIDEO_LIMITS` — общие пороги: субтитры, описание и SEO, читаемость на телефоне (`readMinPx`, `readMinContrast`), темп, файл к загрузке, обложки |
+| `qa/limits.ts` | `VIDEO_LIMITS` — общие пороги: субтитры, описание и SEO, читаемость на телефоне (`readMinPx`, `readMinContrast`), время чтения (`readMinSec`, `readPerWordSec`, `readFreeWords`, `readOutroSec`), темп, файл к загрузке, обложки |
+| `**/*.test.ts` | модульные тесты (`npm test`, vitest): `time/ease.ts`, `voice/timing.ts` (привязки, субтитры), `voice/calc.ts` (`calcVoiced`), `video/registry.ts`; без браузера — `staticFile`, `fetch` и длина аудио подменены |
 | `qa/audit.ts` | автопроверка данных ролика (yt-qa): `qaOf(channel)` → `audit`, `assetsOf`, `expectedJumps`, `paceOf`, `chapterList`, `thumbVariants`; проверки канала — `channel.qa` (`ChannelQa`), сцены — `SceneDef.audit`, `jumps`, `pace`, `silent` |
 | `video/compositions.tsx` | `voicedCompositions(channel, Thumb)` — регистрация ролика в Root студии: композиция `<id>`, обложки `<id>-thumb`, `-thumb-b`, `-thumb-c` |
 

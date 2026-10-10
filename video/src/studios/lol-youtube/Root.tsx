@@ -1,10 +1,13 @@
 // Студия «YouTube по League of Legends (канал — TODO)»: npm run studio:lol. Канал (стиль, бренд, игра, сцены) — ./channel.ts, ролики — ./videos.ts,
 // паспорт студии — ./README.md, бриф — ./BRIEF.md. Заготовка — scripts/new-direction.mjs. Реестр студий — ../README.md
 import React from 'react';
-import {AbsoluteFill, Folder, Still} from 'remotion';
+import {AbsoluteFill, Composition, Folder, Still} from 'remotion';
 import {voicedCompositions} from '../../core/video/compositions';
+import {BASE_FPS} from '../../core/time/fps';
+import {YT_BASE} from '../../brands/lol-channel/channel';
 import {channel, type LolConfig} from './channel';
 import {VIDEOS} from './videos';
+import {LolMotionLab, MOTION_LAB_SEC} from './MotionLab';
 import {StyleA} from './style-frames/StyleA';
 import {StyleB} from './style-frames/StyleB';
 import {StyleC} from './style-frames/StyleC';
@@ -17,6 +20,8 @@ const Thumb: React.FC<{config: LolConfig}> = ({config}) => (
 );
 // Композиция ролика <id> (16:9, под голос) и обложки <id>-thumb, -thumb-b, -thumb-c (core/video/compositions.tsx)
 const Compositions = voicedCompositions<LolConfig>(channel, Thumb);
+// Частота пробы движения — как у роликов канала; в черновике (render.ps1 -Draft) — 30 к/с
+const LAB_FPS = process.env.REMOTION_DRAFT ? BASE_FPS : YT_BASE.fps;
 
 // Витрина стиля — ЗАГЛУШКА: фон стиля канала и подпись. Сюда — пробные стиль-кадры (шаг 4: npx remotion still … lol-showcase),
 // потом витрина приёмов стиля. Не для публикации; в слепки yt-snap не входит (showcase в id)
@@ -40,6 +45,8 @@ export const Root: React.FC = () => (
     {/* Витрина стиля (не для публикации) */}
     <Folder name="showcase">
       <Still id="lol-showcase" component={Showcase} width={1920} height={1080} />
+      {/* проба движения: маркер (looks/gazette/marker.tsx) и смена полос кляксой (looks/gazette/ink.tsx) — ./MotionLab.tsx */}
+      <Composition id="lol-motion-lab" component={LolMotionLab} durationInFrames={Math.round(MOTION_LAB_SEC * LAB_FPS)} fps={LAB_FPS} width={1920} height={1080} />
     </Folder>
 
     {/* Стиль-кадры на выбор пользователя (один кадр «обзор патча — изменения чемпиона» в трёх стилях; ./style-frames,

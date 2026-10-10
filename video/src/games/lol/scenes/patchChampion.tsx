@@ -7,9 +7,11 @@ import type {BaseSeg} from '../../../core/video/types';
 import {timeAt} from '../../../core/voice/timing';
 import {Sfx} from '../../../core/audio/Sfx';
 import {useFrame} from '../../../core/time/fps';
+import {useFitSize} from '../../../core/layout/fit';
 import {EASE_IN_OUT, ramp} from '../../../core/time/ease';
 import {G, HEAD, LABEL, PAGE, TEXT} from '../../../looks/gazette/theme';
 import {ChangeRow, Footer, Masthead, Photo, Rise, Rule, Stamp, Words} from '../../../looks/gazette/parts';
+import {Marker} from '../../../looks/gazette/marker';
 import {abilityOf, iconOf, nameOf, splashFile, splashOf, SPLASH, type PatchBrief, type PatchHero} from '../data/patch';
 
 export type PatchChampionSeg = BaseSeg & {
@@ -25,6 +27,7 @@ export type PatchChampionSeg = BaseSeg & {
 
 const PW = 800; // фото номера: 800 / 1215 → 1,32× в 4K
 const PH = Math.round((PW * SPLASH.h) / SPLASH.w);
+const ABILITY_W = 1190 - PW - 34 - 30 - 80; // место под имя умения: колонка справа от фото минус отступ, иконка и зазор
 
 // Заметка правой колонки: иконка, имя, штамп, изменения строками «было / стало»
 const Brief: React.FC<{b: PatchBrief; at: number}> = ({b, at}) => (
@@ -61,6 +64,10 @@ export const PatchChampionScene: React.FC<SceneProps<PatchChampionSeg>> = ({seg,
   const head = at(seg.headlineAt, 0, 8) - 4;
   const stamp = at(hero.stampAt, 1, 8);
   const ability = at(hero.ability.at, 2, 8);
+  const mark = ability + 20; // строка умения встаёт за 16 кадров (Rise) — маркер после неё
+  const abilityText = `${hero.ability.key} «${hero.ability.spell}»`;
+  // длинное имя умения («W «Проклятые цепи»») не раздвигает колонку за линейку: кегль подгоняется под ширину, не мельче 26
+  const abilitySize = useFitSize(abilityText, {width: ABILITY_W, max: 34, min: 26, fontFamily: LABEL, fontWeight: 600});
   const ranks = hero.ranks.map((r, i) => at(r.at, 3 + i, 8));
   const also = (seg.also ?? []).map((b, i) => at(b.at, 6 + i, 8));
   return (
@@ -78,8 +85,9 @@ export const PatchChampionScene: React.FC<SceneProps<PatchChampionSeg>> = ({seg,
             <Rise at={ability} style={{display: 'flex', alignItems: 'center', gap: 16, marginTop: 34}}>
               <Img src={abilityOf(hero.id, hero.ability.key)} style={{width: 64, height: 64, display: 'block'}} />
               <div>
-                <div style={{fontFamily: LABEL, fontWeight: 600, fontSize: 34, lineHeight: 1.1, whiteSpace: 'nowrap'}}>
-                  {hero.ability.key} «{hero.ability.spell}»
+                <div style={{fontFamily: LABEL, fontWeight: 600, fontSize: abilitySize, lineHeight: 1.1, whiteSpace: 'nowrap'}}>
+                  {/* единственная пометка маркером на полосе: что изменилось — когда строка уже встала */}
+                  <Marker at={mark}>{abilityText}</Marker>
                 </div>
                 <div style={{fontFamily: LABEL, fontWeight: 500, fontSize: 26, color: G.grey, textTransform: 'uppercase', letterSpacing: 1}}>
                   {hero.ability.what}
@@ -127,8 +135,9 @@ export const PatchChampionScene: React.FC<SceneProps<PatchChampionSeg>> = ({seg,
 
       <Footer left={`Источник: ${seg.source}`} right={seg.note ?? ''} at={14} />
 
-      {/* Звуки: оттиск штампа и перо по строкам таблицы — тише голоса */}
+      {/* Звуки: оттиск штампа, маркер и перо по строкам таблицы — тише голоса */}
       <Sfx file="lib/sfx/seal-stamp.wav" at={stamp} volume={0.45} />
+      <Sfx file="lib/sfx/quill-scratch.wav" at={mark} volume={0.04} />
       {ranks.map((r, i) => (
         <Sfx key={i} file="lib/sfx/quill-scratch.wav" at={r + 8} volume={0.05} />
       ))}

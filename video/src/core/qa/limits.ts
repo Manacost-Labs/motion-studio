@@ -23,6 +23,12 @@ export const VIDEO_LIMITS = {
   // ── Читаемость на телефоне (yt-lint → lint-report.md, «Читаемость»; только ⚠ — в код выхода не входит) ──
   readMinPx: 24, // смысловой текст мельче, px кадра 1080p — ⚠; мелкий по замыслу (сноска, номер) — data-qa-small-ok на элементе
   readMinContrast: 4.5, // контраст текста с однотонным фоном ниже (WCAG 2.x, обычный текст) — ⚠
+  // время чтения (yt-lint, «Время чтения», ⚠): смысловая надпись на экране не меньше readMinSec + readPerWordSec за каждое
+  // слово сверх readFreeWords, надпись финальной сцены — не меньше readOutroSec. Правило — github.com/whaleyxbt/claude-motion (MIT)
+  readMinSec: 1.0,
+  readPerWordSec: 0.25,
+  readFreeWords: 3,
+  readOutroSec: 2,
 
   // ── Темп (pace.md) ──
   paceGapSec: 90, // дольше без «новинки» (врезка, разделитель, заставка, другая сцена, смена музыки) — ⚠

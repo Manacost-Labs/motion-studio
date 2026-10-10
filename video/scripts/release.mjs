@@ -1,10 +1,13 @@
-// Проверка перед выпуском YouTube-ролика: node scripts/release.mjs <id> [--no-golden] [--no-video]
+// Проверка перед выпуском YouTube-ролика: node scripts/release.mjs <id> [--no-golden] [--no-video] [--approved]
 // Единый чек-лист «профессиональный ролик» (~25 пунктов): автоматические — ✅ / ⚠️ / ❌, ручные — списком «проверить
 // человеку». Запускает yt-qa (по данным и по видео out/<id>/video.mp4) и yt-golden (вид не ушёл от одобренного; --no-golden —
 // пропустить), читает judge.json (смысловая проверка выполнена или пропущена явно), лог рендера, обложки, файлы к загрузке.
 // Пишет out/<id>/release.md (чек-лист) и release.json (что именно выпускается: коммит и признак незакоммиченных правок,
 // sha1 данных ролика — как yt-snap, хэши голоса, параметры видео, LUFS, sha256 файла, версии Chrome и Remotion).
-// Готово к выпуску = release.mjs без ❌. Код выхода 1, если есть ❌.
+// Вердикт: есть ❌ — «Не готово» (код выхода 1); ❌ нет — «Технически готово — ждёт человека: N 👤» (код 0): ручные пункты
+// (фрагмент показан и «да» получено, звук, телефон…) машина не проверяет. Пройдены вместе с пользователем — запуск
+// с --approved по его слову: release.json получает approved: {at: ISO}, заголовок — «Готово к выпуску (одобрено человеком)».
+// Одобрение не переносится: каждый запуск без --approved пишет approved: null; при ❌ --approved не записывается.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -20,7 +23,7 @@ quietFonts();
 const args = process.argv.slice(2);
 const id = args[0];
 const flag = (n) => args.includes(`--${n}`);
-if (!id || id.startsWith('--')) throw new Error('node scripts/release.mjs <id> [--no-golden] [--no-video]');
+if (!id || id.startsWith('--')) throw new Error('node scripts/release.mjs <id> [--no-golden] [--no-video] [--approved]');
 const outDir = path.resolve('out', id);
 fs.mkdirSync(outDir, {recursive: true});
 const rel = (f) => path.relative(process.cwd(), f).replace(/\\/g, '/');
@@ -210,18 +213,31 @@ const release = {
   remotion: JSON.parse(fs.readFileSync(path.join('node_modules', 'remotion', 'package.json'), 'utf8')).version,
   judge: judge ? {backend: judge.backend, skipped: !!judge.skipped, counts: judge.counts ?? null} : null,
   checklist: Object.fromEntries(['fail', 'warn', 'ok', 'manual', 'skip'].map((s) => [s, items.filter((i) => i.status === s).length])),
+  // одобрение человека: только явным --approved в этом запуске и только без ❌ (сам по себе ролик одобренным не становится)
+  approved: null,
 };
+const fails = items.filter((i) => i.status === 'fail');
+if (flag('approved') && fails.length) console.log(`⚠ --approved не записано: есть ❌ (${fails.length}) — сначала исправить`);
+else if (flag('approved')) release.approved = {at: new Date().toISOString()};
 fs.writeFileSync(path.join(outDir, 'release.json'), JSON.stringify(release, null, 1) + '\n');
 
 // ── release.md ──
 const icon = {ok: '✅', warn: '⚠️', fail: '❌', manual: '👤', skip: '➖'};
-const fails = items.filter((i) => i.status === 'fail');
+const manualN = release.checklist.manual;
+const tail = `⚠️ ${release.checklist.warn} · ✅ ${release.checklist.ok}`;
+const verdict = fails.length
+  ? `**Не готово: ❌ ${fails.length}** · ${tail} · проверить человеку ${manualN}`
+  : release.approved
+    ? `**Готово к выпуску (одобрено человеком)** (❌ нет, ручные пункты пройдены, ${new Date(release.approved.at).toLocaleString('ru-RU')}) · ${tail}`
+    : manualN
+      ? `**Технически готово — ждёт человека: ${manualN} 👤** (❌ нет) · ${tail} — пройти «Проверить человеку» вместе с пользователем, по его слову: node scripts/release.mjs ${id} --approved`
+      : `**Технически готово** (❌ нет, ручных пунктов нет) · ${tail} — одобрение человека: node scripts/release.mjs ${id} --approved`;
 const md = [
   `# Выпуск «${config.title}»`,
   '',
   `${new Date().toLocaleString('ru-RU')} · коммит ${release.commit.slice(0, 7)}${release.dirty ? ' + незакоммиченные правки' : ''} · данные ${release.configSha1.slice(0, 10)} · ${mmss(release.duration)}`,
   '',
-  fails.length ? `**Не готово: ❌ ${fails.length}** · ⚠️ ${release.checklist.warn} · ✅ ${release.checklist.ok} · проверить человеку ${release.checklist.manual}` : `**Готово к выпуску** (❌ нет) · ⚠️ ${release.checklist.warn} · ✅ ${release.checklist.ok} · проверить человеку ${release.checklist.manual}`,
+  verdict,
   '',
   '| # | пункт | | подробности |',
   '|---|---|---|---|',
@@ -229,7 +245,7 @@ const md = [
   '',
   '## Проверить человеку',
   '',
-  ...items.filter((i) => i.status === 'manual').map((i) => `- [ ] ${i.title}${i.detail ? ` — ${i.detail}` : ''}`),
+  ...items.filter((i) => i.status === 'manual').map((i) => `- [${release.approved ? 'x' : ' '}] ${i.title}${i.detail ? ` — ${i.detail}` : ''}`),
   '',
   `Подробности: out/${id}/qa-report.md, pace.md${judge && !judge.skipped ? ', judge-report.md' : ''}, release.json.`,
 ];

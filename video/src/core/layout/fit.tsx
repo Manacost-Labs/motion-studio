@@ -31,9 +31,10 @@ const isReady = (family: string, weight: number | undefined, text: string) => {
 const waitFont = async (family: string, weight: number | undefined, text: string) => {
   const set = fonts();
   if (!set) return;
+  // qa:nondeterministic-ok — часы только для тайм-аута ожидания шрифта до continueRender, кадр по ним не рисуется
   const t0 = Date.now();
   while (!isReady(family, weight, text)) {
-    if (Date.now() - t0 > WAIT_MS) {
+    if (Date.now() - t0 > WAIT_MS) { // qa:nondeterministic-ok — тот же тайм-аут ожидания шрифта
       console.warn(`useFitSize: шрифт «${family}» не загрузился за ${WAIT_MS / 1000} с — кегль подогнан по запасному`);
       return;
     }

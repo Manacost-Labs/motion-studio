@@ -19,17 +19,18 @@
 
 | Команда | Что делает | Область | Тратит |
 |---|---|---|---|
-| `node scripts/check-layers.mjs [--strict \| --quiet \| --test]` | правила импортов слоёв; `--strict` — код 1 при новых нарушениях; `--test` — самопроверка разбора импортов (комментарии, строки) | общий | — |
+| `node scripts/check-layers.mjs [--strict \| --quiet \| --test]` | правила импортов слоёв и детерминизм кадра (`Math.random(`, `Date.now(`, `new Date(`, `performance.now(` в `src/` без пометки `qa:nondeterministic-ok`); `--strict` — код 1 при новых нарушениях; `--test` — самопроверка разбора импортов и вызовов (комментарии, строки) | общий | — |
+| `npm test` | модульные тесты (vitest): чистая логика `src/core` и `scripts`, секунды; pre-commit и CI | общий | — |
 | `node scripts/doc-check.mjs` | пути и команды в документах и навыках | общий | — |
 | `node scripts/doctor.mjs` | окружение: ffmpeg, yt-dlp, Chrome, `.venv-vo`, ключи «есть/нет» | общий | — |
-| `node scripts/credits.mjs [--need N]` | остаток ElevenLabs и Higgsfield — перед любой тратой | общий | сеть |
+| `node scripts/credits.mjs [--need N]` | остаток ElevenLabs, Higgsfield и OpenRouter — перед любой тратой | общий | сеть |
 | `node scripts/yt-qa.mjs <id> [--no-video] [--video <файл>] [--allow-todo]` | данные, файлы, произношение, право (`legal` бренда: `forbidden` — в названии канала, `forbiddenInVideo` — в названии и тегах ролика, `forbiddenInTags` — товарные знаки в тегах и хэштегах), видео → `out/<id>/qa-report.md`; `--allow-todo` — «не заполнено (TODO)» не дают кода 1 (черновик) | YouTube | — |
-| `node scripts/yt-lint.mjs <id> [сцена…]` | раскладка надписей → `out/<id>/lint-report.md`, код 1 при находках; читаемость на телефоне (кегль, контраст) — раздел «Читаемость», только ⚠ | YouTube | — |
+| `node scripts/yt-lint.mjs <id> [сцена…] [--no-read]` | раскладка надписей → `out/<id>/lint-report.md`, код 1 при находках; читаемость на телефоне (кегль, контраст) — раздел «Читаемость», время на экране — «Время чтения», оба только ⚠ (`--no-read` — без прохода времени чтения) | YouTube | — |
 | `node scripts/yt-board.mjs <id> [сцена…] [--at …] [--frames …]` | кадры сцен и листы `out/<id>/board/` | YouTube | — |
 | `node scripts/yt-golden.mjs <id> [--dir qa/golden-joints] [--approve]` | эталоны сцен и стыков | YouTube | — |
 | `node scripts/yt-snap.mjs <префикс> [id…]` | слепок данных композиций (sha1) — «рефакторинг ничего не изменил» | YouTube | — |
-| `node scripts/judge.mjs <id> [--checks …] [--scenes …] [--backend …] [--strict] [--dry]` | смысловой судья → `out/<id>/judge.json` (нужен `release.mjs`) | YouTube | `jev`, `claude` — сеть и ключ |
-| `node scripts/release.mjs <id> [--no-golden] [--no-video]` | проверка перед выпуском → `out/<id>/release.md`, `out/<id>/release.json` | YouTube | — |
+| `node scripts/judge.mjs <id> [--checks …] [--scenes …] [--backend …] [--strict] [--dry] [--yes]` | смысловой судья → `out/<id>/judge.json` (нужен `release.mjs`); `--visual` — визуальный критик кадров → `out/<id>/judge-visual.md` (⚠) | YouTube | `jev`, `openrouter` (смета, отправка с `--yes`), `claude` — сеть и ключ |
+| `node scripts/release.mjs <id> [--no-golden] [--no-video] [--approved]` | проверка перед выпуском → `out/<id>/release.md`, `out/<id>/release.json`; без ❌ — «Технически готово — ждёт человека»; `--approved` — только по слову пользователя после ручных пунктов | YouTube | — |
 | `node scripts/yt-thumb.mjs <id>` | лист читаемости вариантов обложки в малых размерах | YouTube | — |
 | `node scripts/yt-metrics.mjs <id> <csv>` | удержание из YouTube Studio по сценам | YouTube | — |
 | `node scripts/check-ads.mjs [папка] [--update <папка>]` | сверка закреплённой рекламы с эталоном | реклама | — |
@@ -54,7 +55,7 @@
 | `node scripts/eyes.mjs look \| scenes \| search <…>` | разбор чужого ролика, планы, быстрый поиск | общий | сеть |
 | `node scripts/eyes.mjs find "<запрос>"` | геймплей с авторами и правами; Twitch — категория Hearthstone | YouTube: общий, Twitch: Hearthstone | сеть |
 | `node scripts/eyes.mjs cut <…> --name <имя> [--own \| --permission …]` | кусок в `public/clips/` + паспорт | общий | сеть |
-| `node scripts/rec.mjs` · `rec.mjs take <клип> --name <имя>` | свои записи OBS → клипы → в ролик | Hearthstone | — |
+| `node scripts/rec.mjs` · `rec.mjs take <клип> --name <имя> [--tight]` · `rec.mjs idle <запись>` | свои записи OBS → клипы → в ролик; простой по движению (auto-editor, подсказки) | Hearthstone | — |
 | `.venv-vo/Scripts/python.exe scripts/depth.py <арт.jpg>` | карта глубины для `DepthArt` | общий | — |
 
 ## Только Hearthstone (YouTube Манакоста)
@@ -83,13 +84,14 @@
 | `node scripts/capture.mjs <имя>` · `capture-auth.mjs a-<имя>` | съёмка страниц сайта в 2x (закрытые — со входом пользователя) | сеть |
 | `.\scripts\crop-ui.ps1 <файл.png>` | вырезка блоков интерфейса в `public/ui` | — |
 | `node scripts/plates.mjs [h]` | стартовые кадры для живых фонов | — |
+| `node scripts/imagegen.mjs "<промпт>" --out <файл.png> [--ref <картинка>] [--aspect 3:2\|2:3\|1:1]` | статичная картинка через imagegen в Codex CLI (подписка ChatGPT, ~1,5 мин на картинку); в `public/lib/` сам пишет `manifest.json`. Основной путь для статики с 10.10.2026; интерфейс и текст не генерировать | лимит подписки |
 | `.\scripts\gen-live.ps1` · `gen-audio.ps1` · `node scripts/gen-library.mjs` | генерация в Higgsfield | ₽ |
 | `.\scripts\library-sheets.ps1` | листы превью библиотеки | — |
 | `prep-assets.ps1` | **не запускать**: рецепт первичной сборки, перезапишет `public/ui` закреплённой рекламы | — |
 
 ## Хуки (не переносить)
 
-- `scripts/hooks/pre-commit` — типы, слои (`check-layers --strict`), `yt-qa` YouTube-роликов (ролик из коммита — полностью; при правке общего кода — все ролики, черновики с `--allow-todo`), `check-ads`; подключён `git config core.hooksPath video/scripts/hooks`.
+- `scripts/hooks/pre-commit` — типы, модульные тесты (`vitest run`), слои и детерминизм (`check-layers --strict`), `yt-qa` YouTube-роликов (ролик из коммита — полностью; при правке общего кода — все ролики, черновики с `--allow-todo`), `check-ads`; подключён `git config core.hooksPath video/scripts/hooks`.
 - `scripts/hooks/stop-typecheck.mjs` — хук Claude Code «Stop» (`.claude/settings.json`): не даёт закончить ход с ошибками типов и новыми нарушениями слоёв.
 
 ## Общие модули скриптов (`scripts/lib/`)

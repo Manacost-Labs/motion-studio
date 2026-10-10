@@ -59,13 +59,14 @@ npm run studio:youtube
 | Что | Команда (из `video/`) |
 |---|---|
 | типы | `npx tsc --noEmit -p .` |
-| слои импортов | `node scripts/check-layers.mjs --strict` |
+| слои импортов и детерминизм кадра | `node scripts/check-layers.mjs --strict` |
 | ссылки в документах | `node scripts/doc-check.mjs --strict` |
+| модульные тесты (чистая логика, секунды) | `npm test` |
 | закреплённая реклама не изменилась | `node scripts/check-ads.mjs` |
 | эталонные кадры ролика | `node scripts/yt-golden.mjs <id>` |
 | ролик перед выпуском | `node scripts/yt-qa.mjs <id>` |
 
-Хук перед коммитом запускает нужные из них сам: `git config core.hooksPath video/scripts/hooks`.
+Хук перед коммитом запускает нужные из них сам: `git config core.hooksPath video/scripts/hooks`. На каждый push и pull request GitHub Actions (`.github/workflows/ci.yml`) прогоняет типы, слои, ссылки и тесты на чистой машине — без рендера.
 
 ## Новое направление
 

@@ -12,7 +12,7 @@
 | `motion.tsx` | перелистывание страницы на стыке: `OVL` (кадров перекрытия), `SceneMotion`, `useSceneMotion`, `SceneBody` (тело сцены — «страница»), `PageLayer` (перелистывание внутри сцены) |
 | `look.tsx` | `compendium` — стиль для движка `core/video/VoicedVideo.tsx`: фон, переход, субтитры, виньетка и зерно, шелест страницы на стыке |
 | `types.ts` | сегменты сцен стиля (`Base`, `IntroSeg`, `PointsSeg<Side>`, `ImageSeg`, `OutroSeg`, `DividerSeg`) и контекст канала: `CompendiumBrand` (name, site, logo, defaultMural, sealRing, leaderLabel), `RankCtx`, `CompendiumCtx` |
-| `parts/` | `Page`, `WoodRule`, `HeaderBand` (шапка из сукна, место прокручивается), `MainPoints` (раздел «Главное»), `Mural` (персонаж), `Words` (слова из-под маски), `Subtitles`, `InkCircle` (пометка пером), `WaxSeal` (сургучная печать, надпись по кругу — `ring`), `RankReveal` (заставка места, пометка №1 — `leaderLabel`), `RecapBoard` (итоговая таблица из строк `RecapRow`), `Vignette` |
+| `parts/` | `Page`, `WoodRule`, `HeaderBand` (шапка из сукна, место прокручивается), `MainPoints` (раздел «Главное»), `Mural` (персонаж), `Words` (слова из-под маски), `Subtitles`, `InkCircle` (пометка пером), `WaxSeal` (сургучная печать, надпись по кругу — `ring`), `RankReveal` (заставка места, пометка №1 — `leaderLabel`), `RecapBoard` (итоговая таблица из строк `RecapRow`), `Vignette`, `DeckDeal` (раздача из колоды: разгон, дуга, посадка, тень с запаздыванием; проба — `yt-deal-lab`) |
 | `scenes/` | `intro`, `outro` (+ `recapTurn`), `points` (+ `pointsScene(Aside)` — сторона игры справа), `image`, `divider` (+ `DIVIDER`); у каждой — компонент и `defineScene` |
 | `showcase/` | витрина приёмов стиля (ссылка: сама витрина собрана на данных Hearthstone и лежит в студии) |
 

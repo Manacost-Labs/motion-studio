@@ -10,6 +10,7 @@
 - Видео-витрина: композиции `Library-Showcase` (9:16) и `Library-Showcase-16x9` в студии рекламы (`npm run studio:ads`)
 - Листы превью пересобираются скриптом `scripts/library-sheets.ps1`
 - Догенерировать недостающее или расширить библиотеку: дописать в `scripts/gen-library.mjs` и запустить `node scripts/gen-library.mjs` (готовые файлы пропускаются)
+- Отдельная статичная картинка (с 10.10.2026 — основной путь вместо GPT Image в Higgsfield): `node scripts/imagegen.mjs "<промпт>" --out public/lib/<категория>/<имя>.png` — imagegen в Codex CLI по подписке ChatGPT; запись в `manifest.json` скрипт делает сам
 
 ## Живые фоны (9:16, 1080p, 30 fps, цикл 136 кадров ≈ 4,5 с без шва)
 

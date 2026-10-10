@@ -1,5 +1,7 @@
 // Стиль «Газета» для движка ролика под голос (core/video/registry.ts → VoicedLook): бумага, смена полос, субтитры наборным
-// шрифтом под линейкой. Переход — новая полоса ложится поверх: выезжает снизу с тенью, прежняя чуть темнеет (без поворотов и тряски)
+// шрифтом под линейкой. Смена полос — на выбор (gazetteLook(change)):
+// · 'sheet' (по умолчанию, `gazette`) — новая полоса ложится поверх: выезжает снизу с тенью, прежняя чуть темнеет (без поворотов и тряски);
+// · 'ink' — новая полоса проступает пятном с неровным краем растёкшейся краски, край — тонкой линией (./ink.tsx), без звука стыка
 import React from 'react';
 import {AbsoluteFill, interpolate} from 'remotion';
 import {useFrame} from '../../core/time/fps';
@@ -7,6 +9,7 @@ import {clamp, EASE_IN_OUT, ramp} from '../../core/time/ease';
 import type {FrameProps, VoicedLook} from '../../core/video/registry';
 import type {Sub} from '../../core/voice/timing';
 import {G, TEXT} from './theme';
+import {INK_DUR, InkBleed} from './ink';
 
 const OVERLAP = 18;
 
@@ -24,6 +27,26 @@ const Frame: React.FC<FrameProps> = ({dur, first, last, children}) => {
   );
 };
 
+// Точки падения капли по номеру сцены (доли кадра): переходы ролика не повторяют друг друга
+const INK_DROPS: [number, number][] = [
+  [0.34, 0.42],
+  [0.66, 0.5],
+  [0.42, 0.62],
+  [0.58, 0.36],
+];
+
+// Смена пятном: прежняя полоса стоит как есть, новая проступает поверх неё за INK_DUR кадров
+const InkFrame: React.FC<FrameProps> = ({i, first, children}) => {
+  const page = <AbsoluteFill style={{background: G.paper}}>{children}</AbsoluteFill>;
+  if (first) return page;
+  const [x, y] = INK_DROPS[i % INK_DROPS.length];
+  return (
+    <InkBleed at={0} x={x} y={y} seed={i}>
+      {page}
+    </InkBleed>
+  );
+};
+
 const Subtitles: React.FC<{subs: Sub[]; cx: number; bottom: number; maxW: number}> = ({subs, cx, bottom, maxW}) => {
   const f = useFrame();
   const cue = subs.find((s) => f >= s.from && f < s.to);
@@ -38,11 +61,11 @@ const Subtitles: React.FC<{subs: Sub[]; cx: number; bottom: number; maxW: number
   );
 };
 
-export const gazette: VoicedLook = {
-  Backdrop,
-  Frame,
-  Subtitles,
-  subtitles: {cx: 960, maxW: 1560, bottom: 96},
-  overlap: OVERLAP,
-  cut: {file: 'lib/sfx/page-turn.wav', volume: 0.2, before: 4},
-};
+export type PageChange = 'sheet' | 'ink';
+
+export const gazetteLook = (change: PageChange = 'sheet'): VoicedLook =>
+  change === 'ink'
+    ? {Backdrop, Frame: InkFrame, Subtitles, subtitles: {cx: 960, maxW: 1560, bottom: 96}, overlap: INK_DUR}
+    : {Backdrop, Frame, Subtitles, subtitles: {cx: 960, maxW: 1560, bottom: 96}, overlap: OVERLAP, cut: {file: 'lib/sfx/page-turn.wav', volume: 0.2, before: 4}};
+
+export const gazette: VoicedLook = gazetteLook();

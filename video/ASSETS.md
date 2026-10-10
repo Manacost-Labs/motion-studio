@@ -48,8 +48,19 @@
 
 - **Шрифты Google Fonts** подключаются пакетом `@remotion/google-fonts` при рендере и в репозитории не лежат: Alegreya, Alegreya SC, Caveat, Cormorant Garamond, IBM Plex Sans и Mono, Inter, Oswald, PT Serif, Playfair Display — SIL Open Font License.
 - **Данные игр:** база карт HearthstoneJSON (ruRU) — содержание © Blizzard Entertainment; имена и id League of Legends (`src/games/lol/data/champions.ts`, `ids.ts`) — из Data Dragon, © Riot Games; мета-статистика — свой API Колоды (ключ только в `.env`).
-- **Remotion** — своя лицензия: бесплатно для частных лиц и компаний до трёх сотрудников, компании больше — нужна Company License (https://remotion.dev/license).
+- **Remotion** — своя лицензия: бесплатно для частных лиц и компаний до трёх сотрудников, компании больше — нужна Company License (https://remotion.dev/license). Студия — не фирма (ответ владельца 10.10.2026): действует бесплатная лицензия.
 - **Python-пакеты** — `requirements.txt`, открытые лицензии. Модель глубины — только Depth Anything V2 Small (Apache 2.0): веса Base и Large — некоммерческие.
+
+## Заимствованный код
+
+Приёмы движения переписаны по мотивам открытого репозитория [Vincentwei1021/video-shotcraft](https://github.com/Vincentwei1021/video-shotcraft) (Apache License 2.0, файла NOTICE нет; сверено 10.10.2026). Код не скопирован, а переписан на наши помощники; в шапке каждого файла — «по мотивам … (Apache-2.0)» и путь исходника. Звуки, свечения, глитч, засветки, вспышки и тряску оттуда не брали.
+
+| Наш файл | Исходник в video-shotcraft |
+|---|---|
+| `src/core/time/motion.ts` (`lagged`) | `assets/lib/helpers/motion.ts` |
+| `src/looks/gazette/marker.tsx` | `demos/typography/marker-underline-title/MarkerUnderlineTitle.tsx` |
+| `src/looks/gazette/ink.tsx` | `demos/transition/print-texture-transitions/InkBleedReveal.tsx` |
+| `src/looks/compendium/parts/deal.tsx` | `demos/ui-entrance/deck-deal-flyin/DeckDealFlyin.tsx` |
 
 ## Лицензия репозитория
 
@@ -59,7 +70,7 @@
 
 - Новая папка ассетов или новый источник — строка в таблицу «По папкам».
 - Новый клип — паспорт `<клип>.json` рядом с ним (`scripts/eyes.mjs` и `scripts/rec.mjs` пишут его сами); у своей записи OBS (`scripts/rec.mjs`) автор в паспорте — «Манакост».
-- Новая генерация библиотеки — промпт и модель в `public/lib/manifest.json` (`scripts/gen-library.mjs` дописывает сам).
+- Новая генерация библиотеки — промпт и модель в `public/lib/manifest.json` (`scripts/gen-library.mjs` и `scripts/imagegen.mjs` дописывают сами). Картинка imagegen (Codex CLI, подписка ChatGPT) вне `public/lib/` — строка в таблицу «По папкам».
 
 ## Уточнить у владельца
 
@@ -67,4 +78,3 @@
 2. Происхождение персонажей `исходники/персонажи/` без «ChatGPT» и «grok» в имени (`mage.png`, `priest.png`, `rogue.png`, `warrior.png`, `warlock.png` и др.) и чей арт у Элизы и Теотара.
 3. Откуда иконки классов `public/brand/arena/class_icon/`.
 4. Условия api.blizzcore.ru для постеров колод.
-5. Сколько сотрудников у фирмы: от четырёх — нужна Company License Remotion.

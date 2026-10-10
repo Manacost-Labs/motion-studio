@@ -17,6 +17,7 @@ export const KEYS = {
   TWITCH_CLIENT_SECRET: 'поиск клипов по категории Twitch (eyes.mjs find --twitch)',
   TYPESAFE_API_KEY: 'смысловые проверки judge.mjs --backend jev (платно, текст уходит в США), не обязателен',
   ANTHROPIC_API_KEY: 'смысловые проверки judge.mjs --backend claude (платно), не обязателен',
+  OPENROUTER_API_KEY: 'судьи judge.mjs --backend openrouter и --visual (Jev, Clef; платно, только после сметы) и остаток в credits.mjs',
   CHROME_PATH: 'браузер для рендера, если не стандартный путь Chrome (lib/remotion.mjs)',
 };
 

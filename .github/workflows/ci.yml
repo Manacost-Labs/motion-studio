@@ -1,0 +1,42 @@
+# CI студии: те же ворота, что pre-commit и Stop-хук, но на чистой машине — типы (src и скрипты), слои импортов и детерминизм
+# кадра, ссылки в документах и навыках, модульные тесты. Без рендера: ему нужны Chrome, ffmpeg и гигабайты ассетов
+# (yt-qa, yt-golden, check-ads — локально). Порядок ворот — video/STUDIO.md, «Ворота качества».
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: video
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+      - run: npm ci
+      - name: Типы src
+        run: npx tsc --noEmit -p .
+      - name: Типы скриптов
+        run: npx tsc --noEmit -p tsconfig.scripts.json
+      - name: Слои импортов и детерминизм кадра
+        run: node scripts/check-layers.mjs --strict
+      # документы называют video/.env (ключи — только локально, в git его нет): на машине CI — пустой из образца, без ключей
+      - name: Ссылки в документах и навыках
+        run: |
+          cp .env.example .env
+          node scripts/doc-check.mjs --strict
+      - name: Модульные тесты
+        run: npm test

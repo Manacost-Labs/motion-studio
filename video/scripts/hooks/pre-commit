@@ -1,6 +1,6 @@
 #!/bin/sh
 # Git-хук перед коммитом (подключён: git config core.hooksPath video/scripts/hooks).
-# Сломанное в git не попадает: типы, слои импортов (scripts/check-layers.mjs --strict), автопроверка данных YouTube-роликов (если менялись
+# Сломанное в git не попадает: типы, модульные тесты (vitest), слои импортов и детерминизм кадра (scripts/check-layers.mjs --strict), автопроверка данных YouTube-роликов (если менялись
 # их студии, общие слои src/core, looks, games, brands, голос, статьи, ассеты Hearthstone или паспорта клипов), сверка закреплённых роликов (если менялись бренд HearthPulse,
 # студии рекламы, их ассеты в public/ или сама проверка). Список студий — из src/studios/studios.json.
 # Пропускать хук (--no-verify) — только по прямой просьбе пользователя.
@@ -12,8 +12,13 @@ cd "$top/video" || exit 1
 echo "pre-commit: проверка типов…"
 npx tsc --noEmit -p . || { echo "✗ ошибки типов — коммит остановлен"; exit 1; }
 
-# слои импортов: новое нарушение правил слоёв (core, looks, games, brands, studios) останавливает коммит
-node scripts/check-layers.mjs --strict --quiet || { echo "✗ нарушены слои импортов — коммит остановлен (правила — scripts/check-layers.mjs)"; exit 1; }
+# модульные тесты чистой логики (vitest: src/core/**/*.test.ts, scripts/**/*.test.ts) — секунды, без рендера
+echo "pre-commit: модульные тесты…"
+npx vitest run --silent > /dev/null 2>&1 || { echo "✗ модульные тесты упали — коммит остановлен (подробно: npm test)"; exit 1; }
+
+# слои импортов и детерминизм кадра: новое нарушение (импорт против слоёв core, looks, games, brands, studios; Math.random,
+# Date.now, new Date, performance.now в src/ без пометки qa:nondeterministic-ok) останавливает коммит
+node scripts/check-layers.mjs --strict --quiet || { echo "✗ нарушены слои импортов или детерминизм кадра — коммит остановлен (правила — scripts/check-layers.mjs)"; exit 1; }
 
 # студии YouTube из реестра: их папки и ролики
 ytdirs=$(node scripts/studios.mjs dirs youtube) || { echo "✗ реестр студий не читается (src/studios/studios.json)"; exit 1; }

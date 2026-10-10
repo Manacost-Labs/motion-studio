@@ -26,7 +26,7 @@ description: Направление «YouTube по League of Legends» моуш�
 | Игра: id, имена, словарь | `src/games/lol/data/{ids.ts, champions.ts, pronounce.json}` (ids и champions СГЕНЕРИРОВАНЫ) |
 | Загрузчики | `scripts/games/lol/lol-data.mjs` (Data Dragon + осколки рун из CommunityDragon, `--check`), `lol-assets.mjs` (картинки по запросу), `lol-lib.mjs` (`ddToPublic`, `publicToDd`) |
 | Бренд канала | `src/brands/lol-channel/channel.ts` — имя, ссылки, финал TODO; `legal` заполнен, кроме дословной оговорки |
-| Стиль | `src/looks/gazette/` — «Газета»: theme.ts (краски, шрифты), parts.tsx (шапка, линейки, штамп, фото, строка «было → стало»), look.tsx (бумага, смена полос, субтитры) |
+| Стиль | `src/looks/gazette/` — «Газета»: theme.ts (краски, шрифты), parts.tsx (шапка, линейки, штамп, фото, строка «было → стало»), marker.tsx (маркер под строкой — одна пометка на полосе), ink.tsx (смена полос кляксой), look.tsx (бумага, смена полос — `gazetteLook('sheet' | 'ink')`, субтитры); проба приёмов — композиция `lol-motion-lab` (`src/studios/lol-youtube/MotionLab.tsx`) |
 
 ## Ждёт решений пользователя
 

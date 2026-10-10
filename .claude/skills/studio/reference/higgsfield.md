@@ -7,6 +7,7 @@
 - Стартовые кадры — композиции `plate-*` (`node scripts/plates.mjs` — вертикаль в `public/plates`, `plates.mjs h` — горизонталь в `public/plates-h`).
 - Оживление — `.\scripts\gen-live.ps1` (Seedance 2.5, `omni_reference`, 1080p) → `public/live`, `public/live-h`; `-Resume "<имя>=<job_id>;…"` — только дождаться уже отправленных заданий.
 - Музыка и звуки — `.\scripts\gen-audio.ps1`; библиотека — `node scripts/gen-library.mjs` (готовые файлы пропускаются, описание — `public/lib/manifest.json`).
+- Статичные картинки с 10.10.2026 — не здесь, а `node scripts/imagegen.mjs` (imagegen в Codex CLI по подписке ChatGPT); Higgsfield — для видео (Seedance) и звука.
 
 ## Особенности (выяснено 28.09.2026 на аккаунте пользователя)
 

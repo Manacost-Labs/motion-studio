@@ -16,7 +16,11 @@ export const G = {
   ink: '#151515',
   grey: '#4D4B47',
   red: '#B3222A',
+  // охра текстовыделителя (marker.tsx): кладётся под текст полупрозрачно (MARKER_ALPHA) — на бумаге выходит ≈ #EACE91,
+  // чёрная краска на ней 12:1
+  marker: '#E2AE3C',
 };
+export const MARKER_ALPHA = 0.5;
 
 // Вердикт строки и штампа: усилен — чёрной краской, ослаблен — красной, изменён — серой
 export type Verdict = 'buff' | 'nerf' | 'adjust';

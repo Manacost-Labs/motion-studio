@@ -2,9 +2,10 @@
 //   node scripts/doctor.mjs
 // ✓ — есть, ✗ — нет и без этого не работает рендер или проверки, ⚠ — нет, но нужно только части команд.
 // Ключи video/.env — только «есть / нет», значения не печатаются.
-//   node scripts/doctor.mjs --clean-bundles — единственное, что меняет диск: удаляет из %TEMP% только папки
-//   remotion-webpack-bundle-* старше суток (копии public/ по ~0,7 ГБ от прошлых сборок) и только если не идёт ни один
-//   рендер — нет процессов Remotion (node с remotion в командной строке, compositor remotion.exe, Chrome рендера).
+//   node scripts/doctor.mjs --clean-bundles — единственное, что меняет диск: удаляет из %TEMP% только папки старше суток —
+//   remotion-webpack-bundle-* (копии public/ по ~0,7 ГБ от прошлых сборок), remotion-v*-assets* (загрузки рендеров) и
+//   puppeteer_dev_chrome_profile-* (профили Chrome рендера) — и только если не идёт ни один рендер — нет процессов
+//   Remotion (node с remotion в командной строке, compositor remotion.exe, Chrome рендера).
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -16,14 +17,17 @@ import {STUDIOS, entryPoint} from './lib/studios.mjs';
 
 process.chdir(VIDEO);
 
-// Старые сборки Remotion в TEMP: bundle() кладёт туда копию public/ и не убирает её (bundleStudio убирает при выходе,
-// но прерванные и прежние запуски оставляют). Старше суток — точно не идущий рендер
+// Остатки Remotion в TEMP: bundle() кладёт туда копию public/ и не убирает её (bundleStudio убирает при выходе,
+// но прерванные и прежние запуски оставляют); каждый renderStill/selectComposition без puppeteerInstance заводит свой
+// профиль Chrome и папку загрузок, а прерванный запуск (и Chrome, держащий файлы на Windows) их не убирает.
+// Старше суток — точно не идущий рендер
 const DAY = 24 * 3600 * 1000;
 const tmp = os.tmpdir();
-const oldBundles = () =>
+const LEFTOVER = /^(remotion-webpack-bundle-|remotion-v\d+\.\d+\.\d+-assets|puppeteer_dev_chrome_profile-)/;
+const oldLeftovers = () =>
   fs
     .readdirSync(tmp, {withFileTypes: true})
-    .filter((d) => d.isDirectory() && d.name.startsWith('remotion-webpack-bundle-'))
+    .filter((d) => d.isDirectory() && LEFTOVER.test(d.name))
     .map((d) => path.join(tmp, d.name))
     .filter((f) => {
       try {
@@ -71,9 +75,9 @@ if (process.argv.includes('--clean-bundles')) {
     console.error('Дождитесь окончания (или закройте студию Remotion) и запустите снова.');
     process.exit(1);
   }
-  const dirs = oldBundles();
+  const dirs = oldLeftovers();
   const before = freeGbIn(tmp);
-  console.log(`Сборок remotion-webpack-bundle-* старше суток в ${tmp}: ${dirs.length}${dirs.length ? ' — удаляю…' : ''}`);
+  console.log(`Остатков Remotion и Chrome рендера старше суток в ${tmp}: ${dirs.length}${dirs.length ? ' — удаляю…' : ''}`);
   const failed = [];
   dirs.forEach((f, i) => {
     try {
@@ -118,10 +122,16 @@ if (fs.existsSync(CHROME)) {
 } else add('✗', 'Chrome', `нет ${CHROME} — рендер и проверки не запустятся (другой путь — переменная CHROME_PATH)`);
 // Место: каждая сборка Remotion копирует public/ (~0,7 ГБ) в TEMP; при 0 байт рендер и проверки падают с ENOSPC
 const freeGb = freeGbIn(tmp);
-const stale = oldBundles().length;
-add(freeGb < 5 ? '✗' : freeGb < 30 ? '⚠' : '✓', 'место на диске', `${freeGb.toFixed(1)} ГБ свободно в ${tmp}${stale ? ` · сборок Remotion старше суток там: ${stale} (remotion-webpack-bundle-*)${stale > 10 ? ' — удалить, когда рендер не идёт: node scripts/doctor.mjs --clean-bundles' : ''}` : ''}`);
+const stale = oldLeftovers().length;
+add(freeGb < 5 ? '✗' : freeGb < 30 ? '⚠' : '✓', 'место на диске', `${freeGb.toFixed(1)} ГБ свободно в ${tmp}${stale ? ` · остатков Remotion старше суток там: ${stale} (сборки, загрузки, профили Chrome)${stale > 10 ? ' — удалить, когда рендер не идёт: node scripts/doctor.mjs --clean-bundles' : ''}` : ''}`);
 const hf = spawnSync('where', ['higgsfield'], {encoding: 'utf8'});
 add(hf.status === 0 ? '✓' : '⚠', 'Higgsfield CLI', hf.status === 0 ? hf.stdout.trim().split(/\r?\n/)[0] : 'нет в PATH — нужен только генерации (gen-*.ps1, credits.mjs)');
+// auto-editor — движение в кадре для rec.mjs idle и take --tight; бинарник релиза GitHub в tools/ (на PyPI нет 31.x).
+// Версия закреплена: вывод levels и синтаксис --edit менялись между версиями
+const AE_VERSION = '31.7.2';
+const aeLocal = path.resolve('tools/auto-editor/auto-editor.exe');
+const ae = ver(fs.existsSync(aeLocal) ? aeLocal : 'auto-editor', ['--version']);
+add(ae === AE_VERSION ? '✓' : '⚠', 'auto-editor', ae ? `${ae}${fs.existsSync(aeLocal) ? ' · tools/auto-editor' : ' (PATH)'}${ae === AE_VERSION ? '' : ` — проверен ${AE_VERSION}, levels --edit motion мог измениться`}` : `нет — нужен только rec.mjs idle и take --tight: ${AE_VERSION} с GitHub (recordings/README.md)`);
 
 // Python-окружение .venv-vo (голос, «уши», «глаза», глубина) — по requirements.txt
 const py = path.resolve('.venv-vo/Scripts/python.exe');

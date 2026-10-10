@@ -24,7 +24,7 @@
 ## Нельзя без слова пользователя
 
 - **Коммит:** готовый этап — *предложить* коммит; коммит, тег `freeze-<дата>`, push — только по слову пользователя (как в глобальных правилах).
-- **Кредиты** (ElevenLabs, Higgsfield, TypeSafe) — только после сметы (`node scripts/credits.mjs`) и «да».
+- **Кредиты** (ElevenLabs, Higgsfield, TypeSafe, OpenRouter) — только после сметы (`node scripts/credits.mjs`; у `judge.mjs` — запуск без `--yes`) и «да». Картинки `scripts/imagegen.mjs` (Codex CLI) — по подписке ChatGPT, без поштучной оплаты.
 - **Эталоны** (`yt-golden.mjs --approve`, `check-ads.mjs --update`) — только после «да» на фрагменте.
 - **Закреплённые ролики** (`hp-ads/launch30`, `hp-ads/library-showcase`, `hp-features/feature-matchups`) не правим; после правок в `video/src/hearthpulse` — `node scripts/check-ads.mjs`.
 - `video/.env` не выводить, ключи не передавать в аргументах и логах.

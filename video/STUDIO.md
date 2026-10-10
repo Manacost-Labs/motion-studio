@@ -32,7 +32,7 @@
 ```
 src/
   core/                    движок «ролик под голос» без игры, стиля и бренда — src/core/README.md
-    time/                  fps.ts (BASE_FPS = 30, useK, useFrame), ease.ts (EASE, clamp, ramp)
+    time/                  fps.ts (BASE_FPS = 30, useK, useFrame), ease.ts (EASE, clamp, ramp), motion.ts (lagged)
     voice/                 timing.ts (CPS, stripTags, anchorFrame, timeAt, субтитры), calc.ts (calcVoiced; паузы LEAD, TAIL, MIN)
     audio/                 Music.tsx (приглушение под речь), Ambience.tsx, Sfx.tsx
     video/                 types.ts (BaseSeg, VoicedConfig), registry.ts (SceneDef, defineChannel, ConfigOf), VoicedVideo.tsx, compositions.tsx
@@ -41,7 +41,7 @@ src/
     qa/                    lint.tsx (зонд yt-lint), audit.ts (qaOf — проверки yt-qa), limits.ts (VIDEO_LIMITS)
   looks/
     compendium/            стиль «Компендиум»: theme.ts, motion.tsx, look.tsx, types.ts (CompendiumCtx), parts/, scenes/ (intro, outro, points, image, divider), showcase/README.md — src/looks/compendium/README.md
-    gazette/               стиль «Газета» (LoL, выбран для фрагмента 04.10): theme.ts, parts.tsx, look.tsx
+    gazette/               стиль «Газета» (LoL, выбран для фрагмента 04.10): theme.ts, parts.tsx, marker.tsx (маркер), ink.tsx (смена полос кляксой), look.tsx (gazetteLook)
   games/
     hearthstone/           GAME.md; data/ (классы, картинки, постеры, камера, места, статья, проверки, словарь), scenes/ (hook, deck, cards, mulligan, matchups, points, thumb + parts/), fixtures/ (образец статьи, стенд постеров)
     lol/                   GAME.md; data/ (ids.ts и champions.ts — генерирует загрузчик scripts/games/lol/, словарь pronounce.json); сцен нет до выбора стиль-кадра
@@ -82,7 +82,7 @@ src/
 | `hearthpulse` | только пакеты (remotion, react) | всё; импортируют его только студии бренда hearthpulse (`hp-ads`, `hp-features`) |
 
 - Импорты только относительные (`../../core/video/registry`). Алиасы `paths` в tsconfig запрещены: tsc их примет, а webpack Remotion и вызовы `bundle()` — нет.
-- Проверка: `node scripts/check-layers.mjs` — отчёт; `--strict` — код 1 при новых нарушениях (известных сейчас нет). **Блокирует:** pre-commit и Stop-хук вызывают `--strict --quiet`. Ролики рекламы (закреплены) живут по прежним правилам: правило «ролик видит только канал» касается студий с `channel.ts` в корне.
+- Проверка: `node scripts/check-layers.mjs` — отчёт; `--strict` — код 1 при новых нарушениях (известных сейчас нет). Она же ловит недетерминированный кадр (`Math.random(`, `Date.now(`, `new Date(`, `performance.now(` в `src/`; случайность — `random('ключ')` из remotion). Тесты `*.test.ts` могут брать `vitest` и `node:*`. **Блокирует:** pre-commit и Stop-хук вызывают `--strict --quiet`. Ролики рекламы (закреплены) живут по прежним правилам: правило «ролик видит только канал» касается студий с `channel.ts` в корне.
 - `channel.ts` и всё, что он тянет (сцены, стиль, игра), скрипты собирают в Node (`scripts/lib/channel.mjs` → `yt-qa`, `yt-export`, `release`). Поэтому модуль не трогает браузер при импорте: `fetch`, `document`, `loadFont` — под `typeof document !== 'undefined'` (как в `src/looks/compendium/theme.ts`).
 
 ## Реестр сцен и тип конфига
@@ -144,7 +144,7 @@ scenes: [hook, intro, deck, cards, mulligan, matchups, points, image, dividerSce
 | 5 | Голос | смета → «да» → запись → нарезка | `credits.mjs`, `ears.py`, снова `yt-qa` |
 | 6 | Фрагмент | 10–45 с черновиком (`render.ps1 -Draft -Frames`) | **«да» пользователя** |
 | 7 | Рендер | полный файл (`render.ps1`, в фоне с `-Notify`) | лог `out/<Out>.render.log`, код 0 |
-| 8 | Выпуск | `node scripts/release.mjs <id>` → `out/<id>/release.md` + `out/<id>/release.json` (нужны эталон `qa/golden/<id>/` и `judge.json`) | **ни одного ❌** |
+| 8 | Выпуск | `node scripts/release.mjs <id>` → `out/<id>/release.md` + `out/<id>/release.json` (нужны эталон `qa/golden/<id>/` и `judge.json`); без ❌ — «Технически готово — ждёт человека: N 👤»; ручные пункты пройдены с пользователем — по его слову `release.mjs <id> --approved` | **ни одного ❌ и «да» человека** (`approved` в `release.json`) |
 | 9 | Сдача | файлы пользователю, строка в реестре `src/studios/README.md`, предложить коммит | слово пользователя на коммит |
 
 Новый вид, приём или спорное решение — фрагментом до массовой правки. Долгий рендер — только после «да» на фрагменте.
@@ -154,17 +154,19 @@ scenes: [hook, intro, deck, cards, mulligan, matchups, points, image, dividerSce
 | Проверка | Что ловит | Когда | Блокирует |
 |---|---|---|---|
 | `npx tsc --noEmit -p .` | ошибки типов, чужие поля и чужой `kind` в конфиге | Stop-хук после каждого хода, pre-commit | да |
-| `node scripts/check-layers.mjs` | импорты против слоёв | Stop-хук и pre-commit (`--strict --quiet`) | да (новые нарушения) |
-| `node scripts/doc-check.mjs` | битые пути и команды в документах и навыках | после правки `*.md` и навыков | отчёт |
+| `node scripts/check-layers.mjs` | импорты против слоёв; детерминизм кадра — `Math.random(`, `Date.now(`, `new Date(`, `performance.now(` в `src/` (вне кадра по замыслу — пометка `// qa:nondeterministic-ok — <причина>` на строке или строкой выше) | Stop-хук и pre-commit (`--strict --quiet`), CI | да (новые нарушения) |
+| `node scripts/doc-check.mjs` | битые пути и команды в документах и навыках | после правки `*.md` и навыков, CI (`--strict`) | отчёт (в CI — да) |
+| `npm test` (vitest) | чистая логика: кривые и рампы, привязки и субтитры, хронометраж `calcVoiced`, реестр сцен, `studios.json`; тесты — `*.test.ts` рядом с кодом в `src/core` и `scripts` | pre-commit, CI | да |
+| CI (`.github/workflows/ci.yml`) | на чистой машине (Ubuntu, Node 24, `npm ci`): оба `tsc`, `check-layers --strict`, `doc-check --strict`, `npm test`; без рендера | каждый push и pull request | красная галочка на GitHub |
 | `node scripts/doctor.mjs` | ffmpeg, yt-dlp, Chrome, `.venv-vo`, ключи «есть/нет» | новая машина, странные сбои | — |
 | `yt-qa.mjs <id>` | данные: TODO, привязки, текст диктора, пороги `LIMITS` канала, право (`legal` бренда); видео: громкость, цвет, рывки, тишина, пробные врезки | до и после рендера, pre-commit | ❌ — да |
-| `yt-lint.mjs <id>` | текст за краем, текст на тексте, на постере; читаемость на телефоне — кегль < 24 px при 1080p, контраст < 4,5:1 (раздел «Читаемость», ⚠) | после правки сцен | код 1 (только раскладка) |
+| `yt-lint.mjs <id>` | текст за краем, текст на тексте, на постере; читаемость на телефоне — кегль < 24 px при 1080p, контраст < 4,5:1 (раздел «Читаемость», ⚠); время чтения — надпись на экране ≥ 1 с + 0,25 с за слово сверх трёх, в финальной сцене ≥ 2 с (раздел «Время чтения», ⚠) | после правки сцен | код 1 (только раскладка) |
 | `yt-golden.mjs <id>` | изменилась ли картинка сцен против `qa/golden/<id>/` | после любой правки `src/core`, `src/looks`, `src/games`, `src/brands` или канала | показывает |
 | `yt-golden.mjs <id> --dir qa/golden-joints` | кадры стыков сцен | то же | показывает |
 | `yt-snap.mjs <префикс>` | данные композиций (тайминги, конфиг) до и после рефакторинга — хэши должны совпасть | рефакторинг слоёв и канала | показывает |
 | `check-ads.mjs` | закреплённая реклама изменилась | после правок `src/hearthpulse`, pre-commit | да |
-| `judge.mjs <id>` | смысл: матч-апы, тезисы и фразы диктора против статьи; карты и обводки против текста | по запросу, перед фрагментом | только `--strict` |
-| `release.mjs <id>` | всё к выпуску: файл, LUFS, главы, srt, обложка, паспорта клипов, свежесть, TODO | перед сдачей | ❌ — не сдавать |
+| `judge.mjs <id>` | смысл: матч-апы, тезисы и фразы диктора против статьи; карты и обводки против текста; `--visual` — кадры против фразы диктора и вкуса (⚠) | по запросу, перед фрагментом | только `--strict` |
+| `release.mjs <id> [--approved]` | всё к выпуску: файл, LUFS, главы, srt, обложка, паспорта клипов, свежесть, TODO; ручные пункты 👤 — за человеком: без ❌ вердикт «Технически готово — ждёт человека», `--approved` по слову пользователя → «Готово к выпуску (одобрено человеком)» | перед сдачей | ❌ — не сдавать; без `approved` — не сдавать |
 
 Подробно о каждой команде и её флагах — `.claude/skills/studio/reference/quality.md`.
 
@@ -177,9 +179,10 @@ scenes: [hook, intro, deck, cards, mulligan, matchups, points, image, dividerSce
 
 ## Хуки
 
-- **pre-commit** (`scripts/hooks/pre-commit`, подключён `git config core.hooksPath video/scripts/hooks`): типы; слои (`check-layers --strict`); `yt-qa` роликов YouTube: ролик, чьи файлы в коммите, — целиком (TODO тоже останавливают); при правке общего кода (`src/core`, `src/looks`, `src/games`, `src/brands`, корень YouTube-студии, `studios.json`, скрипты голоса и Hearthstone, общие ассеты) — ролики, чей `config.ts` есть в git, с `--allow-todo` (чужие неотслеживаемые черновики не проверяются); `check-ads`, если менялся `src/hearthpulse`, студии рекламы или их ассеты. `--no-verify` — только по прямой просьбе пользователя.
+- **pre-commit** (`scripts/hooks/pre-commit`, подключён `git config core.hooksPath video/scripts/hooks`): типы; модульные тесты (`vitest run`); слои и детерминизм кадра (`check-layers --strict`); `yt-qa` роликов YouTube: ролик, чьи файлы в коммите, — целиком (TODO тоже останавливают); при правке общего кода (`src/core`, `src/looks`, `src/games`, `src/brands`, корень YouTube-студии, `studios.json`, скрипты голоса и Hearthstone, общие ассеты) — ролики, чей `config.ts` есть в git, с `--allow-todo` (чужие неотслеживаемые черновики не проверяются); `check-ads`, если менялся `src/hearthpulse`, студии рекламы или их ассеты. `--no-verify` — только по прямой просьбе пользователя.
 - **Stop** (`.claude/settings.json` → `scripts/hooks/stop-typecheck.mjs`): не даёт закончить ход с ошибками типов в `src` и с новыми нарушениями слоёв.
 - Сеть и платные проверки (`judge.mjs`, озвучка) в хуки не входят.
+- **CI** (`.github/workflows/ci.yml`, GitHub Actions): на каждый push и pull request — оба `tsc`, `check-layers --strict`, `doc-check --strict`, `npm test` на Ubuntu с Node 24 из чистого `npm ci`. Рендер, `yt-qa`, эталоны и `check-ads` — только локально (нужны Chrome, ffmpeg и ассеты вне git). Файлы вне git (`out/`, `recordings/`, `.env`, снимки `capture/*.png`) в CI не существуют — тесты и проверки на них не опираются.
 
 ## Именование
 

@@ -1,8 +1,8 @@
-// Правила импортов между слоями src/ (без зависимостей, по тексту файлов):
+// Правила импортов между слоями src/ и детерминизм кадра (без зависимостей, по тексту файлов):
 //   node scripts/check-layers.mjs            — отчёт: все нарушения, код выхода 0
 //   node scripts/check-layers.mjs --strict   — код 1, если есть НОВЫЕ нарушения (известные печатаются, но не блокируют)
 //   node scripts/check-layers.mjs --quiet    — печатать только новые нарушения (для хуков; пусто — всё чисто)
-//   node scripts/check-layers.mjs --test     — самопроверка разбора импортов (комментарии, строки, регулярки)
+//   node scripts/check-layers.mjs --test     — самопроверка разбора импортов и вызовов (комментарии, строки, регулярки, пометки)
 // --strict блокирует: git-хук pre-commit (коммит не пройдёт) и Stop-хук Claude Code (hooks/stop-typecheck.mjs).
 // Слои src/ (целевое дерево — video/STUDIO.md, src/studios/README.md):
 //   - src/hearthpulse (бренд рекламы) импортирует только пакеты; его импортируют только студии с brand "hearthpulse" (studios.json);
@@ -20,6 +20,13 @@
 //   - games/<игра>/fixtures (образцы данных для демо, витрин и стендов) → core и своя игра (data, fixtures);
 //     образцы берут только студии: data и scenes игры их не импортируют;
 //   - никто из них не импортирует studios/ и hearthpulse.
+// Тесты (*.test.ts рядом с кодом, npm test) могут брать пакеты vitest и node:*; правила слоёв для их относительных импортов — те же.
+// Детерминизм кадра (во всём src/, кроме тестов): Math.random(, Date.now(, new Date(, performance.now( запрещены — Remotion
+// рендерит кадры в нескольких вкладках и в любом порядке, кадр должен зависеть только от номера кадра, пропсов и файлов
+// (иначе расходятся эталоны yt-golden и check-ads). Случайность — random('ключ') из remotion, время — useCurrentFrame()/useFrame().
+// Вызов вне кадра по замыслу (ожидание шрифта) — пометка на той же строке или строкой-комментарием выше:
+//   // qa:nondeterministic-ok — <причина>
+// Известные нарушения (KNOWN) — и для импортов, и для детерминизма (to — имя вызова, например /^Date\.now\($/).
 import fs from 'node:fs';
 import path from 'node:path';
 import {VIDEO} from './lib/paths.mjs';
@@ -97,7 +104,28 @@ const importsOf = (src) => {
   return out;
 };
 
-// Самопроверка разбора импортов: node scripts/check-layers.mjs --test (код 1 — разбор сломан)
+// Недетерминированные вызовы в коде (не в комментариях и строках): {call, line}; помеченные qa:nondeterministic-ok с причиной
+// (на той же строке или строкой-комментарием выше) — в allowed
+const NONDET = /\bMath\.random\s*\(|\bDate\.now\s*\(|\bnew\s+Date\s*\(|\bperformance\.now\s*\(/g;
+const NONDET_OK = /qa:nondeterministic-ok\s*[—–-]+\s*\S/;
+const nondetOf = (src) => {
+  const masked = mask(src);
+  const lines = src.split('\n');
+  const found = [];
+  let allowed = 0;
+  for (const m of masked.matchAll(NONDET)) {
+    const line = masked.slice(0, m.index).split('\n').length;
+    const above = lines[line - 2] ?? '';
+    if (NONDET_OK.test(lines[line - 1]) || (/^\s*(\/\/|\/?\*)/.test(above) && NONDET_OK.test(above))) allowed++;
+    else found.push({call: m[0].replace(/\s+/g, ' ').replace(/\s*\($/, '('), line});
+  }
+  return {found, allowed};
+};
+const NONDET_WHY = "недетерминированный кадр: случайность — random('ключ') из remotion, время — useCurrentFrame()/useFrame(); вне кадра по замыслу — пометка «// qa:nondeterministic-ok — <причина>» на строке или строкой выше";
+const TEST_FILE = /\.test\.[cm]?[jt]sx?$/;
+const TEST_PKG = /^(vitest$|node:)/;
+
+// Самопроверка разбора импортов и поиска недетерминированных вызовов: node scripts/check-layers.mjs --test (код 1 — разбор сломан)
 if (args.includes('--test')) {
   const cases = [
     ["x(); // из '../../games/hearthstone/data' — from '../../games/x'", []],
@@ -118,7 +146,23 @@ if (args.includes('--test')) {
     if (!ok) bad++;
     console.log(`${ok ? '✓' : '✗'} ${JSON.stringify(src).slice(0, 70)} → ${JSON.stringify(got)}${ok ? '' : ` (ждали ${JSON.stringify(want)})`}`);
   }
-  console.log(bad ? `✗ разбор импортов: ${bad} из ${cases.length} не совпали` : `✓ разбор импортов: ${cases.length} случаев`);
+  // детерминизм: [текст, найденные вызовы]
+  const nd = [
+    ['const a = Math.random(); const t = Date.now ();', ['Math.random(', 'Date.now(']],
+    ["// Math.random() в комментарии\nconst s = 'new Date()'; const r = random('seed');", []],
+    ['const d = new Date(0); const p = performance.now();', ['new Date(', 'performance.now(']],
+    ['const t0 = Date.now(); // qa:nondeterministic-ok — ожидание шрифта вне кадра', []],
+    ['// qa:nondeterministic-ok — замер вне кадра\nconst t0 = Date.now();\nconst t1 = Date.now();', ['Date.now(']],
+    ['const t0 = Date.now(); // qa:nondeterministic-ok', ['Date.now(']], // без причины — не пометка
+  ];
+  for (const [src, want] of nd) {
+    const got = nondetOf(src).found.map((x) => x.call);
+    const ok = JSON.stringify(got) === JSON.stringify(want);
+    if (!ok) bad++;
+    console.log(`${ok ? '✓' : '✗'} ${JSON.stringify(src).slice(0, 70)} → ${JSON.stringify(got)}${ok ? '' : ` (ждали ${JSON.stringify(want)})`}`);
+  }
+  const total = cases.length + nd.length;
+  console.log(bad ? `✗ разбор: ${bad} из ${total} не совпали` : `✓ разбор импортов и вызовов: ${total} случаев`);
   process.exit(bad ? 1 : 0);
 }
 const SRC = path.join(VIDEO, 'src');
@@ -195,19 +239,26 @@ walk(SRC);
 
 const found = [];
 let imports = 0;
+let nondetOk = 0; // вызовов с пометкой qa:nondeterministic-ok
 const tsconfig = fs.readFileSync(path.join(VIDEO, 'tsconfig.json'), 'utf8');
 if (/"paths"\s*:/.test(tsconfig)) found.push({where: 'tsconfig.json', spec: 'compilerOptions.paths', why: 'алиасы путей запрещены: tsc их примет, а сборка Remotion и скрипты — нет'});
 for (const file of files) {
   const rel = path.relative(SRC, file).replace(/\\/g, '/');
   const A = layerOf(rel);
   const text = fs.readFileSync(file, 'utf8');
+  const test = TEST_FILE.test(rel);
+  if (!test) {
+    const nd = nondetOf(text);
+    nondetOk += nd.allowed;
+    for (const {call, line} of nd.found) found.push({where: `src/${rel}:${line}`, spec: call, why: NONDET_WHY, from: rel, to: call});
+  }
   for (const {spec, index} of importsOf(text)) {
     const line = text.slice(0, index).split('\n').length;
     const where = `src/${rel}:${line}`;
     imports++;
     if (!spec.startsWith('.')) {
       if (!installed(spec)) found.push({where, spec, why: 'не относительный путь и не пакет из node_modules — алиас путей или неустановленный пакет'});
-      else if (A.name === 'core' && !PKG_CORE.test(spec)) found.push({where, spec, why: 'core знает только remotion, react и @remotion/*'});
+      else if (A.name === 'core' && !PKG_CORE.test(spec) && !(test && TEST_PKG.test(spec))) found.push({where, spec, why: 'core знает только remotion, react и @remotion/*'});
       continue;
     }
     const toRel = path.posix.normalize(path.posix.join(path.posix.dirname(rel), spec));
@@ -224,10 +275,10 @@ const known = found.filter((f) => f.from && KNOWN.some((k) => k.from.test(f.from
 const fresh = found.filter((f) => !known.includes(f));
 const show = (f) => `  ${f.where} → '${f.spec}': ${f.why}`;
 if (!quiet) {
-  console.log(`check-layers: файлов ${files.length}, импортов ${imports}`);
+  console.log(`check-layers: файлов ${files.length}, импортов ${imports}, вызовов вне кадра с пометкой qa:nondeterministic-ok ${nondetOk}`);
   console.log(fresh.length ? `✗ новые нарушения (${fresh.length}):` : '✓ новых нарушений нет');
 }
-if (fresh.length) console.log((quiet ? 'check-layers — нарушения слоёв импортов:\n' : '') + fresh.map(show).join('\n'));
+if (fresh.length) console.log((quiet ? 'check-layers — нарушения слоёв импортов и детерминизма кадра:\n' : '') + fresh.map(show).join('\n'));
 if (!quiet && known.length) {
   console.log(`· известные (${known.length}, не блокируют --strict):`);
   for (const f of known) console.log(`${show(f)} — ${KNOWN.find((k) => k.from.test(f.from) && k.to.test(f.to)).why}`);

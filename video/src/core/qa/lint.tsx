@@ -5,7 +5,9 @@
 //   • текст на «запретной зоне» — элементах с data-qa-clear (постер колоды, карты веера): надпись их перекрывает.
 // Украшения, которым перекрывать можно по замыслу (сургучная печать на углу постера), помечены data-qa-ok — их текст не проверяется.
 // И читаемость на телефоне (readDom, только замеры — решает yt-lint, уровень ⚠): кегль смыслового текста и контраст с фоном.
-// Результат — в консоль строкой «YTLINT {…}», её собирает скрипт через onBrowserLog
+// Результат — в консоль строкой «YTLINT {…}», её собирает скрипт через onBrowserLog.
+// Лёгкий режим REMOTION_LINT=seen (seenDom) — только какие смысловые надписи видны в кадре: yt-lint проходит ролик частыми
+// кадрами без снимков и считает, сколько каждая надпись на экране (время чтения, ⚠); строка «YTSEEN {…}»
 import React, {useEffect} from 'react';
 import {continueRender, delayRender, useCurrentFrame, useVideoConfig} from 'remotion';
 
@@ -40,22 +42,24 @@ const blockOf = (el: Element) => {
   return document.body;
 };
 
-// видимые надписи кадра: текстовый узел → текст, видимая часть, блок, элемент
-type TextItem = {text: string; box: Box; block: Element; el: Element};
+// видимые надписи кадра: текстовый узел → текст, видимая часть, блок, элемент, видимость (opacity с предками)
+type TextItem = {text: string; box: Box; block: Element; el: Element; opacity: number};
 const textItems = (): TextItem[] => {
   const items: TextItem[] = [];
   const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
   for (let n = walker.nextNode(); n; n = walker.nextNode()) {
     const text = (n.textContent ?? '').trim();
     const el = n.parentElement;
-    if (!text || !el || opacityOf(el) < 0.15 || el.closest('[data-qa-ok]')) continue;
+    if (!text || !el || el.closest('[data-qa-ok]')) continue;
+    const opacity = opacityOf(el);
+    if (opacity < 0.15) continue;
     const range = document.createRange();
     range.selectNodeContents(n);
     const r = range.getBoundingClientRect();
     if (r.width < 2 || r.height < 2) continue;
     const box = clipOf(el, r);
     if (area(box) < area(r) * 0.4) continue; // в основном спрятан маской — так задумано (вылет из-под маски)
-    items.push({text, box, block: blockOf(el), el});
+    items.push({text, box, block: blockOf(el), el, opacity});
   }
   return items;
 };
@@ -226,16 +230,38 @@ export const readDom = (W = 1920, H = 1080): ReadReport => {
   return out;
 };
 
-// Зонд: после отрисовки кадра (и загрузки шрифтов) меряет раскладку и читаемость и пишет их в консоль
+// ─── Время чтения: какие смысловые надписи видны в кадре (режим REMOTION_LINT=seen) ───
+// seen — [текст целиком, opacity с предками (от 0,15, до сотых), 1 — мелкий по замыслу (data-qa-small-ok), номер цепочки
+// компонентов в chains]. Без снимка и замеров фона — кадр дешёвый: yt-lint проходит ролик с шагом в доли секунды и сам решает,
+// что считать «на экране», что — субтитры, и сколько надписи нужно на прочтение (пороги — VIDEO_LIMITS)
+export type SeenReport = {chains: string[][]; seen: [string, number, 0 | 1, number][]};
+export const seenDom = (W = 1920, H = 1080): SeenReport => {
+  const out: SeenReport = {chains: [], seen: []};
+  const chainIndex = new Map<string, number>();
+  for (const it of textItems()) {
+    if (!/[\p{L}\p{N}]/u.test(it.text)) continue; // «·», «—», «★» — не смысловой текст
+    const {box} = it;
+    if (box.right <= 0 || box.bottom <= 0 || box.left >= W || box.top >= H) continue;
+    const names = componentsOf(it.el);
+    const key = names.join('<');
+    if (!chainIndex.has(key)) chainIndex.set(key, out.chains.push(names) - 1);
+    out.seen.push([it.text, Math.round(it.opacity * 100) / 100, it.el.closest('[data-qa-small-ok]') ? 1 : 0, chainIndex.get(key) as number]);
+  }
+  return out;
+};
+
+// Зонд: после отрисовки кадра (и загрузки шрифтов) меряет раскладку и читаемость и пишет их в консоль;
+// в режиме seen — только видимые надписи
 export const LintProbe: React.FC = () => {
   const frame = useCurrentFrame();
   const {width, height} = useVideoConfig();
   useEffect(() => {
     const handle = delayRender('проверка раскладки');
+    const seen = process.env.REMOTION_LINT === 'seen';
     (document.fonts?.ready ?? Promise.resolve()).then(() =>
       requestAnimationFrame(() =>
         requestAnimationFrame(() => {
-          console.debug(`YTLINT ${JSON.stringify({frame, issues: lintDom(width, height), read: readDom(width, height)})}`);
+          console.debug(seen ? `YTSEEN ${JSON.stringify({frame, ...seenDom(width, height)})}` : `YTLINT ${JSON.stringify({frame, issues: lintDom(width, height), read: readDom(width, height)})}`);
           continueRender(handle);
         }),
       ),

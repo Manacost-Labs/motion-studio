@@ -31,3 +31,6 @@ video/capture/*.png
 
 # Локальное распознавание речи для таймингов озвучки (scripts/vo-words.py): python -m venv video/.venv-vo && pip install faster-whisper
 video/.venv-vo/
+
+# Сторонние программы-бинарники (auto-editor для rec.mjs idle — ~45 МБ); откуда и какая версия — video/recordings/README.md
+video/tools/
