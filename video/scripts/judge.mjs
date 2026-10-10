@@ -217,11 +217,17 @@ const scenes = opt('scenes')?.split(',').filter(Boolean);
 // ── Визуальный критик (--visual) ──
 // Рубрика — по мотивам visual-critic.md из github.com/Liamrjohnston/remotion-motion-graphics-skill
 // (skills/motion-graphics/references/visual-critic.md, лицензия MIT, © Liam Johnston): «жёсткие провалы» (нечитаемо, обрезано,
-// неон и свечения) и оценки 0–10 с порогом 8 — переложены на вкус студии (TASTE.md: ничего не обрезано, читается на телефоне,
+// неон и свечения) и оценки 0–10 — переложены на вкус студии (TASTE.md: ничего не обрезано, читается на телефоне,
 // без «нейросетевого почерка» — свечений, искр, частиц, неона, тряски, бликов на картах) и на решающую модель: она отвечает
 // вероятностями, а не текстом, поэтому «причина» в отчёте собрана из её ответов. Только советы (⚠): решает владелец.
 // Вопросы — по-английски (модели так точнее), фраза диктора — по-русски; кадр без голоса не проверяется на «про то ли кадр».
-const VISUAL = {readable: 0.5, uncropped: 0.5, hierarchy: 0.4, matches: 0.4, taste: 0.6, dead: 0.6, pass: 8};
+// Пороги — по калибровке 10.10.2026 (Clef Omni, кадры 1024 px): 6 хороших кадров готовых роликов против 7 испорченных копий
+// (мелко, обрезано, неон, текст на тексте, пустой кадр, дважды чужая фраза диктора) — 13 из 13 верно. Модель осторожна: хорошим
+// кадрам «читается» — 0,42–0,52, «не обрезано» — 0,51–0,75, «про фразу» — 0,24–0,44, оценка 4,8–6,0 (испорченным — 0,11–0,39,
+// 0,21–0,41, 0,12–0,13, 3,3–5,3; неон 0,78 против ≤ 0,17). Запас у «читается» мал, шум на одном кадре ±0,1 — это подсказка,
+// не приговор. «Иерархия» хорошие и плохие не различила (0,36–0,46 и 0,29–0,53) — в отчёт числом, в итог не идёт. 1344 px
+// точнее не стало. Новая модель — повторить калибровку тем же набором
+const VISUAL = {readable: 0.4, uncropped: 0.45, matches: 0.18, taste: 0.6, dead: 0.6, pass: 4.5};
 const TASTE_Q = {
   neon_glow: ['Does the image use neon, glow, bloom, lens flares, light glare sweeping over cards, coloured light halos, glassmorphism or cyan-purple gradients?', 'неон, свечение или блики'],
   particles: ['Does the image contain sparks, particles, embers or floating dust effects?', 'искры или частицы'],
@@ -249,7 +255,7 @@ const visualQuestions = (phrase, tag) => {
     overall: {type: 'score', instructions: `${on}Overall quality of this frame as part of a professional, hand-crafted YouTube video`, criteria: QUALITY},
   };
 };
-// Итог по кадру: жёсткий провал (нечитаемо, обрезано, «нейросетевой почерк») или оценка ниже 8 — ⚠; мелкие замечания — ℹ
+// Итог по кадру: жёсткий провал (нечитаемо, обрезано, «нейросетевой почерк») или оценка ниже VISUAL.pass — ⚠; мелкие замечания — ℹ
 const visualVerdict = (a, phrase) => {
   const p = (k) => a[k]?.noul;
   const n = (x) => x.toFixed(2);
@@ -258,7 +264,6 @@ const visualVerdict = (a, phrase) => {
   if (p('readable') < VISUAL.readable) hard.push(`мелко или нечитаемо на телефоне (${n(p('readable'))})`);
   if (p('uncropped') < VISUAL.uncropped) hard.push(`обрезано или перекрыто (${n(p('uncropped'))})`);
   for (const [k, [, ru]] of Object.entries(TASTE_Q)) if (p(k) > VISUAL.taste) hard.push(`${ru} (${n(p(k))})`);
-  if (p('hierarchy') < VISUAL.hierarchy) soft.push(`нет ясного главного элемента (${n(p('hierarchy'))})`);
   if (phrase && p('matches_vo') < VISUAL.matches) soft.push(`кадр не про фразу диктора (${n(p('matches_vo'))})`);
   if (p('dead_space') > VISUAL.dead) soft.push(`пустые зоны (${n(p('dead_space'))})`);
   const score = typeof a.overall?.score === 'number' ? +((a.overall.score / (QUALITY.length - 1)) * 10).toFixed(1) : null;
@@ -353,7 +358,7 @@ if (visual) {
     `Итог: ${vsum}`,
     '',
     'Только советы — решает владелец. На кадр: читается ли на телефоне, ясна ли иерархия, всё ли в кадре, про то ли кадр, что говорит диктор,',
-    'нет ли «нейросетевого почерка» (TASTE.md: неон, свечения, блики, искры, частицы, тряска, ИИ-вид), оценка 0–10 (порог 8).',
+    `нет ли «нейросетевого почерка» (TASTE.md: неон, свечения, блики, искры, частицы, тряска, ИИ-вид), оценка 0–10 (порог ${VISUAL.pass}; пороги — по калибровке, см. judge.mjs).`,
     'Модель отвечает вероятностями, не текстом: причина собрана из её ответов. Рубрика — по мотивам visual-critic.md (Liam Johnston, MIT).',
     '',
     ...[...new Set(rows.map((x) => x.seg))].flatMap((seg) => {
